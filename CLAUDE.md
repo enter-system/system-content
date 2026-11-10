@@ -32,9 +32,10 @@ Goal: tomorrow's **7 TikTok posts**, made and scheduled, with no input from Nahu
    - Video scenes (`tools/scenes/sceneN.mp4`): 0 system notice, 1 stats bars, 2 daily quests, 3 streak + "kicked up a notch", 4 level up, 5 end card (coming soon). Always end with 5.
 7. **Render:** `node tools/render.cjs plans/<date>.json` writes `posts/<date>/`. Look at 2–3 of the rendered slides to make sure nothing overflows or overlaps, and fix the plan if it does.
 8. **Commit and push.** Public links are `https://raw.githubusercontent.com/enter-system/system-content/main/posts/<date>/<file>`.
-9. **Schedule on Metricool** (`createScheduledPost`, blogId `7986494`), TikTok only, `autoPublish: true`.
+9. **Schedule on Metricool** (`createScheduledPost`, blogId `7986494`), TikTok for all 7, plus YouTube Shorts for the 3 videos, `autoPublish: true`.
    - Times (ET): 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00. Alternate slideshows and videos, and put the strongest hook at 10:00 or 18:00.
    - `tiktokData`: `title` (required, ≤ 90 chars), `privacyOption` PUBLIC_TO_EVERYONE, `commercialContentOwnBrand` true, `autoAddMusic` true for slideshows and false for videos (videos have their own audio), `isAigc` false.
+   - **YouTube Shorts too:** schedule each of the 3 videos a second time to `youtube` at the same time, as a separate post. `youtubeData`: `type` "short", `privacy` "public", `madeForKids` false, `isAiGeneratedContent` false, `category` PEOPLE_BLOGS, 4–6 search `tags`, and a `title` that is the urgent hook in Title Case plus 1–2 hashtags (≤ 100 chars). Description: 2 sentences, "Subscribe to follow the build.", then #shorts plus 2 hashtags. Slideshows stay TikTok-only.
    - Captions: lead with a search phrase ("self improvement app", "habit tracker", "Christian", "discipline", "level up your life"). Write 1–3 short sentences, then a question or "save this", then 5–7 hashtags (always #selfimprovement and #selfimprovementapp).
 10. **Log:** append each post to `bank/posted.json`, add the date to each used hook's `used` list, commit and push.
 11. **Tell Nahum,** in a short message: the 7 posts with times and hooks, yesterday's best performer, and anything that failed.

@@ -100,7 +100,8 @@
    "id": "stop-saying-monday",
    "hook": "start-monday-lie",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "youtube"
    ]
   },
   {
@@ -118,7 +119,8 @@
    "id": "nobody-is-coming",
    "hook": "level-up-silent",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "youtube"
    ]
   },
   {
@@ -136,7 +138,8 @@
    "id": "stats-dropping",
    "hook": "stats-screen-pov",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "youtube"
    ]
   },
   {
