@@ -1,0 +1,122 @@
+{
+ "date": "2026-11-12",
+ "posts": [
+  {
+   "id": "man-family-brags-about",
+   "hookId": "seven-stats-countdown",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "yellowcover",
+     "title": "How to become the man your family brags about…",
+     "sub": "(Bible approved)"
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "7) Charisma",
+      "Learn to own the room. Talk to one new person this week."
+     ],
+     "ab": "CHA",
+     "name": "CHARISMA",
+     "role": "LIFE OF THE PARTY",
+     "color": "#a98bff",
+     "fill": 30
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "6) Ambition",
+      "Build a career, not just a paycheck. One skill, one hour a day."
+     ],
+     "ab": "AMB",
+     "name": "AMBITION",
+     "role": "CEO",
+     "color": "#e2b85a",
+     "fill": 40
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "5) Wealth",
+      "Know where every dollar goes. Budget before you spend."
+     ],
+     "ab": "WLT",
+     "name": "WEALTH",
+     "role": "STABILITY",
+     "color": "#4fd6a0",
+     "fill": 50
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "4) Intellect",
+      "Read 10 pages a day. Learn something hard."
+     ],
+     "ab": "INT",
+     "name": "INTELLECT",
+     "role": "DISCIPLINED MIND",
+     "color": "#4cb8ff",
+     "fill": 60
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "3) Strength",
+      "Train like someone depends on you. Because they do."
+     ],
+     "ab": "STR",
+     "name": "STRENGTH",
+     "role": "PROTECTOR",
+     "color": "#ff6a5c",
+     "fill": 70
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "2) Heart",
+      "Lead your family with warmth. Phone down. Be present."
+     ],
+     "ab": "HRT",
+     "name": "HEART",
+     "role": "LEADER",
+     "color": "#ff9f6b",
+     "fill": 85
+    },
+    {
+     "kind": "rank",
+     "labels": [
+      "1) Faith",
+      "Put God first. Every single morning.",
+      "“Seek ye first the kingdom of God” Matthew 6:33"
+     ],
+     "ab": "FTH",
+     "name": "FAITH",
+     "role": "SOLDIER",
+     "color": "#f1e6b8",
+     "fill": 100,
+     "lv": "MAX PRIORITY"
+    },
+    {
+     "kind": "rank",
+     "y": 22,
+     "labels": [
+      "All 7 stats. One system.",
+      "Train every one of them daily with quests, streaks and level-ups."
+     ],
+     "foot": [
+      "The System · Coming soon",
+      "Follow to join ⬇️"
+     ],
+     "ab": "S",
+     "name": "THE SYSTEM",
+     "role": "LEVEL UP YOUR LIFE",
+     "color": "#5ee7ff",
+     "fill": 100,
+     "lv": "ALL 7 STATS"
+    }
+   ]
+  }
+ ]
+}

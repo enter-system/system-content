@@ -187,6 +187,15 @@
     "wealth-restaurant-pov-01.jpg",
     "wealth-pool-breakfast-laptop-01.jpg"
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "12:00",
+   "id": "man-family-brags-about",
+   "hook": "seven-stats-countdown",
+   "platforms": [
+    "tiktok"
+   ]
   }
  ]
 }

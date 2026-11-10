@@ -496,6 +496,15 @@
    "used": [
     "2026-11-12"
    ]
+  },
+  {
+   "id": "seven-stats-countdown",
+   "pillar": "app",
+   "format": "rank",
+   "hook": "How to become the man your family brags about (7 stats countdown)",
+   "used": [
+    "2026-11-12"
+   ]
   }
  ]
 }
