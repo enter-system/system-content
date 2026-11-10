@@ -1,43 +1,43 @@
 {
  "date": "2026-11-11",
  "posts": [
-  {"id": "bible-before-phone", "hookId": "phone-before-bible", "time": "08:00", "type": "slides", "slides": [
-   {"kind": "cover", "kick": "FAITH QUEST", "title": "BIBLE BEFORE <b>PHONE</b>:<br>WHAT CHANGES", "sub": "Try it for 7 days →"},
-   {"kind": "point", "num": "01 / 04", "kick": "CHANGE 01", "text": "Your first thought isn't someone else's opinion."},
-   {"kind": "point", "num": "02 / 04", "kick": "CHANGE 02", "text": "Anxiety doesn't get to set the tone."},
-   {"kind": "point", "num": "03 / 04", "kick": "CHANGE 03", "text": "You start with direction, not a feed."},
-   {"kind": "point", "num": "04 / 04", "kick": "CHANGE 04", "text": "Even one chapter beats zero.", "sub": "+1 FAITH every morning you do it."},
-   {"kind": "cta", "title": "MAKE IT A<br><b>DAILY QUEST</b>", "text": "The System tracks your Bible streak like a stat. <b>Coming soon.</b>"}
+  {"id": "stop-phone-before-bible", "hookId": "phone-before-bible", "time": "08:00", "type": "slides", "slides": [
+   {"kind": "cover", "tone": "alert", "banner": "DO THIS TOMORROW MORNING", "kick": "FAITH QUEST", "title": "<b>STOP</b> OPENING YOUR PHONE BEFORE YOUR BIBLE"},
+   {"kind": "point", "tone": "alert", "num": "01 / 04", "kick": "WHAT IT'S COSTING YOU", "text": "Your first thought is someone else's opinion."},
+   {"kind": "point", "tone": "alert", "num": "02 / 04", "kick": "WHAT IT'S COSTING YOU", "text": "Anxiety sets the tone before God does."},
+   {"kind": "point", "num": "03 / 04", "kick": "THE FIX", "text": "Bible first. Phone second. Every morning."},
+   {"kind": "point", "num": "04 / 04", "kick": "THE FIX", "text": "Even one chapter beats zero.", "sub": "+1 FAITH every morning you do it."},
+   {"kind": "cta", "title": "START <b>TOMORROW</b>.<br>NOT MONDAY.", "text": "The System tracks your Bible streak like a stat. <b>Coming soon.</b>"}
   ]},
-  {"id": "start-monday-lie", "hookId": "start-monday-lie", "time": "10:00", "type": "video", "hook": "“I'LL START MONDAY”<br>IS THE MOST<br><b>EXPENSIVE LIE</b>", "scenes": [2, 3, 5]},
-  {"id": "boring-money-habits", "hookId": "stats-boring-money", "time": "12:00", "type": "slides", "slides": [
-   {"kind": "cover", "kick": "WEALTH STAT", "title": "BORING MONEY HABITS THAT <b>QUIETLY</b> BUILD WEALTH"},
-   {"kind": "point", "num": "01 / 05", "kick": "HABIT 01", "text": "Track every dollar for 30 days."},
-   {"kind": "point", "num": "02 / 05", "kick": "HABIT 02", "text": "Pay yourself first, even $20."},
-   {"kind": "point", "num": "03 / 05", "kick": "HABIT 03", "text": "Wait 48 hours before any non-essential buy."},
-   {"kind": "point", "num": "04 / 05", "kick": "HABIT 04", "text": "Kill the highest-interest debt first."},
-   {"kind": "point", "num": "05 / 05", "kick": "HABIT 05", "text": "Automate it so willpower isn't needed.", "sub": "+1 WEALTH every time."},
-   {"kind": "cta", "title": "LEVEL UP YOUR<br><b>WEALTH STAT</b>", "text": "Budgets and money quests in The System. <b>Coming soon.</b>"}
+  {"id": "stop-saying-monday", "hookId": "start-monday-lie", "time": "10:00", "type": "video", "kicker": "WARNING", "hook": "STOP SAYING<br>“I'LL START<br><b>MONDAY</b>”", "scenes": [2, 3, 5]},
+  {"id": "money-before-2027", "hookId": "stats-boring-money", "time": "12:00", "type": "slides", "slides": [
+   {"kind": "countdown", "kick": "TIME LEFT", "big": "50", "title": "DAYS LEFT<br>IN 2026", "sub": "Fix your money before the year ends →"},
+   {"kind": "point", "tone": "alert", "num": "01 / 05", "kick": "DO IT NOW", "text": "Track every dollar. Starting today."},
+   {"kind": "point", "tone": "alert", "num": "02 / 05", "kick": "DO IT NOW", "text": "Pay yourself first, even $20."},
+   {"kind": "point", "tone": "alert", "num": "03 / 05", "kick": "DO IT NOW", "text": "Wait 48 hours before any non-essential buy."},
+   {"kind": "point", "tone": "alert", "num": "04 / 05", "kick": "DO IT NOW", "text": "Kill your highest-interest debt first."},
+   {"kind": "point", "tone": "alert", "num": "05 / 05", "kick": "DO IT NOW", "text": "Automate it. Willpower runs out."},
+   {"kind": "cta", "title": "DON'T ENTER 2027<br><b>BROKE AND LOST</b>", "text": "Budgets and money quests in The System. <b>Coming soon.</b>"}
   ]},
-  {"id": "nobody-claps-day-47", "hookId": "level-up-silent", "time": "14:00", "type": "video", "hook": "NOBODY CLAPS<br>FOR <b>DAY 47.</b><br>DO IT ANYWAY.", "scenes": [1, 4, 5]},
-  {"id": "signs-leveling-up", "hookId": "signs-leveling-up", "time": "16:00", "type": "slides", "slides": [
-   {"kind": "cover", "kick": "STATUS CHECK", "title": "SIGNS YOU'RE<br><b>LEVELING UP</b>", "sub": "(even if it doesn't feel like it)"},
+  {"id": "nobody-is-coming", "hookId": "level-up-silent", "time": "14:00", "type": "video", "kicker": "ALERT", "hook": "NOBODY IS COMING<br>TO <b>SAVE YOU.</b><br>START TODAY.", "scenes": [0, 4, 5]},
+  {"id": "leveling-up-check", "hookId": "signs-leveling-up", "time": "16:00", "type": "slides", "slides": [
+   {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "STATUS CHECK", "title": "IF YOU DO THESE 5, YOU'RE <b>LEVELING UP</b>"},
    {"kind": "point", "num": "01 / 05", "kick": "SIGN 01", "text": "Things that used to drain you now bore you."},
    {"kind": "point", "num": "02 / 05", "kick": "SIGN 02", "text": "You keep promises to yourself."},
    {"kind": "point", "num": "03 / 05", "kick": "SIGN 03", "text": "Your circle got smaller and better."},
    {"kind": "point", "num": "04 / 05", "kick": "SIGN 04", "text": "Bad days don't turn into bad weeks."},
-   {"kind": "point", "num": "05 / 05", "kick": "SIGN 05", "text": "You're uncomfortable more often."},
-   {"kind": "cta", "title": "SEE YOUR<br><b>LEVEL</b>", "text": "The System turns your growth into stats you can see. <b>Coming soon.</b>"}
+   {"kind": "point", "tone": "alert", "num": "05 / 05", "kick": "SIGN 05", "text": "You're uncomfortable. On purpose."},
+   {"kind": "cta", "title": "0 OUT OF 5?<br><b>START TODAY.</b>", "text": "The System turns your growth into stats you can see. <b>Coming soon.</b>"}
   ]},
-  {"id": "stats-screen-pov", "hookId": "stats-screen-pov", "time": "18:00", "type": "video", "hook": "IF YOUR LIFE HAD<br>A <b>STATS SCREEN</b>,<br>WHAT WOULD IT SAY?", "scenes": [0, 1, 5]},
-  {"id": "verses-when-you-want-to-quit", "hookId": "verses-discipline", "time": "20:00", "type": "slides", "slides": [
-   {"kind": "cover", "kick": "SCRIPTURE", "title": "5 VERSES FOR WHEN YOU WANT TO <b>QUIT</b>"},
+  {"id": "stats-dropping", "hookId": "stats-screen-pov", "time": "18:00", "type": "video", "kicker": "SYSTEM ALERT", "hook": "YOUR <b>STATS</b><br>ARE DROPPING<br>EVERY DAY YOU WAIT", "scenes": [0, 1, 3, 5]},
+  {"id": "read-before-you-quit", "hookId": "verses-discipline", "time": "20:00", "type": "slides", "slides": [
+   {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "SCRIPTURE", "title": "READ THIS BEFORE YOU <b>QUIT</b>"},
    {"kind": "point", "tone": "gold", "num": "01 / 05", "kick": "GALATIANS 6:9", "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not."},
    {"kind": "point", "tone": "gold", "num": "02 / 05", "kick": "PROVERBS 24:16", "text": "For a just man falleth seven times, and riseth up again."},
    {"kind": "point", "tone": "gold", "num": "03 / 05", "kick": "PHILIPPIANS 4:13", "text": "I can do all things through Christ which strengtheneth me."},
    {"kind": "point", "tone": "gold", "num": "04 / 05", "kick": "ISAIAH 40:31", "text": "They that wait upon the LORD shall renew their strength…"},
    {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "HEBREWS 12:1", "text": "…let us run with patience the race that is set before us."},
-   {"kind": "cta", "title": "KEEP GOING.<br><b>REST, DON'T QUIT.</b>", "text": "Scripture, prayer and streaks in The System. <b>Coming soon.</b>"}
+   {"kind": "cta", "title": "GET UP.<br><b>ONE MORE DAY.</b>", "text": "Scripture, prayer and streaks in The System. <b>Coming soon.</b>"}
   ]}
  ]
 }

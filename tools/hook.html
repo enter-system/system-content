@@ -1,27 +1,42 @@
 <!doctype html>
-<!-- 2-second hook card that opens each video. ?t=<html text>&bg=<photo path, optional> -->
+<!-- 1.5-second hook card that opens each video. Urgent by default: red flash, slam-in text, screen shake, glitch.
+     ?t=<html text>&k=<kicker, e.g. "WARNING">&bg=<photo path, optional>&calm=1 (no red flash) -->
 <html><head><meta charset="utf-8"><style>
 @font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
 html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#050810}
 #s{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Raj,sans-serif;color:#e8f1fb;background:radial-gradient(ellipse at 50% 45%,#10223f 0%,#070b14 60%,#04060c 100%)}
-#bg{position:absolute;inset:-40px;background-size:cover;background-position:center;display:none}
+#bg{position:absolute;inset:-60px;background-size:cover;background-position:center;display:none}
 #bg::after{content:'';position:absolute;inset:0;background:rgba(4,6,12,.66)}
 #g{position:absolute;inset:-100px;background-image:linear-gradient(rgba(94,231,255,.07) 2px,transparent 2px),linear-gradient(90deg,rgba(94,231,255,.07) 2px,transparent 2px);background-size:90px 90px}
-#t{position:absolute;left:80px;right:80px;top:50%;transform:translateY(-50%);text-align:center;font-weight:700;font-size:118px;line-height:1.02;letter-spacing:.02em;text-shadow:0 0 40px rgba(94,231,255,.35)}
+#t{position:absolute;left:70px;right:70px;top:50%;text-align:center;font-weight:700;font-size:124px;line-height:1.0;letter-spacing:.02em;text-shadow:0 0 40px rgba(94,231,255,.35)}
 #t b{color:#5ee7ff;text-shadow:0 0 40px rgba(94,231,255,.8)}
-#k{position:absolute;left:0;right:0;top:600px;text-align:center;font-weight:700;font-size:48px;letter-spacing:.32em;color:#f5c451}
-.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 6px)}
-</style></head><body><div id="s"><div id="bg"></div><div id="g"></div><div id="k">[ SYSTEM ]</div><div id="t"></div><div class="scan"></div></div>
+#t2{position:absolute;left:70px;right:70px;top:50%;text-align:center;font-weight:700;font-size:124px;line-height:1.0;letter-spacing:.02em;color:#ff3b4e;opacity:0;mix-blend-mode:screen}
+#k{position:absolute;left:0;right:0;top:560px;text-align:center;font-weight:700;font-size:56px;letter-spacing:.3em;color:#ff4d5e;text-shadow:0 0 30px rgba(255,60,80,.8)}
+#bar{position:absolute;left:0;right:0;height:14px;background:#ff3b4e;box-shadow:0 0 40px #ff3b4e}
+#bar.top{top:0}#bar2{position:absolute;left:0;right:0;bottom:0;height:14px;background:#ff3b4e;box-shadow:0 0 40px #ff3b4e}
+#flash{position:absolute;inset:0;background:#ff1f3a;opacity:0;mix-blend-mode:screen}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.2) 0 2px,transparent 2px 6px)}
+</style></head><body><div id="s"><div id="bg"></div><div id="g"></div><div id="bar" class="top"></div><div id="bar2"></div><div id="k"></div><div id="t2"></div><div id="t"></div><div id="flash"></div><div class="scan"></div></div>
 <script>
 const q = new URLSearchParams(location.search);
-document.getElementById('t').innerHTML = q.get('t');
+const calm = q.get('calm') === '1';
+document.getElementById('t').innerHTML = q.get('t'); document.getElementById('t2').innerHTML = q.get('t').replace(/<[^>]+>/g, (m) => (m.startsWith('<br') ? m : ''));
+document.getElementById('k').textContent = `⚠ ${q.get('k') || 'WARNING'} ⚠`;
+if (calm) { document.getElementById('k').style.color = '#f5c451'; document.getElementById('k').textContent = `[ ${q.get('k') || 'SYSTEM'} ]`; ['bar', 'bar2'].forEach((i) => (document.getElementById(i).style.display = 'none')); }
 if (q.get('bg')) { const b = document.getElementById('bg'); b.style.display = 'block'; b.style.backgroundImage = `url("${q.get('bg')}")`; }
 window.render = (t) => {
-  const k = Math.min(1, t / 0.35), e = 1 - Math.pow(1 - k, 3);
-  const el = document.getElementById('t'); el.style.transform = `translateY(-50%) scale(${1.15 - 0.15 * e})`; el.style.opacity = k;
-  document.getElementById('g').style.transform = `translateY(${(t * 30) % 90}px)`;
-  document.getElementById('k').style.opacity = Math.min(1, t / 0.5);
-  document.getElementById('bg').style.transform = `scale(${1 + t * 0.02})`;
+  const slam = Math.min(1, t / 0.18), e = 1 - Math.pow(1 - slam, 4);
+  const shake = t < 0.45 ? (1 - t / 0.45) * 22 : 0;
+  const glitch = !calm && (Math.floor(t * 30) % 9 === 0 || t < 0.12);
+  const el = document.getElementById('t'), el2 = document.getElementById('t2');
+  el.style.transform = `translate(${Math.sin(t * 97) * shake}px, calc(-50% + ${Math.cos(t * 71) * shake}px)) scale(${1.7 - 0.7 * e})`;
+  el.style.opacity = Math.min(1, t / 0.08);
+  el2.style.transform = `translate(${glitch ? 14 : 0}px, -50%) scale(${1.7 - 0.7 * e})`; el2.style.opacity = glitch ? 0.7 : 0;
+  document.getElementById('flash').style.opacity = calm ? 0 : Math.max(0, 0.55 - t * 2.2) + (Math.floor(t * 4) % 2 === 0 && t > 0.5 ? 0.06 : 0);
+  const blink = calm ? 1 : (Math.floor(t * 6) % 2 === 0 ? 1 : 0.35);
+  document.getElementById('k').style.opacity = Math.min(1, t / 0.1) * blink;
+  document.getElementById('g').style.transform = `translateY(${(t * 60) % 90}px)`;
+  document.getElementById('bg').style.transform = `scale(${1.08 - t * 0.03})`;
 };
 render(0);
 </script></body></html>

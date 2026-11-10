@@ -1,6 +1,7 @@
 <!doctype html>
 <!-- One 1080x1920 slide for The System's faceless posts. render.cjs calls show(slide) for each slide.
-     A slide is { kind: 'cover'|'point'|'math'|'cta', ...text, bg?: 'photos/library/x.jpg', tone?: 'red' }.
+     A slide is { kind: 'cover'|'point'|'math'|'countdown'|'cta', ...text, bg?: 'photos/library/x.jpg', tone?: 'red'|'gold'|'alert', banner?: 'DON\'T SCROLL PAST THIS' }.
+     countdown: { big: '50', title: 'DAYS LEFT IN 2026', sub }.
      Text fields accept a little HTML: <b> makes words cyan. -->
 <html><head><meta charset="utf-8"><style>
 @font-face { font-family: Raj; src: url(fonts/rajdhani-latin-600-normal.woff2); font-weight: 600; }
@@ -29,6 +30,10 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
 .red .kick{color:#ff8a8a;text-shadow:0 0 24px rgba(255,120,120,.5)} .red .box{border-color:rgba(255,138,138,.7)} .red .math{color:#ff8a8a}
 .red .box::before,.red .box::after{border-color:#ff8a8a}
 .gold .kick{color:#f5c451} .gold .box{border-color:rgba(245,196,81,.75)} .gold .box::before,.gold .box::after{border-color:#f5c451}
+.alert .kick{color:#ff4d5e;text-shadow:0 0 30px rgba(255,60,80,.8)} .alert .box{border-color:#ff4d5e;box-shadow:0 0 70px rgba(255,60,80,.35)} .alert .box::before,.alert .box::after{border-color:#ff4d5e} .alert .h b{color:#ff4d5e;text-shadow:0 0 36px rgba(255,60,80,.8)}
+.banner{position:absolute;left:0;right:0;top:300px;padding:22px 40px;background:#ff3b4e;color:#fff;text-align:center;font-weight:700;font-size:48px;letter-spacing:.14em;box-shadow:0 0 60px rgba(255,59,78,.6)}
+.edge{position:absolute;left:0;right:0;height:12px;background:#ff3b4e;box-shadow:0 0 40px #ff3b4e}
+.cd{font-weight:700;font-size:330px;line-height:.9;color:#ff4d5e;text-shadow:0 0 60px rgba(255,60,80,.7)}
 </style></head><body><div id="s"><div id="bg"></div><div class="grid"></div><div class="brand">THE SYSTEM</div><div id="c"></div><div class="scan"></div></div>
 <script>
 const esc = (x) => x ?? '';
@@ -41,7 +46,11 @@ window.show = async (sl) => {
   if (sl.kind === 'cover') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="h">${esc(sl.title)}</div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div><div class="swipe">SWIPE →</div>`;
   if (sl.kind === 'point') h = `${sl.num ? `<div class="num">${sl.num}</div>` : ''}<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="box"><div class="p${(sl.text || '').replace(/<[^>]+>/g, '').length > 60 ? ' long' : ''}">${esc(sl.text)}</div></div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
   if (sl.kind === 'math') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="math c">${esc(sl.big)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div></div>`;
-  if (sl.kind === 'cta') h = `<div class="wrap${tone}"><div class="h">${esc(sl.title)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div><div class="small">${esc(sl.sub || 'FOLLOW TO JOIN THE WAITLIST')}</div></div>`;
+  if (sl.kind === 'countdown') h = `<div class="wrap alert"><div class="kick">[ ${esc(sl.kick || 'TIME LEFT')} ]</div><div class="cd">${esc(sl.big)}</div><div class="h" style="font-size:96px">${esc(sl.title)}</div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
+  if (sl.kind === 'cta') h =`<div class="wrap${tone}"><div class="h">${esc(sl.title)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div><div class="small">${esc(sl.sub || 'FOLLOW TO JOIN THE WAITLIST')}</div></div>`;
+  // Urgency: a red banner across the top (sl.banner) and red edge bars on alert slides.
+  if (sl.banner) h = `<div class="banner">⚠ ${sl.banner} ⚠</div>` + h.replace('class="wrap', 'style="top:420px" class="wrap');
+  if (sl.tone === 'alert' || sl.kind === 'countdown') h += '<div class="edge" style="top:0"></div><div class="edge" style="bottom:0"></div>';
   document.getElementById('c').innerHTML = h;
   await document.fonts.ready;
 };
