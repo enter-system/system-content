@@ -54,7 +54,8 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
 .es .xp{display:flex;align-items:center;gap:18px;margin-top:10px;font-family:Raj,sans-serif;font-weight:700;font-size:30px;letter-spacing:.2em;color:#5ee7ff}
 .es .xp span{flex:0 0 220px;height:8px;background:rgba(94,231,255,.2);border-radius:4px;overflow:hidden}.es .xp span b{display:block;height:100%;background:#5ee7ff;box-shadow:0 0 12px #5ee7ff}
 .es.center{text-align:center;left:90px;right:90px}
-.es.center h2{font-size:58px}
+.es.center h2{font-size:58px}.es.center .xp{justify-content:center}
+.es .bl{list-style:none;margin:0 0 30px;padding:0;font-size:42px;line-height:1.38}.es .bl li::before{content:'• ';color:#5ee7ff}.es.small .bl{font-size:34px}
 .es.small{left:150px;right:150px;text-align:center}.es.small h2{font-size:46px;margin-bottom:22px}.es.small p{font-size:32px;line-height:1.35;margin-bottom:18px}.es.small .xp{justify-content:center}
 .logo{background:#000 !important}.logo .grid,.logo .brand,.logo .scan{display:none}
 .lg{position:absolute;left:0;right:0;top:50%;transform:translateY(-55%);text-align:center;font-family:Raj,sans-serif;font-weight:700;color:#fff}
@@ -93,7 +94,7 @@ window.show = async (sl) => {
   if (sl.kind === 'math') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="math c">${esc(sl.big)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div></div>`;
   if (sl.kind === 'whisper') { s.className = 'photo whisper'; h = `<div class="wh${sl.font === 'sans' ? ' sans' : ''}" style="top:${sl.y ?? 34}%">${esc(sl.text)}</div>${sl.cap ? `<div class="whcap">${sl.cap}</div>` : ''}`; }
   // essay: { bg, num: '02', title: 'Own it & let go', paras: ['...','...'], last: 'Write it down. Move on.', tag?: 'QUEST 02', xp?: 40, y?: 13 (% from top), center?: true }
-  if (sl.kind === 'essay') { s.className = 'photo essay'; h = `<div class="es${sl.center ? ' center' : ''}" style="top:${sl.y ?? 13}%">${sl.tag ? `<div class="tag">[ ${sl.tag} ]</div>` : ''}${sl.title ? `<h2>${sl.num ? `<i>${sl.num}</i>` : ''}${sl.title}</h2>` : ''}${(sl.paras || []).map((p) => `<p>${p}</p>`).join('')}${sl.last ? `<p class="last">${sl.last}</p>` : ''}${sl.xp ? `<div class="xp">+${sl.xp} XP <span><b style="width:${Math.min(100, sl.xp)}%"></b></span></div>` : ''}</div>`; }
+  if (sl.kind === 'essay') { s.className = 'photo essay'; h = `<div class="es${sl.center ? ' center' : ''}" style="top:${sl.y ?? 13}%">${sl.tag ? `<div class="tag">[ ${sl.tag} ]</div>` : ''}${sl.title ? `<h2>${sl.num ? `<i>${sl.num}</i>` : ''}${sl.title}</h2>` : ''}${(sl.paras || []).map((p) => `<p>${p}</p>`).join('')}${sl.bullets ? `<ul class="bl">${sl.bullets.map((b) => `<li>${b}</li>`).join('')}</ul>` : ''}${(sl.after || []).map((p) => `<p>${p}</p>`).join('')}${sl.last ? `<p class="last">${sl.last}</p>` : ''}${sl.xp ? `<div class="xp">+${sl.xp} XP <span><b style="width:${Math.min(100, sl.xp)}%"></b></span></div>` : ''}</div>`; }
   // logo: the brand end card on plain black (the "Minimalism." carousel ends this way). { sub?: 'COMING SOON' }
   if (sl.kind === 'logo') { s.className = 'logo'; h = `<div class="lg"><div class="mk">S</div><div class="nm">THE SYSTEM</div><div class="ln"></div><div class="sb">${esc(sl.sub || 'COMING SOON')}</div></div>`; }
   // yellowcover: { bg?, title, sub?: '(Bible approved)' }  rank: { labels:['7) Charisma','Learn to own the room.'], ab:'CHA', name:'CHARISMA', role:'LIFE OF THE PARTY', color:'#a98bff', fill: 70, lv:'+XP DAILY', y?: 13 }
