@@ -85,12 +85,12 @@ function finish(parts, audioParts, outDir, id, work, speed = 1.2) {
       finish([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], [...audio, SC[5]], outDir, post.id, work, post.speed ?? 1);
     } else if (post.type === 'montage') {
       const parts = [], audio = [];
-      if (post.hook) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm); parts.push(hk); audio.push(HOOK_AUDIO); }
+      if (post.hook && !post.mood) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm); parts.push(hk); audio.push(HOOK_AUDIO); }
       await page.goto('file://' + path.join(TOOLS, 'montage.html'));
-      const DUR = 2.6; let at = 3.2; // ride the beat section of the track
+      const DUR = post.dur ?? 2.6; let at = 3.2; // ride the beat section of the track
       for (let i = 0; i < post.frames.length; i++) {
         const f = post.frames[i]; const out = path.join(work, `${post.id}-m${i}.mp4`);
-        await page.evaluate((fr) => setFrame(fr), { photo: fileUrl(f.photo), text: f.text });
+        await page.evaluate((fr) => setFrame(fr), { photo: fileUrl(f.photo), text: f.text ?? post.word, mood: post.mood });
         await frames(page, Math.round(DUR * 30), (n) => page.evaluate(([t, d]) => render(t, d), [n / 30, DUR]), out);
         parts.push(out); audio.push([at, at + DUR]); at += DUR; if (at + DUR > 16.8) at = 3.2;
       }
