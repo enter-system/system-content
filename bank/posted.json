@@ -84,6 +84,69 @@
    "platforms": [
     "tiktok"
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "08:00",
+   "id": "bible-before-phone",
+   "hook": "phone-before-bible",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "10:00",
+   "id": "start-monday-lie",
+   "hook": "start-monday-lie",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "12:00",
+   "id": "boring-money-habits",
+   "hook": "stats-boring-money",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "14:00",
+   "id": "nobody-claps-day-47",
+   "hook": "level-up-silent",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "16:00",
+   "id": "signs-leveling-up",
+   "hook": "signs-leveling-up",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "18:00",
+   "id": "stats-screen-pov",
+   "hook": "stats-screen-pov",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "20:00",
+   "id": "verses-when-you-want-to-quit",
+   "hook": "verses-discipline",
+   "platforms": [
+    "tiktok"
+   ]
   }
  ]
 }
