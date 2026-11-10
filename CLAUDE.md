@@ -58,6 +58,10 @@ If Metricool or GitHub fails, retry once. If it still fails, stop and report exa
 
 Save them into `photos/inbox/` (resize so the long side is ≤ 2000px, JPEG quality 88, sensible names), then commit and push. The next run uses them first. If he asks for them "in the next post," make that post right away and schedule it at the next open slot instead of waiting for the nightly run.
 
+## Video style rule
+
+**No zoom in videos** (Nahum): photos and backgrounds stay still; cuts happen on the beat instead. The templates already do this.
+
 ## Sounds (Nahum's standing rule)
 
 Nahum sends TikTok screen recordings of sounds. **Every video is cut to the beat of one of his sounds; slideshows keep TikTok's auto music** (`autoAddMusic: true`).

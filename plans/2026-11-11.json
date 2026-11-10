@@ -49,7 +49,7 @@
    ]
   },
   {
-   "id": "stop-saying-monday",
+   "id": "stop-saying-monday-beat",
    "hookId": "start-monday-lie",
    "time": "10:00",
    "type": "video",
@@ -59,7 +59,8 @@
     2,
     3,
     5
-   ]
+   ],
+   "sound": "hype-semdemora-01"
   },
   {
    "id": "money-before-2027",
@@ -117,7 +118,7 @@
    ]
   },
   {
-   "id": "nobody-is-coming-photos",
+   "id": "nobody-is-coming-photos-beat",
    "hookId": "level-up-silent",
    "time": "14:00",
    "type": "montage",
@@ -144,7 +145,8 @@
      "photo": "photos/library/body-treadmill-garage-01.jpg",
      "text": "Start<br><b>TODAY.</b>"
     }
-   ]
+   ],
+   "sound": "calm-shizuku-01"
   },
   {
    "id": "leveling-up-check",
@@ -198,7 +200,7 @@
    ]
   },
   {
-   "id": "stats-dropping",
+   "id": "stats-dropping-beat",
    "hookId": "stats-screen-pov",
    "time": "18:00",
    "type": "video",
@@ -209,7 +211,8 @@
     1,
     3,
     5
-   ]
+   ],
+   "sound": "hype-bipolar-01"
   },
   {
    "id": "read-before-you-quit",

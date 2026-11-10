@@ -97,7 +97,7 @@
   {
    "date": "2026-11-11",
    "time": "10:00",
-   "id": "stop-saying-monday",
+   "id": "stop-saying-monday-beat",
    "hook": "start-monday-lie",
    "platforms": [
     "tiktok",
@@ -116,7 +116,7 @@
   {
    "date": "2026-11-11",
    "time": "14:00",
-   "id": "nobody-is-coming-photos",
+   "id": "nobody-is-coming-photos-beat",
    "hook": "level-up-silent",
    "platforms": [
     "tiktok",
@@ -142,7 +142,7 @@
   {
    "date": "2026-11-11",
    "time": "18:00",
-   "id": "stats-dropping",
+   "id": "stats-dropping-beat",
    "hook": "stats-screen-pov",
    "platforms": [
     "tiktok",
@@ -200,7 +200,7 @@
   {
    "date": "2026-11-12",
    "time": "10:00",
-   "id": "same-person-last-year",
+   "id": "same-person-last-year-beat",
    "hook": "same-person-last-year",
    "platforms": [
     "tiktok",

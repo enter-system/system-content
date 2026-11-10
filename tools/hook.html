@@ -5,7 +5,7 @@
 @font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
 html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#050810}
 #s{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Raj,sans-serif;color:#e8f1fb;background:radial-gradient(ellipse at 50% 45%,#10223f 0%,#070b14 60%,#04060c 100%)}
-#bg{position:absolute;inset:-60px;background-size:cover;background-position:center;display:none}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center;display:none}
 #bg::after{content:'';position:absolute;inset:0;background:rgba(4,6,12,.66)}
 #g{position:absolute;inset:-100px;background-image:linear-gradient(rgba(94,231,255,.07) 2px,transparent 2px),linear-gradient(90deg,rgba(94,231,255,.07) 2px,transparent 2px);background-size:90px 90px}
 #t{position:absolute;left:70px;right:70px;top:50%;text-align:center;font-weight:700;font-size:124px;line-height:1.0;letter-spacing:.02em;text-shadow:0 0 40px rgba(94,231,255,.35)}
@@ -36,7 +36,7 @@ window.render = (t) => {
   const blink = calm ? 1 : (Math.floor(t * 6) % 2 === 0 ? 1 : 0.35);
   document.getElementById('k').style.opacity = Math.min(1, t / 0.1) * blink;
   document.getElementById('g').style.transform = `translateY(${(t * 60) % 90}px)`;
-  document.getElementById('bg').style.transform = `scale(${1.08 - t * 0.03})`;
+  document.getElementById('bg').style.transform = 'none'; // no zoom (Nahum)
 };
 render(0);
 </script></body></html>

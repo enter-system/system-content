@@ -27,9 +27,9 @@ window.setFrame = async (f) => {
   await document.fonts.ready;
 };
 window.render = (t, dur) => {
-  if (document.body.classList.contains('mood')) { document.getElementById('bg').style.transform = `scale(${1.02 + 0.03 * t / dur})`; return; }
+  if (document.body.classList.contains('mood')) { document.getElementById('bg').style.transform = 'none'; return; }
   const k = t / dur;
-  document.getElementById('bg').style.transform = `scale(${1.04 + 0.08 * k}) translateY(${-20 * k}px)`;
+  document.getElementById('bg').style.transform = 'none'; // no zoom (Nahum)
   const a = Math.min(1, t / 0.3, (dur - t) / 0.2);
   const el = document.getElementById('t'); el.style.opacity = a; el.style.transform = `translateY(calc(-50% + ${12 * (1 - Math.min(1, t / 0.3))}px))`;
 };
