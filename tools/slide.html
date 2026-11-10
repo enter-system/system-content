@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- One 1080x1920 slide for The System's faceless posts. render.cjs calls show(slide) for each slide.
-     A slide is { kind: 'cover'|'point'|'math'|'countdown'|'cta'|'whisper'|'essay', ...text, bg?: 'photos/library/x.jpg', tone?: 'red'|'gold'|'alert', banner?: 'DON\'T SCROLL PAST THIS' }.
+     A slide is { kind: 'cover'|'point'|'math'|'countdown'|'cta'|'whisper'|'essay'|'logo', ...text, bg?: 'photos/library/x.jpg', tone?: 'red'|'gold'|'alert', banner?: 'DON\'T SCROLL PAST THIS' }.
      countdown: { big: '50', title: 'DAYS LEFT IN 2026', sub }.
      whisper: { bg (required), text: 'rich.', y?: 34 (% from top), font?: 'serif'|'sans', cap?: 'THE SYSTEM · COMING SOON' } — no grid, no banner.
      Text fields accept a little HTML: <b> makes words cyan. -->
@@ -55,6 +55,13 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
 .es .xp span{flex:0 0 220px;height:8px;background:rgba(94,231,255,.2);border-radius:4px;overflow:hidden}.es .xp span b{display:block;height:100%;background:#5ee7ff;box-shadow:0 0 12px #5ee7ff}
 .es.center{text-align:center;left:90px;right:90px}
 .es.center h2{font-size:58px}
+.logo{background:#000 !important}.logo .grid,.logo .brand,.logo .scan{display:none}
+.lg{position:absolute;left:0;right:0;top:50%;transform:translateY(-55%);text-align:center;font-family:Raj,sans-serif;font-weight:700;color:#fff}
+.lg .mk{position:relative;width:170px;height:170px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:118px;line-height:1;color:#5ee7ff;text-shadow:0 0 30px rgba(94,231,255,.7)}
+.lg .mk::before{content:'';position:absolute;inset:14px;border:6px solid #5ee7ff;transform:rotate(45deg);box-shadow:0 0 40px rgba(94,231,255,.35),inset 0 0 30px rgba(94,231,255,.2)}
+.lg .nm{margin-top:90px;font-size:128px;letter-spacing:.18em;padding-left:.18em}
+.lg .ln{width:90px;height:6px;background:#5ee7ff;margin:34px auto 0;box-shadow:0 0 16px #5ee7ff}
+.lg .sb{margin-top:34px;font-size:40px;letter-spacing:.5em;padding-left:.5em;color:#f5c451}
 .whcap{position:absolute;left:0;right:0;bottom:250px;text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:34px;letter-spacing:.42em;color:rgba(255,255,255,.85);text-shadow:0 2px 12px rgba(0,0,0,.6)}
 </style></head><body><div id="s"><div id="bg"></div><div class="grid"></div><div class="brand">THE SYSTEM</div><div id="c"></div><div class="scan"></div></div>
 <script>
@@ -71,6 +78,8 @@ window.show = async (sl) => {
   if (sl.kind === 'whisper') { s.className = 'photo whisper'; h = `<div class="wh${sl.font === 'sans' ? ' sans' : ''}" style="top:${sl.y ?? 34}%">${esc(sl.text)}</div>${sl.cap ? `<div class="whcap">${sl.cap}</div>` : ''}`; }
   // essay: { bg, num: '02', title: 'Own it & let go', paras: ['...','...'], last: 'Write it down. Move on.', tag?: 'QUEST 02', xp?: 40, y?: 13 (% from top), center?: true }
   if (sl.kind === 'essay') { s.className = 'photo essay'; h = `<div class="es${sl.center ? ' center' : ''}" style="top:${sl.y ?? 13}%">${sl.tag ? `<div class="tag">[ ${sl.tag} ]</div>` : ''}${sl.title ? `<h2>${sl.num ? `<i>${sl.num}</i>` : ''}${sl.title}</h2>` : ''}${(sl.paras || []).map((p) => `<p>${p}</p>`).join('')}${sl.last ? `<p class="last">${sl.last}</p>` : ''}${sl.xp ? `<div class="xp">+${sl.xp} XP <span><b style="width:${Math.min(100, sl.xp)}%"></b></span></div>` : ''}</div>`; }
+  // logo: the brand end card on plain black (the "Minimalism." carousel ends this way). { sub?: 'COMING SOON' }
+  if (sl.kind === 'logo') { s.className = 'logo'; h = `<div class="lg"><div class="mk">S</div><div class="nm">THE SYSTEM</div><div class="ln"></div><div class="sb">${esc(sl.sub || 'COMING SOON')}</div></div>`; }
   if (sl.kind === 'countdown') h =`<div class="wrap alert"><div class="kick">[ ${esc(sl.kick || 'TIME LEFT')} ]</div><div class="cd">${esc(sl.big)}</div><div class="h" style="font-size:96px">${esc(sl.title)}</div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
   if (sl.kind === 'cta') h =`<div class="wrap${tone}"><div class="h">${esc(sl.title)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div><div class="small">${esc(sl.sub || 'FOLLOW TO JOIN THE WAITLIST')}</div></div>`;
   // Urgency: a red banner across the top (sl.banner) and red edge bars on alert slides.
