@@ -116,11 +116,18 @@
   {
    "date": "2026-11-11",
    "time": "14:00",
-   "id": "nobody-is-coming",
+   "id": "nobody-is-coming-photos",
    "hook": "level-up-silent",
    "platforms": [
     "tiktok",
     "youtube"
+   ],
+   "photos": [
+    "body-hooded-gym-01.jpg",
+    "body-fog-run-behind-01.jpg",
+    "body-dark-gym-rest-01.jpg",
+    "body-fog-run-masked-01.jpg",
+    "body-treadmill-garage-01.jpg"
    ]
   },
   {
@@ -163,6 +170,22 @@
     "faith-bibles-church-01.jpg",
     "faith-saved-by-god-couple-01.jpg",
     "family-mountains-behind-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "08:00",
+   "id": "reset-before-2027",
+   "hook": "reset-life-essay",
+   "platforms": [
+    "tiktok"
+   ],
+   "photos": [
+    "wealth-lake-robe-laptop-01.jpg",
+    "wealth-cafe-cars-pov-01.jpg",
+    "wealth-skyline-cars-behind-01.jpg",
+    "wealth-restaurant-pov-01.jpg",
+    "wealth-pool-breakfast-laptop-01.jpg"
    ]
   }
  ]

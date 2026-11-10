@@ -1,0 +1,13 @@
+{
+ "date": "2026-11-12",
+ "posts": [
+  {"id": "reset-before-2027", "hookId": "reset-life-essay", "time": "08:00", "type": "slides", "slides": [
+   {"kind": "essay", "bg": "photos/library/wealth-lake-robe-laptop-01.jpg", "center": true, "y": 20, "tag": "49 DAYS LEFT IN 2026", "title": "How to reset your life before 2027:"},
+   {"kind": "essay", "bg": "photos/library/wealth-cafe-cars-pov-01.jpg", "tag": "QUEST 01", "num": "01", "title": "Clean it up", "paras": ["Clean up your space, your phone, your schedule and your circle.", "You can't become someone new while living inside the setup of your old self."], "last": "Remove one thing today.", "xp": 20},
+   {"kind": "essay", "bg": "photos/library/wealth-skyline-cars-behind-01.jpg", "tag": "QUEST 02", "num": "02", "title": "Own it", "paras": ["Stop waiting for a better season. Be honest about what isn't working in your habits, your money and your days.", "Not everything is your fault, but what happens next is on you."], "last": "Write it down. Pray over it. Move.", "xp": 40},
+   {"kind": "essay", "bg": "photos/library/wealth-restaurant-pov-01.jpg", "tag": "QUEST 03", "num": "03", "title": "Put God first", "paras": ["Before the phone. Before the plan.", "“But seek ye first the kingdom of God, and his righteousness; and all these things shall be added unto you.” Matthew 6:33"], "last": "Bible first. Every morning.", "xp": 60},
+   {"kind": "essay", "bg": "photos/library/wealth-pool-breakfast-laptop-01.jpg", "tag": "QUEST 04", "num": "04", "title": "Build the routine", "paras": ["Stop relying on motivation.", "Build your days around the life you want: your mornings, your training, your work, your money. Keep showing up when you don't feel like it."], "last": "Structure makes progress simple.", "xp": 80},
+   {"kind": "essay", "bg": "photos/library/wealth-lake-robe-laptop-01.jpg", "center": true, "y": 18, "tag": "THE SYSTEM", "title": "This page is for people building a life that honors God.", "paras": ["The System turns all of this into daily quests, streaks and level-ups."], "last": "Coming soon · Follow to join.", "xp": 100}
+  ]}
+ ]
+}

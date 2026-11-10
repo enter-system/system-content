@@ -1,6 +1,6 @@
 <!doctype html>
 <!-- One 1080x1920 slide for The System's faceless posts. render.cjs calls show(slide) for each slide.
-     A slide is { kind: 'cover'|'point'|'math'|'countdown'|'cta', ...text, bg?: 'photos/library/x.jpg', tone?: 'red'|'gold'|'alert', banner?: 'DON\'T SCROLL PAST THIS' }.
+     A slide is { kind: 'cover'|'point'|'math'|'countdown'|'cta'|'whisper'|'essay', ...text, bg?: 'photos/library/x.jpg', tone?: 'red'|'gold'|'alert', banner?: 'DON\'T SCROLL PAST THIS' }.
      countdown: { big: '50', title: 'DAYS LEFT IN 2026', sub }.
      whisper: { bg (required), text: 'rich.', y?: 34 (% from top), font?: 'serif'|'sans', cap?: 'THE SYSTEM · COMING SOON' } — no grid, no banner.
      Text fields accept a little HTML: <b> makes words cyan. -->
@@ -40,6 +40,21 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
 .whisper #bg::after{background:linear-gradient(180deg,rgba(0,0,0,.08),rgba(0,0,0,.18) 60%,rgba(0,0,0,.35))}
 .wh{position:absolute;left:80px;right:80px;text-align:center;font-family:'Liberation Serif','DejaVu Serif',Georgia,serif;font-size:58px;color:#fff;text-shadow:0 2px 18px rgba(0,0,0,.55);letter-spacing:.01em}
 .wh.sans{font-family:Raj,sans-serif;font-weight:600;font-size:60px}
+/* essay: the "How to start your life again" carousel look. Full photo, a numbered heading and a short paragraph, left aligned. */
+@font-face { font-family: Inter; src: url(fonts/inter-latin-400-normal.woff2); font-weight: 400; }
+@font-face { font-family: Inter; src: url(fonts/inter-latin-600-normal.woff2); font-weight: 600; }
+.essay .grid,.essay .brand{display:none}.essay .scan{opacity:.35}
+.essay #bg::after{background:linear-gradient(180deg,rgba(0,0,0,.72) 0%,rgba(0,0,0,.55) 38%,rgba(0,0,0,.12) 62%,rgba(0,0,0,.35) 100%)}
+.es{position:absolute;left:84px;right:150px;font-family:Inter,sans-serif;color:#fff;text-shadow:0 2px 14px rgba(0,0,0,.7)}
+.es .tag{font-family:Raj,sans-serif;font-weight:700;font-size:30px;letter-spacing:.32em;color:#5ee7ff;text-shadow:0 0 18px rgba(94,231,255,.6);margin-bottom:22px}
+.es h2{margin:0 0 34px;font-weight:600;font-size:62px;line-height:1.1;letter-spacing:-.01em}
+.es h2 i{font-style:normal;color:#5ee7ff;margin-right:14px}
+.es p{margin:0 0 30px;font-weight:400;font-size:40px;line-height:1.32}
+.es p.last{font-weight:600;color:#f5c451}
+.es .xp{display:flex;align-items:center;gap:18px;margin-top:10px;font-family:Raj,sans-serif;font-weight:700;font-size:30px;letter-spacing:.2em;color:#5ee7ff}
+.es .xp span{flex:0 0 220px;height:8px;background:rgba(94,231,255,.2);border-radius:4px;overflow:hidden}.es .xp span b{display:block;height:100%;background:#5ee7ff;box-shadow:0 0 12px #5ee7ff}
+.es.center{text-align:center;left:90px;right:90px}
+.es.center h2{font-size:58px}
 .whcap{position:absolute;left:0;right:0;bottom:250px;text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:34px;letter-spacing:.42em;color:rgba(255,255,255,.85);text-shadow:0 2px 12px rgba(0,0,0,.6)}
 </style></head><body><div id="s"><div id="bg"></div><div class="grid"></div><div class="brand">THE SYSTEM</div><div id="c"></div><div class="scan"></div></div>
 <script>
@@ -54,6 +69,8 @@ window.show = async (sl) => {
   if (sl.kind === 'point') h = `${sl.num ? `<div class="num">${sl.num}</div>` : ''}<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="box"><div class="p${(sl.text || '').replace(/<[^>]+>/g, '').length > 60 ? ' long' : ''}">${esc(sl.text)}</div></div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
   if (sl.kind === 'math') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="math c">${esc(sl.big)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div></div>`;
   if (sl.kind === 'whisper') { s.className = 'photo whisper'; h = `<div class="wh${sl.font === 'sans' ? ' sans' : ''}" style="top:${sl.y ?? 34}%">${esc(sl.text)}</div>${sl.cap ? `<div class="whcap">${sl.cap}</div>` : ''}`; }
+  // essay: { bg, num: '02', title: 'Own it & let go', paras: ['...','...'], last: 'Write it down. Move on.', tag?: 'QUEST 02', xp?: 40, y?: 13 (% from top), center?: true }
+  if (sl.kind === 'essay') { s.className = 'photo essay'; h = `<div class="es${sl.center ? ' center' : ''}" style="top:${sl.y ?? 13}%">${sl.tag ? `<div class="tag">[ ${sl.tag} ]</div>` : ''}${sl.title ? `<h2>${sl.num ? `<i>${sl.num}</i>` : ''}${sl.title}</h2>` : ''}${(sl.paras || []).map((p) => `<p>${p}</p>`).join('')}${sl.last ? `<p class="last">${sl.last}</p>` : ''}${sl.xp ? `<div class="xp">+${sl.xp} XP <span><b style="width:${Math.min(100, sl.xp)}%"></b></span></div>` : ''}</div>`; }
   if (sl.kind === 'countdown') h =`<div class="wrap alert"><div class="kick">[ ${esc(sl.kick || 'TIME LEFT')} ]</div><div class="cd">${esc(sl.big)}</div><div class="h" style="font-size:96px">${esc(sl.title)}</div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
   if (sl.kind === 'cta') h =`<div class="wrap${tone}"><div class="h">${esc(sl.title)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div><div class="small">${esc(sl.sub || 'FOLLOW TO JOIN THE WAITLIST')}</div></div>`;
   // Urgency: a red banner across the top (sl.banner) and red edge bars on alert slides.
