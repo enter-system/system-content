@@ -1,0 +1,48 @@
+<!doctype html>
+<!-- One 1080x1920 slide for The System's faceless posts. render.cjs calls show(slide) for each slide.
+     A slide is { kind: 'cover'|'point'|'math'|'cta', ...text, bg?: 'photos/library/x.jpg', tone?: 'red' }.
+     Text fields accept a little HTML: <b> makes words cyan. -->
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-600-normal.woff2); font-weight: 600; }
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Raj,sans-serif;color:#e8f1fb;background:radial-gradient(ellipse at 50% 42%,#10223f 0%,#070b14 60%,#04060c 100%)}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center;display:none}
+#bg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,6,12,.55) 0%,rgba(4,6,12,.72) 45%,rgba(4,6,12,.9) 100%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(94,231,255,.07) 2px,transparent 2px),linear-gradient(90deg,rgba(94,231,255,.07) 2px,transparent 2px);background-size:90px 90px}
+.photo .grid{opacity:.35}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.16) 0 2px,transparent 2px 6px)}
+.wrap{position:absolute;left:90px;right:90px;top:330px;bottom:420px;display:flex;flex-direction:column;justify-content:center;gap:44px}
+.kick{font-weight:700;font-size:46px;letter-spacing:.32em;color:#f5c451;text-shadow:0 0 24px rgba(245,196,81,.5)}
+.h{font-weight:700;font-size:124px;line-height:.98;letter-spacing:.01em;text-shadow:0 4px 30px rgba(0,0,0,.6)}
+.h b,.c,.p b{color:#5ee7ff;text-shadow:0 0 36px rgba(94,231,255,.7)}
+.box{border:3px solid rgba(94,231,255,.75);background:rgba(8,18,36,.85);padding:56px 60px;box-shadow:0 0 60px rgba(94,231,255,.25);position:relative}
+.box::before,.box::after{content:'';position:absolute;width:40px;height:40px;border:6px solid #5ee7ff}
+.box::before{top:-10px;left:-10px;border-right:0;border-bottom:0}.box::after{bottom:-10px;right:-10px;border-left:0;border-top:0}
+.p{font-weight:700;font-size:80px;line-height:1.15}
+.p.long{font-size:64px;font-weight:600}
+.small{font-weight:600;font-size:46px;color:#b8c8dc;letter-spacing:.06em;text-shadow:0 2px 16px rgba(0,0,0,.6)}
+.num{position:absolute;right:90px;top:270px;font-weight:700;font-size:44px;letter-spacing:.2em;color:#7e93b0}
+.swipe{position:absolute;left:0;right:0;bottom:330px;text-align:center;font-weight:700;font-size:46px;letter-spacing:.3em;color:#5ee7ff}
+.brand{position:absolute;left:0;right:0;top:200px;text-align:center;font-weight:700;font-size:40px;letter-spacing:.5em;color:#8ea3c0}
+.math{font-weight:700;font-size:136px;line-height:1;white-space:nowrap}
+.red .kick{color:#ff8a8a;text-shadow:0 0 24px rgba(255,120,120,.5)} .red .box{border-color:rgba(255,138,138,.7)} .red .math{color:#ff8a8a}
+.red .box::before,.red .box::after{border-color:#ff8a8a}
+.gold .kick{color:#f5c451} .gold .box{border-color:rgba(245,196,81,.75)} .gold .box::before,.gold .box::after{border-color:#f5c451}
+</style></head><body><div id="s"><div id="bg"></div><div class="grid"></div><div class="brand">THE SYSTEM</div><div id="c"></div><div class="scan"></div></div>
+<script>
+const esc = (x) => x ?? '';
+window.show = async (sl) => {
+  const s = document.getElementById('s'), bg = document.getElementById('bg');
+  s.className = sl.bg ? 'photo' : '';
+  if (sl.bg) { bg.style.display = 'block'; bg.style.backgroundImage = `url("${sl.bg}")`; await new Promise((r) => { const i = new Image(); i.onload = i.onerror = r; i.src = sl.bg; }); } else bg.style.display = 'none';
+  const tone = sl.tone ? ` ${sl.tone}` : '';
+  let h = '';
+  if (sl.kind === 'cover') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="h">${esc(sl.title)}</div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div><div class="swipe">SWIPE →</div>`;
+  if (sl.kind === 'point') h = `${sl.num ? `<div class="num">${sl.num}</div>` : ''}<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="box"><div class="p${(sl.text || '').replace(/<[^>]+>/g, '').length > 60 ? ' long' : ''}">${esc(sl.text)}</div></div>${sl.sub ? `<div class="small">${sl.sub}</div>` : ''}</div>`;
+  if (sl.kind === 'math') h = `<div class="wrap${tone}"><div class="kick">[ ${esc(sl.kick)} ]</div><div class="math c">${esc(sl.big)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div></div>`;
+  if (sl.kind === 'cta') h = `<div class="wrap${tone}"><div class="h">${esc(sl.title)}</div><div class="box"><div class="p long">${esc(sl.text)}</div></div><div class="small">${esc(sl.sub || 'FOLLOW TO JOIN THE WAITLIST')}</div></div>`;
+  document.getElementById('c').innerHTML = h;
+  await document.fonts.ready;
+};
+</script></body></html>

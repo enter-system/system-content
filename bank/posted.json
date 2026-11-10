@@ -1,0 +1,89 @@
+{
+ "posts": [
+  {
+   "date": "2026-11-10",
+   "time": "10:00",
+   "id": "promo",
+   "hook": "The System promo",
+   "platforms": [
+    "tiktok",
+    "instagram",
+    "youtube",
+    "facebook"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "07:45",
+   "id": "p4-5-habits-to-quit",
+   "hook": "quit-5-habits",
+   "platforms": [
+    "tiktok"
+   ],
+   "note": "draft test"
+  },
+  {
+   "date": "2026-11-10",
+   "time": "12:00",
+   "id": "p2-1-percent-rule",
+   "hook": "1pct-rule",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "13:30",
+   "id": "v4-life-rpg",
+   "hook": "life-rpg",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "15:00",
+   "id": "p1-5-stats",
+   "hook": "5-stats-2027",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "16:30",
+   "id": "v2-todo-list-xp",
+   "hook": "todo-xp",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "18:00",
+   "id": "p3-3-daily-quests",
+   "hook": "3-daily-quests",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "19:00",
+   "id": "v3-30-days",
+   "hook": "30-days",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-10",
+   "time": "20:30",
+   "id": "v1-never-miss-twice",
+   "hook": "never-miss-twice",
+   "platforms": [
+    "tiktok"
+   ]
+  }
+ ]
+}

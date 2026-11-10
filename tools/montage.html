@@ -1,0 +1,29 @@
+<!doctype html>
+<!-- One photo frame of a montage video: slow zoom on the photo, one line of text. render(t, frame). -->
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#04060c}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Raj,sans-serif;color:#e8f1fb}
+#bg{position:absolute;inset:0;background-size:cover;background-position:center}
+#shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(4,6,12,.35),rgba(4,6,12,.55) 50%,rgba(4,6,12,.85))}
+#t{position:absolute;left:90px;right:90px;top:50%;transform:translateY(-50%);text-align:center;font-weight:700;font-size:96px;line-height:1.05;text-shadow:0 4px 30px rgba(0,0,0,.8)}
+#t b{color:#5ee7ff;text-shadow:0 0 36px rgba(94,231,255,.8)}
+#k{position:absolute;left:0;right:0;top:200px;text-align:center;font-weight:700;font-size:40px;letter-spacing:.5em;color:#cfd9e8;opacity:.8}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.14) 0 2px,transparent 2px 6px)}
+</style></head><body><div id="s"><div id="bg"></div><div id="shade"></div><div id="k">THE SYSTEM</div><div id="t"></div><div class="scan"></div></div>
+<script>
+let cur = null;
+window.setFrame = async (f) => {
+  if (cur === f.photo) return; cur = f.photo;
+  document.getElementById('bg').style.backgroundImage = `url("${f.photo}")`;
+  document.getElementById('t').innerHTML = f.text || '';
+  await new Promise((r) => { const i = new Image(); i.onload = i.onerror = r; i.src = f.photo; });
+  await document.fonts.ready;
+};
+window.render = (t, dur) => {
+  const k = t / dur;
+  document.getElementById('bg').style.transform = `scale(${1.04 + 0.08 * k}) translateY(${-20 * k}px)`;
+  const a = Math.min(1, t / 0.3, (dur - t) / 0.2);
+  const el = document.getElementById('t'); el.style.opacity = a; el.style.transform = `translateY(calc(-50% + ${12 * (1 - Math.min(1, t / 0.3))}px))`;
+};
+</script></body></html>

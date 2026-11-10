@@ -1,0 +1,27 @@
+<!doctype html>
+<!-- 2-second hook card that opens each video. ?t=<html text>&bg=<photo path, optional> -->
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#050810}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden;font-family:Raj,sans-serif;color:#e8f1fb;background:radial-gradient(ellipse at 50% 45%,#10223f 0%,#070b14 60%,#04060c 100%)}
+#bg{position:absolute;inset:-40px;background-size:cover;background-position:center;display:none}
+#bg::after{content:'';position:absolute;inset:0;background:rgba(4,6,12,.66)}
+#g{position:absolute;inset:-100px;background-image:linear-gradient(rgba(94,231,255,.07) 2px,transparent 2px),linear-gradient(90deg,rgba(94,231,255,.07) 2px,transparent 2px);background-size:90px 90px}
+#t{position:absolute;left:80px;right:80px;top:50%;transform:translateY(-50%);text-align:center;font-weight:700;font-size:118px;line-height:1.02;letter-spacing:.02em;text-shadow:0 0 40px rgba(94,231,255,.35)}
+#t b{color:#5ee7ff;text-shadow:0 0 40px rgba(94,231,255,.8)}
+#k{position:absolute;left:0;right:0;top:600px;text-align:center;font-weight:700;font-size:48px;letter-spacing:.32em;color:#f5c451}
+.scan{position:absolute;inset:0;background:repeating-linear-gradient(0deg,rgba(0,0,0,.18) 0 2px,transparent 2px 6px)}
+</style></head><body><div id="s"><div id="bg"></div><div id="g"></div><div id="k">[ SYSTEM ]</div><div id="t"></div><div class="scan"></div></div>
+<script>
+const q = new URLSearchParams(location.search);
+document.getElementById('t').innerHTML = q.get('t');
+if (q.get('bg')) { const b = document.getElementById('bg'); b.style.display = 'block'; b.style.backgroundImage = `url("${q.get('bg')}")`; }
+window.render = (t) => {
+  const k = Math.min(1, t / 0.35), e = 1 - Math.pow(1 - k, 3);
+  const el = document.getElementById('t'); el.style.transform = `translateY(-50%) scale(${1.15 - 0.15 * e})`; el.style.opacity = k;
+  document.getElementById('g').style.transform = `translateY(${(t * 30) % 90}px)`;
+  document.getElementById('k').style.opacity = Math.min(1, t / 0.5);
+  document.getElementById('bg').style.transform = `scale(${1 + t * 0.02})`;
+};
+render(0);
+</script></body></html>
