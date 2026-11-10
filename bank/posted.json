@@ -88,7 +88,7 @@
   {
    "date": "2026-11-11",
    "time": "08:00",
-   "id": "bible-before-phone",
+   "id": "stop-phone-before-bible",
    "hook": "phone-before-bible",
    "platforms": [
     "tiktok"
@@ -97,7 +97,7 @@
   {
    "date": "2026-11-11",
    "time": "10:00",
-   "id": "start-monday-lie",
+   "id": "stop-saying-monday",
    "hook": "start-monday-lie",
    "platforms": [
     "tiktok"
@@ -106,7 +106,7 @@
   {
    "date": "2026-11-11",
    "time": "12:00",
-   "id": "boring-money-habits",
+   "id": "money-before-2027",
    "hook": "stats-boring-money",
    "platforms": [
     "tiktok"
@@ -115,7 +115,7 @@
   {
    "date": "2026-11-11",
    "time": "14:00",
-   "id": "nobody-claps-day-47",
+   "id": "nobody-is-coming",
    "hook": "level-up-silent",
    "platforms": [
     "tiktok"
@@ -124,7 +124,7 @@
   {
    "date": "2026-11-11",
    "time": "16:00",
-   "id": "signs-leveling-up",
+   "id": "leveling-up-check",
    "hook": "signs-leveling-up",
    "platforms": [
     "tiktok"
@@ -133,7 +133,7 @@
   {
    "date": "2026-11-11",
    "time": "18:00",
-   "id": "stats-screen-pov",
+   "id": "stats-dropping",
    "hook": "stats-screen-pov",
    "platforms": [
     "tiktok"
@@ -142,7 +142,7 @@
   {
    "date": "2026-11-11",
    "time": "20:00",
-   "id": "verses-when-you-want-to-quit",
+   "id": "read-before-you-quit",
    "hook": "verses-discipline",
    "platforms": [
     "tiktok"
