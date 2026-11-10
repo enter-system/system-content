@@ -505,6 +505,15 @@
    "used": [
     "2026-11-12"
    ]
+  },
+  {
+   "id": "same-person-last-year",
+   "pillar": "identity",
+   "format": "explainer",
+   "hook": "If you're the same person you were last year, that should scare you",
+   "used": [
+    "2026-11-12"
+   ]
   }
  ]
 }

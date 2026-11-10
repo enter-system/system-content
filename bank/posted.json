@@ -196,6 +196,16 @@
    "platforms": [
     "tiktok"
    ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "10:00",
+   "id": "same-person-last-year",
+   "hook": "same-person-last-year",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ]
   }
  ]
 }

@@ -1,0 +1,18 @@
+{
+ "date": "2026-11-12",
+ "posts": [
+  {"id": "same-person-last-year", "hookId": "same-person-last-year", "time": "10:00", "type": "explainer", "scenes": [
+   {"cap": "IF YOU'RE THE SAME PERSON YOU WERE LAST YEAR…", "show": "compare", "l": {"label": "LAST YEAR", "fig": true}, "r": {"label": "THIS YEAR", "fig": true}, "dur": 2.4},
+   {"cap": "THAT SHOULD <i>SCARE</i> YOU.", "show": "none", "dur": 1.5},
+   {"cap": "SAME BANK ACCOUNT.", "show": "compare", "l": {"label": "LAST YEAR", "box": "$43"}, "r": {"label": "THIS YEAR", "box": "$43"}, "dur": 1.8},
+   {"cap": "SAME EXCUSES. NEW DATE.", "show": "compare", "l": {"label": "LAST YEAR", "box": "START", "small": "MONDAY · 2025"}, "r": {"label": "THIS YEAR", "box": "START", "small": "MONDAY · 2026"}, "dur": 1.8},
+   {"cap": "SAME “I'LL READ MY BIBLE TOMORROW.”", "show": "compare", "l": {"label": "LAST YEAR", "box": "0", "small": "DAY STREAK"}, "r": {"label": "THIS YEAR", "box": "0", "small": "DAY STREAK"}, "dur": 1.9},
+   {"cap": "THREE HUNDRED SIXTY-FIVE DAYS.", "show": "big", "big": "365", "small": "DAYS", "dur": 1.8},
+   {"cap": "AND NOT ONE STAT WENT UP.", "show": "bars", "fill": [0, 0, 0, 0], "dur": 1.7},
+   {"cap": "HERE'S THE <i>SCARY</i> PART.", "show": "none", "dur": 1.4},
+   {"cap": "2027 IS COMING WHETHER YOU CHANGE OR NOT.", "show": "calendar", "months": ["SEP", "OCT", "NOV", "DEC"], "dur": 2.3},
+   {"cap": "OR… YOU START TODAY.", "show": "bars", "fill": [60, 45, 50, 35], "dur": 2.0},
+   {"cap": "AND THEY START ASKING <b>WHAT CHANGED.</b>", "show": "crowd", "glow": true, "dur": 2.3}
+  ]}
+ ]
+}

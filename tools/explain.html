@@ -1,0 +1,81 @@
+<!doctype html>
+<!-- Minimal animated "explainer" video (inspo: "If you're the same person you were last year, that should scare you").
+     load(scenes) then render(t). A scene: { cap: 'SAME BANK ACCOUNT.', dur?: 2.0, show?: 'compare'|'big'|'calendar'|'crowd'|'bars'|'one'|'none', ... }
+       compare: { l: {label:'LAST YEAR', box:'$43' | fig:true, strike?:'2025', sub?}, r: {...}, eq?: true }
+       big:     { big: '365', small: 'DAYS' }      calendar: { months: ['SEP','OCT','NOV','DEC'] }
+       crowd:   { glow: true }                      bars: { fill: [0,0,0,0] , names:['FTH','STR','INT','WLT'] }
+       one:     { glow?: true }  (a single figure)  -->
+<html><head><meta charset="utf-8"><style>
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
+@font-face { font-family: Inter; src: url(fonts/inter-latin-600-normal.woff2); font-weight: 600; }
+html,body{margin:0;width:1080px;height:1920px;overflow:hidden;background:#070b14}
+#s{position:relative;width:1080px;height:1920px;overflow:hidden;color:#fff;font-family:Inter,sans-serif;background:radial-gradient(ellipse at 50% 50%,#0f1d36 0%,#070b14 65%)}
+.grid{position:absolute;inset:0;background-image:linear-gradient(rgba(94,231,255,.05) 2px,transparent 2px),linear-gradient(90deg,rgba(94,231,255,.05) 2px,transparent 2px);background-size:90px 90px}
+#cap{position:absolute;left:70px;right:70px;bottom:1140px;text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:96px;line-height:1.02;letter-spacing:.01em}
+#cap span{display:inline-block;margin:0 .14em}
+#cap b{color:#5ee7ff;text-shadow:0 0 30px rgba(94,231,255,.7)}
+#cap i{font-style:normal;color:#ff4d5e;text-shadow:0 0 30px rgba(255,60,80,.7)}
+#art{position:absolute;left:0;right:0;top:820px;height:640px}
+.lbl{font-family:Raj,sans-serif;font-weight:700;font-size:34px;letter-spacing:.3em;color:#7e93b0;text-align:center}
+.col{position:absolute;top:0;width:420px;height:600px;display:flex;flex-direction:column;align-items:center;gap:60px}
+.divider{position:absolute;left:538px;top:40px;width:4px;height:520px;background:rgba(255,255,255,.35)}
+.box{border:5px solid #fff;padding:26px 44px;font-family:Raj,sans-serif;font-weight:700;font-size:84px;line-height:1;position:relative;background:rgba(7,11,20,.8)}
+.box small{display:block;font-size:34px;letter-spacing:.12em;margin-top:10px;color:#9fb0c8}
+.strike{position:absolute;left:-12px;right:-12px;top:50%;height:8px;background:#ff4d5e;box-shadow:0 0 14px #ff4d5e}
+.fig{width:90px;height:220px;position:relative}
+.fig::before{content:'';position:absolute;left:25px;top:0;width:40px;height:40px;border-radius:50%;background:var(--f,#fff)}
+.fig::after{content:'';position:absolute;left:14px;top:52px;width:62px;height:150px;border-radius:30px 30px 10px 10px;background:var(--f,#fff)}
+.fig.glow{--f:#5ee7ff;filter:drop-shadow(0 0 26px #5ee7ff)}
+.fig.dim{--f:#56637a}
+.big{text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:330px;line-height:.9;color:#fff;text-shadow:0 0 50px rgba(94,231,255,.4)}
+.cal{margin:40px auto 0;width:360px;height:360px;border:6px solid #fff;position:relative;background:#0b1424;box-shadow:12px 12px 0 rgba(255,255,255,.18)}
+.cal::before{content:'';position:absolute;left:0;right:0;top:0;height:70px;background:#ff4d5e}
+.cal span{position:absolute;left:0;right:0;top:120px;text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:150px;line-height:1}
+.row{display:flex;justify-content:center;align-items:flex-end;gap:54px;height:600px}
+.bars{display:flex;flex-direction:column;gap:42px;width:720px;margin:40px auto 0}
+.bar{display:flex;align-items:center;gap:30px;font-family:Raj,sans-serif;font-weight:700;font-size:52px;letter-spacing:.12em}
+.bar div{flex:1;height:30px;background:rgba(255,255,255,.1);border-radius:15px;overflow:hidden}
+.bar div b{display:block;height:100%;background:#5ee7ff;box-shadow:0 0 16px #5ee7ff}
+.bar em{font-style:normal;width:80px;text-align:right;color:#ff4d5e}
+.ring{position:absolute;border:4px solid #5ee7ff;border-radius:50%;opacity:0}
+#flash{position:absolute;inset:0;background:#fff;opacity:0}
+.brand{position:absolute;left:0;right:0;bottom:170px;text-align:center;font-family:Raj,sans-serif;font-weight:700;font-size:34px;letter-spacing:.5em;color:#3f5574}
+</style></head><body><div id="s"><div class="grid"></div><div id="cap"></div><div id="art"></div><div class="brand">THE SYSTEM</div><div id="flash"></div></div>
+<script>
+let SC = [], cur = -1, T0 = [];
+window.load = (scenes) => { SC = scenes.map((s) => ({ dur: 2.0, ...s })); let a = 0; T0 = SC.map((s) => { const x = a; a += s.dur; return x; }); return a; };
+const ease = (u) => 1 - Math.pow(1 - Math.min(1, Math.max(0, u)), 3);
+function side(o) {
+  if (!o) return '';
+  const item = o.fig ? `<div class="fig${o.glow ? ' glow' : ''}"></div>` : `<div class="box">${o.box}${o.small ? `<small>${o.small}</small>` : ''}${o.strike ? '<div class="strike"></div>' : ''}</div>`;
+  return `<div class="lbl">${o.label || ''}</div>${item}`;
+}
+function build(s) {
+  const words = (s.cap || '').split(' ').map((w) => `<span>${w}</span>`).join(' ');
+  document.getElementById('cap').innerHTML = words;
+  let h = '';
+  if (s.show === 'compare') h = `<div class="col" style="left:90px">${side(s.l)}</div><div class="divider"></div><div class="col" style="right:90px">${side(s.r)}</div>`;
+  if (s.show === 'big') h = `<div class="big" id="bign">0</div><div class="lbl" style="font-size:56px;margin-top:20px">${s.small || ''}</div>`;
+  if (s.show === 'calendar') h = `<div class="cal"><span id="mon">${s.months[0]}</span></div>`;
+  if (s.show === 'crowd') h = `<div class="row">${[0, 1, 2, 3, 4].map((i) => `<div class="fig ${i === 2 && s.glow ? 'glow' : 'dim'}" id="c${i}"></div>`).join('')}</div>`;
+  if (s.show === 'one') h = `<div class="row"><div class="fig${s.glow ? ' glow' : ''}" id="c2" style="transform:scale(1.5);transform-origin:bottom"></div></div>`;
+  if (s.show === 'bars') h = `<div class="bars">${(s.names || ['FTH', 'STR', 'INT', 'WLT']).map((n, i) => `<div class="bar">${n}<div><b id="b${i}" style="width:0"></b></div><em id="e${i}">+0</em></div>`).join('')}</div>`;
+  document.getElementById('art').innerHTML = h;
+  document.getElementById('cap').style.bottom = s.show === 'none' || !s.show ? '900px' : '1140px';
+}
+window.render = (t) => {
+  let i = T0.length - 1; while (i > 0 && t < T0[i]) i--;
+  const s = SC[i], lt = t - T0[i];
+  if (i !== cur) { cur = i; build(s); }
+  // caption words slam in one after another
+  const sp = document.querySelectorAll('#cap span'), step = Math.min(0.12, 0.6 / Math.max(1, sp.length));
+  sp.forEach((el, k) => { const u = ease((lt - k * step) / 0.16); el.style.opacity = u > 0 ? 1 : 0; el.style.transform = `scale(${1.6 - 0.6 * u})`; });
+  const art = document.getElementById('art'), ua = ease((lt - 0.15) / 0.35);
+  art.style.opacity = ua; art.style.transform = `translateY(${40 * (1 - ua)}px)`;
+  document.getElementById('flash').style.opacity = Math.max(0, 0.18 - lt * 1.2);
+  if (s.show === 'big') { const n = parseInt(s.big, 10); document.getElementById('bign').textContent = isNaN(n) ? s.big : Math.round(n * ease(lt / 0.9)); }
+  if (s.show === 'calendar') { const k = Math.min(s.months.length - 1, Math.floor(lt / (s.dur * 0.8 / s.months.length))); document.getElementById('mon').textContent = s.months[k]; }
+  if (s.show === 'bars') (s.fill || []).forEach((f, k) => { const u = ease((lt - 0.3 - k * 0.1) / 0.6); document.getElementById('b' + k).style.width = `${f * u}%`; document.getElementById('e' + k).textContent = `+${Math.round(f * u / 10)}`; });
+  if ((s.show === 'crowd' || s.show === 'one') && s.glow) { const g = document.getElementById('c2'), u = ease((lt - 0.5) / 0.5); g.style.transform = `${s.show === 'one' ? 'scale(1.5) ' : ''}translateY(${-60 * u}px)`; }
+};
+</script></body></html>

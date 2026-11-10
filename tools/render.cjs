@@ -1,7 +1,7 @@
 // Renders one day's posts from a plan file.
 //   node tools/render.cjs plans/2026-11-11.json
 // Writes posts/<date>/<id>-<n>.jpg for slideshows and posts/<date>/<id>.mp4 for videos.
-// Plan: { date, posts: [ {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, frames:[{photo,text}], end?:true} ] }
+// Plan: { date, posts: [ {id, type:'explainer', scenes:[{cap, show, ...}]} | {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, frames:[{photo,text}], end?:true} ] }
 // Photo paths are relative to the repo root (e.g. "photos/library/gym-01.jpg").
 const { chromium } = require('playwright');
 const { spawn, execFileSync } = require('child_process');
@@ -73,6 +73,16 @@ function finish(parts, audioParts, outDir, id, work, speed = 1.2) {
       const hk = path.join(work, `${post.id}-hook.mp4`);
       await hookCard(page, post.hook, post.hookBg, hk, post.kicker, post.calm);
       finish([hk, ...post.scenes.map((i) => path.join(TOOLS, 'scenes', `scene${i}.mp4`))], [HOOK_AUDIO, ...post.scenes.map((i) => SC[i])], outDir, post.id, work, post.speed ?? 1.2);
+    } else if (post.type === 'explainer') {
+      // Minimal animated explainer (tools/explain.html). post.scenes = [{cap, show, ...}], ends on the coming-soon end card.
+      await page.goto('file://' + path.join(TOOLS, 'explain.html'));
+      await page.evaluate(() => document.fonts.ready);
+      const total = await page.evaluate((s) => load(s), post.scenes);
+      const out = path.join(work, `${post.id}-x.mp4`);
+      await frames(page, Math.round(total * 30), (f) => page.evaluate((t) => render(t), f / 30), out);
+      const audio = []; let left = total, at = 3.2; // ride the beat section of the track, looping if needed
+      while (left > 0.01) { const d = Math.min(left, 16.8 - at); audio.push([at, at + d]); left -= d; at = 3.2; }
+      finish([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], [...audio, SC[5]], outDir, post.id, work, post.speed ?? 1);
     } else if (post.type === 'montage') {
       const parts = [], audio = [];
       if (post.hook) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm); parts.push(hk); audio.push(HOOK_AUDIO); }
