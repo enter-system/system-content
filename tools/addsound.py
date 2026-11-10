@@ -44,6 +44,10 @@ def main():
     rise = np.diff(smooth, prepend=smooth[0])
     drop_t = float(rt[int(np.argmax(rise))]) if len(rise) else 0.0
     beats = [round(float(b), 3) for b in beats]
+    if tempo > 160 and len(beats) > 4:  # double-time detection: keep every other beat so cuts aren't frantic
+        env_at = [env[np.argmin(abs(times - b))] for b in beats]
+        off = 0 if sum(env_at[0::2]) >= sum(env_at[1::2]) else 1
+        beats = beats[off::2]; tempo /= 2
     drop = min(beats, key=lambda b: abs(b - drop_t)) if beats else drop_t
     beat = float(np.median(np.diff(beats))) if len(beats) > 1 else 60 / max(tempo, 1)
     info = {'id': sid, 'mood': mood, 'bpm': round(tempo, 1), 'beat': round(beat, 4), 'beats': beats,

@@ -1,0 +1,39 @@
+{
+ "id": "calm-build-01",
+ "mood": "calm",
+ "bpm": 99.4,
+ "beat": 0.604,
+ "beats": [
+  0.418,
+  1.045,
+  1.672,
+  2.276,
+  2.879,
+  3.483,
+  4.11,
+  4.69,
+  5.294,
+  5.921,
+  6.525,
+  7.129,
+  7.755,
+  8.359,
+  8.963,
+  9.567,
+  10.17,
+  10.797,
+  11.401,
+  12.005
+ ],
+ "drop": 5.294,
+ "length": 14.47,
+ "note": "Likely Girlfriends - New Computers. Calm start that swells ~5s in. Good for explainers and montages with a reveal.",
+ "loudest": [
+  0.42,
+  1.04,
+  4.69,
+  7.13,
+  7.43,
+  12.0
+ ]
+}
