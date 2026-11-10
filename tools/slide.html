@@ -55,6 +55,7 @@ html,body{margin:0;width:1080px;height:1920px;overflow:hidden}
 .es .xp span{flex:0 0 220px;height:8px;background:rgba(94,231,255,.2);border-radius:4px;overflow:hidden}.es .xp span b{display:block;height:100%;background:#5ee7ff;box-shadow:0 0 12px #5ee7ff}
 .es.center{text-align:center;left:90px;right:90px}
 .es.center h2{font-size:58px}
+.es.small{left:150px;right:150px;text-align:center}.es.small h2{font-size:46px;margin-bottom:22px}.es.small p{font-size:32px;line-height:1.35;margin-bottom:18px}.es.small .xp{justify-content:center}
 .logo{background:#000 !important}.logo .grid,.logo .brand,.logo .scan{display:none}
 .lg{position:absolute;left:0;right:0;top:50%;transform:translateY(-55%);text-align:center;font-family:Raj,sans-serif;font-weight:700;color:#fff}
 .lg .mk{position:relative;width:170px;height:170px;margin:0 auto;display:flex;align-items:center;justify-content:center;font-size:118px;line-height:1;color:#5ee7ff;text-shadow:0 0 30px rgba(94,231,255,.7)}
@@ -85,6 +86,9 @@ window.show = async (sl) => {
   // Urgency: a red banner across the top (sl.banner) and red edge bars on alert slides.
   if (sl.banner) h = `<div class="banner">⚠ ${sl.banner} ⚠</div>` + h.replace('class="wrap', 'style="top:420px" class="wrap');
   if (sl.tone === 'alert' || sl.kind === 'countdown') h += '<div class="edge" style="top:0"></div><div class="edge" style="bottom:0"></div>';
+  // mono: black-and-white photo (the "quiet life" moodboard look). small: smaller centered essay text.
+  bg.style.filter = sl.mono ? 'grayscale(1) contrast(1.08) brightness(.92)' : '';
+  if (sl.small) h = h.replace('class="es', 'class="es small');
   document.getElementById('c').innerHTML = h;
   await document.fonts.ready;
 };
