@@ -23,6 +23,8 @@ Goal: tomorrow's **7 TikTok posts**, made and scheduled, with no input from Nahu
    - **Videos:** use the alert hook card by default with a `kicker` ("WARNING", "ALERT", "SYSTEM ALERT"). Hook text is 3 short lines, max ~10 words. Videos render about 1.2× faster automatically.
    - **Captions:** open with the urgent line plus ⚠️ or ⏳, then a direct command.
    - **Keep it honest:** urgency comes from the viewer's own time and habits, never from fake scarcity, fake numbers, fear about salvation, or shaming.
+   - **Exception, the "dream life" whisper format:** when photos are available, 1 slideshow a day can be the calm Pinterest-style kind. It's 3–5 `whisper` slides (full photo, one small lowercase line like "rich.", "God, please.", "the real flex.", "answered prayer.") and then a normal `cta`. The faith/family/peace version of "rich" fits the brand. No urgency styling on those slides; the contrast is the point.
+   - **People in photos:** only use photos where faces aren't identifiable (backs, hands, silhouettes, far away) unless Nahum says the people in them are him or have agreed. Never feature identifiable children. Skip photos where alcohol, drugs or sexual content is the focus.
 6. **Write the plan** at `plans/<date>.json` (shape at the top of `tools/render.cjs`). Faceless slideshow pattern:
    - Slide 1: a relatable hook (`cover`).
    - Slides 2–5: real, useful points (`point`, numbered).
