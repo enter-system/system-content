@@ -97,7 +97,7 @@
   {
    "date": "2026-11-11",
    "time": "10:00",
-   "id": "stop-saying-monday-beat",
+   "id": "start-on-wednesday",
    "hook": "start-monday-lie",
    "platforms": [
     "tiktok",
@@ -133,7 +133,7 @@
   {
    "date": "2026-11-11",
    "time": "16:00",
-   "id": "leveling-up-check",
+   "id": "signs-leveling-up-rank",
    "hook": "signs-leveling-up",
    "platforms": [
     "tiktok"
@@ -142,7 +142,7 @@
   {
    "date": "2026-11-11",
    "time": "18:00",
-   "id": "stats-dropping-beat",
+   "id": "stats-dropping-explained",
    "hook": "stats-screen-pov",
    "platforms": [
     "tiktok",

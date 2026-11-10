@@ -49,18 +49,118 @@
    ]
   },
   {
-   "id": "stop-saying-monday-beat",
+   "id": "start-on-wednesday",
    "hookId": "start-monday-lie",
    "time": "10:00",
-   "type": "video",
-   "kicker": "WARNING",
-   "hook": "STOP SAYING<br>“I'LL START<br><b>MONDAY</b>”",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
    "scenes": [
-    2,
-    3,
-    5
-   ],
-   "sound": "hype-semdemora-01"
+    {
+     "cap": "YOU SAID “I'LL START MONDAY.”",
+     "show": "compare",
+     "l": {
+      "label": "LAST WEEK",
+      "box": "START",
+      "small": "MONDAY · NOV 2"
+     },
+     "r": {
+      "label": "THIS WEEK",
+      "box": "START",
+      "small": "MONDAY · NOV 9"
+     },
+     "dur": 2.2
+    },
+    {
+     "cap": "THEN MONDAY CAME.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "AND YOU SAID IT <i>AGAIN.</i>",
+     "show": "compare",
+     "l": {
+      "label": "LAST WEEK",
+      "fig": true
+     },
+     "r": {
+      "label": "THIS WEEK",
+      "fig": true
+     },
+     "dur": 1.8
+    },
+    {
+     "cap": "MONDAYS LEFT IN 2026:",
+     "show": "big",
+     "big": "7",
+     "small": "MONDAYS",
+     "dur": 1.8
+    },
+    {
+     "cap": "SEVEN MORE CHANCES TO SAY “NEXT WEEK.”",
+     "show": "none",
+     "dur": 1.8
+    },
+    {
+     "cap": "HERE'S THE <i>TRUTH.</i>",
+     "show": "none",
+     "dur": 1.3
+    },
+    {
+     "cap": "MONDAY WAS NEVER THE PROBLEM.",
+     "show": "one",
+     "dur": 1.8
+    },
+    {
+     "cap": "WAITING WAS.",
+     "show": "bars",
+     "fill": [
+      0,
+      0,
+      0,
+      0
+     ],
+     "dur": 1.6
+    },
+    {
+     "cap": "TODAY IS <b>WEDNESDAY.</b>",
+     "show": "calendar",
+     "months": [
+      "MON",
+      "TUE",
+      "WED"
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "START ONE QUEST. TODAY.",
+     "show": "bars",
+     "fill": [
+      25,
+      0,
+      0,
+      0
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "THEN DO IT AGAIN TOMORROW.",
+     "show": "bars",
+     "fill": [
+      40,
+      25,
+      20,
+      15
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "FOLLOW IF YOU'RE STARTING <b>TODAY.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.3
+    }
+   ]
   },
   {
    "id": "money-before-2027",
@@ -149,70 +249,232 @@
    "sound": "calm-shizuku-01"
   },
   {
-   "id": "leveling-up-check",
+   "id": "signs-leveling-up-rank",
    "hookId": "signs-leveling-up",
    "time": "16:00",
    "type": "slides",
    "slides": [
     {
-     "kind": "cover",
-     "tone": "alert",
-     "banner": "CHECK YOURSELF RIGHT NOW",
-     "kick": "STATUS CHECK",
-     "title": "IF YOU DO THESE 5, YOU'RE <b>LEVELING UP</b>"
+     "kind": "yellowcover",
+     "title": "5 signs you're leveling up (even if it doesn't feel like it)…",
+     "sub": "(Bible approved)"
     },
     {
-     "kind": "point",
-     "num": "01 / 05",
-     "kick": "SIGN 01",
-     "text": "Things that used to drain you now bore you."
+     "kind": "rank",
+     "labels": [
+      "5) Your circle got smaller",
+      "…and better. That's not loss. That's focus."
+     ],
+     "ab": "CHA",
+     "name": "CHARISMA",
+     "role": "LIFE OF THE PARTY",
+     "color": "#a98bff",
+     "fill": 40
     },
     {
-     "kind": "point",
-     "num": "02 / 05",
-     "kick": "SIGN 02",
-     "text": "You keep promises to yourself."
+     "kind": "rank",
+     "labels": [
+      "4) What used to drain you now bores you",
+      "Gossip, drama, endless scrolling. You outgrew it."
+     ],
+     "ab": "INT",
+     "name": "INTELLECT",
+     "role": "DISCIPLINED MIND",
+     "color": "#4cb8ff",
+     "fill": 55
     },
     {
-     "kind": "point",
-     "num": "03 / 05",
-     "kick": "SIGN 03",
-     "text": "Your circle got smaller and better."
+     "kind": "rank",
+     "labels": [
+      "3) Bad days don't become bad weeks",
+      "You fall. You get back up the same day."
+     ],
+     "ab": "STR",
+     "name": "STRENGTH",
+     "role": "PROTECTOR",
+     "color": "#ff6a5c",
+     "fill": 70
     },
     {
-     "kind": "point",
-     "num": "04 / 05",
-     "kick": "SIGN 04",
-     "text": "Bad days don't turn into bad weeks."
+     "kind": "rank",
+     "labels": [
+      "2) You're uncomfortable on purpose",
+      "Cold mornings. Hard workouts. Honest budgets."
+     ],
+     "ab": "AMB",
+     "name": "AMBITION",
+     "role": "CEO",
+     "color": "#e2b85a",
+     "fill": 85
     },
     {
-     "kind": "point",
-     "tone": "alert",
-     "num": "05 / 05",
-     "kick": "SIGN 05",
-     "text": "You're uncomfortable. On purpose."
+     "kind": "rank",
+     "labels": [
+      "1) You keep your promises",
+      "To God first. Then to yourself.",
+      "“Let your yea be yea; and your nay, nay” James 5:12"
+     ],
+     "ab": "FTH",
+     "name": "FAITH",
+     "role": "SOLDIER",
+     "color": "#f1e6b8",
+     "fill": 100,
+     "lv": "MAX PRIORITY"
     },
     {
-     "kind": "cta",
-     "title": "0 OUT OF 5?<br><b>START TODAY.</b>",
-     "text": "The System turns your growth into stats you can see. <b>Coming soon.</b>"
+     "kind": "rank",
+     "y": 22,
+     "labels": [
+      "0 out of 5?",
+      "Start today. Not Monday."
+     ],
+     "ab": "S",
+     "name": "THE SYSTEM",
+     "role": "LEVEL UP YOUR LIFE",
+     "color": "#5ee7ff",
+     "fill": 100,
+     "lv": "ALL 7 STATS",
+     "foot": [
+      "The System · Coming soon",
+      "Follow to join ⬇️"
+     ]
     }
    ]
   },
   {
-   "id": "stats-dropping-beat",
+   "id": "stats-dropping-explained",
    "hookId": "stats-screen-pov",
    "time": "18:00",
-   "type": "video",
-   "kicker": "SYSTEM ALERT",
-   "hook": "YOUR <b>STATS</b><br>ARE DROPPING<br>EVERY DAY YOU WAIT",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
    "scenes": [
-    0,
-    1,
-    3,
-    5
-   ],
-   "sound": "hype-bipolar-01"
+    {
+     "cap": "<i>WARNING:</i> YOUR STATS ARE DROPPING.",
+     "show": "bars",
+     "from": [
+      70,
+      65,
+      60,
+      55
+     ],
+     "fill": [
+      60,
+      55,
+      52,
+      46
+     ],
+     "dur": 2.2
+    },
+    {
+     "cap": "EVERY DAY YOU SKIP YOUR BIBLE…",
+     "show": "bars",
+     "from": [
+      60,
+      55,
+      52,
+      46
+     ],
+     "fill": [
+      35,
+      55,
+      52,
+      46
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "EVERY WORKOUT YOU PUSH TO TOMORROW…",
+     "show": "bars",
+     "from": [
+      35,
+      55,
+      52,
+      46
+     ],
+     "fill": [
+      35,
+      30,
+      52,
+      46
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "EVERY DOLLAR YOU DON'T TRACK…",
+     "show": "bars",
+     "from": [
+      35,
+      30,
+      52,
+      46
+     ],
+     "fill": [
+      35,
+      30,
+      52,
+      20
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "NOBODY SEES IT HAPPEN.",
+     "show": "one",
+     "dur": 1.6
+    },
+    {
+     "cap": "UNTIL ONE DAY…",
+     "show": "calendar",
+     "months": [
+      "NOV",
+      "DEC",
+      "JAN"
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "LEVELS GAINED THIS YEAR:",
+     "show": "big",
+     "big": "0",
+     "small": "LEVELS",
+     "dur": 1.7
+    },
+    {
+     "cap": "HERE'S THE <b>GOOD</b> NEWS.",
+     "show": "none",
+     "dur": 1.3
+    },
+    {
+     "cap": "STATS CLIMB BACK THE SAME WAY THEY FELL.",
+     "show": "bars",
+     "from": [
+      35,
+      30,
+      52,
+      20
+     ],
+     "fill": [
+      70,
+      65,
+      72,
+      60
+     ],
+     "dur": 2.2
+    },
+    {
+     "cap": "ONE DAY AT A TIME.",
+     "show": "big",
+     "big": "1",
+     "small": "DAY",
+     "dur": 1.6
+    },
+    {
+     "cap": "FOLLOW AND START YOUR <b>STREAK</b> TODAY.",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.3
+    }
+   ]
   },
   {
    "id": "read-before-you-quit",
