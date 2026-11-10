@@ -1,7 +1,8 @@
 // Renders one day's posts from a plan file.
 //   node tools/render.cjs plans/2026-11-11.json
 // Writes posts/<date>/<id>-<n>.jpg for slideshows and posts/<date>/<id>.mp4 for videos.
-// Plan: { date, posts: [ {id, type:'explainer', scenes:[{cap, show, ...}]} | {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, frames:[{photo,text}], end?:true} ] }
+// Plan: { date, posts: [ {id, type:'explainer', scenes:[{cap, show, ...}]} | {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, mood?, word?, frames:[{photo,text}], end?:true} ] }
+// Any video type can take sound:'<id>' (sounds/<id>.json) to cut on the beat; montage also takes beatsPer (2 default).
 // Photo paths are relative to the repo root (e.g. "photos/library/gym-01.jpg").
 const { chromium } = require('playwright');
 const { spawn, execFileSync } = require('child_process');
@@ -30,12 +31,12 @@ async function frames(page, n, draw, out) {
   fs.renameSync(tmp, out);
 }
 
-async function hookCard(page, text, bg, out, kicker, calm) {
+async function hookCard(page, text, bg, out, kicker, calm, nFrames = HOOK_FRAMES) {
   const q = `?t=${encodeURIComponent(text)}&k=${encodeURIComponent(kicker || 'WARNING')}${calm ? '&calm=1' : ''}${bg ? `&bg=${encodeURIComponent(fileUrl(bg))}` : ''}`;
   await page.goto('file://' + path.join(TOOLS, 'hook.html') + q);
   await page.evaluate(() => document.fonts.ready);
   await page.waitForTimeout(150);
-  await frames(page, HOOK_FRAMES, (f) => page.evaluate((t) => render(t), f / 30), out);
+  await frames(page, nFrames, (f) => page.evaluate((t) => render(t), Math.min(1.5, f / 30)), out);
 }
 
 function finish(parts, audioParts, outDir, id, work, speed = 1.2) {
@@ -52,6 +53,33 @@ function finish(parts, audioParts, outDir, id, work, speed = 1.2) {
   // Speed the whole cut up a little so it feels urgent (speed 1 = as rendered).
   if (speed === 1) fs.copyFileSync(muxed, path.join(outDir, `${id}.mp4`));
   else ff(['-i', muxed, '-filter_complex', `[0:v]setpts=PTS/${speed}[v];[0:a]atempo=${speed}[a]`, '-map', '[v]', '-map', '[a]', ...ENC, '-c:a', 'aac', '-b:a', '160k', '-movflags', '+faststart', path.join(outDir, `${id}.mp4`)]);
+}
+
+// ---- Beat sync: post.sound = '<id>' uses sounds/<id>.m4a + sounds/<id>.json (made by tools/addsound.py) ----
+function loadSound(id) {
+  const j = JSON.parse(fs.readFileSync(path.join(ROOT, 'sounds', `${id}.json`), 'utf8'));
+  return { ...j, file: path.join(ROOT, 'sounds', `${id}.m4a`) };
+}
+// Beat times from where the video starts in the sound (start = a beat). Extends past the clip at the same tempo.
+function beatGrid(snd, start) {
+  const g = snd.beats.filter((b) => b >= start - 0.001).map((b) => b - start);
+  while (g.length < 400) g.push((g[g.length - 1] ?? 0) + snd.beat);
+  return g;
+}
+// Where to start in the sound: the drop minus `lead` beats (so the drop lands on the first real cut), never before 0.
+function soundStart(snd, leadBeats) {
+  const i = Math.max(0, snd.beats.indexOf(snd.drop) - leadBeats);
+  return snd.beats[i] ?? 0;
+}
+function finishSound(parts, outDir, id, work, snd, start, speed = 1) {
+  const list = path.join(work, `${id}.txt`);
+  fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join('\n'));
+  let vid = path.join(work, `${id}-v.mp4`);
+  ff(['-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', vid]);
+  if (speed !== 1) { const sp = path.join(work, `${id}-sp.mp4`); ff(['-i', vid, '-vf', `setpts=PTS/${speed}`, '-an', ...ENC, sp]); vid = sp; }
+  const dur = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', vid]).toString());
+  ff(['-i', vid, '-stream_loop', '-1', '-ss', String(start), '-i', snd.file, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
+    '-af', `afade=t=out:st=${Math.max(0, dur - 0.8).toFixed(2)}:d=0.8`, '-c:a', 'aac', '-b:a', '192k', '-t', dur.toFixed(3), '-movflags', '+faststart', path.join(outDir, `${id}.mp4`)]);
 }
 
 (async () => {
@@ -71,20 +99,54 @@ function finish(parts, audioParts, outDir, id, work, speed = 1.2) {
       }
     } else if (post.type === 'video') {
       const hk = path.join(work, `${post.id}-hook.mp4`);
+      if (post.sound) {
+        // Hook lasts 4 beats and the first app scene hits on the drop.
+        const snd = loadSound(post.sound), sp = post.speed ?? 1.2, start = soundStart(snd, 4);
+        const g = beatGrid(snd, start);
+        await hookCard(page, post.hook, post.hookBg, hk, post.kicker, post.calm, Math.round(g[4] * sp * 30));
+        finishSound([hk, ...post.scenes.map((i) => path.join(TOOLS, 'scenes', `scene${i}.mp4`))], outDir, post.id, work, snd, start, sp);
+        console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue;
+      }
       await hookCard(page, post.hook, post.hookBg, hk, post.kicker, post.calm);
       finish([hk, ...post.scenes.map((i) => path.join(TOOLS, 'scenes', `scene${i}.mp4`))], [HOOK_AUDIO, ...post.scenes.map((i) => SC[i])], outDir, post.id, work, post.speed ?? 1.2);
     } else if (post.type === 'explainer') {
       // Minimal animated explainer (tools/explain.html). post.scenes = [{cap, show, ...}], ends on the coming-soon end card.
       await page.goto('file://' + path.join(TOOLS, 'explain.html'));
       await page.evaluate(() => document.fonts.ready);
+      let snd = null, xStart = 0;
+      if (post.sound) {
+        // Every scene change lands on a beat: round each scene to a whole number of beats (at least 2).
+        snd = loadSound(post.sound); xStart = soundStart(snd, post.lead ?? 0);
+        const g = beatGrid(snd, xStart); let bi = 0;
+        post.scenes = post.scenes.map((sc) => { const n = Math.max(2, Math.round((sc.dur ?? 2) / snd.beat)); const d = g[bi + n] - g[bi]; bi += n; return { ...sc, dur: d }; });
+      }
       const total = await page.evaluate((s) => load(s), post.scenes);
       const out = path.join(work, `${post.id}-x.mp4`);
       await frames(page, Math.round(total * 30), (f) => page.evaluate((t) => render(t), f / 30), out);
+      if (snd) { finishSound([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], outDir, post.id, work, snd, xStart, 1); console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue; }
       const audio = []; let left = total, at = 3.2; // ride the beat section of the track, looping if needed
       while (left > 0.01) { const d = Math.min(left, 16.8 - at); audio.push([at, at + d]); left -= d; at = 3.2; }
       finish([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], [...audio, SC[5]], outDir, post.id, work, post.speed ?? 1);
     } else if (post.type === 'montage') {
       const parts = [], audio = [];
+      if (post.sound) {
+        // Hook = 4 beats, then each photo lasts `beatsPer` beats (default 2; 1 for fast hype cuts), every cut on a beat.
+        const snd = loadSound(post.sound), useHook = post.hook && !post.mood, start = soundStart(snd, useHook ? 4 : (post.lead ?? 0));
+        const g = beatGrid(snd, start), per = post.beatsPer ?? 2; let bi = 0;
+        if (useHook) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm, Math.round(g[4] * 30)); parts.push(hk); bi = 4; }
+        await page.goto('file://' + path.join(TOOLS, 'montage.html'));
+        let tAt = g[bi];
+        for (let i = 0; i < post.frames.length; i++) {
+          const f = post.frames[i], out = path.join(work, `${post.id}-m${i}.mp4`);
+          bi += per; const n = Math.round(g[bi] * 30) - Math.round(tAt * 30); tAt = g[bi];
+          await page.evaluate((fr) => setFrame(fr), { photo: fileUrl(f.photo), text: f.text ?? post.word, mood: post.mood });
+          await frames(page, n, (k) => page.evaluate(([t, d]) => render(t, d), [k / 30, n / 30]), out);
+          parts.push(out);
+        }
+        if (post.end !== false) parts.push(path.join(TOOLS, 'scenes', 'scene5.mp4'));
+        finishSound(parts, outDir, post.id, work, snd, start, 1);
+        console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue;
+      }
       if (post.hook && !post.mood) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm); parts.push(hk); audio.push(HOOK_AUDIO); }
       await page.goto('file://' + path.join(TOOLS, 'montage.html'));
       const DUR = post.dur ?? 2.6; let at = 3.2; // ride the beat section of the track
