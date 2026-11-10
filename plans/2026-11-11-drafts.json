@@ -1,0 +1,29 @@
+{
+ "date": "2026-11-11",
+ "posts": [
+  {"id": "draft-life-is-a-game", "time": "09:00", "type": "montage", "silent": true, "sound": "hype-semdemora-01", "beatsPer": 2,
+   "hook": "POV: YOUR LIFE<br>IS A <b>GAME</b> NOW", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Choose your form."},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Level up <b>daily.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Build the <b>streak.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Then kick it up a notch."},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Faith is a <b>stat.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% better. Every day."}
+   ]},
+  {"id": "draft-quests-waiting", "time": "13:00", "type": "video", "silent": true, "sound": "calm-build-01",
+   "kicker": "SYSTEM ALERT", "hook": "YOUR DAILY<br><b>QUESTS</b><br>ARE WAITING", "scenes": [0, 2, 3, 4, 5]},
+  {"id": "draft-one-percent-rule", "time": "17:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "GET 1% BETTER EVERY DAY…", "show": "big", "big": "1", "small": "PERCENT", "dur": 1.8},
+   {"cap": "FOR ONE YEAR.", "show": "big", "big": "365", "small": "DAYS", "dur": 1.6},
+   {"cap": "THAT'S NOT 365% BETTER.", "show": "none", "dur": 1.5},
+   {"cap": "IT'S ALMOST <b>38 TIMES</b> BETTER.", "show": "big", "big": "38", "small": "1.01 ^ 365 = 37.8", "dur": 2.0},
+   {"cap": "BUT 1% WORSE EVERY DAY?", "show": "bars", "from": [60, 60, 60, 60], "fill": [25, 25, 25, 25], "dur": 1.8},
+   {"cap": "YOU'RE LEFT WITH ALMOST <i>NOTHING.</i>", "show": "big", "big": "0", "small": "0.99 ^ 365 = 0.03", "dur": 1.9},
+   {"cap": "SAME DAYS. SAME 24 HOURS.", "show": "compare", "l": {"label": "1% WORSE", "fig": true}, "r": {"label": "1% BETTER", "fig": true, "glow": true}, "dur": 1.9},
+   {"cap": "ONE PAGE. ONE PUSHUP. ONE PRAYER.", "show": "bars", "fill": [10, 10, 10, 0], "dur": 1.9},
+   {"cap": "EVERY. SINGLE. DAY.", "show": "bars", "from": [10, 10, 10, 0], "fill": [55, 50, 45, 35], "dur": 1.8},
+   {"cap": "FOLLOW IF YOU'RE TAKING THE <b>1%</b> TODAY.", "show": "crowd", "glow": true, "dur": 2.3}
+  ]}
+ ]
+}

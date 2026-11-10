@@ -58,6 +58,14 @@ If Metricool or GitHub fails, retry once. If it still fails, stop and report exa
 
 Save them into `photos/inbox/` (resize so the long side is ≤ 2000px, JPEG quality 88, sensible names), then commit and push. The next run uses them first. If he asks for them "in the next post," make that post right away and schedule it at the next open slot instead of waiting for the nightly run.
 
+## Daily drafts: 3 extra videos for Nahum to finish (6 videos a day total)
+
+Besides the 7 auto posts, make **3 more videos every night as TikTok drafts**. Nahum adds the sound inside TikTok and posts them himself, so the song is TikTok's licensed copy.
+- Plan them in `plans/<date>-drafts.json` with ids starting `draft-`. Each gets `silent: true` and a `sound` from the bank: it's cut to that sound's beat but has no audio. Use 3 different sounds, and mix types (one explainer, one montage or mood video, one app-scene video). App screens in `photos/app/` are fine for montages any day.
+- Different hooks from the 7 auto posts of the same day.
+- Schedule on Metricool for TikTok only at **9:00, 13:00 and 17:00** with **`autoPublish: false`** (Metricool sends Nahum a phone notification to finish it), `autoAddMusic: false`, a full caption and title like a normal post.
+- In the nightly message, list each draft with the exact sound to add (the `note` in `sounds/<id>.json`, e.g. "SEM DEMORA (Slowed)") and "start the sound at the drop."
+
 ## Video style rule
 
 **No zoom in videos** (Nahum): photos and backgrounds stay still; cuts happen on the beat instead. The templates already do this.

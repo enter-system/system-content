@@ -2,6 +2,7 @@
 //   node tools/render.cjs plans/2026-11-11.json
 // Writes posts/<date>/<id>-<n>.jpg for slideshows and posts/<date>/<id>.mp4 for videos.
 // Plan: { date, posts: [ {id, type:'explainer', scenes:[{cap, show, ...}]} | {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, mood?, word?, frames:[{photo,text}], end?:true} ] }
+// silent:true = Nahum's TikTok drafts (cut to the sound's beat, no audio).
 // Any video type can take sound:'<id>' (sounds/<id>.json) to cut on the beat; montage also takes beatsPer (2 default).
 // Photo paths are relative to the repo root (e.g. "photos/library/gym-01.jpg").
 const { chromium } = require('playwright');
@@ -71,12 +72,15 @@ function soundStart(snd, leadBeats) {
   const i = Math.max(0, snd.beats.indexOf(snd.drop) - leadBeats);
   return snd.beats[i] ?? 0;
 }
-function finishSound(parts, outDir, id, work, snd, start, speed = 1) {
+function finishSound(parts, outDir, id, work, snd, start, speed = 1, silent = false) {
   const list = path.join(work, `${id}.txt`);
   fs.writeFileSync(list, parts.map((p) => `file '${p}'`).join('\n'));
   let vid = path.join(work, `${id}-v.mp4`);
   ff(['-f', 'concat', '-safe', '0', '-i', list, '-c', 'copy', vid]);
   if (speed !== 1) { const sp = path.join(work, `${id}-sp.mp4`); ff(['-i', vid, '-vf', `setpts=PTS/${speed}`, '-an', ...ENC, sp]); vid = sp; }
+  if (silent) { // draft for Nahum: cut to the beat of `snd` but no audio; he adds the same sound in TikTok
+    ff(['-i', vid, '-an', '-c:v', 'copy', '-movflags', '+faststart', path.join(outDir, `${id}.mp4`)]); return;
+  }
   const dur = parseFloat(execFileSync('ffprobe', ['-v', 'error', '-show_entries', 'format=duration', '-of', 'csv=p=0', vid]).toString());
   ff(['-i', vid, '-stream_loop', '-1', '-ss', String(start), '-i', snd.file, '-map', '0:v', '-map', '1:a', '-c:v', 'copy',
     '-af', `afade=t=out:st=${Math.max(0, dur - 0.8).toFixed(2)}:d=0.8`, '-c:a', 'aac', '-b:a', '192k', '-t', dur.toFixed(3), '-movflags', '+faststart', path.join(outDir, `${id}.mp4`)]);
@@ -104,7 +108,7 @@ function finishSound(parts, outDir, id, work, snd, start, speed = 1) {
         const snd = loadSound(post.sound), sp = post.speed ?? 1.2, start = soundStart(snd, 4);
         const g = beatGrid(snd, start);
         await hookCard(page, post.hook, post.hookBg, hk, post.kicker, post.calm, Math.round(g[4] * sp * 30));
-        finishSound([hk, ...post.scenes.map((i) => path.join(TOOLS, 'scenes', `scene${i}.mp4`))], outDir, post.id, work, snd, start, sp);
+        finishSound([hk, ...post.scenes.map((i) => path.join(TOOLS, 'scenes', `scene${i}.mp4`))], outDir, post.id, work, snd, start, sp, post.silent);
         console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue;
       }
       await hookCard(page, post.hook, post.hookBg, hk, post.kicker, post.calm);
@@ -123,7 +127,7 @@ function finishSound(parts, outDir, id, work, snd, start, speed = 1) {
       const total = await page.evaluate((s) => load(s), post.scenes);
       const out = path.join(work, `${post.id}-x.mp4`);
       await frames(page, Math.round(total * 30), (f) => page.evaluate((t) => render(t), f / 30), out);
-      if (snd) { finishSound([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], outDir, post.id, work, snd, xStart, 1); console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue; }
+      if (snd) { finishSound([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], outDir, post.id, work, snd, xStart, 1, post.silent); console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue; }
       const audio = []; let left = total, at = 3.2; // ride the beat section of the track, looping if needed
       while (left > 0.01) { const d = Math.min(left, 16.8 - at); audio.push([at, at + d]); left -= d; at = 3.2; }
       finish([out, path.join(TOOLS, 'scenes', 'scene5.mp4')], [...audio, SC[5]], outDir, post.id, work, post.speed ?? 1);
@@ -144,7 +148,7 @@ function finishSound(parts, outDir, id, work, snd, start, speed = 1) {
           parts.push(out);
         }
         if (post.end !== false) parts.push(path.join(TOOLS, 'scenes', 'scene5.mp4'));
-        finishSound(parts, outDir, post.id, work, snd, start, 1);
+        finishSound(parts, outDir, post.id, work, snd, start, 1, post.silent);
         console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue;
       }
       if (post.hook && !post.mood) { const hk = path.join(work, `${post.id}-hook.mp4`); await hookCard(page, post.hook, post.frames[0]?.photo, hk, post.kicker, post.calm); parts.push(hk); audio.push(HOOK_AUDIO); }

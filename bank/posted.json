@@ -206,6 +206,36 @@
     "tiktok",
     "youtube"
    ]
+  },
+  {
+   "date": "2026-11-11",
+   "time": "09:00",
+   "id": "draft-life-is-a-game",
+   "hook": "life-is-a-game",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "13:00",
+   "id": "draft-quests-waiting",
+   "hook": "quests-waiting",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "17:00",
+   "id": "draft-one-percent-rule",
+   "hook": "one-percent-rule",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "hype-bipolar-01"
   }
  ]
 }
