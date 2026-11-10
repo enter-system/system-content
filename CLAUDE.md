@@ -65,7 +65,6 @@ Nahum sends TikTok screen recordings of sounds. **Every video is cut to the beat
 - **When he sends a sound recording in chat:** `python3 tools/addsound.py <recording> <id> <hype|calm> [--start S --end E] [--note "..."]` (needs `pip install --break-system-packages librosa`). Trim to the part with the drop. Name ids by feel (`hype-drill-01`, `calm-piano-01`). Commit `sounds/<id>.m4a` + `.json`. If he sends several, sort them into hype and calm by ear (bpm and loudness help).
 - **Nightly:** give every video `sound: '<id>'`. Pick the sound that fits the post: hype sounds for urgent hook videos, montages and explainers; calm sounds for "quiet life" mood videos and whisper-style videos. Don't use the same sound twice in one day, and rotate so each sound gets used. If `sounds/` is empty, fall back to the built-in track.
 - Beat sync is automatic: video = the hook lasts 4 beats and the first scene hits on the drop; montage = each photo lasts `beatsPer` beats (2 default, 1 for fast cuts); explainer = every scene is snapped to whole beats.
-- Keep the TikTok video caption honest about nothing extra; no need to credit the sound in text.
 
 ## Brand
 
