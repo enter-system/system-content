@@ -514,6 +514,27 @@
    "used": [
     "2026-11-12"
    ]
+  },
+  {
+   "id": "rebuild-this-winter",
+   "pillar": "identity",
+   "format": "essay",
+   "hook": "How to quietly rebuild your life this winter (body, mind, environment, money, character, faith)",
+   "used": []
+  },
+  {
+   "id": "winter-arc-quests",
+   "pillar": "consistency",
+   "format": "essay",
+   "hook": "Your winter arc starts now: 5 quests before 2027",
+   "used": []
+  },
+  {
+   "id": "before-january-crowd",
+   "pillar": "body",
+   "format": "essay",
+   "hook": "Do this before the January crowd shows up",
+   "used": []
   }
  ]
 }
