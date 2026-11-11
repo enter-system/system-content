@@ -1,0 +1,57 @@
+{
+ "date": "ads",
+ "note": "Anime-look version: same ad with photos run through tools/anime.py. Preview for Nahum, not scheduled.",
+ "posts": [
+  {
+   "id": "ad-rules-anime",
+   "type": "montage",
+   "sound": "hype-semdemora-01",
+   "beatsPer": 1,
+   "frames": [
+    {
+     "photo": "photos/anime/faith-bible-table-pov-01.jpg",
+     "text": "Bible first.",
+     "beats": 2
+    },
+    {
+     "photo": "photos/anime/body-hooded-gym-01.jpg",
+     "text": "Train daily."
+    },
+    {
+     "photo": "photos/anime/body-fog-run-behind-01.jpg",
+     "text": "Run anyway."
+    },
+    {
+     "photo": "photos/anime/body-cooking-night-back-01.jpg",
+     "text": "Cook your food."
+    },
+    {
+     "photo": "photos/anime/mind-desk-night-discipline-01.jpg",
+     "text": "Work in silence."
+    },
+    {
+     "photo": "photos/anime/faith-alarm-phone-bed-01.jpg",
+     "text": "Phone down."
+    },
+    {
+     "photo": "photos/anime/body-dark-gym-rest-01.jpg",
+     "text": "<b>Discipline.</b>",
+     "beats": 2
+    },
+    {
+     "photo": "photos/app/01-home-level-up.jpg",
+     "text": "Reset your life<br><b>before 2027.</b>",
+     "beats": 4
+    },
+    {
+     "photo": "photos/app/02-streak.jpg",
+     "text": "Every quest<br>builds your <b>streak.</b>",
+     "beats": 3
+    }
+   ],
+   "tail": [
+    4
+   ]
+  }
+ ]
+}
