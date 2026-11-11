@@ -1,0 +1,46 @@
+{
+ "date": "2026-11-12",
+ "note": "Nightly run: 08:00, 10:00 and 12:00 were already scheduled (see plans/2026-11-12-*.json). This file fills 14:00, 16:00, 18:00, 20:00.",
+ "posts": [
+  {"id": "stop-waiting-january", "hookId": "new-year-before-new-year", "time": "14:00", "type": "montage", "sound": "hype-bipolar-01", "beatsPer": 2,
+   "kicker": "WARNING", "hook": "49 DAYS LEFT.<br>STOP WAITING<br>FOR <b>JANUARY.</b>",
+   "frames": [
+    {"photo": "photos/library/body-cooking-night-back-01.jpg", "text": "Cook your own food <b>tonight.</b>"},
+    {"photo": "photos/library/wealth-house-cars-behind-01.jpg", "text": "Build in <b>silence.</b>"},
+    {"photo": "photos/library/family-couple-house-cars-behind-01.jpg", "text": "Build it for the ones you <b>love.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Track it <b>daily.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break the <b>streak.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "Start <b>today.</b> Not January."}
+   ]},
+  {"id": "winter-arc-quests", "hookId": "winter-arc-quests", "time": "16:00", "type": "slides", "slides": [
+   {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "WINTER ARC", "title": "YOUR WINTER ARC STARTS NOW", "sub": "4 quests before 2027 →"},
+   {"kind": "countdown", "kick": "TIME LEFT", "big": "49", "title": "DAYS LEFT<br>IN 2026", "sub": "Every day you wait, January starts further back."},
+   {"kind": "point", "tone": "alert", "num": "01 / 04", "kick": "QUEST 01 · FAITH", "text": "Bible before phone. One chapter, every morning."},
+   {"kind": "point", "tone": "alert", "num": "02 / 04", "kick": "QUEST 02 · BODY", "text": "Train 3x a week. Walk on the days you don't."},
+   {"kind": "point", "tone": "alert", "num": "03 / 04", "kick": "QUEST 03 · MIND", "text": "Read 10 pages before bed instead of scrolling."},
+   {"kind": "point", "tone": "alert", "num": "04 / 04", "kick": "QUEST 04 · WEALTH", "text": "Track every dollar until December 31."},
+   {"kind": "cta", "title": "START <b>TODAY.</b><br>NOT MONDAY.", "text": "The System turns your winter arc into daily quests and streaks. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+  ]},
+  {"id": "seven-mondays-left", "hookId": "start-monday-lie", "remixOf": "start-monday-lie", "time": "18:00", "type": "explainer", "sound": "calm-build-01", "lead": 999, "scenes": [
+   {"cap": "YOU SAID <i>“I'LL START MONDAY.”</i>", "show": "none", "dur": 1.8},
+   {"cap": "YOU SAID IT IN JANUARY.", "show": "calendar", "months": ["JAN", "FEB", "MAR", "APR"], "dur": 1.8},
+   {"cap": "AND IN JUNE. AND IN SEPTEMBER.", "show": "calendar", "months": ["JUN", "JUL", "AUG", "SEP"], "dur": 2.0},
+   {"cap": "MONDAY NEVER CAME.", "show": "bars", "fill": [0, 0, 0, 0], "dur": 1.6},
+   {"cap": "HERE'S THE <i>SCARY</i> PART.", "show": "none", "dur": 1.4},
+   {"cap": "ONLY 7 MONDAYS LEFT IN 2026.", "show": "big", "big": "7", "small": "MONDAYS LEFT", "dur": 2.0},
+   {"cap": "BUT 49 DAYS. THAT'S 49 CHANCES.", "show": "big", "big": "49", "small": "DAYS LEFT IN 2026", "dur": 2.0},
+   {"cap": "START ON A <b>THURSDAY.</b>", "show": "none", "dur": 1.6},
+   {"cap": "ONE QUEST TODAY. ONE TOMORROW.", "show": "bars", "fill": [20, 15, 20, 10], "dur": 1.9},
+   {"cap": "AND MONDAY FINDS YOU <b>ALREADY MOVING.</b>", "show": "bars", "from": [20, 15, 20, 10], "fill": [55, 50, 45, 40], "dur": 2.2}
+  ]},
+  {"id": "proverbs-lazy-man", "hookId": "proverbs-sluggard", "time": "20:00", "type": "slides", "slides": [
+   {"kind": "cover", "tone": "alert", "banner": "BEFORE YOU HIT SNOOZE", "kick": "PROVERBS CHECK", "title": "WHAT PROVERBS SAYS ABOUT THE LAZY MAN", "sub": "(it's convicting) →"},
+   {"kind": "point", "tone": "alert", "num": "01 / 05", "kick": "PROVERBS 26:14", "text": "“As the door turneth upon his hinges, so doth the slothful upon his bed.”", "sub": "Snooze. Turn over. Snooze."},
+   {"kind": "point", "tone": "alert", "num": "02 / 05", "kick": "PROVERBS 20:4", "text": "“The sluggard will not plow by reason of the cold…”", "sub": "…therefore shall he beg in harvest. Winter is not an excuse."},
+   {"kind": "point", "tone": "alert", "num": "03 / 05", "kick": "PROVERBS 13:4", "text": "“The soul of the sluggard desireth, and hath nothing…”", "sub": "Wanting it isn't doing it."},
+   {"kind": "point", "tone": "gold", "num": "04 / 05", "kick": "THE FIX · PROVERBS 6:6", "text": "“Go to the ant, thou sluggard; consider her ways, and be wise”", "sub": "Small work. Every day. Nobody watching."},
+   {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "THE PROMISE · PROVERBS 10:4", "text": "“…the hand of the diligent maketh rich.”", "sub": "Diligent = shows up daily."},
+   {"kind": "cta", "title": "GET UP.<br><b>START TODAY.</b>", "text": "The System turns diligence into daily quests and streaks. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+  ]}
+ ]
+}

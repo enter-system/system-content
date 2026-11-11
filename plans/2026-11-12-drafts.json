@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-12",
+ "posts": [
+  {"id": "draft-read-20-pages", "hookId": "read-20-pages", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "READ 20 PAGES A DAY.", "show": "big", "big": "20", "small": "PAGES", "dur": 1.8},
+   {"cap": "INSTEAD OF ONE SCROLL SESSION.", "show": "none", "dur": 1.6},
+   {"cap": "NOW DO IT FOR A YEAR.", "show": "calendar", "months": ["JAN", "APR", "JUL", "OCT"], "dur": 1.9},
+   {"cap": "THAT'S 7,300 PAGES.", "show": "big", "big": "7300", "small": "20 × 365", "dur": 1.9},
+   {"cap": "ABOUT <b>24 BOOKS</b> AT 300 PAGES EACH.", "show": "big", "big": "24", "small": "BOOKS", "dur": 2.0},
+   {"cap": "OR <i>ZERO</i> IF YOU KEEP WAITING.", "show": "bars", "fill": [0, 0, 0, 0], "dur": 1.8},
+   {"cap": "SAME PHONE. SAME 24 HOURS.", "show": "compare", "l": {"label": "SCROLLED", "fig": true}, "r": {"label": "READ", "fig": true, "glow": true}, "dur": 1.9},
+   {"cap": "START WITH THE BOOK OF <b>PROVERBS.</b>", "show": "none", "dur": 1.8},
+   {"cap": "FOLLOW IF YOU'RE READING <b>TONIGHT.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-sneak-peek", "hookId": "app-sneak-peek", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "SNEAK PEEK:<br>WHAT <b>THE SYSTEM</b><br>LOOKS LIKE", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/08-your-world.jpg", "text": "Your <b>world.</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Your <b>map.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Your body is a <b>stat.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "So is your <b>faith.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Stay consistent. Level <b>up.</b>"},
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-plan-tomorrow", "hookId": "plan-tomorrow", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT", "hook": "PLAN TOMORROW<br><b>TONIGHT.</b><br>WAKE UP WINNING.", "scenes": [0, 2, 1, 4, 5]}
+ ]
+}
