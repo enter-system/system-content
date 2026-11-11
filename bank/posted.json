@@ -251,6 +251,82 @@
     "tiktok-draft"
    ],
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "14:00",
+   "id": "stop-waiting-january",
+   "hook": "new-year-before-new-year",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "sound": "hype-bipolar-01",
+   "photos": [
+    "body-cooking-night-back-01.jpg",
+    "wealth-house-cars-behind-01.jpg",
+    "family-couple-house-cars-behind-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "16:00",
+   "id": "winter-arc-quests",
+   "hook": "winter-arc-quests",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "18:00",
+   "id": "seven-mondays-left",
+   "hook": "start-monday-lie",
+   "platforms": [
+    "tiktok",
+    "youtube"
+   ],
+   "sound": "calm-build-01",
+   "note": "remix of start-monday-lie"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "20:00",
+   "id": "proverbs-lazy-man",
+   "hook": "proverbs-sluggard",
+   "platforms": [
+    "tiktok"
+   ]
+  },
+  {
+   "date": "2026-11-12",
+   "time": "09:00",
+   "id": "draft-read-20-pages",
+   "hook": "read-20-pages",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "13:00",
+   "id": "draft-sneak-peek",
+   "hook": "app-sneak-peek",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-12",
+   "time": "17:00",
+   "id": "draft-plan-tomorrow",
+   "hook": "plan-tomorrow",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "hype-bipolar-01"
   }
  ]
 }
