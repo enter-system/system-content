@@ -108,7 +108,9 @@
    "hook": "start-monday-lie",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -117,7 +119,9 @@
    "id": "money-before-2027",
    "hook": "stats-boring-money",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -127,7 +131,9 @@
    "hook": "level-up-silent",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ],
    "photos": [
     "body-hooded-gym-01.jpg",
@@ -143,7 +149,9 @@
    "id": "signs-leveling-up-rank",
    "hook": "signs-leveling-up",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -153,7 +161,9 @@
    "hook": "stats-screen-pov",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -162,7 +172,9 @@
    "id": "before-you-quit-quiet",
    "hook": "verses-discipline",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ],
    "photos": [
     "body-gym-towel-rest-01.jpg",
@@ -193,7 +205,9 @@
    "id": "reset-before-2027",
    "hook": "reset-life-essay",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ],
    "photos": [
     "wealth-lake-robe-laptop-01.jpg",
@@ -209,7 +223,9 @@
    "id": "man-family-brags-about",
    "hook": "seven-stats-countdown",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -219,7 +235,9 @@
    "hook": "same-person-last-year",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -259,7 +277,9 @@
    "hook": "new-year-before-new-year",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ],
    "sound": "hype-bipolar-01",
    "photos": [
@@ -274,7 +294,9 @@
    "id": "winter-arc-quests",
    "hook": "winter-arc-quests",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
@@ -284,7 +306,9 @@
    "hook": "start-monday-lie",
    "platforms": [
     "tiktok",
-    "youtube"
+    "youtube",
+    "ig-story",
+    "fb-story"
    ],
    "sound": "calm-build-01",
    "note": "remix of start-monday-lie"
@@ -295,7 +319,9 @@
    "id": "proverbs-lazy-man",
    "hook": "proverbs-sluggard",
    "platforms": [
-    "tiktok"
+    "tiktok",
+    "ig-story",
+    "fb-story"
    ]
   },
   {
