@@ -353,6 +353,21 @@
     "tiktok-draft"
    ],
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-11",
+   "time": "11:22",
+   "id": "system-level-1-blocky",
+   "hook": "nahum-video",
+   "platforms": [
+    "tiktok",
+    "instagram-reel",
+    "facebook-reel",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "note": "Nahum's own video, posted on request"
   }
  ]
 }
