@@ -1,0 +1,277 @@
+<!doctype html>
+<meta charset="utf-8">
+<!-- Original anime-style scenes drawn in code (SVG) for The System ads.
+     setScene(i) picks a scene, render(t, d) draws it at time t of d seconds. No photos, no zoom: only things in the scene move.
+     Scenes: 0 5AM bedroom, 1 Bible at the desk, 2 dawn run, 3 pull-ups, 4 night desk, 5 rooftop LV1 -> LV2, 6 app screen. -->
+<style>
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-700-normal.woff2); font-weight: 700; }
+@font-face { font-family: Raj; src: url(fonts/rajdhani-latin-600-normal.woff2); font-weight: 600; }
+html, body { margin: 0; width: 1080px; height: 1920px; overflow: hidden; background: #000; }
+#s { position: absolute; inset: 0; width: 1080px; height: 1920px; }
+#cap { position: absolute; left: 60px; right: 60px; top: 1400px; text-align: center; font: 700 104px/1.05 Raj; color: #fff; letter-spacing: .01em;
+  text-shadow: 0 5px 0 rgba(5,8,20,.85), 0 0 40px rgba(5,8,20,.9), 0 0 8px rgba(5,8,20,.9); }
+#cap b { color: #5ee7ff; text-shadow: 0 5px 0 rgba(5,8,20,.85), 0 0 36px rgba(94,231,255,.8); }
+#hud { position: absolute; top: 250px; left: 50%; white-space: nowrap; padding: 16px 34px; border: 3px solid var(--c); background: rgba(7,11,20,.82);
+  font: 700 44px Raj; letter-spacing: .14em; color: var(--c); box-shadow: 0 0 34px color-mix(in srgb, var(--c) 55%, transparent); }
+#hud span { color: #fff; }
+#brand { position: absolute; top: 150px; left: 0; right: 0; text-align: center; font: 600 30px Raj; letter-spacing: .6em; color: rgba(255,255,255,.75); text-shadow: 0 2px 10px #000; }
+</style>
+<svg id="s" viewBox="0 0 1080 1920" xmlns="http://www.w3.org/2000/svg"></svg>
+<div id="brand">THE SYSTEM</div>
+<div id="hud"></div>
+<div id="cap"></div>
+<script>
+const R = (i) => { const x = Math.sin(i * 127.1 + 11.7) * 43758.5453; return x - Math.floor(x); };
+const clamp = (x, a = 0, b = 1) => Math.max(a, Math.min(b, x));
+const ease = (x) => { x = clamp(x); return 1 - Math.pow(1 - x, 3); };
+const S = Math.sin, C = Math.cos, PI = Math.PI;
+
+const DEFS = `
+<defs>
+ <filter id="blur8"><feGaussianBlur stdDeviation="8"/></filter>
+ <filter id="blur20"><feGaussianBlur stdDeviation="20"/></filter>
+ <filter id="blur50"><feGaussianBlur stdDeviation="50"/></filter>
+ <radialGradient id="vig" cx="50%" cy="50%" r="75%"><stop offset="55%" stop-color="#000" stop-opacity="0"/><stop offset="100%" stop-color="#000" stop-opacity=".55"/></radialGradient>
+ <linearGradient id="capfade" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#050814" stop-opacity="0"/><stop offset="1" stop-color="#050814" stop-opacity=".7"/></linearGradient>
+</defs>`;
+const FINISH = `<rect y="1250" width="1080" height="670" fill="url(#capfade)"/><rect width="1080" height="1920" fill="url(#vig)"/>`;
+
+// Back of a head with spiky hair. s = scale, rim = light colour on the lit side (side: 1 right, -1 left, 0 both).
+function head(cx, cy, s, hair, skin, rim, side = 1, sway = 0) {
+  const sp = [[-52, 34], [-40, 6], [-28, 42], [-14, 8], [0, 46], [15, 8], [28, 42], [40, 5], [50, 35]].map(([x, y], i) => `L${x + (i % 2 ? 0 : sway * (1 + i * .2))},${y}`).join(' ');
+  const d = `M-62,10 C-74,-52 -32,-88 4,-84 C46,-88 74,-46 64,10 ${sp.split(' ').reverse().join(' ')} Z`;
+  const rimR = `<path d="M4,-84 C46,-88 74,-46 64,10 L50,35" fill="none" stroke="${rim}" stroke-width="7" stroke-linecap="round"/>`;
+  const rimL = `<path d="M4,-84 C-32,-88 -74,-52 -62,10 L-52,34" fill="none" stroke="${rim}" stroke-width="7" stroke-linecap="round"/>`;
+  return `<g transform="translate(${cx},${cy}) scale(${s})"><rect x="-22" y="30" width="44" height="62" fill="${skin}"/>
+   <ellipse cx="-62" cy="8" rx="9" ry="15" fill="${skin}"/><ellipse cx="62" cy="8" rx="9" ry="15" fill="${skin}"/>
+   <path d="${d}" fill="${hair}"/><path d="M-30,-60 C-10,-76 20,-74 34,-58" fill="none" stroke="#fff" stroke-opacity=".10" stroke-width="10" stroke-linecap="round"/>
+   ${side >= 0 ? rimR : ''}${side <= 0 ? rimL : ''}</g>`;
+}
+const cloud = (x, y, w, fill, op = 1) => `<g opacity="${op}" fill="${fill}"><ellipse cx="${x}" cy="${y}" rx="${w}" ry="${w * .16}"/><ellipse cx="${x - w * .35}" cy="${y - w * .1}" rx="${w * .34}" ry="${w * .2}"/><ellipse cx="${x + w * .1}" cy="${y - w * .18}" rx="${w * .4}" ry="${w * .26}"/><ellipse cx="${x + w * .5}" cy="${y - w * .08}" rx="${w * .3}" ry="${w * .17}"/></g>`;
+function skyline(seed, base, minH, maxH, fill, lit, t = 0, w0 = 50, w1 = 110) {
+  let x = -20, out = '', i = 0;
+  while (x < 1100) { const w = w0 + R(seed + i) * (w1 - w0), h = minH + R(seed + i * 3.3) * (maxH - minH);
+    out += `<rect x="${x}" y="${base - h}" width="${w + 2}" height="${h + 4}" fill="${fill}"/>`;
+    if (lit) for (let k = 0; k < 7; k++) if (R(seed + i * 7 + k) > .5) { const wx = x + 8 + R(seed + i + k * 2.1) * (w - 22), wy = base - h + 14 + R(seed + i * 1.7 + k) * (h - 30);
+      out += `<rect x="${wx}" y="${wy}" width="8" height="12" fill="${lit}" opacity="${.5 + .5 * S(t * 2 + i + k)}"/>`; }
+    x += w; i++; }
+  return out;
+}
+
+const SCENES = [
+ // 0 ── 5:00 AM. He's already sitting up.
+ { cap: 'Up before the <b>sun.</b>', hud: ['QUEST 01', 'WAKE UP FIRST'], c: '#5ee7ff', draw(t, d) {
+   const p = t / d, colon = (t * 2) % 1 < .5;
+   let stars = ''; for (let i = 0; i < 40; i++) stars += `<circle cx="${540 + R(i) * 440}" cy="${270 + R(i + 50) * 420}" r="${1.5 + R(i + 9) * 2}" fill="#fff" opacity="${.3 + .6 * Math.abs(S(t * 2.2 + i))}"/>`;
+   return `<linearGradient id="a0" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0d1245"/><stop offset=".6" stop-color="#24307c"/><stop offset=".88" stop-color="#4c6bb0"/><stop offset="1" stop-color="#f0a078"/></linearGradient>
+    <clipPath id="w0"><rect x="520" y="250" width="480" height="760"/></clipPath>
+    <rect width="1080" height="1920" fill="#080b1e"/><rect x="0" y="0" width="1080" height="1180" fill="#0c1130"/>
+    <g clip-path="url(#w0)"><rect x="520" y="250" width="480" height="760" fill="url(#a0)"/>${stars}
+     <ellipse cx="760" cy="1010" rx="320" ry="${60 + 30 * p}" fill="#ffb37a" opacity="${.35 + .3 * p}" filter="url(#blur20)"/>
+     ${skyline(3, 1012, 60, 210, '#10163f', '#ffd98a', t)}</g>
+    <rect x="520" y="250" width="480" height="760" fill="none" stroke="#1c2658" stroke-width="20"/><path d="M760,250 V1010 M520,620 H1000" stroke="#1c2658" stroke-width="14"/>
+    <rect x="496" y="1010" width="528" height="26" fill="#222e6a"/>
+    <polygon points="520,1036 1000,1036 760,1920 60,1920" fill="#5f8de0" opacity=".13"/>
+    <rect x="0" y="1180" width="1080" height="740" fill="#070a1a"/>
+    <path d="M-20,1500 C200,1440 520,1430 1100,1470 L1100,1920 L-20,1920 Z" fill="#18214f"/>
+    <path d="M-20,1560 C260,1500 600,1500 1100,1540 L1100,1920 L-20,1920 Z" fill="#232f6e"/>
+    <path d="M40,1640 C240,1600 420,1610 620,1660 M200,1740 C420,1700 700,1720 900,1780" stroke="#151c47" stroke-width="8" fill="none" stroke-linecap="round"/>
+    <rect x="30" y="1330" width="260" height="150" rx="60" fill="#2c3a80"/>
+    <rect x="770" y="1290" width="230" height="330" fill="#111838"/><rect x="770" y="1290" width="230" height="16" fill="#27336f"/>
+    <ellipse cx="885" cy="1235" rx="150" ry="70" fill="#ff6a3c" opacity=".28" filter="url(#blur20)"/>
+    <rect x="795" y="1190" width="180" height="100" rx="12" fill="#05060f" stroke="#2a2030" stroke-width="4"/>
+    <text x="885" y="1264" text-anchor="middle" font-family="Raj" font-weight="700" font-size="76" fill="#ff7a45">5${colon ? ':' : ' '}00</text>
+    <g transform="translate(0,${S(t * 2) * 3})">
+     <path d="M258,1560 C240,1330 285,1215 345,1190 L455,1190 C520,1215 560,1330 545,1560 Z" fill="#141b44"/>
+     <path d="M455,1190 C520,1215 560,1330 545,1560" fill="none" stroke="#8fc8ff" stroke-width="9" stroke-linecap="round"/>
+     <path d="M300,1560 C296,1400 310,1300 330,1250" fill="none" stroke="#0c1130" stroke-width="10" stroke-linecap="round"/>
+     ${head(400, 1090, 1.5, '#070a1c', '#3a3f6e', '#8fc8ff', 1)}
+    </g>${FINISH}`; } },
+
+ // 1 ── Bible open at the desk, first light.
+ { cap: 'Bible <b>first.</b>', capY: 960, hud: ['+10 XP', 'FAITH'], c: '#f1e6b8', draw(t, d) {
+   let dust = ''; for (let i = 0; i < 34; i++) { const x = 120 + R(i) * 620 + S(t * .8 + i) * 16, y = 300 + ((R(i + 20) * 900 + t * (18 + R(i) * 26)) % 900);
+     dust += `<circle cx="${x}" cy="${y}" r="${2 + R(i + 5) * 3.5}" fill="#fff3cf" opacity="${.25 + .5 * Math.abs(S(t * 1.5 + i * 2))}"/>`; }
+   const steam = [0, 1, 2].map((k) => { const ph = (t * .5 + k * .33) % 1, y = 1120 - ph * 200, x = 880 + (k - 1) * 28;
+     return `<path d="M${x},${y} c-22,-34 22,-56 0,-92 s22,-56 0,-92" fill="none" stroke="#fff" stroke-width="9" stroke-linecap="round" opacity="${(1 - ph) * .4}" filter="url(#blur8)"/>`; }).join('');
+   const lines = (x0, x1, y0, sk) => Array.from({ length: 11 }, (_, i) => `<path d="M${x0},${y0 + i * 21 + sk * 0} L${x1 - (i % 4 == 3 ? 70 : 0)},${y0 + i * 21 + sk}" stroke="#bda98a" stroke-width="4" opacity=".75"/>`).join('');
+   return `<linearGradient id="a1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#ffd9a0"/><stop offset=".5" stop-color="#ff9f7a"/><stop offset="1" stop-color="#c86a8c"/></linearGradient>
+    <linearGradient id="b1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3a2440"/><stop offset="1" stop-color="#22152a"/></linearGradient>
+    <rect width="1080" height="1920" fill="url(#b1)"/>
+    <rect x="70" y="220" width="430" height="620" fill="url(#a1)"/>${cloud(250 + t * 8, 520, 150, '#fff1d6', .8)}${cloud(400 - t * 5, 690, 110, '#ffd0b0', .7)}
+    <circle cx="210" cy="660" r="70" fill="#fffbe6"/><circle cx="210" cy="660" r="130" fill="#fff3c0" opacity=".5" filter="url(#blur20)"/>
+    <rect x="70" y="220" width="430" height="620" fill="none" stroke="#1d1226" stroke-width="22"/><path d="M285,220 V840 M70,530 H500" stroke="#1d1226" stroke-width="14"/>
+    <polygon points="92,242 478,242 1080,1500 1080,1920 420,1920" fill="#ffd28a" opacity="${.20 + .04 * S(t * 2)}"/>
+    ${dust}
+    <polygon points="0,1150 1080,1150 1080,1920 0,1920" fill="#5d3a28"/><polygon points="0,1150 1080,1150 1080,1190 0,1190" fill="#7d5236"/>
+    <polygon points="300,1190 1080,1190 1080,1920 900,1920" fill="#8a5c3c" opacity=".55"/>
+    <path d="M0,1700 H1080" stroke="#3c2418" stroke-width="6" opacity=".5"/>
+    <g transform="translate(190,0)"><rect x="700" y="820" width="26" height="340" fill="#1b1226"/><polygon points="610,700 816,700 866,830 560,830" fill="#f5c451"/><polygon points="610,700 700,700 660,830 560,830" fill="#ffe08a"/>
+     <ellipse cx="713" cy="1162" rx="90" ry="20" fill="#1b1226"/><ellipse cx="713" cy="900" rx="210" ry="110" fill="#ffd98a" opacity=".22" filter="url(#blur50)"/></g>
+    <g transform="translate(-700,0)">${steam}
+    <ellipse cx="900" cy="1262" rx="84" ry="18" fill="#2c1a14" opacity=".6"/>
+    <path d="M820,1130 h160 v96 a80,36 0 0 1 -160,0 Z" fill="#ece6dc"/><path d="M930,1130 h50 v96 a80,36 0 0 1 -50,33 Z" fill="#c9bfb2"/><ellipse cx="900" cy="1130" rx="80" ry="20" fill="#3a2418"/>
+    <path d="M980,1150 q60,10 44,56 q-14,34 -50,26" fill="none" stroke="#ece6dc" stroke-width="18"/></g>
+    <ellipse cx="520" cy="1640" rx="400" ry="50" fill="#2c1a14" opacity=".55" filter="url(#blur8)"/>
+    <polygon points="170,1350 520,1318 520,1640 140,1660" fill="#3a1f1a"/><polygon points="520,1318 870,1350 900,1660 520,1640" fill="#3a1f1a"/>
+    <polygon points="190,1330 520,1300 520,1610 164,1632" fill="#efe4cc"/><polygon points="520,1300 850,1330 876,1632 520,1610" fill="#fff6e0"/>
+    <polygon points="440,1307 520,1300 520,1610 440,1616" fill="#c9b99a" opacity=".5"/><polygon points="520,1300 590,1306 590,1614 520,1610" fill="#d8c8a8" opacity=".5"/>
+    ${lines(214, 430, 1356, -14)}${lines(612, 836, 1344, 14)}
+    <path d="M520,1300 V1612" stroke="#8a7658" stroke-width="5"/>
+    <path d="M512,1606 q-8,70 6,${120 + S(t * 3) * 8} l18,-22 l10,26 q-16,-60 -14,-124 Z" fill="#c0392b"/>
+    <g transform="translate(${S(t * 2.4) * 10},${C(t * 2.4) * 5})">
+     <path d="M1080,1760 L820,1560 C790,1530 760,1520 740,1500 L712,1520 C730,1560 760,1600 800,1640 L1000,1920 L1080,1920 Z" fill="#1f2a55"/>
+     <path d="M820,1560 C780,1510 730,1480 700,1470 C680,1466 672,1486 690,1500 L740,1560 C770,1600 800,1600 820,1560 Z" fill="#e2ac8a"/>
+     <path d="M700,1470 C690,1470 672,1486 690,1500 L740,1560" fill="none" stroke="#b9805f" stroke-width="5"/>
+     <path d="M640,1540 L760,1440" stroke="#101633" stroke-width="13" stroke-linecap="round"/><path d="M640,1540 l-12,10" stroke="#f5c451" stroke-width="9" stroke-linecap="round"/>
+    </g>${FINISH}`; } },
+
+ // 2 ── Dawn run along the sea wall.
+ { cap: 'Run <b>anyway.</b>', hud: ['+10 XP', 'STRENGTH'], c: '#ff6a5c', draw(t, d) {
+   const ph = t * 11, bob = -Math.abs(S(ph)) * 22, hx = 500, hy = 1290 + bob, L = 120;
+   const leg = (o) => { const a = .95 * S(ph + o), bend = .25 + 1.25 * clamp(S(ph + o + 1.9) * .5 + .5); const kx = hx + L * S(a), ky = hy + L * C(a), fx = kx + L * S(a - bend), fy = ky + L * C(a - bend);
+     return `<path d="M${hx},${hy} L${kx},${ky} L${fx},${fy} l34,4" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="46"`; };
+   const arm = (o) => { const sx = hx + 26, sy = hy - 196, a = -.85 * S(ph + o), ex = sx + 92 * S(a), ey = sy + 92 * C(a), wx = ex + 84 * S(a + 1.35), wy = ey + 84 * C(a + 1.35);
+     return `<path d="M${sx},${sy} L${ex},${ey} L${wx},${wy}" fill="none" stroke-linejoin="round" stroke-linecap="round" stroke-width="36"`; };
+   let posts = ''; for (let i = 0; i < 8; i++) { const x = ((i * 190 - t * 620) % 1520 + 1520) % 1520 - 200; posts += `<rect x="${x}" y="1470" width="20" height="120" fill="#141a45"/><rect x="${x}" y="1470" width="6" height="120" fill="#ffc98a" opacity=".7"/>`; }
+   let dash = ''; for (let i = 0; i < 6; i++) { const x = ((i * 300 - t * 900) % 1800 + 1800) % 1800 - 300; dash += `<polygon points="${x},1760 ${x + 150},1760 ${x + 130},1784 ${x - 24},1784" fill="#e9ecff" opacity=".5"/>`; }
+   let shim = ''; for (let i = 0; i < 26; i++) { const y = 1110 + R(i) * 190, w = 20 + R(i + 3) * 120 * (y - 1090) / 200; shim += `<rect x="${760 - w / 2 + (R(i + 8) - .5) * 80}" y="${y}" width="${w}" height="5" rx="2" fill="#fff3c8" opacity="${.25 + .6 * Math.abs(S(t * 5 + i * 1.7))}"/>`; }
+   let lines = ''; for (let i = 0; i < 7; i++) { const x = ((R(i) * 1400 - t * 1500) % 1500 + 1500) % 1500 - 300; lines += `<rect x="${x}" y="${1180 + R(i + 4) * 380}" width="${120 + R(i + 2) * 160}" height="4" fill="#fff" opacity=".22"/>`; }
+   const birds = [0, 1, 2].map((i) => { const x = 180 + i * 70 + t * 30, y = 520 + i * 34 - (i == 1 ? 30 : 0), f = S(t * 9 + i) * 10; return `<path d="M${x - 22},${y + f} L${x},${y + 8} L${x + 22},${y + f}" fill="none" stroke="#1d2460" stroke-width="5" stroke-linecap="round"/>`; }).join('');
+   return `<linearGradient id="a2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#18246b"/><stop offset=".38" stop-color="#5a5cb4"/><stop offset=".7" stop-color="#f28a86"/><stop offset="1" stop-color="#ffd596"/></linearGradient>
+    <linearGradient id="b2" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6f6cc0"/><stop offset="1" stop-color="#232c70"/></linearGradient>
+    <rect width="1080" height="1110" fill="url(#a2)"/><g transform="translate(0,-190)"><rect y="-10" width="1080" height="1120" fill="url(#a2)" transform="translate(0,190)"/>
+    <circle cx="760" cy="1030" r="260" fill="#fff0b8" opacity=".55" filter="url(#blur50)"/><circle cx="760" cy="1040" r="118" fill="#fff8dc"/>
+    ${cloud(300 - t * 14, 420, 300, '#7a78c8', .9)}${cloud(860 - t * 20, 640, 260, '#f6a6a0', .95)}${cloud(180 - t * 26, 830, 220, '#ffc4a8', .95)}${cloud(980 - t * 10, 300, 200, '#5d62b8', .8)}${birds}
+    <rect y="1100" width="1080" height="240" fill="url(#b2)"/>${shim}
+    <path d="M-10,1100 C80,1050 200,1066 300,1084 L330,1102 L-10,1104 Z" fill="#2a2f7a"/>
+    <polygon points="0,1330 1080,1330 1080,2200 0,2200" fill="#4a4c9e"/><rect y="1330" width="1080" height="10" fill="#ffc98a" opacity=".8"/>
+    <rect y="1480" width="1080" height="16" fill="#141a45"/><rect y="1480" width="1080" height="5" fill="#ffc98a" opacity=".6"/>${posts}
+    <polygon points="0,1590 1080,1590 1080,2200 0,2200" fill="#34387e"/>${dash}${lines}
+    <ellipse cx="${hx + 10}" cy="1560" rx="${120 - bob * 1.5}" ry="18" fill="#0a0d2a" opacity=".55"/>
+    <g>${leg(PI)} stroke="#0c1034"/>${arm(0)} stroke="#0c1034"/>
+     <path d="M${hx - 40},${hy + 8} C${hx - 62},${hy - 90} ${hx - 34},${hy - 200} ${hx + 14},${hy - 226} L${hx + 66},${hy - 214} C${hx + 84},${hy - 120} ${hx + 60},${hy - 40} ${hx + 44},${hy + 12} Z" fill="#121848"/>
+     <path d="M${hx + 66},${hy - 214} C${hx + 84},${hy - 120} ${hx + 60},${hy - 40} ${hx + 44},${hy + 12}" fill="none" stroke="#ffd596" stroke-width="8" stroke-linecap="round"/>
+     <path d="M${hx - 4},${hy - 232} q-50,6 -64,54 q40,-14 70,-10 Z" fill="#0c1034"/>
+     ${leg(0)} stroke="#151c52"/>${arm(PI)} stroke="#151c52"/>
+     <g transform="translate(${hx + 48},${hy - 282}) rotate(8)"><ellipse cx="6" cy="6" rx="50" ry="56" fill="#2a2440"/><path d="M-50,10 C-60,-50 -20,-74 14,-68 C50,-66 66,-36 60,-14 L38,-22 L20,-40 L-8,-22 L-30,6 L-44,34 Z" fill="#070a22"/>
+      <path d="M14,-68 C50,-66 66,-36 60,-14" fill="none" stroke="#ffd596" stroke-width="7" stroke-linecap="round"/><path d="M56,-8 L62,22 L50,48" fill="none" stroke="#ffd596" stroke-width="6" stroke-linecap="round"/></g>
+    </g></g>${FINISH}`; } },
+
+ // 3 ── Pull-ups against the sunset windows.
+ { cap: 'Train <b>daily.</b>', hud: ['+10 XP', 'STRENGTH'], c: '#ff6a5c', draw(t, d) {
+   const up = (1 - C(t * 5.2)) / 2, y = -150 * up, sx = 540, sy = 820 + y, hw = 118, bar = 600;
+   const arm = (s) => { const hx = sx + s * 150, shx = sx + s * hw, len = 150, dy = sy - bar, dist = Math.hypot(hx - shx, dy), h = Math.sqrt(Math.max(0, len * len - dist * dist / 4));
+     const mx = (hx + shx) / 2, my = (bar + sy) / 2, ex = mx + s * h * (dy / dist), ey = my - h * ((hx - shx) * s / dist) * s;
+     return `<path d="M${shx},${sy} L${ex},${ey} L${hx},${bar}" fill="none" stroke="#1a1330" stroke-width="50" stroke-linecap="round" stroke-linejoin="round"/><path d="M${shx + s * 20},${sy - 6} L${ex + s * 22},${ey} L${hx + s * 20},${bar + 10}" fill="none" stroke="#ffb074" stroke-width="7" stroke-linecap="round" stroke-linejoin="round" opacity=".95"/>`; };
+   const win = (x) => `<rect x="${x}" y="230" width="250" height="900" fill="url(#a3)"/><rect x="${x}" y="230" width="250" height="900" fill="none" stroke="#120e22" stroke-width="18"/><path d="M${x},530 h250 M${x},830 h250" stroke="#120e22" stroke-width="12"/>`;
+   const shaft = (x) => `<polygon points="${x},1130 ${x + 250},1130 ${x + 250 - 330},1920 ${x - 520},1920" fill="#ff9a5c" opacity="${.20 + .03 * S(t * 2 + x)}"/>`;
+   return `<linearGradient id="a3" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#6a46a0"/><stop offset=".45" stop-color="#f0706a"/><stop offset=".8" stop-color="#ffb866"/><stop offset="1" stop-color="#ffe6a8"/></linearGradient>
+    <rect width="1080" height="1920" fill="#17122a"/>${win(60)}${win(415)}${win(770)}
+    <circle cx="540" cy="1000" r="80" fill="#fff5cf"/><circle cx="540" cy="1000" r="220" fill="#ffd28a" opacity=".45" filter="url(#blur50)"/>
+    <rect x="415" y="230" width="250" height="900" fill="none" stroke="#120e22" stroke-width="18"/><path d="M415,530 h250 M415,830 h250" stroke="#120e22" stroke-width="12"/>
+    <rect y="1130" width="1080" height="790" fill="#1d1733"/><rect y="1130" width="1080" height="12" fill="#2e2548"/>
+    ${shaft(60)}${shaft(415)}${shaft(770)}
+    <rect x="150" y="560" width="30" height="1000" fill="#0c0a18"/><rect x="900" y="560" width="30" height="1000" fill="#0c0a18"/>
+    <rect x="130" y="${bar - 14}" width="820" height="28" rx="14" fill="#0c0a18"/><rect x="130" y="${bar - 14}" width="820" height="7" rx="3" fill="#ffb074" opacity=".8"/>
+    <ellipse cx="540" cy="1600" rx="${170 + 40 * up}" ry="26" fill="#090714" opacity="${.6 - .2 * up}"/>
+    <g>${arm(-1)}${arm(1)}
+     <path d="M${sx - 40},${sy + 330} L${sx - 54},${sy + 620} M${sx + 40},${sy + 330} L${sx + 30},${sy + 610}" stroke="#110d22" stroke-width="64" stroke-linecap="round"/>
+     <path d="M${sx - 60},${sy + 640} l-10,44 M${sx + 26},${sy + 630} l-8,44" stroke="#e9e4f5" stroke-width="50" stroke-linecap="round"/>
+     <path d="M${sx - hw - 20},${sy - 10} C${sx - hw + 10},${sy - 46} ${sx + hw - 10},${sy - 46} ${sx + hw + 20},${sy - 10} C${sx + hw},${sy + 130} ${sx + 86},${sy + 250} ${sx + 78},${sy + 350} L${sx - 78},${sy + 350} C${sx - 86},${sy + 250} ${sx - hw},${sy + 130} ${sx - hw - 20},${sy - 10} Z" fill="#241a3e"/>
+     <path d="M${sx},${sy - 20} V${sy + 320}" stroke="#17102c" stroke-width="8" stroke-linecap="round"/>
+     <path d="M${sx - 70},${sy + 70} q30,34 62,6 M${sx + 70},${sy + 70} q-30,34 -62,6" fill="none" stroke="#17102c" stroke-width="7" stroke-linecap="round"/>
+     <path d="M${sx + hw + 20},${sy - 10} C${sx + hw},${sy + 130} ${sx + 86},${sy + 250} ${sx + 78},${sy + 350}" fill="none" stroke="#ffb074" stroke-width="8" stroke-linecap="round"/>
+     <path d="M${sx - hw - 20},${sy - 10} C${sx - hw},${sy + 130} ${sx - 86},${sy + 250} ${sx - 78},${sy + 350}" fill="none" stroke="#ffb074" stroke-width="8" stroke-linecap="round"/>
+     <rect x="${sx - 82}" y="${sy + 300}" width="164" height="90" rx="20" fill="#0d0a1c"/>
+     ${head(sx, sy - 118, 1.25, '#0a0716', '#4a3350', '#ffb074', 0)}
+    </g>${FINISH}`; } },
+
+ // 4 ── Night desk. Rain outside, screen glow.
+ { cap: 'Work in <b>silence.</b>', hud: ['+10 XP', 'INTELLECT'], c: '#4cb8ff', draw(t, d) {
+   let rain = ''; for (let i = 0; i < 46; i++) { const x = 60 + R(i) * 420, y = 230 + ((R(i + 30) * 640 + t * (700 + R(i) * 500)) % 640); rain += `<path d="M${x},${y} l-10,44" stroke="#b9d4ff" stroke-width="3" opacity="${.3 + R(i + 2) * .4}" stroke-linecap="round"/>`; }
+   let bokeh = ''; for (let i = 0; i < 16; i++) bokeh += `<circle cx="${80 + R(i + 60) * 390}" cy="${520 + R(i + 70) * 320}" r="${10 + R(i + 80) * 20}" fill="${['#ffcf7a', '#ff7a8a', '#7ad8ff', '#fff'][i % 4]}" opacity="${.25 + .2 * S(t * 2 + i)}"/>`;
+   const code = Array.from({ length: 9 }, (_, i) => { const w = 60 + R(i + 5) * 240; const vis = clamp((t * 5.5 - i * .8)); return `<rect x="${560 + (i % 3) * 26}" y="${800 + i * 32}" width="${w * vis}" height="10" rx="5" fill="${i % 4 == 0 ? '#0a5a7a' : '#134a66'}" opacity=".75"/>`; }).join('');
+   const fl = .95 + .05 * S(t * 23), pen = S(t * 14) * 7;
+   return `<linearGradient id="a4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0a0f33"/><stop offset="1" stop-color="#2a2f6e"/></linearGradient>
+    <linearGradient id="m4" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#d8fbff"/><stop offset="1" stop-color="#6fe6ff"/></linearGradient>
+    <clipPath id="w4"><rect x="60" y="230" width="420" height="640"/></clipPath>
+    <rect width="1080" height="1920" fill="#080b1c"/>
+    <g clip-path="url(#w4)"><rect x="60" y="230" width="420" height="640" fill="url(#a4)"/>${skyline(21, 872, 120, 420, '#0b0f30', '#ffd98a', t, 60, 120)}${bokeh}${rain}</g>
+    <rect x="60" y="230" width="420" height="640" fill="none" stroke="#171d42" stroke-width="20"/><path d="M270,230 V870" stroke="#171d42" stroke-width="12"/>
+    <ellipse cx="760" cy="900" rx="520" ry="460" fill="#5ee7ff" opacity="${.16 * fl}" filter="url(#blur50)"/>
+    <rect x="520" y="730" width="470" height="330" rx="14" fill="#05070f"/><rect x="536" y="746" width="438" height="298" fill="url(#m4)" opacity="${fl}"/>${code}
+    <rect x="${590 + 0}" y="${1010}" width="16" height="22" fill="#0a5a7a" opacity="${(t * 2.5) % 1 < .5 ? 1 : 0}"/>
+    <rect x="735" y="1060" width="40" height="80" fill="#05070f"/><rect x="660" y="1136" width="190" height="16" rx="6" fill="#05070f"/>
+    <rect y="1150" width="1080" height="770" fill="#0d1230"/><rect y="1150" width="1080" height="14" fill="#2b6f9a" opacity=".8"/>
+    <polygon points="500,1164 1010,1164 1080,1500 1080,1920 380,1920" fill="#5ee7ff" opacity=".07"/>
+    <g><rect x="56" y="1070" width="150" height="34" fill="#a23a4a"/><rect x="66" y="1036" width="130" height="34" fill="#2e6a8a"/><rect x="50" y="1104" width="164" height="46" fill="#c9a04a"/><rect x="50" y="1104" width="164" height="8" fill="#fff" opacity=".2"/></g>
+    <g><path d="M930,1150 v-70 h90 v70 Z" fill="#1b2452"/><ellipse cx="975" cy="1080" rx="45" ry="10" fill="#0a0d24"/><path d="M930,1100 h90" stroke="#5ee7ff" stroke-width="4" opacity=".6"/></g>
+    <polygon points="520,1230 800,1220 830,1330 500,1346" fill="#e8f6ff"/><polygon points="520,1230 660,1225 668,1338 500,1346" fill="#bfd9ea"/>
+    <path d="M700,1250 h90 M704,1274 h70 M708,1298 h${40 + (t * 40) % 50}" stroke="#35507a" stroke-width="5" stroke-linecap="round"/>
+    <rect x="190" y="1360" width="500" height="560" rx="50" fill="#070918"/>
+    <path d="M230,1920 C200,1560 250,1420 330,1380 L540,1380 C640,1420 690,1560 660,1920 Z" fill="#111840"/>
+    <path d="M540,1380 C640,1420 690,1560 660,1920" fill="none" stroke="#7fe9ff" stroke-width="9" stroke-linecap="round"/>
+    <path d="M600,1440 C680,1420 740,1380 ${770 + pen},${1318 + pen * .4}" fill="none" stroke="#111840" stroke-width="64" stroke-linecap="round"/>
+    <path d="M610,1412 C680,1396 730,1362 ${764 + pen},${1296 + pen * .4}" fill="none" stroke="#7fe9ff" stroke-width="7" stroke-linecap="round"/>
+    <circle cx="${778 + pen}" cy="${1308 + pen * .4}" r="30" fill="#6a5a80"/><path d="M${792 + pen},${1300 + pen * .4} l-34,-70" stroke="#f5c451" stroke-width="9" stroke-linecap="round"/>
+    <path d="M318,1250 a124,130 0 0 1 244,0" fill="none" stroke="#05060f" stroke-width="22"/>
+    ${head(440, 1270, 1.55, '#05070f', '#3a3f6e', '#7fe9ff', 1)}
+    <rect x="296" y="1236" width="46" height="96" rx="20" fill="#05060f"/><rect x="538" y="1236" width="46" height="96" rx="20" fill="#0d1230" stroke="#7fe9ff" stroke-width="5"/>
+    ${FINISH}`; } },
+
+ // 5 ── Rooftop at sunrise. LV 1 becomes LV 2.
+ { cap: '', hud: null, c: '#f5c451', draw(t, d) {
+   const p = t / d, flip = p > .46, k = ease((p - .46) / .14), w = S(t * 5);
+   const rays = Array.from({ length: 14 }, (_, i) => { const a = -PI + (i + .5) * PI / 14 + S(t * .6) * .03; return `<polygon points="540,1250 ${540 + C(a - .035) * 1700},${1250 + S(a - .035) * 1700} ${540 + C(a + .035) * 1700},${1250 + S(a + .035) * 1700}" fill="#fff0c0" opacity="${.07 + .05 * S(t * 1.5 + i)}"/>`; }).join('');
+   const tagC = flip ? '#f5c451' : '#5ee7ff';
+   return `<linearGradient id="a5" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#0e1650"/><stop offset=".4" stop-color="#4a45a8"/><stop offset=".72" stop-color="#ef7a8c"/><stop offset="1" stop-color="#ffcf8a"/></linearGradient>
+    <rect width="1080" height="1920" fill="url(#a5)"/>${rays}
+    <circle cx="540" cy="1250" r="330" fill="#fff0b8" opacity=".5" filter="url(#blur50)"/><circle cx="540" cy="1262" r="150" fill="#fffae6"/>
+    ${cloud(220 - t * 12, 470, 280, '#6a66c0', .9)}${cloud(900 - t * 18, 700, 300, '#f49aa2', .95)}${cloud(120 - t * 22, 940, 220, '#ffc0a6', .95)}${cloud(820 - t * 9, 330, 190, '#4f52b0', .8)}
+    ${skyline(41, 1300, 60, 300, '#7c5fb0', null)}${skyline(52, 1340, 80, 420, '#3d3486', '#ffe3a0', t, 70, 140)}${skyline(63, 1400, 60, 260, '#1c1b52', '#ffe3a0', t, 80, 170)}
+    <rect y="1396" width="1080" height="524" fill="#12123c"/>
+    <polygon points="0,1560 1080,1560 1080,1920 0,1920" fill="#0a0b26"/><rect y="1560" width="1080" height="12" fill="#ffcf8a" opacity=".85"/>
+    <path d="M0,1470 H1080" stroke="#0a0b26" stroke-width="14"/>${[60, 300, 780, 1020].map((x) => `<rect x="${x}" y="1470" width="14" height="92" fill="#0a0b26"/>`).join('')}
+    <ellipse cx="540" cy="1580" rx="170" ry="16" fill="#03040f" opacity=".7"/>
+    <g>
+     <path d="M488,1250 L478,1560 M592,1250 L604,1560" stroke="#0b0c2a" stroke-width="74" stroke-linecap="round"/>
+     <path d="M470,1566 h-30 M612,1566 h30" stroke="#e9e4f5" stroke-width="30" stroke-linecap="round"/>
+     <path d="M410,920 C440,884 640,884 670,920 C700,1040 690,1180 ${700 + w * 16},${1310 + w * 6} L${640 + w * 10},1290 L${590 + w * 6},1322 L540,1296 L${480 - w * 4},1320 L${430 - w * 8},1292 L${382 - w * 14},${1312 - w * 5} C392,1180 380,1040 410,920 Z" fill="#141540"/>
+     <path d="M410,920 C380,1040 392,1180 ${382 - w * 14},${1312 - w * 5}" fill="none" stroke="#ffd596" stroke-width="9" stroke-linecap="round"/>
+     <path d="M670,920 C700,1040 690,1180 ${700 + w * 16},${1310 + w * 6}" fill="none" stroke="#ffd596" stroke-width="9" stroke-linecap="round"/>
+     <path d="M418,940 C380,1040 372,1130 384,1200 M662,940 C700,1040 708,1130 696,1200" fill="none" stroke="#0b0c2a" stroke-width="46" stroke-linecap="round"/>
+     <path d="M540,930 V1290" stroke="#0b0c2a" stroke-width="6"/>
+     ${head(540, 800, 1.35, '#07081e', '#3a3066', '#ffd596', 0, w * 5)}
+    </g>
+    <circle cx="540" cy="520" r="${k * 420}" fill="none" stroke="#f5c451" stroke-width="${10 * (1 - k)}" opacity="${flip ? 1 - k : 0}"/>
+    <g transform="translate(540,${520 + S(t * 3) * 6}) scale(${flip ? 1 + .35 * (1 - k) : 1})">
+     <rect x="-170" y="-74" width="340" height="148" rx="30" fill="#070b14" stroke="${tagC}" stroke-width="9"/>
+     <rect x="-170" y="-74" width="340" height="148" rx="30" fill="none" stroke="${tagC}" stroke-width="20" opacity=".35" filter="url(#blur8)"/>
+     <text x="0" y="38" text-anchor="middle" font-family="Raj" font-weight="700" font-size="112" fill="${tagC}" letter-spacing="4">LV ${flip ? 2 : 1}</text>
+     <polygon points="-22,74 22,74 0,104" fill="${tagC}"/>
+    </g>${FINISH}`; },
+   capAt(p) { return p > .46 ? 'Level up. <b>For real.</b>' : 'Day after day.'; } },
+
+ // 6 ── The real app.
+ { cap: 'Turn your habits<br>into <b>stats.</b>', hud: null, c: '#5ee7ff', draw(t, d) {
+   return `<rect width="1080" height="1920" fill="#070b14"/><image href="../photos/app/01-home-level-up.jpg" x="90" y="210" width="900" height="1600" preserveAspectRatio="xMidYMid slice" opacity=".92"/>
+    <rect x="90" y="210" width="900" height="1600" fill="none" stroke="#5ee7ff" stroke-width="5" opacity=".8"/><rect x="90" y="210" width="900" height="1600" fill="none" stroke="#5ee7ff" stroke-width="22" opacity=".3" filter="url(#blur20)"/>
+    <rect y="1150" width="1080" height="770" fill="url(#capfade)"/><rect y="1250" width="1080" height="670" fill="url(#capfade)"/>`; } },
+];
+
+let cur = 0;
+window.setScene = (i) => { cur = i; };
+window.render = (t, d) => {
+  const sc = SCENES[cur], p = t / d;
+  document.getElementById('s').innerHTML = DEFS + sc.draw(t, d);
+  const cap = document.getElementById('cap'), hud = document.getElementById('hud'), a = ease(t / .18);
+  cap.innerHTML = sc.capAt ? sc.capAt(p) : sc.cap;
+  cap.style.top = (sc.capY || 1400) + 'px'; cap.style.opacity = a; cap.style.transform = `translateY(${(1 - a) * 26}px)`;
+  document.getElementById('brand').style.display = cur === 6 ? 'none' : '';
+  if (sc.hud) { const h = ease((p - .34) / .16); hud.style.display = ''; hud.style.setProperty('--c', sc.c);
+    hud.innerHTML = `[ ${sc.hud[0]} ] <span>${sc.hud[1]}</span>`; hud.style.opacity = h; hud.style.transform = `translateX(-50%) scale(${1.25 - .25 * h})`; }
+  else hud.style.display = 'none';
+};
+window.sceneCount = SCENES.length;
+</script>
