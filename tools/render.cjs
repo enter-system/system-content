@@ -3,7 +3,7 @@
 // Writes posts/<date>/<id>-<n>.jpg for slideshows and posts/<date>/<id>.mp4 for videos.
 // Plan: { date, posts: [ {id, type:'explainer', scenes:[{cap, show, ...}]} | {id, type:'slides', slides:[...]} | {id, type:'video', hook, kicker?, calm?, speed?, hookBg?, scenes:[0-5]} | {id, type:'montage', hook?, mood?, word?, frames:[{photo,text}], end?:true} ] }
 // silent:true = Nahum's TikTok drafts (cut to the sound's beat, no audio).
-// Any video type can take sound:'<id>' (sounds/<id>.json) to cut on the beat; montage also takes beatsPer (2 default).
+// Any video type can take sound:'<id>' (sounds/<id>.json) to cut on the beat; montage also takes beatsPer (2 default), per-frame beats, and tail:[scene numbers] played before the end card.
 // Photo paths are relative to the repo root (e.g. "photos/library/gym-01.jpg").
 const { chromium } = require('playwright');
 const { spawn, execFileSync } = require('child_process');
@@ -142,11 +142,12 @@ function finishSound(parts, outDir, id, work, snd, start, speed = 1, silent = fa
         let tAt = g[bi];
         for (let i = 0; i < post.frames.length; i++) {
           const f = post.frames[i], out = path.join(work, `${post.id}-m${i}.mp4`);
-          bi += per; const n = Math.round(g[bi] * 30) - Math.round(tAt * 30); tAt = g[bi];
+          bi += f.beats ?? per; const n = Math.round(g[bi] * 30) - Math.round(tAt * 30); tAt = g[bi];
           await page.evaluate((fr) => setFrame(fr), { photo: fileUrl(f.photo), text: f.text ?? post.word, mood: post.mood });
           await frames(page, n, (k) => page.evaluate(([t, d]) => render(t, d), [k / 30, n / 30]), out);
           parts.push(out);
         }
+        for (const i of post.tail || []) parts.push(path.join(TOOLS, 'scenes', `scene${i}.mp4`)); // app scenes after the photos
         if (post.end !== false) parts.push(path.join(TOOLS, 'scenes', 'scene5.mp4'));
         finishSound(parts, outDir, post.id, work, snd, start, 1, post.silent);
         console.log('rendered', post.id, '(on the beat of', post.sound + ')'); continue;

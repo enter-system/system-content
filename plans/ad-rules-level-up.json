@@ -1,0 +1,19 @@
+{
+ "date": "ads",
+ "note": "Ad from Nahum's inspo (fast rule list over lifestyle shots, then the app levelling up). Not scheduled; preview for Nahum.",
+ "posts": [
+  {"id": "ad-rules-level-up", "type": "montage", "sound": "hype-semdemora-01", "beatsPer": 1,
+   "frames": [
+    {"photo": "photos/inbox/faith-bible-table-pov-01.jpg", "text": "Bible first.", "beats": 2},
+    {"photo": "photos/library/body-hooded-gym-01.jpg", "text": "Train daily."},
+    {"photo": "photos/library/body-fog-run-behind-01.jpg", "text": "Run anyway."},
+    {"photo": "photos/library/body-cooking-night-back-01.jpg", "text": "Cook your food."},
+    {"photo": "photos/library/mind-desk-night-discipline-01.jpg", "text": "Work in silence."},
+    {"photo": "photos/library/faith-alarm-phone-bed-01.jpg", "text": "Phone down."},
+    {"photo": "photos/library/body-dark-gym-rest-01.jpg", "text": "<b>Discipline.</b>", "beats": 2},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Reset your life<br><b>before 2027.</b>", "beats": 4},
+    {"photo": "photos/app/02-streak.jpg", "text": "Every quest<br>builds your <b>streak.</b>", "beats": 3}
+   ],
+   "tail": [4]}
+ ]
+}
