@@ -2,49 +2,83 @@
  "date": "2026-11-11",
  "posts": [
   {
-   "id": "stop-phone-before-bible",
+   "id": "phone-before-bible-essay",
    "hookId": "phone-before-bible",
    "time": "08:00",
    "type": "slides",
    "slides": [
     {
-     "kind": "cover",
-     "tone": "alert",
-     "banner": "DO THIS TOMORROW MORNING",
-     "kick": "FAITH QUEST",
-     "title": "<b>STOP</b> OPENING YOUR PHONE BEFORE YOUR BIBLE"
+     "kind": "essay",
+     "bg": "photos/library/faith-alarm-phone-bed-01.jpg",
+     "center": true,
+     "y": 20,
+     "tag": "DO THIS TOMORROW MORNING",
+     "title": "Stop opening your phone before your Bible."
     },
     {
-     "kind": "point",
-     "tone": "alert",
-     "num": "01 / 04",
-     "kick": "WHAT IT'S COSTING YOU",
-     "text": "Your first thought is someone else's opinion."
+     "kind": "essay",
+     "bg": "photos/library/mind-desk-night-discipline-01.jpg",
+     "tag": "QUEST 01",
+     "num": "01",
+     "title": "Charge it across the room",
+     "paras": [
+      "If it's on your pillow, it's the first thing you grab.",
+      "Put it where you have to stand up to reach it."
+     ],
+     "last": "Distance beats willpower.",
+     "xp": 20
     },
     {
-     "kind": "point",
-     "tone": "alert",
-     "num": "02 / 04",
-     "kick": "WHAT IT'S COSTING YOU",
-     "text": "Anxiety sets the tone before God does."
+     "kind": "essay",
+     "bg": "photos/library/mind-laptop-breakfast-book-01.jpg",
+     "tag": "QUEST 02",
+     "num": "02",
+     "title": "Open the Word first",
+     "paras": [
+      "Even one chapter, before anyone else's opinion reaches you.",
+      "“My voice shalt thou hear in the morning, O LORD.” Psalm 5:3"
+     ],
+     "last": "God gets the first word.",
+     "xp": 40
     },
     {
-     "kind": "point",
-     "num": "03 / 04",
-     "kick": "THE FIX",
-     "text": "Bible first. Phone second. Every morning."
+     "kind": "essay",
+     "bg": "photos/library/body-meal-prep-plan-01.jpg",
+     "tag": "QUEST 03",
+     "num": "03",
+     "title": "Write today's plan",
+     "paras": [
+      "Three things that matter today. Not twenty.",
+      "Decide before the notifications decide for you."
+     ],
+     "last": "Plan it. Then pick up the phone.",
+     "xp": 60
     },
     {
-     "kind": "point",
-     "num": "04 / 04",
-     "kick": "THE FIX",
-     "text": "Even one chapter beats zero.",
-     "sub": "+1 FAITH every morning you do it."
+     "kind": "essay",
+     "bg": "photos/library/mind-hooded-window-sea-01.jpg",
+     "tag": "QUEST 04",
+     "num": "04",
+     "title": "Then check the phone",
+     "paras": [
+      "Now you're reacting from peace, not panic.",
+      "Anxiety doesn't get to set the tone before God does."
+     ],
+     "last": "Bible first. Phone second.",
+     "xp": 80
     },
     {
-     "kind": "cta",
-     "title": "START <b>TOMORROW</b>.<br>NOT MONDAY.",
-     "text": "The System tracks your Bible streak like a stat. <b>Coming soon.</b>"
+     "kind": "essay",
+     "bg": "photos/library/faith-alarm-phone-bed-01.jpg",
+     "center": true,
+     "y": 20,
+     "tag": "THE SYSTEM",
+     "title": "Start tomorrow. Not Monday.",
+     "paras": [
+      "The System tracks your Bible streak like a stat."
+     ],
+     "last": "Coming soon · Follow to join.",
+     "xp": 100
     }
    ]
   },
@@ -477,57 +511,82 @@
    ]
   },
   {
-   "id": "read-before-you-quit",
+   "id": "before-you-quit-quiet",
    "hookId": "verses-discipline",
    "time": "20:00",
    "type": "slides",
    "slides": [
     {
-     "kind": "cover",
-     "tone": "alert",
-     "banner": "DON'T SCROLL PAST THIS",
-     "kick": "SCRIPTURE",
-     "title": "READ THIS BEFORE YOU <b>QUIT</b>"
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/body-gym-towel-rest-01.jpg",
+     "y": 44,
+     "title": "Read this before you quit."
     },
     {
-     "kind": "point",
-     "tone": "gold",
-     "num": "01 / 05",
-     "kick": "GALATIANS 6:9",
-     "text": "And let us not be weary in well doing: for in due season we shall reap, if we faint not."
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/identity-night-luggage-walk-01.jpg",
+     "y": 42,
+     "tag": "GALATIANS 6:9",
+     "title": "Keep going",
+     "paras": [
+      "“And let us not be weary in well doing: for in due season we shall reap, if we faint not.”"
+     ]
     },
     {
-     "kind": "point",
-     "tone": "gold",
-     "num": "02 / 05",
-     "kick": "PROVERBS 24:16",
-     "text": "For a just man falleth seven times, and riseth up again."
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/wealth-city-desk-01.jpg",
+     "y": 42,
+     "tag": "PROVERBS 24:16",
+     "title": "Fall. Get up.",
+     "paras": [
+      "“For a just man falleth seven times, and riseth up again.”"
+     ]
     },
     {
-     "kind": "point",
-     "tone": "gold",
-     "num": "03 / 05",
-     "kick": "PHILIPPIANS 4:13",
-     "text": "I can do all things through Christ which strengtheneth me."
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/wealth-snow-drive-pov-01.jpg",
+     "y": 42,
+     "tag": "PHILIPPIANS 4:13",
+     "title": "Not alone",
+     "paras": [
+      "“I can do all things through Christ which strengtheneth me.”"
+     ]
     },
     {
-     "kind": "point",
-     "tone": "gold",
-     "num": "04 / 05",
-     "kick": "ISAIAH 40:31",
-     "text": "They that wait upon the LORD shall renew their strength…"
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/wealth-plane-laptop-01.jpg",
+     "y": 42,
+     "tag": "ISAIAH 40:31",
+     "title": "Wait on Him",
+     "paras": [
+      "“…they shall mount up with wings as eagles; they shall run, and not be weary…”"
+     ]
     },
     {
-     "kind": "point",
-     "tone": "gold",
-     "num": "05 / 05",
-     "kick": "HEBREWS 12:1",
-     "text": "…let us run with patience the race that is set before us."
+     "kind": "essay",
+     "mono": true,
+     "small": true,
+     "bg": "photos/library/body-dark-kitchen-back-01.jpg",
+     "y": 42,
+     "tag": "HEBREWS 12:1",
+     "title": "One more day",
+     "paras": [
+      "“…let us run with patience the race that is set before us.”"
+     ]
     },
     {
-     "kind": "cta",
-     "title": "GET UP.<br><b>ONE MORE DAY.</b>",
-     "text": "Scripture, prayer and streaks in The System. <b>Coming soon.</b>"
+     "kind": "logo",
+     "sub": "COMING SOON"
     }
    ]
   }

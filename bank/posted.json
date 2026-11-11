@@ -88,10 +88,17 @@
   {
    "date": "2026-11-11",
    "time": "08:00",
-   "id": "stop-phone-before-bible",
+   "id": "phone-before-bible-essay",
    "hook": "phone-before-bible",
    "platforms": [
     "tiktok"
+   ],
+   "photos": [
+    "faith-alarm-phone-bed-01.jpg",
+    "mind-desk-night-discipline-01.jpg",
+    "mind-laptop-breakfast-book-01.jpg",
+    "body-meal-prep-plan-01.jpg",
+    "mind-hooded-window-sea-01.jpg"
    ]
   },
   {
@@ -152,10 +159,18 @@
   {
    "date": "2026-11-11",
    "time": "20:00",
-   "id": "read-before-you-quit",
+   "id": "before-you-quit-quiet",
    "hook": "verses-discipline",
    "platforms": [
     "tiktok"
+   ],
+   "photos": [
+    "body-gym-towel-rest-01.jpg",
+    "identity-night-luggage-walk-01.jpg",
+    "wealth-city-desk-01.jpg",
+    "wealth-snow-drive-pov-01.jpg",
+    "wealth-plane-laptop-01.jpg",
+    "body-dark-kitchen-back-01.jpg"
    ]
   },
   {
