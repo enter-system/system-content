@@ -45,6 +45,12 @@ Goal: tomorrow's **7 TikTok posts**, made and scheduled, with no input from Nahu
    - Video scenes (`tools/scenes/sceneN.mp4`): 0 system notice, 1 stats bars, 2 daily quests, 3 streak + "kicked up a notch", 4 level up, 5 end card (coming soon). Always end with 5.
 7. **Render:** `node tools/render.cjs plans/<date>.json` writes `posts/<date>/`. Look at 2–3 of the rendered slides to make sure nothing overflows or overlaps, and fix the plan if it does.
 8. **Commit and push.** Public links are `https://raw.githubusercontent.com/enter-system/system-content/main/posts/<date>/<file>`.
+   - **MANUAL MODE until December 1, 2026 (Nahum, Nov 11):** the free Metricool plan ran out of scheduled posts for November. For any post date **before 2026-12-01**, do **not** call `createScheduledPost` at all (no TikTok, YouTube, Stories or drafts). Still do everything else (render, push, log). Instead, deliver tomorrow's pack to Nahum so he can post by hand:
+     - One `SendUserFile` per post (`status: 'proactive'`, `display: 'attach'`), in time order: the slide JPGs in order (plus `<id>-story.mp4`) for a slideshow, the mp4 for a video. The caption is "<time> ET · TikTok (+ YouTube Shorts / IG+FB Story) · <hook>".
+     - Then one `SendUserMessage` with every post's time, platforms, TikTok title, full caption in a code block (easy to copy), the YouTube title and description for videos, and for slideshows "add a sound in TikTok". Then the 3 drafts the same way, each with its exact sound and "start the sound at the drop".
+     - Log these in `bank/posted.json` with `"manual": true`.
+     - Use `getScheduledPosts` only to check which slots are already filled (those were scheduled before the limit and still go out), and skip them.
+     - **From the run that makes Dec 1 posts on, go back to normal scheduling below** and tell Nahum that auto-posting is back on.
 9. **Schedule on Metricool** (`createScheduledPost`, blogId `7986494`), TikTok for all 7, plus YouTube Shorts for the 3 videos, `autoPublish: true`.
    - Times (ET): 8:00, 10:00, 12:00, 14:00, 16:00, 18:00, 20:00. Alternate slideshows and videos, and put the strongest hook at 10:00 or 18:00.
    - `tiktokData`: `title` (required, ≤ 90 chars), `privacyOption` PUBLIC_TO_EVERYONE, `commercialContentOwnBrand` true, `autoAddMusic` true for slideshows and false for videos (videos have their own audio), `isAigc` false.
