@@ -16,7 +16,8 @@
    "format": "slides",
    "hook": "The 1% rule: 1.01^365 = 37.8",
    "used": [
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-13"
    ]
   },
   {
@@ -94,7 +95,9 @@
    "pillar": "identity",
    "format": "slides",
    "hook": "Your weakest stat is holding the rest back",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "discipline-vs-motivation",
@@ -279,7 +282,9 @@
    "pillar": "consistency",
    "format": "video",
    "hook": "The feeling of clearing every quest today",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "streak-day-1",
@@ -302,14 +307,18 @@
    "pillar": "identity",
    "format": "slides",
    "hook": "Treat your hardest task like a boss fight",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "side-quests",
    "pillar": "productivity",
    "format": "slides",
    "hook": "Stop doing side quests. Do the main quest.",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "xp-small-wins",
@@ -337,7 +346,9 @@
    "pillar": "wealth",
    "format": "video",
    "hook": "Your bank account is a stat too",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "body-stat",
@@ -402,7 +413,9 @@
    "pillar": "mind",
    "format": "video",
    "hook": "You've been scrolling for 20 minutes. Here's your quest.",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "1-thing-today",
@@ -416,7 +429,9 @@
    "pillar": "consistency",
    "format": "slides",
    "hook": "No zero days: the smallest version still counts",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
   },
   {
    "id": "level-system",
@@ -547,7 +562,17 @@
    "pillar": "body",
    "format": "essay",
    "hook": "Do this before the January crowd shows up",
-   "used": []
+   "used": [
+    "2026-11-13"
+   ]
+  },
+  {
+   "id": "quiet-time-table",
+   "pillar": "faith",
+   "hook": "How to set up a quiet time you won't skip",
+   "used": [
+    "2026-11-13"
+   ]
   }
  ]
 }

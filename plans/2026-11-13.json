@@ -1,0 +1,399 @@
+{
+ "date": "2026-11-13",
+ "note": "Nightly run. Nov 13 is in MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. New inbox photo faith-bible-table-pov-01 is the 08:00 post.",
+ "posts": [
+  {
+   "id": "quiet-time-table",
+   "hookId": "quiet-time-table",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "center": true,
+     "y": 16,
+     "tag": "48 DAYS LEFT IN 2026",
+     "title": "How to set up a quiet time you won't skip:"
+    },
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "mono": true,
+     "tag": "QUEST 01",
+     "num": "01",
+     "title": "Same place, same time",
+     "paras": [
+      "Pick one table and one time and protect it.",
+      "Lay it out tonight: Bible open, pen on top, phone charging in another room. When you wake up, the decision is already made."
+     ],
+     "last": "Set the table tonight.",
+     "xp": 20
+    },
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "mono": true,
+     "tag": "QUEST 02",
+     "num": "02",
+     "title": "Open the Word first",
+     "paras": [
+      "Before the news. Before the group chat.",
+      "“My voice shalt thou hear in the morning, O LORD; in the morning will I direct my prayer unto thee, and will look up.” Psalm 5:3"
+     ],
+     "last": "One chapter. Then pray.",
+     "xp": 40
+    },
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "mono": true,
+     "tag": "QUEST 03",
+     "num": "03",
+     "title": "Read with a pen",
+     "paras": [
+      "Don't just read it, wrestle with it.",
+      "Write one verse you want to remember and one thing you'll do about it today. One line is enough. Over a year, that's a whole notebook of what God taught you."
+     ],
+     "last": "One verse. One action.",
+     "xp": 60
+    },
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "mono": true,
+     "tag": "QUEST 04",
+     "num": "04",
+     "title": "Keep it small",
+     "paras": [
+      "Ten honest minutes beats an hour you never start.",
+      "Don't stack five devotionals on day one. Pick one plan, finish it, and let the habit grow before the time does."
+     ],
+     "last": "Small and daily wins.",
+     "xp": 80
+    },
+    {
+     "kind": "essay",
+     "bg": "photos/library/faith-bible-table-pov-01.jpg",
+     "center": true,
+     "y": 18,
+     "tag": "THE SYSTEM",
+     "title": "Your quiet time is your strongest stat.",
+     "paras": [
+      "The System turns it into a daily quest with a streak you won't want to break."
+     ],
+     "last": "Coming soon · Follow to join.",
+     "xp": 100
+    }
+   ]
+  },
+  {
+   "id": "48-days-of-one-percent",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "THERE ARE <i>48 DAYS</i> LEFT IN 2026.",
+     "show": "big",
+     "big": "48",
+     "small": "DAYS LEFT",
+     "dur": 2.0
+    },
+    {
+     "cap": "MOST PEOPLE WILL WASTE THEM.",
+     "show": "crowd",
+     "dur": 1.8
+    },
+    {
+     "cap": "WAITING FOR JANUARY.",
+     "show": "calendar",
+     "months": [
+      "NOV",
+      "DEC",
+      "JAN"
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "BUT WATCH THIS.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "1% BETTER EVERY DAY FOR 48 DAYS.",
+     "show": "big",
+     "big": "61",
+     "small": "% BETTER · 1.01^48 = 1.61",
+     "dur": 2.2
+    },
+    {
+     "cap": "THAT'S <b>61% BETTER</b> BY DECEMBER 31.",
+     "show": "bars",
+     "fill": [
+      60,
+      55,
+      62,
+      58
+     ],
+     "dur": 2.2
+    },
+    {
+     "cap": "1% WORSE EVERY DAY?",
+     "show": "big",
+     "big": "38",
+     "small": "% GONE · 0.99^48 = 0.62",
+     "dur": 2.0
+    },
+    {
+     "cap": "<i>38% OF YOU</i> GONE.",
+     "show": "bars",
+     "from": [
+      60,
+      55,
+      62,
+      58
+     ],
+     "fill": [
+      22,
+      20,
+      24,
+      21
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "SAME 48 DAYS.",
+     "show": "compare",
+     "l": {
+      "label": "WAITED",
+      "fig": true
+     },
+     "r": {
+      "label": "STARTED",
+      "fig": true,
+      "glow": true
+     },
+     "dur": 1.9
+    },
+    {
+     "cap": "START <b>TODAY.</b> NOT JANUARY.",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "before-january-crowd",
+   "hookId": "before-january-crowd",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS BEFORE JANUARY",
+     "kick": "BODY CHECK",
+     "title": "BEAT THE <b>JANUARY CROWD</b> TO THE GYM",
+     "sub": "4 moves to make now →"
+    },
+    {
+     "kind": "countdown",
+     "kick": "TIME LEFT",
+     "big": "48",
+     "title": "DAYS LEFT<br>IN 2026",
+     "sub": "January people start from zero. You don't have to."
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "01 / 04",
+     "kick": "WHAT WAITING COSTS",
+     "text": "7 weeks of soreness you could already be past.",
+     "sub": "Day 1 hurts in November or January. Pick November."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "THE FIX · MOVE 01",
+     "text": "Book 3 workouts this week. Write the times down.",
+     "sub": "If it's not on the calendar, it's a wish."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "THE FIX · MOVE 02",
+     "text": "Walk 20 minutes on the days you don't train.",
+     "sub": "No zero days."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "THE FIX · 1 CORINTHIANS 6:19",
+     "text": "“…your body is the temple of the Holy Ghost…”",
+     "sub": "Take care of what God gave you."
+    },
+    {
+     "kind": "cta",
+     "title": "START <b>TODAY.</b><br>NOT JANUARY.",
+     "text": "The System turns your training into daily quests and a Strength stat you can watch rise. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "stop-side-quests",
+   "hookId": "side-quests",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "STOP DOING<br>SIDE QUESTS.<br>DO THE <b>MAIN QUEST.</b>",
+   "scenes": [
+    0,
+    2,
+    1,
+    3,
+    5
+   ]
+  },
+  {
+   "id": "scrolling-20-minutes",
+   "hookId": "scroll-stop",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "CHECK YOURSELF RIGHT NOW",
+     "kick": "SYSTEM NOTICE",
+     "title": "YOU'VE BEEN SCROLLING <b>TOO LONG.</b>",
+     "sub": "Here's your quest →"
+    },
+    {
+     "kind": "math",
+     "tone": "alert",
+     "kick": "DO THE MATH",
+     "big": "20 × 48 = 960",
+     "text": "Minutes left in 2026 if you keep scrolling 20 a day. That's 16 hours."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "QUEST 01 · RIGHT NOW",
+     "text": "Put the phone face down. Stand up.",
+     "sub": "Drink water. Look outside for one minute."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "QUEST 02 · TODAY",
+     "text": "Move the apps you waste time on off your home screen.",
+     "sub": "Make scrolling take one extra step."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "QUEST 03 · TONIGHT",
+     "text": "Phone charges outside the bedroom.",
+     "sub": "Your first and last thought shouldn't be a feed."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "PHILIPPIANS 4:8",
+     "text": "“…whatsoever things are pure… think on these things.”",
+     "sub": "Guard what you feed your mind."
+    },
+    {
+     "kind": "cta",
+     "title": "CLOSE THE APP.<br><b>START TODAY.</b>",
+     "text": "The System gives your mind a stat and your day real quests. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "weakest-stat-dragging",
+   "hookId": "weak-stat",
+   "time": "18:00",
+   "type": "video",
+   "sound": "calm-build-01",
+   "kicker": "WARNING",
+   "hook": "YOUR WEAKEST STAT<br>IS DRAGGING<br>THE REST <b>DOWN.</b>",
+   "scenes": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "bank-account-stat",
+   "hookId": "money-stat",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "READ THIS BEFORE YOU SPEND",
+     "kick": "WEALTH CHECK",
+     "title": "YOUR BANK ACCOUNT IS A <b>STAT</b> TOO",
+     "sub": "Dropping every day you ignore it →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "01 / 05",
+     "kick": "WHAT IT'S COSTING YOU",
+     "text": "Money you don't track leaves without asking.",
+     "sub": "Subscriptions. Delivery. “Just this once.”"
+    },
+    {
+     "kind": "point",
+     "num": "02 / 05",
+     "kick": "THE FIX · QUEST 01",
+     "text": "Write down every dollar for 7 days.",
+     "sub": "No budget yet. Just look."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 05",
+     "kick": "THE FIX · QUEST 02",
+     "text": "Cancel one subscription you forgot you had. Tonight.",
+     "sub": "Instant +XP."
+    },
+    {
+     "kind": "point",
+     "num": "04 / 05",
+     "kick": "THE FIX · QUEST 03",
+     "text": "Pay yourself first: save before you spend.",
+     "sub": "Even $10. The habit matters more than the amount."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "05 / 05",
+     "kick": "THE FIX · PROVERBS 3:9",
+     "text": "“Honour the LORD with thy substance, and with the firstfruits of all thine increase”",
+     "sub": "Give first. Then build."
+    },
+    {
+     "kind": "cta",
+     "title": "CHECK IT.<br><b>START TODAY.</b>",
+     "text": "The System turns your money habits into a Wealth stat you level up daily. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  }
+ ]
+}

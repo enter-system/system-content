@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-13",
+ "posts": [
+  {"id": "draft-no-zero-days", "hookId": "never-zero-days", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "YOU DON'T NEED A <i>PERFECT</i> DAY.", "show": "none", "dur": 1.8},
+   {"cap": "YOU NEED <b>NO ZERO DAYS.</b>", "show": "big", "big": "0", "small": "ZERO DAYS", "dur": 1.8},
+   {"cap": "NO TIME TO TRAIN? 10 PUSH-UPS.", "show": "bars", "fill": [10, 0, 0, 0], "dur": 1.8},
+   {"cap": "NO TIME TO READ? ONE PAGE.", "show": "bars", "from": [10, 0, 0, 0], "fill": [10, 0, 10, 0], "dur": 1.8},
+   {"cap": "NO TIME TO PRAY? ONE MINUTE.", "show": "bars", "from": [10, 0, 10, 0], "fill": [10, 10, 10, 0], "dur": 1.8},
+   {"cap": "SMALL STILL COUNTS.", "show": "none", "dur": 1.4},
+   {"cap": "48 DAYS LEFT. 48 CHANCES.", "show": "big", "big": "48", "small": "DAYS LEFT IN 2026", "dur": 2.0},
+   {"cap": "ZERO DAYS VS SMALL DAYS.", "show": "compare", "l": {"label": "ZERO", "fig": true}, "r": {"label": "SMALL", "fig": true, "glow": true}, "dur": 1.9},
+   {"cap": "FOLLOW IF TODAY <b>ISN'T A ZERO.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-quest-complete", "hookId": "quest-complete-feeling", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "THE FEELING OF<br>CLEARING EVERY<br><b>QUEST TODAY.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Bible <b>first.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Body <b>moved.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Word <b>learned.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Streak <b>kept.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Level <b>up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-boss-fight", "hookId": "boss-fight", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "ALERT", "hook": "YOUR HARDEST TASK<br>IS A <b>BOSS FIGHT.</b><br>FIGHT IT FIRST.", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}
