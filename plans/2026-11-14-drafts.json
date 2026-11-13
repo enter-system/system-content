@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-14",
+ "posts": [
+  {"id": "draft-discipline-streak", "hookId": "discipline-vs-motivation", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "MOTIVATION FEELS <b>AMAZING.</b>", "show": "big", "big": "100", "small": "% MOTIVATED", "dur": 1.8},
+   {"cap": "FOR ABOUT <i>3 DAYS.</i>", "show": "big", "big": "3", "small": "DAYS", "dur": 1.6},
+   {"cap": "THEN IT'S RAINING. YOU'RE TIRED.", "show": "one", "dur": 1.8},
+   {"cap": "AND IT'S <i>GONE.</i>", "show": "bars", "from": [60, 55, 62, 58], "fill": [10, 8, 12, 9], "dur": 1.8},
+   {"cap": "DISCIPLINE DOESN'T ASK HOW YOU FEEL.", "show": "none", "dur": 1.8},
+   {"cap": "SAME TIME. SAME QUEST. <b>EVERY DAY.</b>", "show": "calendar", "months": ["MON", "TUE", "WED", "THU", "FRI", "SAT", "SUN"], "dur": 2.0},
+   {"cap": "MOTIVATION GETS YOU STARTED.", "show": "compare", "l": {"label": "MOTIVATION", "fig": true}, "r": {"label": "DISCIPLINE", "fig": true, "glow": true}, "dur": 1.9},
+   {"cap": "DISCIPLINE GETS YOU A <b>STREAK.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-how-leveling-works", "hookId": "level-system", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "HOW LEVELING UP<br>ACTUALLY WORKS<br><b>IN REAL LIFE.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Pick your <b>stats.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% a <b>day.</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Rest <b>counts.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break the <b>streak.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Level <b>up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-sunday-reset", "hookId": "weekend-reset", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT", "hook": "DO A SUNDAY RESET<br>TOMORROW.<br><b>NOT NEXT WEEK.</b>", "scenes": [0, 2, 1, 3, 5]}
+ ]
+}

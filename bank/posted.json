@@ -495,6 +495,140 @@
    ],
    "sound": "hype-bipolar-01",
    "manual": true
+  },
+  {
+   "date": "2026-11-14",
+   "time": "08:00",
+   "id": "stop-comparing-level-3",
+   "hook": "comparison-trap",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-14",
+   "time": "10:00",
+   "id": "show-up-anyway",
+   "hook": "gym-not-feeling-it",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "12:00",
+   "id": "5-goals-before-2027",
+   "hook": "2027-goals",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-14",
+   "time": "14:00",
+   "id": "day-one-or-one-day",
+   "hook": "streak-day-1",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "16:00",
+   "id": "too-busy-to-pray",
+   "hook": "prayer-quest",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-14",
+   "time": "18:00",
+   "id": "rate-your-5-stats",
+   "hook": "rank-check",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01",
+   "remixOf": "5-stats-2027"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "20:00",
+   "id": "night-routine-tonight",
+   "hook": "night-routine",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-14",
+   "time": "09:00",
+   "id": "draft-discipline-streak",
+   "hook": "discipline-vs-motivation",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "13:00",
+   "id": "draft-how-leveling-works",
+   "hook": "level-system",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-14",
+   "time": "17:00",
+   "id": "draft-sunday-reset",
+   "hook": "weekend-reset",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }

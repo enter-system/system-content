@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-14",
+ "note": "Nightly run. Nov 14 is in MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No new inbox photos and every library photo was used in the last 14 days, so all 4 slideshows are the original navy System slides today.",
+ "posts": [
+  {
+   "id": "stop-comparing-level-3",
+   "hookId": "comparison-trap",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "SYSTEM NOTICE", "title": "STOP COMPARING YOUR <b>LEVEL 3</b> TO THEIR LEVEL 50", "sub": "Read this before you open another feed →"},
+    {"kind": "point", "tone": "alert", "num": "01 / 05", "kick": "WHAT IT'S COSTING YOU", "text": "You see their highlight reel. Not their 1,000 boring days.", "sub": "Then you quit on day 3."},
+    {"kind": "point", "num": "02 / 05", "kick": "THE FIX · QUEST 01", "text": "Compare yourself to who you were last month.", "sub": "That's the only fair fight."},
+    {"kind": "point", "num": "03 / 05", "kick": "THE FIX · QUEST 02", "text": "Mute three accounts that make you feel behind.", "sub": "Today. It takes 30 seconds."},
+    {"kind": "point", "num": "04 / 05", "kick": "THE FIX · QUEST 03", "text": "Write down one thing you did better this week.", "sub": "Proof beats feelings."},
+    {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "GALATIANS 6:4", "text": "“But let every man prove his own work…”", "sub": "Run your own race."},
+    {"kind": "cta", "title": "YOUR RACE.<br><b>START TODAY.</b>", "text": "The System tracks you against yesterday's you, not anyone else. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "show-up-anyway",
+   "hookId": "gym-not-feeling-it",
+   "time": "10:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "WARNING",
+   "hook": "YOU WILL<br>NEVER FEEL LIKE IT.<br><b>SHOW UP ANYWAY.</b>",
+   "scenes": [0, 2, 3, 1, 5]
+  },
+  {
+   "id": "5-goals-before-2027",
+   "hookId": "2027-goals",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE 2027", "kick": "SYSTEM ALERT", "title": "SET THESE <b>5 GOALS</b> BEFORE JANUARY DOES IT FOR YOU", "sub": "One per stat →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "47", "title": "DAYS LEFT<br>IN 2026", "sub": "January resolutions start at zero. Yours don't have to."},
+    {"kind": "point", "tone": "gold", "num": "01 / 05", "kick": "FAITH", "text": "Read one chapter a day before your phone.", "sub": "Start with the Gospel of John."},
+    {"kind": "point", "num": "02 / 05", "kick": "BODY", "text": "Train 3 days a week. Walk the other 4.", "sub": "Write the days down tonight."},
+    {"kind": "point", "num": "03 / 05", "kick": "MIND", "text": "Read 10 pages a day. Fiction counts.", "sub": "Phone out of the room."},
+    {"kind": "point", "num": "04 / 05", "kick": "WEALTH", "text": "Save something from every paycheck.", "sub": "Pick the amount now, even if it's small."},
+    {"kind": "point", "num": "05 / 05", "kick": "HEART", "text": "Call one person a week you've been meaning to.", "sub": "Not a text. A call."},
+    {"kind": "cta", "title": "PICK ONE.<br><b>START TODAY.</b>", "text": "The System turns these into daily quests with stats you can watch rise. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "day-one-or-one-day",
+   "hookId": "streak-day-1",
+   "time": "14:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "\"ONE DAY I'LL START.\"", "show": "none", "dur": 1.6},
+    {"cap": "YOU'VE SAID IT <i>ALL YEAR.</i>", "show": "calendar", "months": ["JAN", "MAR", "MAY", "JUL", "SEP", "NOV"], "dur": 2.2},
+    {"cap": "AND YOUR STATS STAYED AT <i>ZERO.</i>", "show": "bars", "fill": [4, 3, 5, 2], "dur": 2.0},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "\"ONE DAY\" ISN'T ON ANY CALENDAR.", "show": "calendar", "months": ["NOV", "DEC", "???"], "dur": 2.0},
+    {"cap": "BUT DAY 1 CAN BE <b>TODAY.</b>", "show": "big", "big": "1", "small": "DAY 1", "dur": 1.8},
+    {"cap": "47 DAYS LEFT IN 2026.", "show": "big", "big": "47", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "ONE SMALL QUEST A DAY.", "show": "bars", "from": [4, 3, 5, 2], "fill": [40, 35, 45, 30], "dur": 2.0},
+    {"cap": "SAME 47 DAYS.", "show": "compare", "l": {"label": "ONE DAY", "fig": true}, "r": {"label": "DAY 1", "fig": true, "glow": true}, "dur": 1.9},
+    {"cap": "DAY 1 OR ONE DAY. <b>YOU DECIDE.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "too-busy-to-pray",
+   "hookId": "prayer-quest",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TOMORROW MORNING", "kick": "FAITH CHECK", "title": "STOP SAYING YOU'RE <b>TOO BUSY</b> TO PRAY", "sub": "Here's a 5-minute routine →"},
+    {"kind": "point", "tone": "alert", "num": "01 / 05", "kick": "WHAT IT'S COSTING YOU", "text": "You plan your whole day and never ask God about it.", "sub": "Then wonder why it feels heavy."},
+    {"kind": "point", "num": "02 / 05", "kick": "MINUTE 1 · THANK", "text": "Name three things you're thankful for. Out loud.", "sub": "Start with breath and a bed."},
+    {"kind": "point", "num": "03 / 05", "kick": "MINUTES 2–3 · CONFESS & ASK", "text": "Be honest about yesterday. Ask for help with today.", "sub": "Specific beats fancy."},
+    {"kind": "point", "num": "04 / 05", "kick": "MINUTES 4–5 · PRAY FOR OTHERS", "text": "Pick two people and pray for them by name.", "sub": "Keep a short list on your phone."},
+    {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "MARK 1:35", "text": "“…rising up a great while before day, he went out… and there prayed.”", "sub": "Jesus made time. So can we."},
+    {"kind": "cta", "title": "5 MINUTES.<br><b>NOT MONDAY.</b>", "text": "The System makes prayer your first daily quest and grows your Faith stat. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "rate-your-5-stats",
+   "hookId": "rank-check",
+   "remixOf": "5-stats-2027",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "RATE YOUR 5 STATS. <i>BE HONEST.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "fill": [0, 0, 0, 0, 0], "dur": 1.8},
+    {"cap": "FAITH: DID YOU OPEN YOUR BIBLE THIS WEEK?", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "fill": [30, 0, 0, 0, 0], "dur": 2.0},
+    {"cap": "BODY: DID YOU MOVE ON PURPOSE?", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [30, 0, 0, 0, 0], "fill": [30, 50, 0, 0, 0], "dur": 1.9},
+    {"cap": "MIND: ONE PAGE OR ONE MORE SCROLL?", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [30, 50, 0, 0, 0], "fill": [30, 50, 20, 0, 0], "dur": 1.9},
+    {"cap": "WEALTH: DO YOU KNOW WHERE IT WENT?", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [30, 50, 20, 0, 0], "fill": [30, 50, 20, 40, 0], "dur": 1.9},
+    {"cap": "HEART: WHO DID YOU SHOW UP FOR?", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [30, 50, 20, 40, 0], "fill": [30, 50, 20, 40, 60], "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "YOUR <i>LOWEST</i> STAT SETS YOUR LEVEL.", "show": "one", "dur": 2.0},
+    {"cap": "FIX THAT ONE <b>FIRST.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [30, 50, 20, 40, 60], "fill": [30, 50, 60, 40, 60], "dur": 2.0},
+    {"cap": "COMMENT YOUR <b>WEAKEST STAT.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "night-routine-tonight",
+   "hookId": "night-routine",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TONIGHT", "kick": "SYSTEM NOTICE", "title": "TOMORROW IS <b>DECIDED</b> TONIGHT", "sub": "The 4-step night routine →"},
+    {"kind": "math", "tone": "alert", "kick": "DO THE MATH", "big": "7 × 47", "text": "Hours of sleep left in 2026 if you get 7 a night: 329. Don't spend them on a feed."},
+    {"kind": "point", "num": "01 / 04", "kick": "STEP 01 · 9:30 PM", "text": "Phone on the charger. Outside the bedroom.", "sub": "Alarm clock if you need one."},
+    {"kind": "point", "num": "02 / 04", "kick": "STEP 02 · 9:40 PM", "text": "Write tomorrow's top 3 on paper.", "sub": "Wake up already knowing the mission."},
+    {"kind": "point", "num": "03 / 04", "kick": "STEP 03 · 9:50 PM", "text": "Lay out clothes, Bible, water.", "sub": "Remove every excuse before morning."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "STEP 04 · PSALM 4:8", "text": "“I will both lay me down in peace, and sleep…”", "sub": "End the day with God, not a screen."},
+    {"kind": "cta", "title": "TONIGHT.<br><b>NOT MONDAY.</b>", "text": "The System gives you a night quest and a streak to protect. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}
