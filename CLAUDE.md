@@ -74,6 +74,10 @@ Besides the 7 auto posts, make **3 more videos every night as TikTok drafts**. N
 - Schedule on Metricool for TikTok only at **9:00, 13:00 and 17:00** with **`autoPublish: false`** (Metricool sends Nahum a phone notification to finish it), `autoAddMusic: false`, a full caption and title like a normal post.
 - In the nightly message, list each draft with the exact sound to add (the `note` in `sounds/<id>.json`, e.g. "SEM DEMORA (Slowed)") and "start the sound at the drop."
 
+## Roblox-style "in this town" videos (Nahum, Nov 13)
+
+Nahum's favorite reference is the "in this town!" style: a first-person blocky avatar, a night suburb, one rule ("In this town everybody is leveling up… except me"), and one-word white captions. Full notes are in `tools/blocky/STYLE.md`. Plans go in `plans/blocky/<id>.json` and render with `tools/blocky` (Three.js + Remotion) to `posts/blocky/`. Example: `plans/blocky/in-this-town-01.json`. Our hero is our own character (blue beanie with a gold star, "the system" hoodie). Never copy the other creator's character, name or hoodie. These take ~30 min to render, so make them only when Nahum asks or as an extra, not inside the nightly 7.
+
 ## Video style rule
 
 **No zoom in videos** (Nahum): photos and backgrounds stay still; cuts happen on the beat instead. The templates already do this.
