@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-13 night run (for Nov 15)
+- Data: Metricool TikTok posts Nov 6–13. Still only the Nov 10–11 auto posts; hand-posted Nov 12+ packs don't show in Metricool analytics.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. Unchanged leader; a number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Both already remixed (Nov 13, Nov 14), so today's remix is #3 3-daily-quests (627 views, 36 likes, 5.7% like rate) → 10:00 explainer "Do these 3 before noon", same 3 quests, now with the 46-day countdown.
+
 ## 2026-11-13 run (for Nov 14)
 - Data: Metricool TikTok posts Nov 5–12. Only the Nov 10–11 auto posts show up; the hand-posted Nov 12–13 packs don't appear in Metricool analytics yet.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 0 comments, 1 share. Still the top post; a hard number in line one stops the scroll.

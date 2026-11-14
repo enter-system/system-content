@@ -1,0 +1,417 @@
+{
+ "date": "2026-11-15",
+ "note": "Nightly run (Fri Nov 13 night). Nov 14 was already made, so this is Sunday Nov 15. MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was used Nov 10–13 (inside 14 days), so all 4 slideshows are the original navy slides. App post: why-i-built-it montage with app screens.",
+ "posts": [
+  {
+   "id": "church-doesnt-teach",
+   "hookId": "habits-church-doesnt-teach",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "READ THIS BEFORE CHURCH",
+     "kick": "SYSTEM NOTICE",
+     "title": "4 HABITS <b>NOBODY TEACHES</b> YOU AT CHURCH",
+     "sub": "But the Bible does →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHY IT MATTERS",
+     "kick": "WHAT IT'S COSTING YOU",
+     "text": "One hour on Sunday can't carry 167 hours alone.",
+     "sub": "Faith is built Monday to Saturday too."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "HABIT 01 · WORK",
+     "text": "Do your job like God is your boss.",
+     "sub": "Colossians 3:23."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "HABIT 02 · REST",
+     "text": "Plan your rest. Don't just collapse.",
+     "sub": "Sabbath is a quest, not a crash."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "HABIT 03 · MONEY",
+     "text": "Give first. Save second. Spend last.",
+     "sub": "Decide the order before payday."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "HABIT 04 · JAMES 1:22",
+     "text": "“But be ye doers of the word, and not hearers only…”",
+     "sub": "Pick one habit. Do it this week."
+    },
+    {
+     "kind": "cta",
+     "title": "SUNDAY IS THE START.<br><b>NOT THE FINISH.</b>",
+     "text": "The System turns faith, body, mind and money into daily quests. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "3-quests-before-noon",
+   "hookId": "3-daily-quests",
+   "remixOf": "3-daily-quests",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "DO THESE 3 BEFORE <i>NOON.</i>",
+     "show": "big",
+     "big": "3",
+     "small": "QUESTS",
+     "dur": 1.8
+    },
+    {
+     "cap": "MOST PEOPLE DO <i>ZERO.</i>",
+     "show": "bars",
+     "fill": [
+      3,
+      2,
+      4,
+      2
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "THEN WONDER WHY NOTHING CHANGES.",
+     "show": "calendar",
+     "months": [
+      "JAN",
+      "APR",
+      "JUL",
+      "OCT",
+      "NOV"
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "QUEST 1: BIBLE <b>BEFORE</b> PHONE.",
+     "show": "bars",
+     "from": [
+      3,
+      2,
+      4,
+      2
+     ],
+     "fill": [
+      35,
+      2,
+      4,
+      2
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "QUEST 2: MOVE FOR <b>20 MINUTES.</b>",
+     "show": "bars",
+     "from": [
+      35,
+      2,
+      4,
+      2
+     ],
+     "fill": [
+      35,
+      40,
+      4,
+      2
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "QUEST 3: WRITE TOMORROW'S <b>TOP 3.</b>",
+     "show": "bars",
+     "from": [
+      35,
+      40,
+      4,
+      2
+     ],
+     "fill": [
+      35,
+      40,
+      38,
+      30
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "HERE'S THE SCARY PART.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "46 DAYS LEFT IN 2026.",
+     "show": "big",
+     "big": "46",
+     "small": "DAYS LEFT",
+     "dur": 1.8
+    },
+    {
+     "cap": "SAME 46 DAYS.",
+     "show": "compare",
+     "l": {
+      "label": "ZERO QUESTS",
+      "fig": true
+     },
+     "r": {
+      "label": "3 A DAY",
+      "fig": true,
+      "glow": true
+     },
+     "dur": 1.9
+    },
+    {
+     "cap": "START TOMORROW. <b>NOT MONDAY.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "dopamine-reset-signs",
+   "hookId": "dopamine-reset",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "CHECK YOURSELF RIGHT NOW",
+     "kick": "MIND CHECK",
+     "title": "3 SIGNS YOUR <b>FOCUS</b> IS DROPPING EVERY DAY",
+     "sub": "And the 3-step fix →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "01 / 03",
+     "kick": "SIGN 01",
+     "text": "You can't watch one video without your phone.",
+     "sub": "Two screens. Zero focus."
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "02 / 03",
+     "kick": "SIGN 02",
+     "text": "Reading one page feels impossible.",
+     "sub": "But 40 minutes of scrolling feels easy."
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "03 / 03",
+     "kick": "SIGN 03",
+     "text": "You reach for your phone in every quiet moment.",
+     "sub": "Lines. Red lights. The bathroom."
+    },
+    {
+     "kind": "countdown",
+     "kick": "TIME LEFT",
+     "big": "46",
+     "title": "DAYS LEFT<br>IN 2026",
+     "sub": "Enough to get your focus back before January."
+    },
+    {
+     "kind": "point",
+     "num": "THE FIX",
+     "kick": "QUEST 01 · 02 · 03",
+     "text": "No phone for the first hour. Apps off the home screen. 10 pages a day.",
+     "sub": "Start with just one."
+    },
+    {
+     "kind": "cta",
+     "title": "TAKE IT BACK.<br><b>START TODAY.</b>",
+     "text": "The System tracks your Mind stat and gives you daily focus quests. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "why-im-building-the-system",
+   "hookId": "why-i-built-it",
+   "time": "14:00",
+   "type": "montage",
+   "sound": "calm-build-01",
+   "beatsPer": 2,
+   "kicker": "SYSTEM",
+   "calm": true,
+   "hook": "WHY I'M BUILDING<br>AN APP THAT TURNS<br>LIFE INTO A <b>GAME.</b>",
+   "frames": [
+    {
+     "photo": "photos/app/00-choose-your-form.jpg",
+     "text": "I could grind a game for <b>hours.</b>"
+    },
+    {
+     "photo": "photos/app/01-home-level-up.jpg",
+     "text": "But not my own <b>life.</b>"
+    },
+    {
+     "photo": "photos/app/05-scripture-game.jpg",
+     "text": "So faith became a <b>stat.</b>"
+    },
+    {
+     "photo": "photos/app/02-streak.jpg",
+     "text": "Habits became <b>quests.</b>"
+    },
+    {
+     "photo": "photos/app/04-one-percent-system.jpg",
+     "text": "1% better every <b>day.</b>"
+    },
+    {
+     "photo": "photos/app/08-your-world.jpg",
+     "text": "The System. Coming <b>soon.</b>"
+    }
+   ]
+  },
+  {
+   "id": "50-30-20-money-quest",
+   "hookId": "budget-quest",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS BEFORE PAYDAY",
+     "kick": "WEALTH CHECK",
+     "title": "IF YOU DON'T KNOW WHERE IT WENT, <b>READ THIS</b>",
+     "sub": "Your first money quest →"
+    },
+    {
+     "kind": "math",
+     "kick": "THE 50/30/20 CHECK",
+     "big": "50 · 30 · 20",
+     "text": "50% needs. 30% wants. 20% saving and paying off debt. A starting point, not a law."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "QUEST 01 · 10 MINUTES",
+     "text": "Open last month's bank statement.",
+     "sub": "Just look. No guilt."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "QUEST 02",
+     "text": "Sort every charge: need, want or saved.",
+     "sub": "Three columns on paper is enough."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "QUEST 03",
+     "text": "Set your savings to move on payday. Automatically.",
+     "sub": "Even if it's small."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "PROVERBS 27:23",
+     "text": "“Be thou diligent to know the state of thy flocks…”",
+     "sub": "Know your numbers."
+    },
+    {
+     "kind": "cta",
+     "title": "10 MINUTES.<br><b>NOT MONDAY.</b>",
+     "text": "The System makes your Wealth a stat you can watch grow. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "nobody-is-coming",
+   "hookId": "level-up-quietly",
+   "time": "18:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "NOBODY IS COMING<br>TO SAVE YOU.<br><b>START TODAY.</b>",
+   "scenes": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "7-day-reset-tomorrow",
+   "hookId": "7-day-reset",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS TOMORROW MORNING",
+     "kick": "SYSTEM NOTICE",
+     "title": "YOUR <b>7-DAY RESET</b> STARTS TOMORROW",
+     "sub": "One quest a day →"
+    },
+    {
+     "kind": "point",
+     "num": "DAY 1 · MON",
+     "kick": "ENVIRONMENT",
+     "text": "Clean your room and your desk.",
+     "sub": "Order outside, order inside."
+    },
+    {
+     "kind": "point",
+     "num": "DAY 2 · TUE",
+     "kick": "FAITH",
+     "text": "Bible before phone. One chapter.",
+     "sub": "Start with John 1."
+    },
+    {
+     "kind": "point",
+     "num": "DAY 3–4 · WED–THU",
+     "kick": "BODY & MIND",
+     "text": "Walk 30 minutes. Delete one app that steals your time.",
+     "sub": "You already know which one."
+    },
+    {
+     "kind": "point",
+     "num": "DAY 5–6 · FRI–SAT",
+     "kick": "WEALTH & HEART",
+     "text": "Check your spending. Call someone you love.",
+     "sub": "A call, not a text."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "DAY 7 · SUN",
+     "kick": "LAMENTATIONS 3:22–23",
+     "text": "“…his compassions fail not. They are new every morning…”",
+     "sub": "Rest. Then run it back."
+    },
+    {
+     "kind": "cta",
+     "title": "7 DAYS.<br><b>START TOMORROW.</b>",
+     "text": "The System turns resets like this into daily quests and streaks. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  }
+ ]
+}

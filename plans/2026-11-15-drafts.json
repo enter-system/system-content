@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-15",
+ "posts": [
+  {"id": "draft-2-minute-rule", "hookId": "2-minute-rule", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "YOU'RE NOT LAZY. <i>IT'S TOO BIG.</i>", "show": "none", "dur": 1.8},
+   {"cap": "\"GO TO THE GYM\" FEELS LIKE A MOUNTAIN.", "show": "big", "big": "60", "small": "MINUTES", "dur": 2.0},
+   {"cap": "SO YOU DO <i>NOTHING.</i>", "show": "bars", "fill": [5, 4, 6, 3], "dur": 1.6},
+   {"cap": "THE 2-MINUTE RULE:", "show": "big", "big": "2", "small": "MINUTES", "dur": 1.6},
+   {"cap": "PUT YOUR SHOES ON. <b>THAT'S IT.</b>", "show": "one", "dur": 1.8},
+   {"cap": "OPEN THE BIBLE. READ <b>ONE VERSE.</b>", "show": "one", "dur": 1.8},
+   {"cap": "STARTING IS THE HARD PART.", "show": "bars", "from": [5, 4, 6, 3], "fill": [35, 30, 40, 28], "dur": 2.0},
+   {"cap": "2 MINUTES. <b>RIGHT NOW.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-small-wins-xp", "hookId": "xp-small-wins", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "SMALL WINS THAT<br>GIVE YOU THE<br><b>MOST XP.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/02-streak.jpg", "text": "Make your bed. <b>+10 XP</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "One chapter. <b>+25 XP</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Stretch 5 minutes. <b>+15 XP</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Sleep on time. <b>+20 XP</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Stack them. <b>Level up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-one-thing-today", "hookId": "1-thing-today", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "WARNING", "hook": "IF YOU DO ONE THING<br>TODAY,<br><b>DO THIS.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

@@ -629,6 +629,140 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "08:00",
+   "id": "church-doesnt-teach",
+   "hook": "habits-church-doesnt-teach",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-15",
+   "time": "10:00",
+   "id": "3-quests-before-noon",
+   "hook": "3-daily-quests",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01",
+   "remixOf": "3-daily-quests"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "12:00",
+   "id": "dopamine-reset-signs",
+   "hook": "dopamine-reset",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-15",
+   "time": "14:00",
+   "id": "why-im-building-the-system",
+   "hook": "why-i-built-it",
+   "type": "montage",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "16:00",
+   "id": "50-30-20-money-quest",
+   "hook": "budget-quest",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-15",
+   "time": "18:00",
+   "id": "nobody-is-coming",
+   "hook": "level-up-quietly",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "20:00",
+   "id": "7-day-reset-tomorrow",
+   "hook": "7-day-reset",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-15",
+   "time": "09:00",
+   "id": "draft-2-minute-rule",
+   "hook": "2-minute-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "13:00",
+   "id": "draft-small-wins-xp",
+   "hook": "xp-small-wins",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-15",
+   "time": "17:00",
+   "id": "draft-one-thing-today",
+   "hook": "1-thing-today",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }

@@ -35,7 +35,8 @@
    "format": "slides",
    "hook": "3 quests to start tomorrow",
    "used": [
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-15"
    ]
   },
   {
@@ -113,7 +114,9 @@
    "pillar": "routine",
    "format": "slides",
    "hook": "7-day reset to get your life back on track",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "signs-leveling-up",
@@ -200,14 +203,18 @@
    "pillar": "growth",
    "format": "slides",
    "hook": "How to level up quietly in the next 90 days",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "dopamine-reset",
    "pillar": "mind",
    "format": "slides",
    "hook": "Signs you need a dopamine reset",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "read-20-pages",
@@ -274,7 +281,9 @@
    "pillar": "productivity",
    "format": "slides",
    "hook": "The 2-minute rule for people who procrastinate",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "plan-tomorrow",
@@ -335,7 +344,9 @@
    "pillar": "growth",
    "format": "slides",
    "hook": "Small wins that give you the most XP",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "comparison-trap",
@@ -420,7 +431,9 @@
    "pillar": "faith",
    "format": "slides",
    "hook": "Habits nobody teaches you at church but should",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "scroll-stop",
@@ -436,7 +449,9 @@
    "pillar": "productivity",
    "format": "video",
    "hook": "If you only do one thing today, do this",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "never-zero-days",
@@ -486,7 +501,9 @@
    "pillar": "wealth",
    "format": "slides",
    "hook": "Your first money quest: the 50/30/20 check",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "bible-plan",
@@ -523,7 +540,9 @@
    "pillar": "app",
    "format": "slides",
    "hook": "Why I'm building The System",
-   "used": []
+   "used": [
+    "2026-11-15"
+   ]
   },
   {
    "id": "dream-life-rich",
