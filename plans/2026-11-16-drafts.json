@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-16",
+ "posts": [
+  {"id": "draft-one-real-conversation", "hookId": "one-conversation", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "YOU TEXTED 40 PEOPLE THIS WEEK.", "show": "big", "big": "40", "small": "TEXTS", "dur": 1.9},
+   {"cap": "HOW MANY DID YOU <i>ACTUALLY TALK TO?</i>", "show": "crowd", "dur": 2.0},
+   {"cap": "YOUR HEART STAT IS <i>STARVING.</i>", "show": "bars", "fill": [30, 28, 32, 4], "dur": 1.8},
+   {"cap": "TODAY'S QUEST:", "show": "none", "dur": 1.2},
+   {"cap": "ONE REAL CONVERSATION. <b>NO PHONE.</b>", "show": "one", "dur": 2.0},
+   {"cap": "ASK ONE QUESTION. <b>THEN LISTEN.</b>", "show": "compare", "l": {"label": "SCROLLING", "fig": true}, "r": {"label": "TALKING", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "DO IT AGAIN TOMORROW.", "show": "bars", "from": [30, 28, 32, 4], "fill": [30, 28, 32, 34], "dur": 2.0},
+   {"cap": "CALL SOMEONE. <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-building-in-public", "hookId": "building-in-public", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "I'M BUILDING AN APP<br>THAT TURNS YOUR LIFE<br>INTO A <b>GAME.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Pick your <b>form.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Clear quests. <b>Level up.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Faith is a <b>stat.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "So is your <b>body.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break the <b>streak.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-stack-your-habits", "hookId": "habit-stack", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT", "hook": "STOP STARTING<br>10 HABITS AT ONCE.<br><b>STACK THEM.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

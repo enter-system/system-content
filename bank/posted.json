@@ -763,6 +763,140 @@
    ],
    "manual": true,
    "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "08:00",
+   "id": "monday-phone-first",
+   "hook": "phone-before-bible",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "remixOf": "phone-before-bible"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "10:00",
+   "id": "1-of-7-mondays",
+   "hook": "mondays-left",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "12:00",
+   "id": "friend-audit-circle",
+   "hook": "friend-audit",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-16",
+   "time": "14:00",
+   "id": "protect-your-mind",
+   "hook": "mind-stat",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "16:00",
+   "id": "every-dollar-check",
+   "hook": "track-every-dollar",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-16",
+   "time": "18:00",
+   "id": "finish-the-bible",
+   "hook": "bible-plan",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "20:00",
+   "id": "sleep-is-a-stat",
+   "hook": "sleep-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-16",
+   "time": "09:00",
+   "id": "draft-one-real-conversation",
+   "hook": "one-conversation",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "13:00",
+   "id": "draft-building-in-public",
+   "hook": "building-in-public",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-16",
+   "time": "17:00",
+   "id": "draft-stack-your-habits",
+   "hook": "habit-stack",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }

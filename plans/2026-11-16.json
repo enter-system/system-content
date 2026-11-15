@@ -1,0 +1,453 @@
+{
+ "date": "2026-11-16",
+ "note": "Nightly run (Sat Nov 14 night). Nov 15 was already made, so this is Monday Nov 16 (45 days left, 7 Mondays left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10–13 (inside 14 days), so all 4 slideshows are the original navy slides. Remix: phone-before-bible (Nov 11, the 15-share post). No app post today (Nov 15 had one).",
+ "posts": [
+  {
+   "id": "monday-phone-first",
+   "hookId": "phone-before-bible",
+   "remixOf": "phone-before-bible",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS TOMORROW MORNING",
+     "kick": "SYSTEM NOTICE",
+     "title": "YOU GRABBED YOUR <b>PHONE</b> BEFORE GOD AGAIN",
+     "sub": "Fix it this Monday →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "THE FIRST 10 MINUTES",
+     "text": "Their news. Their opinions. Their highlight reel.",
+     "sub": "Before you've heard one word from God."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "QUEST 01 · TONIGHT",
+     "text": "Charge your phone across the room.",
+     "sub": "Use a real alarm clock."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "QUEST 02 · BEDSIDE",
+     "text": "Leave your Bible where your phone used to be.",
+     "sub": "Make the right thing the easy thing."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "QUEST 03 · 5 MINUTES",
+     "text": "One chapter. One prayer. Then the phone.",
+     "sub": "Start with Psalm 1."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "PSALM 5:3",
+     "text": "“My voice shalt thou hear in the morning, O LORD…”",
+     "sub": "Give Him the first word."
+    },
+    {
+     "kind": "cta",
+     "title": "TOMORROW MORNING.<br><b>NOT NEXT WEEK.</b>",
+     "text": "The System turns Bible-before-phone into a daily quest with a streak. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "1-of-7-mondays",
+   "hookId": "mondays-left",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "YOU SAID <i>MONDAY.</i>",
+     "show": "none",
+     "dur": 1.6
+    },
+    {
+     "cap": "IT'S MONDAY.",
+     "show": "calendar",
+     "months": [
+      "SEP",
+      "OCT",
+      "NOV"
+     ],
+     "dur": 1.6
+    },
+    {
+     "cap": "ONLY <i>7 MONDAYS</i> LEFT IN 2026.",
+     "show": "big",
+     "big": "7",
+     "small": "MONDAYS LEFT",
+     "dur": 2.0
+    },
+    {
+     "cap": "HOW MANY DID YOU <i>SKIP</i> THIS YEAR?",
+     "show": "bars",
+     "fill": [
+      4,
+      3,
+      5,
+      2
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "HERE'S THE SCARY PART.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "NEXT MONDAY <i>NEVER</i> FEELS READY EITHER.",
+     "show": "calendar",
+     "months": [
+      "NOV",
+      "DEC",
+      "JAN"
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "ONE QUEST TODAY. <b>JUST ONE.</b>",
+     "show": "one",
+     "dur": 1.8
+    },
+    {
+     "cap": "THEN AGAIN TOMORROW.",
+     "show": "bars",
+     "from": [
+      4,
+      3,
+      5,
+      2
+     ],
+     "fill": [
+      30,
+      26,
+      34,
+      22
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "SAME 45 DAYS.",
+     "show": "compare",
+     "l": {
+      "label": "WAITING",
+      "fig": true
+     },
+     "r": {
+      "label": "STARTED TODAY",
+      "fig": true,
+      "glow": true
+     },
+     "dur": 1.9
+    },
+    {
+     "cap": "THIS IS THE MONDAY. <b>START.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "friend-audit-circle",
+   "hookId": "friend-audit",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "CHECK YOUR CIRCLE RIGHT NOW",
+     "kick": "HEART CHECK",
+     "title": "YOUR CIRCLE IS <b>LEVELING YOU</b> UP OR DOWN",
+     "sub": "4 friends worth keeping close →"
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "PROVERBS 13:20",
+     "kick": "WHY IT MATTERS",
+     "text": "“He that walketh with wise men shall be wise…”",
+     "sub": "You become who you walk with."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "THE ONE WHO PRAYS",
+     "text": "Prays for you, not just about you.",
+     "sub": "Rare. Keep them close."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "THE ONE WHO TELLS THE TRUTH",
+     "text": "Says the hard thing when you need it.",
+     "sub": "Proverbs 27:17. Iron sharpens iron."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "THE ONE WHO TRAINS",
+     "text": "Gets you moving instead of eating out again.",
+     "sub": "Invite them to a walk this week."
+    },
+    {
+     "kind": "point",
+     "num": "04 / 04",
+     "kick": "THE ONE WHO SHOWS UP",
+     "text": "Shows up on your worst day.",
+     "sub": "Be that friend first."
+    },
+    {
+     "kind": "cta",
+     "title": "TEXT ONE OF THEM.<br><b>TODAY.</b>",
+     "text": "The System tracks your Heart stat with daily people quests. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "protect-your-mind",
+   "hookId": "mind-stat",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-semdemora-01",
+   "kicker": "WARNING",
+   "hook": "YOUR MIND IS YOUR<br>HIGHEST STAT.<br><b>STOP FEEDING IT TRASH.</b>",
+   "scenes": [
+    0,
+    1,
+    2,
+    3,
+    5
+   ]
+  },
+  {
+   "id": "every-dollar-check",
+   "hookId": "track-every-dollar",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "READ THIS BEFORE YOU SPEND",
+     "kick": "WEALTH CHECK",
+     "title": "TRACK EVERY DOLLAR FOR <b>7 DAYS</b>",
+     "sub": "Here's what to look for →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "THE LEAK",
+     "text": "Small charges you forget feel like nothing.",
+     "sub": "Until you add them up."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 04",
+     "kick": "LOOK FOR · SUBSCRIPTIONS",
+     "text": "Anything you haven't opened this month.",
+     "sub": "Cancel one today."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 04",
+     "kick": "LOOK FOR · DELIVERY",
+     "text": "Count the food orders. Then count the dollars.",
+     "sub": "Cook two of those nights."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 04",
+     "kick": "LOOK FOR · BORED BUYS",
+     "text": "Late-night carts and scroll purchases.",
+     "sub": "24-hour rule before checkout."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "04 / 04",
+     "kick": "LUKE 14:28",
+     "text": "“…sitteth not down first, and counteth the cost…”",
+     "sub": "Count it before it counts you."
+    },
+    {
+     "kind": "cta",
+     "title": "START COUNTING.<br><b>NOT MONDAY. TODAY.</b>",
+     "text": "The System makes Wealth a stat you can watch grow. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "finish-the-bible",
+   "hookId": "bible-plan",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "STOP STARTING GENESIS <i>EVERY JANUARY.</i>",
+     "show": "calendar",
+     "months": [
+      "JAN",
+      "FEB",
+      "MAR"
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "AND QUITTING IN <i>LEVITICUS.</i>",
+     "show": "bars",
+     "fill": [
+      6,
+      4,
+      3,
+      2
+     ],
+     "dur": 1.8
+    },
+    {
+     "cap": "THE BIBLE HAS 1,189 CHAPTERS.",
+     "show": "big",
+     "big": "1189",
+     "small": "CHAPTERS",
+     "dur": 2.0
+    },
+    {
+     "cap": "SOUNDS LIKE A <i>MOUNTAIN.</i>",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "4 CHAPTERS A DAY:",
+     "show": "big",
+     "big": "4",
+     "small": "A DAY",
+     "dur": 1.6
+    },
+    {
+     "cap": "DONE IN <b>297 DAYS.</b>",
+     "show": "big",
+     "big": "297",
+     "small": "DAYS",
+     "dur": 1.9
+    },
+    {
+     "cap": "MIX OLD AND NEW TESTAMENT.",
+     "show": "compare",
+     "l": {
+      "label": "OLD",
+      "box": "3",
+      "small": "A DAY"
+     },
+     "r": {
+      "label": "NEW",
+      "box": "1",
+      "small": "A DAY"
+     },
+     "dur": 1.9
+    },
+    {
+     "cap": "MISS A DAY? <b>DON'T MISS TWO.</b>",
+     "show": "bars",
+     "from": [
+      6,
+      4,
+      3,
+      2
+     ],
+     "fill": [
+      34,
+      30,
+      36,
+      28
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "START TONIGHT. <b>NOT JANUARY.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "sleep-is-a-stat",
+   "hookId": "sleep-stat",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "PUT THE PHONE DOWN AFTER THIS",
+     "kick": "BODY CHECK",
+     "title": "SLEEP IS A <b>STAT</b>. YOURS IS DROPPING",
+     "sub": "Fix it tonight →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "EVERY LATE NIGHT",
+     "text": "Tired mornings. Skipped workouts. Short temper.",
+     "sub": "Every other stat pays for it."
+    },
+    {
+     "kind": "countdown",
+     "kick": "TIME LEFT",
+     "big": "45",
+     "title": "DAYS LEFT<br>IN 2026",
+     "sub": "45 nights to reset your sleep before January."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 03",
+     "kick": "QUEST 01",
+     "text": "Same bedtime every night. Weekends too.",
+     "sub": "Most adults need 7+ hours."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 03",
+     "kick": "QUEST 02",
+     "text": "Phone out of the bed 30 minutes before.",
+     "sub": "Read or pray instead."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "03 / 03",
+     "kick": "PSALM 127:2",
+     "text": "“…for so he giveth his beloved sleep.”",
+     "sub": "Rest is not weakness."
+    },
+    {
+     "kind": "cta",
+     "title": "LIGHTS OUT.<br><b>START TONIGHT.</b>",
+     "text": "The System tracks sleep as part of your Body stat. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  }
+ ]
+}

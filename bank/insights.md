@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-14 night run (for Nov 16)
+- Data: Metricool TikTok posts Nov 7–14. Same picture: only the Nov 10–11 auto posts show up; hand-posted packs (Nov 12+) aren't in Metricool analytics.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Both top hooks and 3-daily-quests are already remixed, so today's remix is phone-before-bible (Nov 11: only 12 views but 15 shares, the share leader) → 08:00 Monday-morning slideshow "You grabbed your phone before God again". Leaning on hard numbers again: 7 Mondays left, 1,189 chapters / 4 a day = 297 days, 45 days left.
+
 ## 2026-11-13 night run (for Nov 15)
 - Data: Metricool TikTok posts Nov 6–13. Still only the Nov 10–11 auto posts; hand-posted Nov 12+ packs don't show in Metricool analytics.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. Unchanged leader; a number in line one.

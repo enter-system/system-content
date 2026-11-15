@@ -81,7 +81,8 @@
    "format": "slides",
    "hook": "What happens when you open your Bible before your phone",
    "used": [
-    "2026-11-11"
+    "2026-11-11",
+    "2026-11-16"
    ]
   },
   {
@@ -141,7 +142,9 @@
    "pillar": "wealth",
    "format": "slides",
    "hook": "I tracked every dollar for 30 days: what to look for",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "verses-discipline",
@@ -237,21 +240,27 @@
    "pillar": "body",
    "format": "slides",
    "hook": "Sleep is a stat. Here's how to level it up",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "friend-audit",
    "pillar": "heart",
    "format": "slides",
    "hook": "5 types of friends that level you up",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "one-conversation",
    "pillar": "heart",
    "format": "slides",
    "hook": "Start one real conversation a day. Here's why.",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "prayer-quest",
@@ -274,7 +283,9 @@
    "pillar": "productivity",
    "format": "slides",
    "hook": "How to stack habits so they actually stick",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "2-minute-rule",
@@ -385,7 +396,9 @@
    "pillar": "mind",
    "format": "video",
    "hook": "Protect your mind like it's your highest stat",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "heart-stat",
@@ -510,7 +523,9 @@
    "pillar": "faith",
    "format": "slides",
    "hook": "How to actually finish reading the Bible",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "prayer-list",
@@ -533,7 +548,9 @@
    "pillar": "app",
    "format": "video",
    "hook": "Building an app that turns your life into a game. Day X.",
-   "used": []
+   "used": [
+    "2026-11-16"
+   ]
   },
   {
    "id": "why-i-built-it",
@@ -611,6 +628,14 @@
    "hook": "How to set up a quiet time you won't skip",
    "used": [
     "2026-11-13"
+   ]
+  },
+  {
+   "id": "mondays-left",
+   "pillar": "discipline",
+   "hook": "It's Monday. Only 7 Mondays left in 2026.",
+   "used": [
+    "2026-11-16"
    ]
   }
  ]
