@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-15 night run (for Nov 17)
+- Data: Metricool TikTok posts Nov 9–16. Same rows as before: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't appear in Metricool analytics.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix: 1pct-rule again with the countdown math → 18:00 explainer "44 days of 1%" (1.01^44 ≈ 1.55 = 54% better, 0.99^44 ≈ 0.64 = 36% worse). Seasonal "winter arc" slideshow at 20:00 per the seasonal-hooks note.
+
 ## 2026-11-14 night run (for Nov 16)
 - Data: Metricool TikTok posts Nov 7–14. Same picture: only the Nov 10–11 auto posts show up; hand-posted packs (Nov 12+) aren't in Metricool analytics.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-17",
+ "posts": [
+  {"id": "draft-hard-things-daily", "hookId": "cold-shower", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "YOUR LIFE IS <i>TOO COMFORTABLE.</i>", "show": "none", "dur": 1.6},
+   {"cap": "THAT'S WHY DISCIPLINE FEELS <i>IMPOSSIBLE.</i>", "show": "bars", "fill": [8, 6, 5, 4], "dur": 1.9},
+   {"cap": "DO ONE HARD THING A DAY.", "show": "one", "dur": 1.6},
+   {"cap": "COLD WATER FOR 30 SECONDS.", "show": "big", "big": "30", "small": "SECONDS", "dur": 1.8},
+   {"cap": "TAKE THE STAIRS.", "show": "none", "dur": 1.3},
+   {"cap": "SAY NO TO THE SNACK.", "show": "none", "dur": 1.3},
+   {"cap": "SMALL HARD THINGS. <b>EVERY DAY.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+   {"cap": "HARD GETS <b>EASIER.</b>", "show": "bars", "from": [8, 6, 5, 4], "fill": [34, 30, 32, 28], "dur": 2.0},
+   {"cap": "PICK ONE. <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+  ]},
+  {"id": "draft-habits-scoreboard", "hookId": "app-sneak-peek", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "YOUR HABITS FINALLY<br>GET A <b>SCOREBOARD.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Every habit is <b>XP.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% a day. <b>Tracked.</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Your body has a <b>map.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Stay consistent. It <b>levels up.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Protect the <b>streak.</b>"},
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-body-keeps-score", "hookId": "body-stat", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "WARNING", "hook": "YOUR BODY<br>KEEPS SCORE.<br><b>START KEEPING YOURS.</b>", "scenes": [0, 1, 3, 4, 5]}
+ ]
+}

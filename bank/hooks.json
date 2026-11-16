@@ -17,7 +17,8 @@
    "hook": "The 1% rule: 1.01^365 = 37.8",
    "used": [
     "2026-11-10",
-    "2026-11-13"
+    "2026-11-13",
+    "2026-11-17"
    ]
   },
   {
@@ -90,7 +91,9 @@
    "pillar": "routine",
    "format": "slides",
    "hook": "5 AM routine: expectation vs what actually works",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "weak-stat",
@@ -233,7 +236,9 @@
    "pillar": "body",
    "format": "slides",
    "hook": "Why a daily walk is the most underrated stat boost",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "sleep-stat",
@@ -373,7 +378,9 @@
    "pillar": "faith",
    "format": "video",
    "hook": "Faith is the stat that powers all the others",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "money-stat",
@@ -389,7 +396,9 @@
    "pillar": "body",
    "format": "video",
    "hook": "Your body keeps score. So should you.",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "mind-stat",
@@ -405,7 +414,9 @@
    "pillar": "heart",
    "format": "video",
    "hook": "The most underrated stat: how you treat people",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "2027-goals",
@@ -507,7 +518,9 @@
    "pillar": "body",
    "format": "slides",
    "hook": "Hard things you can do daily to build discipline",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "budget-quest",
@@ -532,7 +545,9 @@
    "pillar": "faith",
    "format": "slides",
    "hook": "Keep a prayer list. Here's how.",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "app-sneak-peek",
@@ -540,7 +555,8 @@
    "format": "video",
    "hook": "Sneak peek: what The System looks like inside",
    "used": [
-    "2026-11-12"
+    "2026-11-12",
+    "2026-11-17"
    ]
   },
   {
@@ -602,7 +618,9 @@
    "pillar": "identity",
    "format": "essay",
    "hook": "How to quietly rebuild your life this winter (body, mind, environment, money, character, faith)",
-   "used": []
+   "used": [
+    "2026-11-17"
+   ]
   },
   {
    "id": "winter-arc-quests",

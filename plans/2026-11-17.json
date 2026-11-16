@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-17",
+ "note": "Nightly run (Sun Nov 15 night, ET). Nov 16 was already made, so this is Tuesday Nov 17 (44 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10-13 (inside 14 days), so all 4 slideshows are the original navy slides. Remix: 1pct-rule (still the top post, 946 views) as the 18:00 explainer '44 days of 1%'. App post is today's draft montage.",
+ "posts": [
+  {
+   "id": "walk-fixes-three",
+   "hookId": "walk-daily",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE WORK TODAY", "kick": "BODY CHECK", "title": "STOP SKIPPING THE <b>20-MINUTE WALK</b>", "sub": "It levels up 3 stats at once →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "EVERY DAY YOU SIT", "text": "Stiff body. Foggy head. Restless nights.", "sub": "And you call it being busy."},
+    {"kind": "point", "num": "01 / 04", "kick": "STAT 01 · STRENGTH", "text": "Your legs, heart and lungs get daily work.", "sub": "No gym. No gear."},
+    {"kind": "point", "num": "02 / 04", "kick": "STAT 02 · INTELLECT", "text": "Leave the phone in your pocket. Think.", "sub": "Your best ideas show up outside."},
+    {"kind": "point", "num": "03 / 04", "kick": "STAT 03 · FAITH", "text": "Pray while you walk. Out loud if you can.", "sub": "20 minutes with God, no excuses."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "ISAIAH 40:31", "text": "“…they shall walk, and not faint.”", "sub": "Start with one lap of the block."},
+    {"kind": "cta", "title": "SHOES ON.<br><b>START TODAY.</b>", "text": "The System turns your daily walk into a quest with a streak. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "faith-powers-all",
+   "hookId": "faith-stat",
+   "time": "10:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "YOUR FAITH STAT<br>POWERS ALL THE OTHERS.<br><b>STOP SKIPPING IT.</b>",
+   "scenes": [0, 1, 2, 4, 5]
+  },
+  {
+   "id": "prayer-list-promise",
+   "hookId": "prayer-list",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "FAITH CHECK", "title": "YOU SAID “I'LL <b>PRAY FOR YOU</b>.” DID YOU?", "sub": "Fix it with a prayer list →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "EMPTY PROMISES", "text": "You meant it. Then you forgot by dinner.", "sub": "Good intentions aren't prayers."},
+    {"kind": "point", "num": "01 / 04", "kick": "QUEST 01 · WRITE IT", "text": "Name, need, date. One line each.", "sub": "Notes app or a notebook."},
+    {"kind": "point", "num": "02 / 04", "kick": "QUEST 02 · SPLIT IT", "text": "Family Monday. Friends Tuesday. Church Wednesday.", "sub": "A few names a day, not fifty."},
+    {"kind": "point", "num": "03 / 04", "kick": "QUEST 03 · TRACK IT", "text": "When God answers, write the date next to it.", "sub": "Your faith gets a receipt."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "PHILIPPIANS 4:6", "text": "“…by prayer and supplication… let your requests be made known unto God.”", "sub": "Then go back and thank Him."},
+    {"kind": "cta", "title": "PRAY FOR THEM.<br><b>TODAY. NOT SOMEDAY.</b>", "text": "The System makes prayer a daily quest you can track. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "5am-alarm-lie",
+   "hookId": "5am-vs-reality",
+   "time": "14:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "STOP SETTING A <i>5 AM ALARM</i>", "show": "big", "big": "5", "small": "AM", "dur": 1.8},
+    {"cap": "YOU'RE NOT GOING TO <i>KEEP.</i>", "show": "none", "dur": 1.4},
+    {"cap": "SNOOZE. SNOOZE. <i>SNOOZE.</i>", "show": "bars", "fill": [6, 4, 3, 2], "dur": 1.8},
+    {"cap": "THEN YOU FEEL LIKE A <i>FAILURE</i> BY 7.", "show": "one", "dur": 1.9},
+    {"cap": "HERE'S WHAT ACTUALLY WORKS.", "show": "none", "dur": 1.4},
+    {"cap": "WAKE <b>15 MINUTES</b> EARLIER. THAT'S IT.", "show": "big", "big": "15", "small": "MINUTES", "dur": 2.0},
+    {"cap": "BED 15 MINUTES EARLIER TOO.", "show": "compare", "l": {"label": "5 AM HERO", "fig": true}, "r": {"label": "15 MIN EARLIER", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "NEXT WEEK? <b>15 MORE.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.8},
+    {"cap": "SMALL WINS STACK. <b>STATS RISE.</b>", "show": "bars", "from": [6, 4, 3, 2], "fill": [32, 28, 34, 26], "dur": 2.0},
+    {"cap": "SET IT TONIGHT. <b>START TOMORROW.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "heart-stat-check",
+   "hookId": "heart-stat",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "HEART CHECK", "title": "HOW YOU TREAT PEOPLE IS A <b>STAT</b>", "sub": "Most people never train it →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "A LOW HEART STAT", "text": "Short with family. Kind to strangers online.", "sub": "The people closest get the worst of you."},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "44", "title": "DAYS LEFT<br>IN 2026", "sub": "44 days to be easier to live with."},
+    {"kind": "point", "num": "01 / 03", "kick": "QUEST 01 · AT HOME", "text": "Put the phone down when someone talks to you.", "sub": "Eye contact is respect."},
+    {"kind": "point", "num": "02 / 03", "kick": "QUEST 02 · AT WORK", "text": "Thank one person by name today.", "sub": "Be specific about what they did."},
+    {"kind": "point", "tone": "gold", "num": "03 / 03", "kick": "EPHESIANS 4:32", "text": "“And be ye kind one to another, tenderhearted, forgiving one another…”", "sub": "Start with whoever annoys you most."},
+    {"kind": "cta", "title": "BE KIND ON PURPOSE.<br><b>START TODAY.</b>", "text": "The System tracks your Heart stat with daily people quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "44-days-of-1pct",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "<i>44 DAYS</i> LEFT IN 2026.", "show": "big", "big": "44", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "YOU THINK IT'S <i>TOO LATE</i> TO CHANGE.", "show": "calendar", "months": ["SEP", "OCT", "NOV"], "dur": 1.8},
+    {"cap": "DO THE MATH.", "show": "none", "dur": 1.2},
+    {"cap": "1% BETTER EVERY DAY FOR 44 DAYS:", "show": "bars", "fill": [10, 10, 10, 10], "dur": 1.9},
+    {"cap": "<b>54% BETTER</b> BY JANUARY 1.", "show": "big", "big": "54", "small": "% BETTER", "dur": 2.0},
+    {"cap": "1% WORSE EVERY DAY?", "show": "none", "dur": 1.4},
+    {"cap": "<i>36% WORSE.</i> SAME 44 DAYS.", "show": "big", "big": "36", "small": "% WORSE", "dur": 2.0},
+    {"cap": "SAME CALENDAR. <b>DIFFERENT PERSON.</b>", "show": "compare", "l": {"label": "1% WORSE", "fig": true}, "r": {"label": "1% BETTER", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "ONE SMALL QUEST. <b>EVERY DAY.</b>", "show": "bars", "from": [10, 10, 10, 10], "fill": [34, 30, 36, 28], "dur": 2.0},
+    {"cap": "DAY 1 IS <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "winter-rebuild",
+   "hookId": "rebuild-this-winter",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE BED", "kick": "WINTER ARC", "title": "REBUILD YOUR LIFE <b>THIS WINTER</b>. QUIETLY.", "sub": "One stat at a time →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "WAITING FOR JANUARY", "text": "Six more weeks of the same habits.", "sub": "January won't do it for you."},
+    {"kind": "point", "num": "01 / 05", "kick": "FAITH", "text": "One chapter every morning before your phone.", "sub": "Always first."},
+    {"kind": "point", "num": "02 / 05", "kick": "STRENGTH", "text": "Train 3 days a week. Walk the rest.", "sub": "Cold mornings count double."},
+    {"kind": "point", "num": "03 / 05", "kick": "INTELLECT", "text": "10 pages a night instead of scrolling.", "sub": "Winter is reading season."},
+    {"kind": "point", "num": "04 / 05", "kick": "WEALTH", "text": "Holiday budget set before Black Friday.", "sub": "Decide the number first."},
+    {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "HEART", "text": "Call one family member every week.", "sub": "Show up before the holidays do."},
+    {"kind": "cta", "title": "YOUR WINTER ARC STARTS<br><b>TONIGHT. NOT MONDAY.</b>", "text": "The System turns all 5 into daily quests with stats. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}

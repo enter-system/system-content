@@ -897,6 +897,140 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "08:00",
+   "id": "walk-fixes-three",
+   "hook": "walk-daily",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-17",
+   "time": "10:00",
+   "id": "faith-powers-all",
+   "hook": "faith-stat",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "12:00",
+   "id": "prayer-list-promise",
+   "hook": "prayer-list",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-17",
+   "time": "14:00",
+   "id": "5am-alarm-lie",
+   "hook": "5am-vs-reality",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "16:00",
+   "id": "heart-stat-check",
+   "hook": "heart-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-17",
+   "time": "18:00",
+   "id": "44-days-of-1pct",
+   "hook": "1pct-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01",
+   "remixOf": "1pct-rule"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "20:00",
+   "id": "winter-rebuild",
+   "hook": "rebuild-this-winter",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-17",
+   "time": "09:00",
+   "id": "draft-hard-things-daily",
+   "hook": "cold-shower",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "13:00",
+   "id": "draft-habits-scoreboard",
+   "hook": "app-sneak-peek",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-17",
+   "time": "17:00",
+   "id": "draft-body-keeps-score",
+   "hook": "body-stat",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }
