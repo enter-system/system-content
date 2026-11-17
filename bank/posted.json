@@ -1031,6 +1031,140 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "08:00",
+   "id": "fast-from-one-thing",
+   "hook": "fasting-discipline",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "10:00",
+   "id": "dont-miss-two",
+   "hook": "never-miss-twice",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "12:00",
+   "id": "quit-these-5",
+   "hook": "quit-5-habits",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "14:00",
+   "id": "3-quests-not-20-tasks",
+   "hook": "todo-xp",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "16:00",
+   "id": "boring-money-moves",
+   "hook": "stats-boring-money",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "18:00",
+   "id": "43-days-5-stats",
+   "hook": "5-stats-2027",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01",
+   "remixOf": "5-stats-2027"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "20:00",
+   "id": "christian-man-day",
+   "hook": "christian-man-routine",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-18",
+   "time": "09:00",
+   "id": "draft-signs-leveling-up",
+   "hook": "signs-leveling-up",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "13:00",
+   "id": "draft-your-stats-screen",
+   "hook": "stats-screen-pov",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-18",
+   "time": "17:00",
+   "id": "draft-life-rpg",
+   "hook": "life-rpg",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }

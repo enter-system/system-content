@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-16 night run (for Nov 18)
+- Data: Metricool TikTok posts Nov 9–16. Same rows: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate (6.8%); self-rating question.
+- 1pct-rule was remixed yesterday, so today's remix is 5-stats-2027 → 18:00 explainer "43 days left. One of your 5 stats is dragging the rest", ending on "comment your weakest stat" (the question that earned the likes).
+
 ## 2026-11-15 night run (for Nov 17)
 - Data: Metricool TikTok posts Nov 9–16. Same rows as before: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't appear in Metricool analytics.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

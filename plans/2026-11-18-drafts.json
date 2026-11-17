@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-18",
+ "posts": [
+  {"id": "draft-signs-leveling-up", "hookId": "signs-leveling-up", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "YOU'RE LEVELING UP. YOU JUST <i>CAN'T SEE IT.</i>", "show": "none", "dur": 1.9},
+   {"cap": "SIGN 1: YOU <i>NOTICE</i> WHEN YOU SKIP.", "show": "one", "dur": 1.8},
+   {"cap": "SIGN 2: OLD HABITS FEEL <i>BORING.</i>", "show": "bars", "fill": [10, 8, 9, 7], "dur": 1.8},
+   {"cap": "SIGN 3: YOU PRAY BEFORE YOU PANIC.", "show": "none", "dur": 1.8},
+   {"cap": "SIGN 4: YOUR CIRCLE GOT <b>SMALLER.</b>", "show": "crowd", "dur": 1.9},
+   {"cap": "SIGN 5: YOU DO IT EVEN WHEN <b>NOBODY CLAPS.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 2.0},
+   {"cap": "IT DOESN'T FEEL LIKE IT. <b>IT'S WORKING.</b>", "show": "bars", "from": [10, 8, 9, 7], "fill": [32, 30, 34, 28], "dur": 2.0},
+   {"cap": "HOW MANY DO YOU HAVE?", "show": "crowd", "glow": true, "dur": 2.0}
+  ]},
+  {"id": "draft-your-stats-screen", "hookId": "stats-screen-pov", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "IF YOUR LIFE HAD<br>A <b>STATS SCREEN…</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Choose who you're <b>becoming.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "What would your level <b>say?</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Faith counts <b>first.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Your body is a <b>stat.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Every day <b>adds up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-life-rpg", "hookId": "life-rpg", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "SYSTEM ALERT", "hook": "POV: YOUR LIFE<br>JUST BECAME<br><b>AN RPG.</b>", "scenes": [0, 1, 2, 3, 4, 5]}
+ ]
+}
