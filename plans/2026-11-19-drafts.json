@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-19",
+ "posts": [
+  {"id": "draft-nobody-claps", "hookId": "level-up-silent", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "NOBODY CLAPS FOR <i>DAY 47.</i>", "show": "big", "big": "47", "small": "DAY", "dur": 1.8},
+   {"cap": "NO LIKES. NO COMMENTS. <i>NO ONE WATCHING.</i>", "show": "crowd", "dur": 2.0},
+   {"cap": "THAT'S WHERE MOST PEOPLE <i>QUIT.</i>", "show": "bars", "fill": [12, 10, 9, 8], "dur": 1.8},
+   {"cap": "HERE'S THE TRUTH.", "show": "none", "dur": 1.3},
+   {"cap": "GOD SEES WHAT <b>NOBODY CLAPS FOR.</b>", "show": "none", "dur": 1.9},
+   {"cap": "DAY 47 BECOMES <b>DAY 100.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+   {"cap": "THE STATS <b>KEEP RISING.</b>", "show": "bars", "from": [12, 10, 9, 8], "fill": [32, 30, 33, 28], "dur": 2.0},
+   {"cap": "DO IT ANYWAY. <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+  ]},
+  {"id": "draft-winter-arc-starts", "hookId": "winter-arc-quests", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "YOUR WINTER ARC<br>STARTS <b>TONIGHT.</b>", "kicker": "SYSTEM", "calm": true,
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Pick your <b>quests.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Word <b>first.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Move every <b>day.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% better. <b>Daily.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Keep the <b>streak.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Walk into 2027 <b>leveled up.</b>"}
+   ]},
+  {"id": "draft-proverbs-lazy-man", "hookId": "proverbs-sluggard", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "ALERT", "hook": "WHAT PROVERBS SAYS<br>ABOUT THE<br><b>LAZY MAN.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

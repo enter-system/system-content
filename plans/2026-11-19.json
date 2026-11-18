@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-19",
+ "note": "Nightly run (Tue Nov 17 night, ET). Nov 18 was already made, so this is Thursday Nov 19 (42 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10-13 (inside 14 days), so no photo slideshow; the 4th slideshow is the app-pillar seven-stats yellowcover countdown (no photos). Remix: 3-daily-quests (627 views, 36 likes) as the 18:00 explainer '42 days x 3 quests = 126 wins'.",
+ "posts": [
+  {
+   "id": "verses-before-you-quit",
+   "hookId": "verses-discipline",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE YOU QUIT", "kick": "FAITH CHECK", "title": "ABOUT TO <b>GIVE UP?</b> STOP.", "sub": "5 verses for that exact moment →"},
+    {"kind": "point", "num": "01 / 05", "kick": "WHEN YOU'RE TIRED · GALATIANS 6:9", "text": "“…let us not be weary in well doing: for in due season we shall reap…”", "sub": "The harvest comes after the grind."},
+    {"kind": "point", "num": "02 / 05", "kick": "WHEN YOU'RE WEAK · ISAIAH 40:31", "text": "“…they that wait upon the LORD shall renew their strength…”", "sub": "Your strength isn't the limit."},
+    {"kind": "point", "tone": "alert", "num": "03 / 05", "kick": "WHEN IT HURTS · HEBREWS 12:11", "text": "“…afterward it yieldeth the peaceable fruit of righteousness…”", "sub": "Discipline hurts now. Pays later."},
+    {"kind": "point", "num": "04 / 05", "kick": "WHEN YOU'RE AFRAID · 2 TIMOTHY 1:7", "text": "“…God hath not given us the spirit of fear…”", "sub": "Power, love and a sound mind."},
+    {"kind": "point", "tone": "gold", "num": "05 / 05", "kick": "WHEN YOU DOUBT · PHILIPPIANS 4:13", "text": "“I can do all things through Christ which strengtheneth me.”", "sub": "Screenshot this one."},
+    {"kind": "cta", "title": "DON'T QUIT TODAY.<br><b>DO ONE MORE.</b>", "text": "The System pairs your daily quests with Scripture. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "30-days-from-now",
+   "hookId": "30-days",
+   "time": "10:00",
+   "type": "video",
+   "sound": "hype-semdemora-01",
+   "kicker": "WARNING",
+   "hook": "30 DAYS FROM NOW<br>YOU'LL WISH YOU<br><b>STARTED TODAY.</b>",
+   "scenes": [0, 1, 3, 4, 5]
+  },
+  {
+   "id": "840-pages-before-2027",
+   "hookId": "read-20-pages",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "MIND CHECK", "title": "YOUR MIND IS <b>STARVING</b> EVERY DAY YOU WAIT", "sub": "20 pages a day fixes it →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "42", "title": "DAYS LEFT<br>IN 2026", "sub": "Enough time to finish real books."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "HOURS OF SCROLLING", "text": "You feed your mind clips. Never a full meal.", "sub": "And wonder why focus is gone."},
+    {"kind": "point", "num": "THE MATH", "kick": "42 DAYS × 20 PAGES", "text": "840 pages before January 1.", "sub": "That's 3 solid books. Starting now."},
+    {"kind": "point", "num": "01 / 02", "kick": "QUEST 01 · SAME TIME DAILY", "text": "Read 20 pages before you open any app.", "sub": "Book on your pillow tonight."},
+    {"kind": "point", "tone": "gold", "num": "02 / 02", "kick": "QUEST 02 · START WITH PROVERBS", "text": "One chapter a day. 31 chapters. Wisdom on repeat.", "sub": "Then pick a book that builds you."},
+    {"kind": "cta", "title": "PAGE ONE. TONIGHT.<br><b>NOT MONDAY.</b>", "text": "The System levels your Intellect stat with reading quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "same-person-scare",
+   "hookId": "same-person-last-year",
+   "time": "14:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "SAME HABITS. SAME EXCUSES. <i>SAME YOU.</i>", "show": "compare", "l": {"label": "LAST YEAR", "fig": true}, "r": {"label": "THIS YEAR", "fig": true}, "dur": 2.0},
+    {"cap": "ANOTHER YEAR <i>ALMOST GONE.</i>", "show": "calendar", "months": ["SEP", "OCT", "NOV"], "dur": 1.8},
+    {"cap": "YOUR STATS? <i>DIDN'T MOVE.</i>", "show": "bars", "fill": [10, 9, 8, 10], "dur": 1.8},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "ONLY <i>42 DAYS</i> LEFT.", "show": "big", "big": "42", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "WAIT FOR JANUARY AND YOU'RE <i>STILL THE SAME.</i>", "show": "crowd", "dur": 2.0},
+    {"cap": "OR START <b>TODAY.</b>", "show": "none", "dur": 1.3},
+    {"cap": "ONE QUEST. EVERY DAY. <b>STATS RISE.</b>", "show": "bars", "from": [10, 9, 8, 10], "fill": [30, 28, 32, 26], "dur": 2.0},
+    {"cap": "NEW YEAR. <b>NEW YOU.</b> FOR REAL.", "show": "compare", "l": {"label": "LAST YEAR", "fig": true}, "r": {"label": "2027", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "BE THE ONE WHO <b>STARTED EARLY.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "7-stats-max-before-2027",
+   "hookId": "seven-stats-countdown",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "yellowcover", "title": "7 stats to max out before 2027…", "sub": "(Bible approved)"},
+    {"kind": "rank", "labels": ["7) Charisma", "Remember names. Ask one more question."], "ab": "CHA", "name": "CHARISMA", "role": "LIFE OF THE PARTY", "color": "#a98bff", "fill": 30},
+    {"kind": "rank", "labels": ["6) Ambition", "Write one goal for 2027. Put it where you'll see it."], "ab": "AMB", "name": "AMBITION", "role": "CEO", "color": "#e2b85a", "fill": 40},
+    {"kind": "rank", "labels": ["5) Wealth", "Save something every payday. Even $10."], "ab": "WLT", "name": "WEALTH", "role": "STABILITY", "color": "#4fd6a0", "fill": 50},
+    {"kind": "rank", "labels": ["4) Intellect", "20 pages a day. No phone while you read."], "ab": "INT", "name": "INTELLECT", "role": "DISCIPLINED MIND", "color": "#4cb8ff", "fill": 60},
+    {"kind": "rank", "labels": ["3) Strength", "Move every day. Walk, lift or pushups."], "ab": "STR", "name": "STRENGTH", "role": "PROTECTOR", "color": "#ff6a5c", "fill": 70},
+    {"kind": "rank", "labels": ["2) Heart", "Text someone you love today. Mean it."], "ab": "HRT", "name": "HEART", "role": "LEADER", "color": "#ff9f6b", "fill": 85},
+    {"kind": "rank", "labels": ["1) Faith", "God before the phone. Every morning.", "“Draw nigh to God, and he will draw nigh to you.” James 4:8"], "ab": "FTH", "name": "FAITH", "role": "SOLDIER", "color": "#f1e6b8", "fill": 100, "lv": "MAX PRIORITY"},
+    {"kind": "rank", "y": 22, "labels": ["All 7 stats. One system.", "Daily quests, streaks and level-ups for every one of them."], "foot": ["The System · Coming soon", "Follow to join ⬇️"], "ab": "S", "name": "THE SYSTEM", "role": "LEVEL UP YOUR LIFE", "color": "#5ee7ff", "fill": 100, "lv": "ALL 7 STATS"}
+   ]
+  },
+  {
+   "id": "126-wins-before-2027",
+   "hookId": "3-daily-quests",
+   "remixOf": "3-daily-quests",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "<i>42 DAYS</i> LEFT IN 2026.", "show": "big", "big": "42", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "MOST PEOPLE WILL <i>WASTE ALL OF THEM.</i>", "show": "crowd", "dur": 1.9},
+    {"cap": "HERE'S THE MATH.", "show": "none", "dur": 1.3},
+    {"cap": "<b>3 QUESTS</b> A DAY.", "show": "big", "big": "3", "small": "QUESTS", "dur": 1.6},
+    {"cap": "BIBLE BEFORE PHONE. MOVE 20 MIN. PLAN TOMORROW.", "show": "bars", "fill": [8, 6, 7, 5], "dur": 2.2},
+    {"cap": "3 × 42 = <b>126 WINS.</b>", "show": "big", "big": "126", "small": "WINS", "dur": 1.9},
+    {"cap": "BEFORE JANUARY <i>EVEN STARTS.</i>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.8},
+    {"cap": "WIN THE DAY. <b>STATS RISE.</b>", "show": "bars", "from": [8, 6, 7, 5], "fill": [32, 30, 34, 28], "dur": 2.0},
+    {"cap": "WIN #1 STARTS <b>TOMORROW MORNING.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "plan-tomorrow-tonight",
+   "hookId": "plan-tomorrow",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE YOU SLEEP", "kick": "PRODUCTIVITY CHECK", "title": "STOP WAKING UP <b>WITH NO PLAN</b>", "sub": "5 minutes tonight fixes tomorrow →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "NO PLAN", "text": "You wake up and the phone decides your day.", "sub": "By noon, nothing important got done."},
+    {"kind": "point", "num": "01 / 04", "kick": "QUEST 01 · WRITE YOUR TOP 3", "text": "Three things that make tomorrow a win.", "sub": "Paper beats apps at night."},
+    {"kind": "point", "num": "02 / 04", "kick": "QUEST 02 · SET IT OUT", "text": "Bible on the table. Clothes ready. Shoes by the door.", "sub": "Remove the morning excuses."},
+    {"kind": "point", "num": "03 / 04", "kick": "QUEST 03 · PHONE OUT", "text": "Charge it outside the bedroom.", "sub": "Sleep is a stat too."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "PROVERBS 16:3", "text": "“Commit thy works unto the LORD, and thy thoughts shall be established.”", "sub": "Pray over the plan. Then rest."},
+    {"kind": "cta", "title": "TOMORROW STARTS<br><b>TONIGHT.</b>", "text": "The System gives you a daily quest list you plan the night before. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}

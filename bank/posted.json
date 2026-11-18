@@ -1165,6 +1165,140 @@
    ],
    "manual": true,
    "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "08:00",
+   "id": "verses-before-you-quit",
+   "hook": "verses-discipline",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-19",
+   "time": "10:00",
+   "id": "30-days-from-now",
+   "hook": "30-days",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "12:00",
+   "id": "840-pages-before-2027",
+   "hook": "read-20-pages",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-19",
+   "time": "14:00",
+   "id": "same-person-scare",
+   "hook": "same-person-last-year",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "16:00",
+   "id": "7-stats-max-before-2027",
+   "hook": "seven-stats-countdown",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-19",
+   "time": "18:00",
+   "id": "126-wins-before-2027",
+   "hook": "3-daily-quests",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01",
+   "remixOf": "3-daily-quests"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "20:00",
+   "id": "plan-tomorrow-tonight",
+   "hook": "plan-tomorrow",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-19",
+   "time": "09:00",
+   "id": "draft-nobody-claps",
+   "hook": "level-up-silent",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "13:00",
+   "id": "draft-winter-arc-starts",
+   "hook": "winter-arc-quests",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-19",
+   "time": "17:00",
+   "id": "draft-proverbs-lazy-man",
+   "hook": "proverbs-sluggard",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }

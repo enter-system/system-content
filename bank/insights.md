@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-17 night run (for Nov 19)
+- Data: Metricool TikTok posts Nov 10–17. Same rows: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Both were remixed Nov 17–18, so today's remix is #3 3-daily-quests (627 views, 36 likes) → 18:00 explainer "42 days × 3 quests = 126 wins", same 3 quests with countdown math.
+
 ## 2026-11-16 night run (for Nov 18)
 - Data: Metricool TikTok posts Nov 9–16. Same rows: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
