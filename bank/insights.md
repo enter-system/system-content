@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-18 night run (for Nov 20)
+- Data: Metricool TikTok posts Nov 11–18. Only the six Nov 11 auto posts come back; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
+- #1 in window phone-before-bible (Nov 11): 12 views, 1 like, 15 shares. Still the only share spike; faith-routine content gets passed on.
+- #2 in window dream-life-rich "God, please." (Nov 11): 9 views, 2 likes. Calm faith/family whisper.
+- All-time leader is still 1pct-rule (Nov 10): 946 views, 21 likes. Remix: flipped to the cost side as the 10:00 explainer "You're getting 1% worse every day you wait" (0.99^41 = 0.66 vs 1.01^41 = 1.50).
+- Fixed tools/explain.html so `big` scenes count up decimals (0.66 used to show as 0).
+
 ## 2026-11-17 night run (for Nov 19)
 - Data: Metricool TikTok posts Nov 10–17. Same rows: only the Nov 10–11 auto posts; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

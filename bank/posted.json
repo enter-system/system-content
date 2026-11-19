@@ -1299,6 +1299,140 @@
    ],
    "manual": true,
    "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "08:00",
+   "id": "christian-woman-routine-real",
+   "hook": "christian-woman-routine",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-20",
+   "time": "10:00",
+   "id": "1pct-worse-every-day",
+   "hook": "1pct-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01",
+   "remixOf": "1pct-rule"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "12:00",
+   "id": "bank-account-stat-41",
+   "hook": "money-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-20",
+   "time": "14:00",
+   "id": "before-january-crowd-gym",
+   "hook": "before-january-crowd",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "16:00",
+   "id": "stop-side-quests",
+   "hook": "side-quests",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-20",
+   "time": "18:00",
+   "id": "no-zero-days-41",
+   "hook": "never-zero-days",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "20:00",
+   "id": "20-minutes-scrolling",
+   "hook": "scroll-stop",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-20",
+   "time": "09:00",
+   "id": "draft-level-3-vs-50",
+   "hook": "comparison-trap",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "13:00",
+   "id": "draft-weekend-decides-monday",
+   "hook": "weekend-reset",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-20",
+   "time": "17:00",
+   "id": "draft-boss-fight",
+   "hook": "boss-fight",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }

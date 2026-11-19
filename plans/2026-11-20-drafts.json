@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-20",
+ "posts": [
+  {"id": "draft-level-3-vs-50", "hookId": "comparison-trap", "time": "09:00", "type": "explainer", "silent": true, "sound": "calm-shizuku-01", "lead": 999, "scenes": [
+   {"cap": "STOP COMPARING YOUR <i>LEVEL 3</i>", "show": "big", "big": "3", "small": "LEVEL", "dur": 1.8},
+   {"cap": "TO SOMEONE'S <i>LEVEL 50.</i>", "show": "big", "big": "50", "small": "LEVEL", "dur": 1.8},
+   {"cap": "YOU SEE THEIR HIGHLIGHTS. <i>NOT THEIR GRIND.</i>", "show": "crowd", "dur": 2.0},
+   {"cap": "THEY WERE LEVEL 3 TOO.", "show": "none", "dur": 1.4},
+   {"cap": "THE ONLY FAIR FIGHT: <b>YOU VS. YESTERDAY.</b>", "show": "compare", "l": {"label": "YESTERDAY", "fig": true}, "r": {"label": "TODAY", "fig": true, "glow": true}, "dur": 2.1},
+   {"cap": "ONE QUEST A DAY. <b>STATS RISE.</b>", "show": "bars", "from": [8, 7, 9, 6], "fill": [30, 28, 32, 26], "dur": 2.0},
+   {"cap": "PLAY <b>YOUR OWN GAME.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+  ]},
+  {"id": "draft-weekend-decides-monday", "hookId": "weekend-reset", "time": "13:00", "type": "montage", "silent": true, "sound": "hype-semdemora-01", "beatsPer": 2,
+   "hook": "YOUR WEEKEND<br>DECIDES YOUR<br><b>MONDAY.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Choose who you're <b>becoming.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Reset your <b>quests.</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Rest on <b>purpose.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Church. Word. <b>Family.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break the <b>streak.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Monday starts <b>leveled up.</b>"}
+   ]},
+  {"id": "draft-boss-fight", "hookId": "boss-fight", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "WARNING", "hook": "TREAT YOUR<br>HARDEST TASK LIKE<br><b>A BOSS FIGHT.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

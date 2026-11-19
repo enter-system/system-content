@@ -73,7 +73,7 @@ window.render = (t) => {
   const art = document.getElementById('art'), ua = ease((lt - 0.15) / 0.35);
   art.style.opacity = ua; art.style.transform = `translateY(${40 * (1 - ua)}px)`;
   document.getElementById('flash').style.opacity = Math.max(0, 0.18 - lt * 1.2);
-  if (s.show === 'big') { const n = parseInt(s.big, 10); document.getElementById('bign').textContent = isNaN(n) ? s.big : Math.round(n * ease(lt / 0.9)); }
+  if (s.show === 'big') { const dec = /^\d+\.\d+$/.test(s.big) ? s.big.split('.')[1].length : 0; const n = dec ? parseFloat(s.big) : (/^\d+$/.test(s.big) ? parseInt(s.big, 10) : NaN); document.getElementById('bign').textContent = isNaN(n) ? s.big : (n * ease(lt / 0.9)).toFixed(dec); }
   if (s.show === 'calendar') { const k = Math.min(s.months.length - 1, Math.floor(lt / (s.dur * 0.8 / s.months.length))); document.getElementById('mon').textContent = s.months[k]; }
   // bars: grow from `from` (default 0) to `fill`. Dropping bars turn red and show a minus.
   if (s.show === 'bars') (s.fill || []).forEach((f, k) => { const a = (s.from || [])[k] ?? 0, u = ease((lt - 0.3 - k * 0.1) / 0.6), v = a + (f - a) * u, d = Math.round((v - a) / 10), b = document.getElementById('b' + k), e = document.getElementById('e' + k);

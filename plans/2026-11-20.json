@@ -1,0 +1,116 @@
+{
+ "date": "2026-11-20",
+ "note": "Nightly run (Wed Nov 18 night, ET). Nov 19 was already made, so this is Friday Nov 20 (41 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10-13 (inside 14 days), so all 4 slideshows are the original navy System slides. Remix: 1pct-rule (946 views, still the top post) flipped to the 1%-worse angle as the 10:00 explainer: 0.99^41 = 0.66.",
+ "posts": [
+  {
+   "id": "christian-woman-routine-real",
+   "hookId": "christian-woman-routine",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TOMORROW MORNING", "kick": "FAITH CHECK", "title": "STOP STARTING YOUR DAY <b>ON EMPTY</b>", "sub": "A Christian woman's routine. Realistic version →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "PHONE FIRST", "text": "Everyone gets your attention before God does.", "sub": "Then you wonder why you're drained by 10."},
+    {"kind": "point", "num": "01 / 04", "kick": "QUEST 01 · 10 MINUTES", "text": "Coffee, Bible, one chapter. Before any app.", "sub": "Not an hour. Ten honest minutes."},
+    {"kind": "point", "num": "02 / 04", "kick": "QUEST 02 · MOVE", "text": "A 20-minute walk or workout. Any kind counts.", "sub": "Your body is a stat too."},
+    {"kind": "point", "num": "03 / 04", "kick": "QUEST 03 · TOP 3", "text": "Write the three things that make today a win.", "sub": "Everything else is a bonus."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "PROVERBS 31:25", "text": "“Strength and honour are her clothing; and she shall rejoice in time to come.”", "sub": "Dress in that first."},
+    {"kind": "cta", "title": "START TOMORROW.<br><b>NOT MONDAY.</b>", "text": "The System turns your morning into daily quests and streaks. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "1pct-worse-every-day",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "YOU'RE GETTING <i>1% WORSE</i> EVERY DAY YOU WAIT.", "show": "bars", "from": [30, 28, 32, 26], "fill": [20, 18, 21, 16], "dur": 2.2},
+    {"cap": "SOUNDS SMALL. <i>IT ISN'T.</i>", "show": "none", "dur": 1.4},
+    {"cap": "<i>41 DAYS</i> LEFT IN 2026.", "show": "big", "big": "41", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "0.99 TO THE 41st = <i>0.66</i>", "show": "big", "big": "0.66", "small": "0.99^41", "dur": 2.0},
+    {"cap": "A THIRD OF YOU. <i>GONE.</i>", "show": "bars", "from": [20, 18, 21, 16], "fill": [13, 12, 14, 10], "dur": 1.8},
+    {"cap": "HERE'S THE OTHER SIDE.", "show": "none", "dur": 1.3},
+    {"cap": "1.01 TO THE 41st = <b>1.50</b>", "show": "big", "big": "1.50", "small": "1.01^41", "dur": 2.0},
+    {"cap": "<b>50% BETTER</b> BEFORE JANUARY.", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.8},
+    {"cap": "SAME 41 DAYS. <b>YOUR CHOICE.</b>", "show": "compare", "l": {"label": "WAIT", "fig": true}, "r": {"label": "START", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "1% BETTER. <b>START TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "bank-account-stat-41",
+   "hookId": "money-stat",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "WEALTH CHECK", "title": "YOUR BANK ACCOUNT <b>IS A STAT</b> TOO", "sub": "And it's leaking every day you ignore it →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "41", "title": "DAYS LEFT<br>IN 2026", "sub": "Enough to fix your money habits."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "NOT LOOKING", "text": "Small charges you forgot about. Every month.", "sub": "What you don't track, you lose."},
+    {"kind": "point", "num": "01 / 03", "kick": "QUEST 01 · 10 MINUTES", "text": "Open your statement. Circle every subscription.", "sub": "Cancel one you don't use."},
+    {"kind": "point", "num": "02 / 03", "kick": "QUEST 02 · PAY YOURSELF FIRST", "text": "Move something to savings every payday. Even $10.", "sub": "Automatic beats willpower."},
+    {"kind": "point", "tone": "gold", "num": "03 / 03", "kick": "PROVERBS 21:5", "text": "“The thoughts of the diligent tend only to plenteousness…”", "sub": "Diligent beats lucky."},
+    {"kind": "cta", "title": "CHECK IT TODAY.<br><b>NOT MONDAY.</b>", "text": "The System levels your Wealth stat with simple money quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "before-january-crowd-gym",
+   "hookId": "before-january-crowd",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-semdemora-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "DO THIS BEFORE<br>THE JANUARY<br><b>CROWD SHOWS UP.</b>",
+   "scenes": [0, 1, 2, 4, 5]
+  },
+  {
+   "id": "stop-side-quests",
+   "hookId": "side-quests",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "PRODUCTIVITY CHECK", "title": "STOP DOING <b>SIDE QUESTS</b>", "sub": "Busy all day. Main quest untouched →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "FAKE PROGRESS", "text": "Inbox zero. Reorganized desk. Big task still waiting.", "sub": "Busy isn't the same as winning."},
+    {"kind": "point", "num": "01 / 04", "kick": "QUEST 01 · NAME IT", "text": "Which one task would make today a win?", "sub": "That's your main quest."},
+    {"kind": "point", "num": "02 / 04", "kick": "QUEST 02 · FIRST", "text": "Do it before email, texts or chores.", "sub": "Side quests can wait an hour."},
+    {"kind": "point", "num": "03 / 04", "kick": "QUEST 03 · 25 MINUTES", "text": "Timer on. Phone in another room. Just start.", "sub": "Starting is the hardest rep."},
+    {"kind": "point", "tone": "gold", "num": "04 / 04", "kick": "ECCLESIASTES 9:10", "text": "“Whatsoever thy hand findeth to do, do it with thy might…”", "sub": "Full effort on the main thing."},
+    {"kind": "cta", "title": "MAIN QUEST FIRST.<br><b>START TODAY.</b>", "text": "The System puts your main quest at the top of every day. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "no-zero-days-41",
+   "hookId": "never-zero-days",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "ONE RULE FOR THE NEXT <i>41 DAYS.</i>", "show": "big", "big": "41", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "<b>NO ZERO DAYS.</b>", "show": "none", "dur": 1.4},
+    {"cap": "MOST PEOPLE GO ALL IN. THEN <i>DISAPPEAR.</i>", "show": "bars", "from": [40, 38, 36, 34], "fill": [6, 5, 4, 3], "dur": 2.0},
+    {"cap": "TIRED? DO THE <b>SMALLEST VERSION.</b>", "show": "none", "dur": 1.6},
+    {"cap": "ONE CHAPTER. TEN PUSHUPS. ONE PAGE.", "show": "bars", "fill": [10, 9, 11, 8], "dur": 2.0},
+    {"cap": "IT STILL <b>COUNTS.</b>", "show": "none", "dur": 1.3},
+    {"cap": "41 SMALL DAYS BEAT <i>4 PERFECT ONES.</i>", "show": "compare", "l": {"label": "ALL OR NOTHING", "fig": true}, "r": {"label": "NO ZERO DAYS", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "THE STREAK <b>KEEPS GROWING.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.8},
+    {"cap": "TODAY IS NOT A <b>ZERO.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "20-minutes-scrolling",
+   "hookId": "scroll-stop",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE YOU SCROLL", "kick": "MIND CHECK", "title": "YOU'VE BEEN SCROLLING <b>FOR 20 MINUTES</b>", "sub": "Here's your quest instead →"},
+    {"kind": "math", "tone": "alert", "kick": "DO THE MATH", "big": "20 × 41", "text": "20 minutes a night until 2027 is 820 minutes. Almost 14 hours."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "LATE NIGHT FEED", "text": "Worse sleep. Foggy morning. Skipped quests.", "sub": "Tonight decides tomorrow."},
+    {"kind": "point", "num": "01 / 03", "kick": "QUEST 01 · RIGHT NOW", "text": "Close this app after this post. Seriously.", "sub": "Save it first so you remember."},
+    {"kind": "point", "num": "02 / 03", "kick": "QUEST 02 · 5 MINUTES", "text": "Read one Psalm. Write tomorrow's top 3.", "sub": "Phone charges outside the room."},
+    {"kind": "point", "tone": "gold", "num": "03 / 03", "kick": "PSALM 4:8", "text": "“I will both lay me down in peace, and sleep…”", "sub": "Rest is part of the plan."},
+    {"kind": "cta", "title": "PUT IT DOWN.<br><b>TONIGHT.</b>", "text": "The System trades scrolling for quests that level you up. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}
