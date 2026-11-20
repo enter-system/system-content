@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-21",
+ "posts": [
+  {"id": "draft-stop-waiting-motivation", "hookId": "discipline-vs-motivation", "time": "09:00", "type": "explainer", "silent": true, "sound": "calm-build-01", "lead": 999, "scenes": [
+   {"cap": "STOP WAITING TO <i>FEEL MOTIVATED.</i>", "show": "none", "dur": 1.8},
+   {"cap": "MOTIVATION SHOWS UP <i>MONDAY.</i>", "show": "bars", "fill": [34, 32, 30, 33], "dur": 1.8},
+   {"cap": "AND LEAVES BY <i>WEDNESDAY.</i>", "show": "bars", "from": [34, 32, 30, 33], "fill": [6, 5, 4, 6], "dur": 1.9},
+   {"cap": "DISCIPLINE DOESN'T CARE <b>HOW YOU FEEL.</b>", "show": "none", "dur": 1.8},
+   {"cap": "SAME TIME. SAME QUEST. <b>EVERY DAY.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+   {"cap": "40 DAYS LEFT IN 2026.", "show": "big", "big": "40", "small": "DAYS LEFT", "dur": 1.8},
+   {"cap": "FEELINGS FOLLOW <b>ACTION.</b>", "show": "compare", "l": {"label": "WAIT TO FEEL IT", "fig": true}, "r": {"label": "DO IT ANYWAY", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "DO ONE QUEST <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+  ]},
+  {"id": "draft-small-wins-xp", "hookId": "xp-small-wins", "time": "13:00", "type": "montage", "silent": true, "sound": "hype-semdemora-01", "beatsPer": 2,
+   "hook": "SMALL WINS THAT<br>GIVE YOU THE<br><b>MOST XP.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Make your bed. <b>+XP</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "One chapter before your phone. <b>+XP</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "10 minutes of stretching. <b>+XP</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "Read 10 pages. <b>+XP</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Text someone you love. <b>+XP</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Stack them. <b>Level up.</b>"}
+   ]},
+  {"id": "draft-day-1-or-one-day", "hookId": "streak-day-1", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT", "hook": "DAY 1<br>OR ONE DAY.<br><b>YOU DECIDE.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

@@ -1,0 +1,121 @@
+{
+ "date": "2026-11-21",
+ "note": "Nightly run (Thu Nov 19 night, ET). Nov 20 was already made, so this is Saturday Nov 21 (40 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10-13 (inside 14 days), so all 4 slideshows are the original navy System slides. Metricool's last-7-days window is empty (hand-posted packs don't show up); all-time leaders are still 1pct-rule (946) and 5-stats-2027 (749). Remix: 5-stats-2027 as a Saturday weekly review explainer at 10:00.",
+ "posts": [
+  {
+   "id": "focus-dropping-dopamine",
+   "hookId": "dopamine-reset",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "MIND CHECK", "title": "YOUR FOCUS IS <b>DROPPING</b> EVERY DAY YOU WAIT", "sub": "Signs you need a reset →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "40", "title": "DAYS LEFT<br>IN 2026", "sub": "Enough to get your focus back."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "SIGN 01", "text": "You can't read one page without grabbing your phone.", "sub": "Your attention got trained. It can be retrained."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "SIGN 02", "text": "Silence feels uncomfortable. You need noise to eat.", "sub": "Boredom isn't the enemy."},
+    {"kind": "point", "num": "THE FIX · 01 / 02", "kick": "QUEST 01 · FIRST HOUR", "text": "No phone for the first hour you're awake.", "sub": "Word first. Feed later."},
+    {"kind": "point", "num": "THE FIX · 02 / 02", "kick": "QUEST 02 · 15 MINUTES", "text": "One walk today. No earbuds. Just think and pray.", "sub": "Let your mind get quiet again."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 46:10", "kick": "SCRIPTURE", "text": "“Be still, and know that I am God…”", "sub": "Still is a skill."},
+    {"kind": "cta", "title": "START TODAY.<br><b>NOT MONDAY.</b>", "text": "The System turns focus into daily quests and a Mind stat you can watch grow. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "saturday-rate-your-week",
+   "hookId": "5-stats-2027",
+   "remixOf": "5-stats-2027",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "IT'S SATURDAY. <i>RATE YOUR WEEK.</i>", "show": "none", "dur": 1.7},
+    {"cap": "5 STATS. <b>BE HONEST.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "fill": [20, 20, 20, 20, 20], "dur": 1.9},
+    {"cap": "DID YOU OPEN YOUR BIBLE? DID YOU <i>MOVE?</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [20, 20, 20, 20, 20], "fill": [28, 6, 24, 22, 26], "dur": 2.1},
+    {"cap": "ONE OF THEM GOT <i>A ZERO.</i>", "show": "one", "dur": 1.6},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "ONLY <i>40 DAYS</i> LEFT IN 2026.", "show": "big", "big": "40", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "THAT'S <i>5 WEEKS</i> LIKE THIS ONE.", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+    {"cap": "PICK THE ZERO. FIX IT <b>NEXT WEEK.</b>", "show": "compare", "l": {"label": "SAME WEEK", "fig": true}, "r": {"label": "BETTER WEEK", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "ONE QUEST A DAY. <b>STATS RISE.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [28, 6, 24, 22, 26], "fill": [32, 28, 30, 26, 30], "dur": 2.0},
+    {"cap": "COMMENT YOUR <b>ZERO STAT.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "weekend-friend-audit",
+   "hookId": "friend-audit",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE TONIGHT", "kick": "HEART CHECK", "title": "WHO YOU SPEND YOUR WEEKEND WITH <b>IS YOUR FUTURE</b>", "sub": "5 friends that level you up →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE WRONG CIRCLE", "text": "Every plan to grow gets laughed off by Saturday night.", "sub": "You become the average of the room."},
+    {"kind": "point", "num": "01 / 05", "kick": "THE PRAYER PARTNER", "text": "Prays for you and asks how it's going.", "sub": "Keep this one close."},
+    {"kind": "point", "num": "02 / 05", "kick": "THE TRUTH TELLER", "text": "Tells you when you're slipping. Kindly, but clearly.", "sub": "Rare. Protect it."},
+    {"kind": "point", "num": "03 / 05", "kick": "THE TRAINING PARTNER", "text": "Texts you at 6 AM: “you coming?”", "sub": "Streaks are easier with two."},
+    {"kind": "point", "num": "04 / 05", "kick": "THE BUILDER", "text": "Talks about ideas and plans, not other people.", "sub": "Ambition is contagious."},
+    {"kind": "point", "num": "05 / 05", "kick": "THE ONE AHEAD", "text": "Ten years further down the road. Ask questions.", "sub": "Buy them coffee. Listen."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 13:20", "kick": "SCRIPTURE", "text": "“He that walketh with wise men shall be wise…”", "sub": "Choose the walk."},
+    {"kind": "cta", "title": "TEXT ONE OF THEM.<br><b>TODAY.</b>", "text": "The System levels your Heart stat with real-life connection quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "show-up-anyway",
+   "hookId": "gym-not-feeling-it",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "WARNING",
+   "hook": "YOU DON'T HAVE TO<br>FEEL LIKE IT.<br><b>JUST SHOW UP.</b>",
+   "scenes": [0, 1, 3, 4, 5]
+  },
+  {
+   "id": "money-check-before-december",
+   "hookId": "budget-quest",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE DECEMBER", "kick": "WEALTH CHECK", "title": "DO THIS <b>MONEY CHECK</b> BEFORE THE HOLIDAYS HIT", "sub": "The 50/30/20 quest. 15 minutes →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "NO PLAN", "text": "December spending decides what January feels like.", "sub": "No plan is still a plan."},
+    {"kind": "math", "kick": "THE SPLIT", "big": "50 / 30 / 20", "text": "Needs. Wants. Savings and debt. A simple starting guide."},
+    {"kind": "point", "num": "01 / 03", "kick": "QUEST 01 · TOTAL IT", "text": "Add up last month: needs, wants, saved.", "sub": "Just look. No guilt."},
+    {"kind": "point", "num": "02 / 03", "kick": "QUEST 02 · GIFT LIMIT", "text": "Set a holiday number now. Write it down.", "sub": "Decide before the store does."},
+    {"kind": "point", "num": "03 / 03", "kick": "QUEST 03 · AUTOMATE", "text": "Schedule a transfer to savings on payday.", "sub": "Even small amounts build the habit."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 27:23", "kick": "SCRIPTURE", "text": "“Be thou diligent to know the state of thy flocks…”", "sub": "Know your numbers."},
+    {"kind": "cta", "title": "CHECK IT TODAY.<br><b>NOT MONDAY.</b>", "text": "The System levels your Wealth stat with simple money quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "i-will-pray-for-you",
+   "hookId": "prayer-list",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-shizuku-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "YOU SAID <i>“I'LL PRAY FOR YOU.”</i>", "show": "none", "dur": 1.8},
+    {"cap": "THEN LIFE GOT BUSY.", "show": "crowd", "dur": 1.5},
+    {"cap": "MOST OF US <i>FORGET.</i> NOT ON PURPOSE.", "show": "none", "dur": 1.8},
+    {"cap": "HERE'S THE FIX.", "show": "none", "dur": 1.3},
+    {"cap": "WRITE <b>EVERY NAME</b> DOWN.", "show": "one", "dur": 1.6},
+    {"cap": "<b>5 MINUTES</b> A DAY. PRAY THE LIST.", "show": "big", "big": "5", "small": "MINUTES", "dur": 1.9},
+    {"cap": "MARK THE <b>ANSWERED</b> ONES.", "show": "bars", "names": ["WK1", "WK2", "WK3", "WK4"], "fill": [8, 16, 24, 32], "dur": 2.0},
+    {"cap": "40 DAYS LEFT. <b>40 DAYS OF PRAYER.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+    {"cap": "START THE LIST <b>TONIGHT.</b>", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "stay-up-late-sunday-gone",
+   "hookId": "sleep-stat",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE MIDNIGHT", "kick": "BODY CHECK", "title": "STAY UP LATE TONIGHT AND <b>SUNDAY IS GONE</b>", "sub": "Sleep is a stat. Level it up →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "2 AM SATURDAY", "text": "Groggy at church. Wasted Sunday. Tired Monday.", "sub": "One late night costs three days."},
+    {"kind": "point", "num": "01 / 04", "kick": "QUEST 01 · SET A TIME", "text": "Pick a bedtime tonight. Set an alarm for it.", "sub": "Bedtime alarms work too."},
+    {"kind": "point", "num": "02 / 04", "kick": "QUEST 02 · LIGHTS DOWN", "text": "Dim the room 30 minutes before bed.", "sub": "Your body reads the light."},
+    {"kind": "point", "num": "03 / 04", "kick": "QUEST 03 · PHONE OUT", "text": "Charge your phone outside the bedroom.", "sub": "Use a cheap alarm clock."},
+    {"kind": "point", "num": "04 / 04", "kick": "QUEST 04 · SAME WAKE", "text": "Wake at your normal time tomorrow. Even Sunday.", "sub": "Consistency beats catch-up sleep."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 127:2", "kick": "SCRIPTURE", "text": "“…for so he giveth his beloved sleep.”", "sub": "Rest is a gift. Take it."},
+    {"kind": "cta", "title": "LIGHTS OUT.<br><b>TONIGHT.</b>", "text": "The System turns rest into daily quests for your Body stat. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}

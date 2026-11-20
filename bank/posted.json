@@ -1433,6 +1433,139 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "08:00",
+   "id": "focus-dropping-dopamine",
+   "hook": "dopamine-reset",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-21",
+   "time": "10:00",
+   "id": "saturday-rate-your-week",
+   "hook": "5-stats-2027",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "12:00",
+   "id": "weekend-friend-audit",
+   "hook": "friend-audit",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-21",
+   "time": "14:00",
+   "id": "show-up-anyway",
+   "hook": "gym-not-feeling-it",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "16:00",
+   "id": "money-check-before-december",
+   "hook": "budget-quest",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-21",
+   "time": "18:00",
+   "id": "i-will-pray-for-you",
+   "hook": "prayer-list",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "20:00",
+   "id": "stay-up-late-sunday-gone",
+   "hook": "sleep-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-21",
+   "time": "09:00",
+   "id": "draft-stop-waiting-motivation",
+   "hook": "discipline-vs-motivation",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "13:00",
+   "id": "draft-small-wins-xp",
+   "hook": "xp-small-wins",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-21",
+   "time": "17:00",
+   "id": "draft-day-1-or-one-day",
+   "hook": "streak-day-1",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }

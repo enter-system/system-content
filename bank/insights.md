@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-19 night run (for Nov 21)
+- Data: Metricool TikTok posts Nov 13–19 returned no rows (the Nov 10–11 auto posts have aged out of the window; hand-posted packs don't show in Metricool analytics).
+- All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- All-time #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix: 5-stats-2027 as a Saturday weekly review explainer at 10:00 "It's Saturday. Rate your week" (5 stat bars, "comment your zero stat").
+- Note: Metricool can't see hand-posted videos, so learning is stuck until auto-posting returns Dec 1. Worth checking TikTok's own analytics by hand.
+
 ## 2026-11-18 night run (for Nov 20)
 - Data: Metricool TikTok posts Nov 11–18. Only the six Nov 11 auto posts come back; hand-posted packs (Nov 12+) still don't show in Metricool analytics.
 - #1 in window phone-before-bible (Nov 11): 12 views, 1 like, 15 shares. Still the only share spike; faith-routine content gets passed on.
