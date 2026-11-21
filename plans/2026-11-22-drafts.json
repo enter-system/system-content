@@ -1,0 +1,26 @@
+{
+ "date": "2026-11-22",
+ "posts": [
+  {"id": "draft-two-minute-start", "hookId": "2-minute-rule", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "PROCRASTINATING? <i>READ THIS.</i>", "show": "none", "dur": 1.6},
+   {"cap": "YOU DON'T NEED <i>AN HOUR.</i>", "show": "none", "dur": 1.6},
+   {"cap": "YOU NEED <b>2 MINUTES.</b>", "show": "big", "big": "2", "small": "MINUTES", "dur": 1.8},
+   {"cap": "PUT ON YOUR SHOES. <b>OPEN THE BIBLE.</b>", "show": "none", "dur": 1.8},
+   {"cap": "STARTING IS <i>THE HARD PART.</i>", "show": "bars", "fill": [6, 10, 22, 32], "dur": 1.9},
+   {"cap": "39 DAYS LEFT IN 2026.", "show": "big", "big": "39", "small": "DAYS LEFT", "dur": 1.8},
+   {"cap": "WAITING LOSES. <b>STARTING WINS.</b>", "show": "compare", "l": {"label": "WAITING", "fig": true}, "r": {"label": "2 MINUTES", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "START THE TIMER <b>NOW.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+  ]},
+  {"id": "draft-clear-every-quest", "hookId": "quest-complete-feeling", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "THE FEELING OF<br>CLEARING EVERY<br><b>QUEST TODAY.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Word before phone. <b>Done.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Moved my body. <b>Done.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% better. <b>Done.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Streak kept. <b>Done.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Every quest cleared. <b>Level up.</b>"}
+   ]},
+  {"id": "draft-leveling-up-looks-boring", "hookId": "level-system", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "SYSTEM ALERT", "hook": "LEVELING UP IN<br>REAL LIFE<br><b>LOOKS BORING.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}

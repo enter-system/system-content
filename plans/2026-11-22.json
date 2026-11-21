@@ -1,0 +1,489 @@
+{
+ "date": "2026-11-22",
+ "note": "Nightly run (Fri Nov 20 night, ET). Nov 21 was already made, so this is Sunday Nov 22 (39 days left in 2026, 6 Mondays left from Nov 23). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and every library photo was last used Nov 10-13 (inside 14 days), so all 4 slideshows are the original navy System slides. Metricool's last-7-days window is empty again (hand-posted packs don't show up); all-time leaders are still 1pct-rule (946) and 5-stats-2027 (749), both remixed in the last 2 days, so the remix is phone-before-bible (share leader) as a Sunday explainer at 10:00. App post at 14:00 (last app post Nov 19).",
+ "posts": [
+  {
+   "id": "sermon-forgotten-by-tuesday",
+   "hookId": "habits-church-doesnt-teach",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "READ THIS BEFORE CHURCH",
+     "kick": "FAITH CHECK",
+     "title": "DON'T JUST HEAR THE SERMON. <b>DO SOMETHING WITH IT.</b>",
+     "sub": "3 quests for this Sunday →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "SUNDAY ONLY",
+     "text": "Great sermon Sunday. Forgotten by Tuesday.",
+     "sub": "Hearing isn't the same as changing."
+    },
+    {
+     "kind": "point",
+     "num": "THE FIX · 01 / 03",
+     "kick": "QUEST 01 · ONE LINE",
+     "text": "Write down one line you will act on this week.",
+     "sub": "Not the whole sermon. One line."
+    },
+    {
+     "kind": "point",
+     "num": "THE FIX · 02 / 03",
+     "kick": "QUEST 02 · SHARE IT",
+     "text": "Text one person what you learned today.",
+     "sub": "Saying it out loud makes it stick."
+    },
+    {
+     "kind": "point",
+     "num": "THE FIX · 03 / 03",
+     "kick": "QUEST 03 · BEFORE WEDNESDAY",
+     "text": "Do that one thing before Wednesday.",
+     "sub": "Midweek is where faith gets tested."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "JAMES 1:22",
+     "kick": "SCRIPTURE",
+     "text": "“But be ye doers of the word, and not hearers only…”",
+     "sub": "Doers level up."
+    },
+    {
+     "kind": "cta",
+     "title": "DO IT TODAY.<br><b>NOT MONDAY.</b>",
+     "text": "The System turns your faith into daily quests and a Faith stat you can watch grow. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "sunday-what-did-you-open-first",
+   "hookId": "phone-before-bible",
+   "remixOf": "phone-before-bible",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "IT'S SUNDAY. WHAT DID YOU <i>OPEN FIRST?</i>",
+     "show": "none",
+     "dur": 1.8
+    },
+    {
+     "cap": "YOUR PHONE. <i>BEFORE YOUR EYES WERE OPEN.</i>",
+     "show": "none",
+     "dur": 1.8
+    },
+    {
+     "cap": "NEWS. TEXTS. <i>SCROLL.</i>",
+     "show": "crowd",
+     "dur": 1.5
+    },
+    {
+     "cap": "YOUR MIND IS <i>FULL</i> BEFORE GOD GETS A WORD IN.",
+     "show": "none",
+     "dur": 2.0
+    },
+    {
+     "cap": "HERE'S THE SCARY PART.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "ONLY <i>39 DAYS</i> LEFT IN 2026.",
+     "show": "big",
+     "big": "39",
+     "small": "DAYS LEFT",
+     "dur": 1.9
+    },
+    {
+     "cap": "39 MORNINGS. <b>WHO GETS THEM?</b>",
+     "show": "calendar",
+     "months": [
+      "NOV",
+      "DEC",
+      "JAN"
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "PICK YOUR <b>FIRST OPEN.</b>",
+     "show": "compare",
+     "l": {
+      "label": "PHONE FIRST",
+      "fig": true
+     },
+     "r": {
+      "label": "WORD FIRST",
+      "fig": true,
+      "glow": true
+     },
+     "dur": 2.0
+    },
+    {
+     "cap": "ONE CHAPTER. <b>THEN</b> THE PHONE.",
+     "show": "bars",
+     "names": [
+      "FTH",
+      "STR",
+      "INT",
+      "WLT",
+      "HRT"
+     ],
+     "from": [
+      8,
+      20,
+      18,
+      20,
+      22
+     ],
+     "fill": [
+      32,
+      22,
+      24,
+      21,
+      26
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "PUT YOUR BIBLE ON YOUR PHONE <b>TONIGHT.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.2
+    }
+   ]
+  },
+  {
+   "id": "leaving-church-alone",
+   "hookId": "one-conversation",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DON'T SCROLL PAST THIS",
+     "kick": "HEART CHECK",
+     "title": "STOP LEAVING CHURCH WITHOUT <b>TALKING TO ANYONE</b>",
+     "sub": "3 easy openers →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "SAME PEW",
+     "text": "Months in the same seat. Nobody knows your name.",
+     "sub": "And you don't know theirs."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 03",
+     "kick": "OPENER 01",
+     "text": "“Hey, I'm ___. How long have you been coming here?”",
+     "sub": "Simple works."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 03",
+     "kick": "OPENER 02",
+     "text": "“How can I pray for you this week?”",
+     "sub": "Then actually pray."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 03",
+     "kick": "OPENER 03",
+     "text": "“We're getting lunch after. Want to come?”",
+     "sub": "One invite changes everything."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "PROVERBS 27:17",
+     "kick": "SCRIPTURE",
+     "text": "“Iron sharpeneth iron; so a man sharpeneth the countenance of his friend.”",
+     "sub": "You can't be sharpened alone."
+    },
+    {
+     "kind": "cta",
+     "title": "TALK TO ONE PERSON.<br><b>TODAY.</b>",
+     "text": "The System levels your Heart stat with real-life connection quests. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "life-has-stats-nobody-tracking",
+   "hookId": "why-i-built-it",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "YOUR LIFE HAS STATS.<br>NOBODY'S<br><b>TRACKING THEM.</b>",
+   "scenes": [
+    0,
+    1,
+    2,
+    4,
+    5
+   ]
+  },
+  {
+   "id": "habits-die-no-anchor",
+   "hookId": "habit-stack",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS TOMORROW MORNING",
+     "kick": "PRODUCTIVITY CHECK",
+     "title": "YOUR NEW HABITS KEEP DYING. <b>THEY HAVE NO ANCHOR.</b>",
+     "sub": "Habit stacking in 1 line →"
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "5 HABITS ON MONDAY",
+     "text": "Start everything at once. Quit everything by Thursday.",
+     "sub": "Willpower runs out. Routines don't."
+    },
+    {
+     "kind": "math",
+     "kick": "THE FORMULA",
+     "big": "OLD + NEW",
+     "text": "“After I ___, I will ___.” Tie the new habit to one you already do every day."
+    },
+    {
+     "kind": "point",
+     "num": "01 / 03",
+     "kick": "STACK 01 · FAITH",
+     "text": "After I pour my coffee, I read one chapter.",
+     "sub": "Coffee is the reminder."
+    },
+    {
+     "kind": "point",
+     "num": "02 / 03",
+     "kick": "STACK 02 · BODY",
+     "text": "After I brush my teeth, I do 10 push-ups.",
+     "sub": "Small enough to never skip."
+    },
+    {
+     "kind": "point",
+     "num": "03 / 03",
+     "kick": "STACK 03 · MIND",
+     "text": "After dinner, I write tomorrow's 3 quests.",
+     "sub": "Wake up already knowing."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "ZECHARIAH 4:10",
+     "kick": "SCRIPTURE",
+     "text": "“For who hath despised the day of small things?”",
+     "sub": "Small stacks win."
+    },
+    {
+     "kind": "cta",
+     "title": "PICK ONE STACK.<br><b>START TODAY.</b>",
+     "text": "The System turns stacked habits into daily quests, streaks and XP. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  },
+  {
+   "id": "sunday-stop-sitting",
+   "hookId": "walk-daily",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {
+     "cap": "STOP SITTING ALL <i>SUNDAY.</i>",
+     "show": "none",
+     "dur": 1.6
+    },
+    {
+     "cap": "COUCH. PHONE. NAP. <i>REPEAT.</i>",
+     "show": "crowd",
+     "dur": 1.6
+    },
+    {
+     "cap": "YOUR BODY STAT <i>DIDN'T MOVE.</i>",
+     "show": "bars",
+     "names": [
+      "FTH",
+      "STR",
+      "INT",
+      "WLT",
+      "HRT"
+     ],
+     "fill": [
+      24,
+      4,
+      18,
+      20,
+      22
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "HERE'S THE EASIEST FIX.",
+     "show": "none",
+     "dur": 1.4
+    },
+    {
+     "cap": "<b>ONE WALK.</b> 20 MINUTES.",
+     "show": "big",
+     "big": "20",
+     "small": "MINUTES",
+     "dur": 1.9
+    },
+    {
+     "cap": "NO EARBUDS. <b>PRAY OR THINK.</b>",
+     "show": "none",
+     "dur": 1.7
+    },
+    {
+     "cap": "39 DAYS LEFT = <b>39 WALKS.</b>",
+     "show": "calendar",
+     "months": [
+      "NOV",
+      "DEC",
+      "JAN"
+     ],
+     "dur": 1.9
+    },
+    {
+     "cap": "SAME DAY. <b>DIFFERENT YOU.</b>",
+     "show": "compare",
+     "l": {
+      "label": "SITTING",
+      "fig": true
+     },
+     "r": {
+      "label": "WALKING",
+      "fig": true,
+      "glow": true
+     },
+     "dur": 2.0
+    },
+    {
+     "cap": "STRENGTH AND FAITH. <b>BOTH GO UP.</b>",
+     "show": "bars",
+     "names": [
+      "FTH",
+      "STR",
+      "INT",
+      "WLT",
+      "HRT"
+     ],
+     "from": [
+      24,
+      4,
+      18,
+      20,
+      22
+     ],
+     "fill": [
+      30,
+      22,
+      22,
+      20,
+      24
+     ],
+     "dur": 2.0
+    },
+    {
+     "cap": "GO <b>BEFORE SUNSET.</b>",
+     "show": "crowd",
+     "glow": true,
+     "dur": 2.1
+    }
+   ]
+  },
+  {
+   "id": "last-6-mondays",
+   "hookId": "mondays-left",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {
+     "kind": "cover",
+     "tone": "alert",
+     "banner": "DO THIS BEFORE BED",
+     "kick": "DISCIPLINE CHECK",
+     "title": "TOMORROW IS ONE OF THE <b>LAST 6 MONDAYS</b> OF 2026",
+     "sub": "Set it up tonight →"
+    },
+    {
+     "kind": "countdown",
+     "kick": "TIME LEFT",
+     "big": "39",
+     "title": "DAYS LEFT<br>IN 2026",
+     "sub": "Only 6 Mondays to start on."
+    },
+    {
+     "kind": "point",
+     "tone": "alert",
+     "num": "WHAT IT'S COSTING YOU",
+     "kick": "“NEXT MONDAY”",
+     "text": "Say it 6 more times and the year is over.",
+     "sub": "Monday isn't the problem. Sunday night is."
+    },
+    {
+     "kind": "point",
+     "num": "TONIGHT · 01 / 04",
+     "kick": "QUEST 01 · WRITE 3",
+     "text": "Write 3 quests for tomorrow. Just 3.",
+     "sub": "Faith. Body. Work."
+    },
+    {
+     "kind": "point",
+     "num": "TONIGHT · 02 / 04",
+     "kick": "QUEST 02 · LAY IT OUT",
+     "text": "Gym bag by the door. Bible on the table.",
+     "sub": "Make the right thing easy."
+    },
+    {
+     "kind": "point",
+     "num": "TONIGHT · 03 / 04",
+     "kick": "QUEST 03 · PHONE OUT",
+     "text": "Alarm set. Phone charging outside the bedroom.",
+     "sub": "Protect the first hour."
+    },
+    {
+     "kind": "point",
+     "num": "TONIGHT · 04 / 04",
+     "kick": "QUEST 04 · PRAY IT",
+     "text": "Pray over your week before you sleep.",
+     "sub": "Hand Him the plan."
+    },
+    {
+     "kind": "point",
+     "tone": "gold",
+     "num": "PSALM 90:12",
+     "kick": "SCRIPTURE",
+     "text": "“So teach us to number our days, that we may apply our hearts unto wisdom.”",
+     "sub": "Count them. Use them."
+    },
+    {
+     "kind": "cta",
+     "title": "SET IT UP TONIGHT.<br><b>NOT NEXT MONDAY.</b>",
+     "text": "The System gives you daily quests, streaks and stats that rise. <b>Coming soon.</b>",
+     "sub": "FOLLOW TO JOIN"
+    }
+   ]
+  }
+ ]
+}
