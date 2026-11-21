@@ -1566,6 +1566,140 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "08:00",
+   "id": "sermon-forgotten-by-tuesday",
+   "hook": "habits-church-doesnt-teach",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-22",
+   "time": "10:00",
+   "id": "sunday-what-did-you-open-first",
+   "hook": "phone-before-bible",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01",
+   "remixOf": "phone-before-bible"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "12:00",
+   "id": "leaving-church-alone",
+   "hook": "one-conversation",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-22",
+   "time": "14:00",
+   "id": "life-has-stats-nobody-tracking",
+   "hook": "why-i-built-it",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "16:00",
+   "id": "habits-die-no-anchor",
+   "hook": "habit-stack",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-22",
+   "time": "18:00",
+   "id": "sunday-stop-sitting",
+   "hook": "walk-daily",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "20:00",
+   "id": "last-6-mondays",
+   "hook": "mondays-left",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-22",
+   "time": "09:00",
+   "id": "draft-two-minute-start",
+   "hook": "2-minute-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "13:00",
+   "id": "draft-clear-every-quest",
+   "hook": "quest-complete-feeling",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-22",
+   "time": "17:00",
+   "id": "draft-leveling-up-looks-boring",
+   "hook": "level-system",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }

@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-20 night run (for Nov 22)
+- Data: Metricool TikTok posts Nov 13–20 returned no rows again (hand-posted packs don't show in Metricool analytics).
+- All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- All-time #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Both were remixed Nov 20–21, so today's remix is phone-before-bible (Nov 11 share leader, 15 shares) → 10:00 Sunday explainer "It's Sunday. What did you open first?" with 39 days / 39 mornings.
+- Sunday angle across the day: sermon → action, talking to someone at church, a Sunday walk, and "last 6 Mondays" setup at 20:00.
+
 ## 2026-11-19 night run (for Nov 21)
 - Data: Metricool TikTok posts Nov 13–19 returned no rows (the Nov 10–11 auto posts have aged out of the window; hand-posted packs don't show in Metricool analytics).
 - All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
