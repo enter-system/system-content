@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-23",
+ "note": "Nightly run (Sat Nov 21 night, ET). Nov 22 was already made, so this is Monday Nov 23 (38 days left in 2026, 6 Mondays left counting this one). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos; the oldest library photos were last used Nov 10 (13 days ago, inside the 14-day rule), so all 4 slideshows are the original navy System slides. Metricool's last-7-days window is empty again; all-time leaders 1pct-rule, 5-stats-2027 and phone-before-bible were remixed Nov 20-22, so the remix is 3-daily-quests as a Monday explainer at 10:00. No app post (last one Nov 22).",
+ "posts": [
+  {
+   "id": "monday-dont-say-next-monday",
+   "hookId": "start-monday-lie",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "DISCIPLINE CHECK", "title": "IT'S MONDAY. <b>DON'T SAY “NEXT MONDAY.”</b>", "sub": "Read this before you push it again →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "38", "title": "DAYS LEFT<br>IN 2026", "sub": "This is one of the last 6 Mondays."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE LIE", "text": "“I'll start next Monday” costs you a full week. Every time.", "sub": "6 more of those and 2026 is gone."},
+    {"kind": "point", "num": "THE FIX · 01 / 03", "kick": "QUEST 01 · SHRINK IT", "text": "Pick one habit. Make it small enough to do today.", "sub": "10 push-ups. One chapter. One walk."},
+    {"kind": "point", "num": "THE FIX · 02 / 03", "kick": "QUEST 02 · TIME IT", "text": "Give it a time. “After lunch,” not “sometime.”", "sub": "Vague plans die by noon."},
+    {"kind": "point", "num": "THE FIX · 03 / 03", "kick": "QUEST 03 · MARK IT", "text": "Do it, then mark day 1. Tonight.", "sub": "Day 1 beats one day."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 27:1", "kick": "SCRIPTURE", "text": "“Boast not thyself of to morrow; for thou knowest not what a day may bring forth.”", "sub": "Today is the one you have."},
+    {"kind": "cta", "title": "START TODAY.<br><b>NOT NEXT MONDAY.</b>", "text": "The System turns one small habit into daily quests, streaks and XP. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "monday-3-quests-before-noon",
+   "hookId": "3-daily-quests",
+   "remixOf": "3-daily-quests",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "IT'S MONDAY. <i>DO THESE 3 BEFORE NOON.</i>", "show": "none", "dur": 1.8},
+    {"cap": "MOST PEOPLE WASTE <i>MONDAY MORNING.</i>", "show": "crowd", "dur": 1.7},
+    {"cap": "EMAILS. SCROLLING. <i>“EASING IN.”</i>", "show": "none", "dur": 1.6},
+    {"cap": "QUEST 1: <b>READ ONE CHAPTER.</b>", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [8, 8, 8], "fill": [30, 8, 8], "dur": 1.8},
+    {"cap": "QUEST 2: <b>MOVE FOR 20 MINUTES.</b>", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [30, 8, 8], "fill": [30, 30, 8], "dur": 1.8},
+    {"cap": "QUEST 3: <b>FINISH YOUR HARDEST TASK.</b>", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [30, 30, 8], "fill": [30, 30, 30], "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "ONLY <i>38 DAYS</i> LEFT IN 2026.", "show": "big", "big": "38", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "38 DAYS × 3 QUESTS = <b>114 WINS.</b>", "show": "big", "big": "114", "small": "WINS", "dur": 2.0},
+    {"cap": "SAME MONDAY. <b>DIFFERENT YOU.</b>", "show": "compare", "l": {"label": "EASING IN", "fig": true}, "r": {"label": "3 BEFORE NOON", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "START QUEST 1 <b>RIGHT NOW.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+   ]
+  },
+  {
+   "id": "weakest-stat-dragging",
+   "hookId": "weak-stat",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "STAT CHECK", "title": "YOUR WEAKEST STAT IS <b>DRAGGING THE REST DOWN</b>", "sub": "Find it in 10 seconds →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE CHAIN", "text": "Bad sleep kills your workout. A tired body skips prayer.", "sub": "One low stat pulls on every other one."},
+    {"kind": "point", "num": "01 / 05", "kick": "FAITH", "text": "Did you open the Word this week?", "sub": "Rate it 1–10. Be honest."},
+    {"kind": "point", "num": "02 / 05", "kick": "BODY", "text": "Did you move, sleep and eat on purpose?", "sub": "Rate it 1–10."},
+    {"kind": "point", "num": "03 / 05", "kick": "MIND", "text": "Did you learn anything, or just scroll?", "sub": "Rate it 1–10."},
+    {"kind": "point", "num": "04 / 05", "kick": "WEALTH", "text": "Do you know where last week's money went?", "sub": "Rate it 1–10."},
+    {"kind": "point", "num": "05 / 05", "kick": "HEART", "text": "Who did you call, help or encourage?", "sub": "Rate it 1–10."},
+    {"kind": "point", "tone": "gold", "num": "THE FIX", "kick": "THIS WEEK", "text": "Lowest number gets one daily quest. Just one.", "sub": "Raise the floor, not the ceiling."},
+    {"kind": "cta", "title": "FIND IT TODAY.<br><b>FIX IT THIS WEEK.</b>", "text": "The System shows your 5 stats and gives your weakest one daily quests. <b>Coming soon.</b>", "sub": "COMMENT YOUR WEAKEST STAT"}
+   ]
+  },
+  {
+   "id": "protect-your-mind-stat",
+   "hookId": "mind-stat",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "WARNING",
+   "hook": "YOUR MIND IS<br>YOUR HIGHEST STAT.<br><b>STOP DRAINING IT.</b>",
+   "scenes": [0, 1, 2, 3, 5]
+  },
+  {
+   "id": "money-leaking-7-day-audit",
+   "hookId": "track-every-dollar",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE DECEMBER", "kick": "WEALTH CHECK", "title": "STOP GUESSING WHERE <b>YOUR MONEY GOES</b>", "sub": "A 7-day money audit →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "“WHERE DID IT GO?”", "text": "December spending hits harder when you never checked November.", "sub": "You can't fix what you don't see."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "DAY 1 · OPEN IT", "text": "Open your bank app. Read the last 30 days.", "sub": "No judging yet. Just look."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "DAY 2 · SUBSCRIPTIONS", "text": "List every subscription. Cancel one you forgot.", "sub": "Forgotten charges add up quietly."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "DAYS 3–6 · WRITE IT", "text": "Write down every purchase the same day.", "sub": "Notes app is enough."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "DAY 7 · DECIDE", "text": "Pick one leak. Set a limit for December.", "sub": "One leak. Not ten."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 27:23", "kick": "SCRIPTURE", "text": "“Be thou diligent to know the state of thy flocks, and look well to thy herds.”", "sub": "Know your numbers."},
+    {"kind": "cta", "title": "OPEN THE APP.<br><b>TODAY.</b>", "text": "The System tracks your Wealth stat with simple daily money quests. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "stop-rushing-out-without-praying",
+   "hookId": "prayer-quest",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "STOP RUSHING OUT THE DOOR <i>WITHOUT PRAYING.</i>", "show": "none", "dur": 1.9},
+    {"cap": "ALARM. PHONE. COFFEE. <i>GO.</i>", "show": "crowd", "dur": 1.6},
+    {"cap": "GOD GETS <i>WHATEVER'S LEFT.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "fill": [4, 20, 22, 20, 18], "dur": 1.9},
+    {"cap": "HERE'S A <b>5-MINUTE</b> FIX.", "show": "big", "big": "5", "small": "MINUTES", "dur": 1.8},
+    {"cap": "MINUTE 1: <b>THANK HIM.</b>", "show": "none", "dur": 1.5},
+    {"cap": "MINUTES 2–3: <b>PRAY FOR SOMEONE ELSE.</b>", "show": "none", "dur": 1.8},
+    {"cap": "MINUTES 4–5: <b>HAND HIM YOUR DAY.</b>", "show": "none", "dur": 1.8},
+    {"cap": "38 DAYS LEFT = <b>38 MORNINGS.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+    {"cap": "RUSHED VS. <b>READY.</b>", "show": "compare", "l": {"label": "RUSHED", "fig": true}, "r": {"label": "PRAYED FIRST", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "SET A <b>5-MINUTE ALARM</b> FOR TOMORROW.", "show": "crowd", "glow": true, "dur": 2.2}
+   ]
+  },
+  {
+   "id": "7-day-reset-before-december",
+   "hookId": "7-day-reset",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "START THIS TONIGHT", "kick": "SYSTEM RESET", "title": "DO THIS <b>7-DAY RESET</b> BEFORE DECEMBER HITS", "sub": "One quest a day →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "38", "title": "DAYS LEFT<br>IN 2026", "sub": "Use the first 7 to reset."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "DRIFTING", "text": "Most people drift into December and promise January.", "sub": "Reset now and you start December strong."},
+    {"kind": "point", "num": "DAYS 1–2", "kick": "ENVIRONMENT", "text": "Clean your room. Clear your desk. Wash the car.", "sub": "Order outside, order inside."},
+    {"kind": "point", "num": "DAYS 3–4", "kick": "BODY", "text": "Bed by 11. Walk every day. Water before coffee.", "sub": "Sleep is the cheapest upgrade."},
+    {"kind": "point", "num": "DAYS 5–6", "kick": "MIND + MONEY", "text": "Delete one app that drains you. Check your bank.", "sub": "Cut the leaks."},
+    {"kind": "point", "num": "DAY 7", "kick": "FAITH", "text": "Pray over December. Write 3 goals for it.", "sub": "Plan with Him, not after."},
+    {"kind": "point", "tone": "gold", "num": "LAMENTATIONS 3:22–23", "kick": "SCRIPTURE", "text": "“…his compassions fail not. They are new every morning…”", "sub": "Every morning is a reset."},
+    {"kind": "cta", "title": "DAY 1 IS TOMORROW.<br><b>SAVE THIS.</b>", "text": "The System turns resets into daily quests with streaks and XP. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  }
+ ]
+}

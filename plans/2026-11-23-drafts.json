@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-23",
+ "posts": [
+  {"id": "draft-one-thing-today", "hookId": "1-thing-today", "time": "09:00", "type": "explainer", "silent": true, "sound": "calm-shizuku-01", "lead": 999, "scenes": [
+   {"cap": "OVERWHELMED? <i>READ THIS.</i>", "show": "none", "dur": 1.6},
+   {"cap": "20 THINGS ON THE LIST. <i>0 DONE.</i>", "show": "crowd", "dur": 1.8},
+   {"cap": "IF YOU ONLY DO <b>ONE THING</b> TODAY…", "show": "big", "big": "1", "small": "THING", "dur": 1.8},
+   {"cap": "DO THE ONE THAT MAKES <b>THE REST EASIER.</b>", "show": "none", "dur": 2.0},
+   {"cap": "ONE DONE BEATS <i>TEN STARTED.</i>", "show": "bars", "fill": [6, 12, 22, 32], "dur": 1.9},
+   {"cap": "38 DAYS LEFT IN 2026.", "show": "big", "big": "38", "small": "DAYS LEFT", "dur": 1.8},
+   {"cap": "BUSY VS. <b>DONE.</b>", "show": "compare", "l": {"label": "20 TABS OPEN", "fig": true}, "r": {"label": "1 THING DONE", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "PICK IT. <b>DO IT NOW.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+  ]},
+  {"id": "draft-todo-list-gives-xp", "hookId": "todo-xp", "time": "13:00", "type": "montage", "silent": true, "sound": "hype-semdemora-01", "beatsPer": 2,
+   "hook": "WHAT IF YOUR<br>TO-DO LIST<br><b>GAVE YOU XP?</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Pick your form. <b>Day 1.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Read the Word. <b>+XP</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Stretch. <b>+XP</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Keep the streak. <b>+XP</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Your world grows <b>with you.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Every quest cleared. <b>Level up.</b>"}
+   ]},
+  {"id": "draft-never-miss-twice", "hookId": "never-miss-twice", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT", "hook": "MISSED YESTERDAY?<br>FINE. NEVER<br><b>MISS TWICE.</b>", "scenes": [0, 3, 2, 4, 5]}
+ ]
+}

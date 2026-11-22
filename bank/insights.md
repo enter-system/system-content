@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-21 night run (for Nov 23)
+- Data: Metricool TikTok posts Nov 14–21 returned no rows again (hand-posted packs don't show in Metricool analytics).
+- All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- All-time #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Leaders and phone-before-bible were remixed Nov 20–22, so today's remix is 3-daily-quests (627 views, 36 likes) → 10:00 Monday explainer "Do these 3 before noon" (38 days × 3 = 114 wins).
+- Monday angle: "don't say next Monday" at 08:00, weakest-stat self-rating at 12:00 (echoes 5-stats), 7-day reset before December at 20:00.
+
 ## 2026-11-20 night run (for Nov 22)
 - Data: Metricool TikTok posts Nov 13–20 returned no rows again (hand-posted packs don't show in Metricool analytics).
 - All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
