@@ -1,0 +1,117 @@
+{
+ "date": "2026-11-24",
+ "note": "Nightly run (Sun Nov 22 night, ET). Nov 23 was already made, so this is Tuesday Nov 24 (37 days left in 2026, Thanksgiving is Thursday). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos. Only 3 library photos are 14+ days old (last used Nov 10), so the photo slot is a Thanksgiving-week whisper with those 3; the other 3 slideshows are the original navy System slides. Metricool's last-7-days window is empty again (hand-posted packs don't show); all-time leader 1pct-rule (946 views) is remixed as the 10:00 explainer '37 days of 1%'. No app post (last one Nov 22).",
+ "posts": [
+  {
+   "id": "faith-stat-dropping",
+   "hookId": "faith-stat",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "FAITH CHECK", "title": "YOUR FAITH STAT IS <b>DROPPING EVERY DAY YOU SKIP</b>", "sub": "Read this before you open your phone →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "37", "title": "DAYS LEFT<br>IN 2026", "sub": "37 mornings. How many start with God?"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE DRIFT", "text": "Skip one day, it's easier to skip the next.", "sub": "Nobody drifts on purpose."},
+    {"kind": "point", "num": "THE FIX · 01 / 03", "kick": "QUEST 01 · ONE CHAPTER", "text": "Read one chapter before you check your phone.", "sub": "Start with Proverbs: 31 chapters."},
+    {"kind": "point", "num": "THE FIX · 02 / 03", "kick": "QUEST 02 · ONE PRAYER", "text": "Pray for 2 minutes. Out loud if you can.", "sub": "Short and real beats long and never."},
+    {"kind": "point", "num": "THE FIX · 03 / 03", "kick": "QUEST 03 · ONE VERSE", "text": "Write one verse down. Read it at lunch.", "sub": "Carry it into your day."},
+    {"kind": "point", "tone": "gold", "num": "JAMES 1:22", "kick": "SCRIPTURE", "text": "“But be ye doers of the word, and not hearers only…”", "sub": "Do it, don't just save it."},
+    {"kind": "cta", "title": "START TODAY.<br><b>NOT MONDAY.</b>", "text": "The System tracks your Faith stat with simple daily quests and streaks. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "37-days-of-1-percent",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "37 DAYS LEFT. <i>DO THE MATH.</i>", "show": "big", "big": "37", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "1% BETTER EVERY DAY…", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [10, 10, 10], "fill": [14, 14, 14], "dur": 1.6},
+    {"cap": "1.01 TO THE 37TH = <b>1.44</b>", "show": "big", "big": "1.44", "small": "1.01³⁷", "dur": 2.0},
+    {"cap": "THAT'S <b>44% BETTER</b> BY JANUARY 1.", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [14, 14, 14], "fill": [32, 32, 32], "dur": 2.0},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "1% WORSE EVERY DAY = <i>0.69</i>", "show": "big", "big": "0.69", "small": "0.99³⁷", "dur": 2.0},
+    {"cap": "YOU ENTER 2027 <i>31% WORSE.</i>", "show": "bars", "names": ["FTH", "STR", "INT"], "from": [22, 22, 22], "fill": [7, 7, 7], "dur": 2.0},
+    {"cap": "SAME 37 DAYS. <b>TWO DIFFERENT PEOPLE.</b>", "show": "compare", "l": {"label": "1% WORSE", "fig": true}, "r": {"label": "1% BETTER", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "1% = <b>ONE SMALL QUEST.</b>", "show": "none", "dur": 1.6},
+    {"cap": "START IT <b>TODAY.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "before-thanksgiving-table",
+   "hookId": "heart-stat",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "THANKSGIVING IS THURSDAY", "kick": "HEART CHECK", "title": "DO THIS <b>BEFORE YOU SIT AT THE TABLE</b>", "sub": "4 quests for this week →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "PRESENT, NOT THERE", "text": "Phone in hand. Mind somewhere else. Gone by dessert.", "sub": "The people at the table notice."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · CALL", "text": "Call one person you haven't talked to in months.", "sub": "Today, not Thursday."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · THANK", "text": "Text 3 people exactly what you're thankful for.", "sub": "Name the specific thing."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · PHONE AWAY", "text": "Phone in another room during the meal.", "sub": "Be all the way there."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · SERVE", "text": "Cook, set up or clean. Don't wait to be asked.", "sub": "Serving is a Heart stat."},
+    {"kind": "point", "tone": "gold", "num": "1 THESSALONIANS 5:18", "kick": "SCRIPTURE", "text": "“In every thing give thanks: for this is the will of God…”", "sub": "Gratitude is a daily quest."},
+    {"kind": "cta", "title": "START TODAY.<br><b>MAKE THE CALL.</b>", "text": "The System levels your Heart stat with daily quests for the people who matter. <b>Coming soon.</b>", "sub": "SAVE THIS FOR THURSDAY"}
+   ]
+  },
+  {
+   "id": "body-stat-sitting-still",
+   "hookId": "body-stat",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "YOUR BODY STAT<br>DROPS EVERY DAY<br><b>YOU SIT STILL.</b>",
+   "scenes": [0, 1, 2, 4, 5]
+  },
+  {
+   "id": "thankful-for-whisper",
+   "hookId": "thankful-for",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "whisper", "bg": "photos/library/faith-bibles-church-01.jpg", "text": "thankful for…", "y": 30},
+    {"kind": "whisper", "bg": "photos/library/faith-saved-by-god-couple-01.jpg", "text": "answered prayers.", "y": 24},
+    {"kind": "whisper", "bg": "photos/library/family-mountains-behind-01.jpg", "text": "the ones who stayed.", "y": 20},
+    {"kind": "cta", "title": "FAITH. FAMILY.<br><b>GRATITUDE.</b>", "text": "Level up the stats that actually matter. The System. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "new-year-starts-tonight",
+   "hookId": "new-year-before-new-year",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-shizuku-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "STOP WAITING FOR <i>JANUARY 1.</i>", "show": "none", "dur": 1.7},
+    {"cap": "EVERYONE STARTS <i>THE SAME DAY.</i>", "show": "crowd", "dur": 1.7},
+    {"cap": "AND MOST QUIT BY <i>FEBRUARY.</i>", "show": "calendar", "months": ["JAN", "FEB"], "dur": 1.8},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "<i>37 DAYS</i> STILL LEFT IN 2026.", "show": "big", "big": "37", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "START NOW. HIT JANUARY <b>ALREADY 37 DAYS IN.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 2.2},
+    {"cap": "ONE HABIT. <b>EVERY DAY.</b> THAT'S IT.", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [8, 8, 8, 8, 8], "fill": [26, 22, 20, 18, 22], "dur": 2.0},
+    {"cap": "RESOLUTION VS. <b>HEAD START.</b>", "show": "compare", "l": {"label": "WAITS FOR JAN 1", "fig": true}, "r": {"label": "STARTS TONIGHT", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "YOUR NEW YEAR <b>STARTS TONIGHT.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+   ]
+  },
+  {
+   "id": "night-routine-tomorrow-lost",
+   "hookId": "night-routine",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TONIGHT", "kick": "NIGHT ROUTINE", "title": "SKIP THIS AND <b>TOMORROW IS ALREADY LOST</b>", "sub": "5 quests before bed →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE SCROLL", "text": "Up till 1 a.m. Snooze 3 times. Day starts behind.", "sub": "Bad mornings start the night before."},
+    {"kind": "point", "num": "01 / 05", "kick": "PLAN", "text": "Write tomorrow's top 3 tasks.", "sub": "Wake up knowing what wins the day."},
+    {"kind": "point", "num": "02 / 05", "kick": "PREP", "text": "Lay out clothes. Fill the water bottle.", "sub": "Fewer choices at 6 a.m."},
+    {"kind": "point", "num": "03 / 05", "kick": "PHONE", "text": "Charge it across the room.", "sub": "No scrolling in bed."},
+    {"kind": "point", "num": "04 / 05", "kick": "PRAY", "text": "Thank God for 3 things from today.", "sub": "End the day with Him."},
+    {"kind": "point", "num": "05 / 05", "kick": "SLEEP", "text": "Lights out at the same time every night.", "sub": "Sleep is the cheapest upgrade."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 4:8", "kick": "SCRIPTURE", "text": "“I will both lay me down in peace, and sleep…”", "sub": "Rest is part of the plan."},
+    {"kind": "cta", "title": "START TONIGHT.<br><b>NOT MONDAY.</b>", "text": "The System turns your night routine into daily quests with streaks and XP. <b>Coming soon.</b>", "sub": "SAVE THIS FOR BEDTIME"}
+   ]
+  }
+ ]
+}

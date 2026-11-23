@@ -1,6 +1,12 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-22 night run (for Nov 24)
+- Data: Metricool TikTok posts Nov 15–22 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one still leads.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix pick: 1pct-rule (last remixed Nov 20) → 10:00 explainer "37 days of 1%" (1.01^37 = 1.44, 0.99^37 = 0.69). Thanksgiving week: heart-stat table quests at 12:00 and a gratitude whisper at 16:00; Black Friday limit as a draft.
+
 ## 2026-11-21 night run (for Nov 23)
 - Data: Metricool TikTok posts Nov 14–21 returned no rows again (hand-posted packs don't show in Metricool analytics).
 - All-time #1 still 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

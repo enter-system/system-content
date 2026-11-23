@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-24",
+ "posts": [
+  {"id": "draft-black-friday-limit", "hookId": "budget-quest", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "BLACK FRIDAY IS IN 3 DAYS. <i>READ THIS.</i>", "show": "none", "dur": 1.8},
+   {"cap": "“IT'S ON SALE” <i>ISN'T A PLAN.</i>", "show": "crowd", "dur": 1.7},
+   {"cap": "SET YOUR LIMIT <b>BEFORE FRIDAY.</b>", "show": "big", "big": "3", "small": "DAYS", "dur": 1.8},
+   {"cap": "STEP 1: <b>WRITE WHAT YOU NEED.</b>", "show": "none", "dur": 1.6},
+   {"cap": "STEP 2: <b>PICK ONE NUMBER.</b>", "show": "none", "dur": 1.6},
+   {"cap": "STEP 3: <b>UNSUBSCRIBE FROM SALE EMAILS.</b>", "show": "none", "dur": 1.8},
+   {"cap": "IMPULSE VS. <b>PLAN.</b>", "show": "compare", "l": {"label": "CART FULL", "fig": true}, "r": {"label": "LIMIT SET", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "WEALTH STAT <b>PROTECTED.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [20, 20, 20, 8, 20], "fill": [20, 20, 20, 30, 20], "dur": 1.9},
+   {"cap": "SET THE NUMBER <b>TONIGHT.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+  ]},
+  {"id": "draft-level-up-in-silence", "hookId": "level-up-quietly", "time": "13:00", "type": "montage", "silent": true, "sound": "hype-semdemora-01", "beatsPer": 2,
+   "hook": "LEVEL UP<br>IN SILENCE.<br><b>LET THE STATS TALK.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "No announcement. <b>Just quests.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Word first. <b>+XP</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Train. Recover. <b>+XP</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% a day. <b>Quietly.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Streak keeps <b>growing.</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Let the results <b>talk.</b>"}
+   ]},
+  {"id": "draft-what-level-are-you", "hookId": "rank-check", "time": "17:00", "type": "video", "silent": true, "sound": "calm-build-01",
+   "kicker": "SYSTEM ALERT", "hook": "37 DAYS LEFT.<br>WHAT LEVEL<br><b>ARE YOU REALLY?</b>", "scenes": [0, 1, 4, 5]}
+ ]
+}

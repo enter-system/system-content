@@ -1834,6 +1834,140 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "08:00",
+   "id": "faith-stat-dropping",
+   "hook": "faith-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-24",
+   "time": "10:00",
+   "id": "37-days-of-1-percent",
+   "hook": "1pct-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01",
+   "remixOf": "1pct-rule"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "12:00",
+   "id": "before-thanksgiving-table",
+   "hook": "heart-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-24",
+   "time": "14:00",
+   "id": "body-stat-sitting-still",
+   "hook": "body-stat",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "16:00",
+   "id": "thankful-for-whisper",
+   "hook": "thankful-for",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-24",
+   "time": "18:00",
+   "id": "new-year-starts-tonight",
+   "hook": "new-year-before-new-year",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "20:00",
+   "id": "night-routine-tomorrow-lost",
+   "hook": "night-routine",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-24",
+   "time": "09:00",
+   "id": "draft-black-friday-limit",
+   "hook": "budget-quest",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "13:00",
+   "id": "draft-level-up-in-silence",
+   "hook": "level-up-quietly",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-24",
+   "time": "17:00",
+   "id": "draft-what-level-are-you",
+   "hook": "rank-check",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
   }
  ]
 }
