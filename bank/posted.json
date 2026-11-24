@@ -1968,6 +1968,158 @@
    ],
    "manual": true,
    "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "08:00",
+   "id": "finish-the-gospels-36-days",
+   "hook": "bible-plan",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-25",
+   "time": "10:00",
+   "id": "fix-your-weakest-stat-36-days",
+   "hook": "5-stats-2027",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01",
+   "remixOf": "5-stats-2027"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "12:00",
+   "id": "5-goals-before-2027",
+   "hook": "2027-goals",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-25",
+   "time": "14:00",
+   "id": "stop-tracking-life-in-notes",
+   "hook": "building-in-public",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "16:00",
+   "id": "finish-2026-quietly",
+   "hook": "finish-2026-quietly",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "photos": [
+    "body-gym-towel-rest-01.jpg",
+    "faith-alarm-phone-bed-01.jpg",
+    "mind-laptop-breakfast-book-01.jpg",
+    "wealth-city-desk-01.jpg",
+    "wealth-plane-laptop-01.jpg",
+    "wealth-snow-drive-pov-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "time": "18:00",
+   "id": "discipline-mood",
+   "hook": "discipline-mood",
+   "type": "montage",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01",
+   "photos": [
+    "body-dark-gym-rest-01.jpg",
+    "body-dark-kitchen-back-01.jpg",
+    "body-fog-run-behind-01.jpg",
+    "body-fog-run-masked-01.jpg",
+    "body-hooded-gym-01.jpg",
+    "identity-night-luggage-walk-01.jpg",
+    "mind-desk-night-discipline-01.jpg",
+    "mind-hooded-window-sea-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-25",
+   "time": "20:00",
+   "id": "black-friday-check-your-cart",
+   "hook": "stats-boring-money",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-25",
+   "time": "09:00",
+   "id": "draft-no-zero-days-thanksgiving",
+   "hook": "never-zero-days",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "13:00",
+   "id": "draft-life-became-an-rpg",
+   "hook": "life-rpg",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-25",
+   "time": "17:00",
+   "id": "draft-discipline-will-show-up",
+   "hook": "discipline-vs-motivation",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
   }
  ]
 }

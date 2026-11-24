@@ -32,7 +32,8 @@
    "used": [
     "2026-11-10",
     "2026-11-18",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-25"
    ]
   },
   {
@@ -54,7 +55,8 @@
    "hook": "POV: your life just became an RPG",
    "used": [
     "2026-11-10",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ]
   },
   {
@@ -126,7 +128,8 @@
    "hook": "Motivation gets you started. Discipline gets you a streak.",
    "used": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-25"
    ]
   },
   {
@@ -156,7 +159,8 @@
    "hook": "Boring money habits that quietly make you rich",
    "used": [
     "2026-11-11",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-25"
    ]
   },
   {
@@ -475,7 +479,8 @@
    "format": "slides",
    "hook": "Set these 5 goals before 2027 starts",
    "used": [
-    "2026-11-14"
+    "2026-11-14",
+    "2026-11-25"
    ]
   },
   {
@@ -543,7 +548,8 @@
    "hook": "No zero days: the smallest version still counts",
    "used": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-25"
    ]
   },
   {
@@ -602,7 +608,8 @@
    "format": "slides",
    "hook": "How to actually finish reading the Bible",
    "used": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-25"
    ]
   },
   {
@@ -631,7 +638,8 @@
    "format": "video",
    "hook": "Building an app that turns your life into a game. Day X.",
    "used": [
-    "2026-11-16"
+    "2026-11-16",
+    "2026-11-25"
    ]
   },
   {
@@ -735,6 +743,24 @@
    "hook": "Thanksgiving-week whisper: thankful for… answered prayers, the ones who stayed",
    "used": [
     "2026-11-24"
+   ]
+  },
+  {
+   "id": "finish-2026-quietly",
+   "pillar": "mind",
+   "format": "essay-quiet",
+   "hook": "How to finish 2026 quietly (wake first, read before you scroll, train in silence, pray on the drive)",
+   "used": [
+    "2026-11-25"
+   ]
+  },
+  {
+   "id": "discipline-mood",
+   "pillar": "consistency",
+   "format": "mood-montage",
+   "hook": "'discipline' quiet mood video: dark calm photos, one tiny word",
+   "used": [
+    "2026-11-25"
    ]
   }
  ]

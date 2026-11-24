@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-23 night run (for Nov 25)
+- Data: Metricool TikTok posts Nov 16–23 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix pick: 5-stats-2027 (last Nov 21) → 10:00 explainer "36 days left. Fix your weakest stat" ending on "comment your weakest stat". 1pct-rule was remixed yesterday.
+- Nov 11 library photos are back in rotation (14+ days): quiet-life essay at 16:00 and the first 'discipline' mood montage at 18:00. Black Friday money check at 20:00, Gospels-in-36-days plan at 08:00.
+
 ## 2026-11-22 night run (for Nov 24)
 - Data: Metricool TikTok posts Nov 15–22 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one still leads.

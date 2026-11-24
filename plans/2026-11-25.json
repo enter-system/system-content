@@ -1,0 +1,130 @@
+{
+ "date": "2026-11-25",
+ "note": "Nightly run (Mon Nov 23 night, ET). Nov 24 was already made, so this is Wednesday Nov 25 (36 days left in 2026, Thanksgiving tomorrow, Black Friday Friday). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos; the 16 library photos last used Nov 11 are now 14+ days old, split between the 16:00 quiet-life essay (6) and the 18:00 'discipline' mood montage (8). Metricool's last-7-days window is empty again; all-time #2 5-stats-2027 (749 views, best like rate) is remixed as the 10:00 explainer 'fix your weakest stat in 36 days'. App post at 14:00 (last one Nov 22).",
+ "posts": [
+  {
+   "id": "finish-the-gospels-36-days",
+   "hookId": "bible-plan",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TOMORROW MORNING", "kick": "FAITH CHECK", "title": "YOU'LL NEVER FINISH THE BIBLE <b>WITHOUT A PLAN</b>", "sub": "Here's one that fits in 36 days →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "36", "title": "DAYS LEFT<br>IN 2026", "sub": "Enough to read all 4 Gospels."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE SOMEDAY PLAN", "text": "Random verses. Start in Genesis. Quit by Leviticus.", "sub": "\"Someday\" never gets a date."},
+    {"kind": "point", "num": "THE FIX · 01 / 03", "kick": "QUEST 01 · ONE TARGET", "text": "Matthew, Mark, Luke, John. 89 chapters.", "sub": "Not the whole Bible. Just the Gospels."},
+    {"kind": "point", "num": "THE FIX · 02 / 03", "kick": "QUEST 02 · 3 A DAY", "text": "3 chapters a day finishes them by Dec 31.", "sub": "About 15 minutes. Before your phone."},
+    {"kind": "point", "num": "THE FIX · 03 / 03", "kick": "QUEST 03 · NEVER MISS TWICE", "text": "Missed a day? Read 3 tomorrow. Keep going.", "sub": "Don't restart. Continue."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 119:105", "kick": "SCRIPTURE", "text": "“Thy word is a lamp unto my feet, and a light unto my path.”", "sub": "Start with Matthew 1."},
+    {"kind": "cta", "title": "START TOMORROW.<br><b>NOT JANUARY.</b>", "text": "The System turns Bible reading into daily quests with a streak for your Faith stat. <b>Coming soon.</b>", "sub": "SAVE THIS PLAN"}
+   ]
+  },
+  {
+   "id": "fix-your-weakest-stat-36-days",
+   "hookId": "5-stats-2027",
+   "remixOf": "5-stats-2027",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "36 DAYS LEFT. <i>CHECK YOUR STATS.</i>", "show": "big", "big": "36", "small": "DAYS LEFT", "dur": 1.8},
+    {"cap": "FAITH. BODY. MIND. MONEY. HEART.", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [5, 5, 5, 5, 5], "fill": [24, 20, 18, 22, 6], "dur": 2.0},
+    {"cap": "ONE OF THEM IS <i>NEAR ZERO.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [24, 20, 18, 22, 6], "fill": [24, 20, 18, 22, 2], "dur": 1.8},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "YOUR WEAKEST STAT <i>DRAGS THE REST DOWN.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [24, 20, 18, 22, 2], "fill": [14, 11, 10, 12, 2], "dur": 2.1},
+    {"cap": "DON'T FIX ALL 5. <b>FIX ONE.</b>", "show": "none", "dur": 1.6},
+    {"cap": "ONE QUEST A DAY. <b>36 DAYS.</b>", "show": "big", "big": "36", "small": "QUESTS", "dur": 1.8},
+    {"cap": "SAME PERSON. <b>ONE STAT FIXED.</b>", "show": "compare", "l": {"label": "IGNORED IT", "fig": true}, "r": {"label": "FIXED IT", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "START IT <b>TODAY.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [14, 11, 10, 12, 2], "fill": [26, 22, 20, 24, 24], "dur": 2.0},
+    {"cap": "COMMENT YOUR <b>WEAKEST STAT.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "5-goals-before-2027",
+   "hookId": "2027-goals",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "2027 CHECK", "title": "WRITE THESE 5 GOALS <b>BEFORE 2027 STARTS</b>", "sub": "One for every stat →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "NO WRITTEN GOAL", "text": "No goal on paper means next January looks like this one.", "sub": "Vague goals stay vague."},
+    {"kind": "point", "num": "01 / 05", "kick": "FAITH", "text": "Read one book of the Bible every month.", "sub": "12 books by next December."},
+    {"kind": "point", "num": "02 / 05", "kick": "BODY", "text": "Move 30 minutes, 5 days a week.", "sub": "Walking counts."},
+    {"kind": "point", "num": "03 / 05", "kick": "MIND", "text": "Read 10 pages a day.", "sub": "Small enough to never skip."},
+    {"kind": "point", "num": "04 / 05", "kick": "WEALTH", "text": "Save a set amount every payday. Automate it.", "sub": "Pick the number tonight."},
+    {"kind": "point", "num": "05 / 05", "kick": "HEART", "text": "Call family once a week. Actually call.", "sub": "Put it on the calendar."},
+    {"kind": "point", "tone": "gold", "num": "HABAKKUK 2:2", "kick": "SCRIPTURE", "text": "“Write the vision, and make it plain upon tables…”", "sub": "Write it down."},
+    {"kind": "cta", "title": "WRITE THEM TONIGHT.<br><b>NOT JANUARY 1.</b>", "text": "The System turns your goals into daily quests for every stat. <b>Coming soon.</b>", "sub": "SAVE THIS FOR TONIGHT"}
+   ]
+  },
+  {
+   "id": "stop-tracking-life-in-notes",
+   "hookId": "building-in-public",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-semdemora-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "STOP TRACKING<br>YOUR LIFE IN NOTES.<br><b>LEVEL IT UP.</b>",
+   "scenes": [0, 1, 2, 3, 4, 5]
+  },
+  {
+   "id": "finish-2026-quietly",
+   "hookId": "finish-2026-quietly",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/wealth-city-desk-01.jpg", "y": 44, "title": "How to finish 2026 quietly."},
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/faith-alarm-phone-bed-01.jpg", "y": 42, "title": "Wake up first", "paras": ["Before the house. Before the phone. Give God the first minutes."]},
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/mind-laptop-breakfast-book-01.jpg", "y": 42, "title": "Read before you scroll", "paras": ["10 pages with breakfast. Every day."]},
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/body-gym-towel-rest-01.jpg", "y": 42, "title": "Train in silence", "paras": ["No posting about it. Just show up again tomorrow."]},
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/wealth-plane-laptop-01.jpg", "y": 42, "title": "Work, don't announce", "paras": ["Let the results do the talking."]},
+    {"kind": "essay", "mono": true, "small": true, "bg": "photos/library/wealth-snow-drive-pov-01.jpg", "y": 42, "title": "Pray on the drive", "paras": ["Turn the music off. Talk to God."]},
+    {"kind": "logo", "sub": "COMING SOON"}
+   ]
+  },
+  {
+   "id": "discipline-mood",
+   "hookId": "discipline-mood",
+   "time": "18:00",
+   "type": "montage",
+   "mood": true,
+   "word": "discipline",
+   "dur": 0.9,
+   "speed": 1,
+   "end": false,
+   "sound": "calm-build-01",
+   "lead": 0,
+   "frames": [
+    {"photo": "photos/library/mind-desk-night-discipline-01.jpg"},
+    {"photo": "photos/library/body-fog-run-behind-01.jpg"},
+    {"photo": "photos/library/mind-hooded-window-sea-01.jpg"},
+    {"photo": "photos/library/body-dark-gym-rest-01.jpg"},
+    {"photo": "photos/library/identity-night-luggage-walk-01.jpg"},
+    {"photo": "photos/library/body-fog-run-masked-01.jpg"},
+    {"photo": "photos/library/body-dark-kitchen-back-01.jpg"},
+    {"photo": "photos/library/body-hooded-gym-01.jpg"},
+    {"photo": "photos/library/mind-desk-night-discipline-01.jpg"},
+    {"photo": "photos/library/body-fog-run-behind-01.jpg"},
+    {"photo": "photos/library/mind-hooded-window-sea-01.jpg"},
+    {"photo": "photos/library/body-dark-gym-rest-01.jpg"},
+    {"photo": "photos/library/body-fog-run-masked-01.jpg"},
+    {"photo": "photos/library/body-dark-kitchen-back-01.jpg"}
+   ]
+  },
+  {
+   "id": "black-friday-check-your-cart",
+   "hookId": "stats-boring-money",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE BLACK FRIDAY", "kick": "WEALTH CHECK", "title": "STOP. <b>CHECK YOUR CART FIRST.</b>", "sub": "4 money quests before Friday →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE SALE TRAP", "text": "\"It's on sale\" still costs money.", "sub": "A deal on something you don't need isn't a deal."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · THE LIST", "text": "Write what you need tonight. Buy only that.", "sub": "No list, no checkout."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · ONE NUMBER", "text": "Pick a spending limit. Hit it, you're done.", "sub": "Decide now, not at checkout."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · 24 HOURS", "text": "Not on the list? Wait 24 hours.", "sub": "Most urges fade by tomorrow."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · UNSUBSCRIBE", "text": "Unsubscribe from 3 sale emails tonight.", "sub": "Fewer ads, fewer impulses."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 21:20", "kick": "SCRIPTURE", "text": "“There is treasure to be desired… in the dwelling of the wise…”", "sub": "Wise money is quiet money."},
+    {"kind": "cta", "title": "SET THE NUMBER TONIGHT.<br><b>NOT FRIDAY.</b>", "text": "The System levels your Wealth stat with simple daily money quests. <b>Coming soon.</b>", "sub": "SAVE THIS FOR FRIDAY"}
+   ]
+  }
+ ]
+}

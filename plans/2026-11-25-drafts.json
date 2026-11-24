@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-25",
+ "posts": [
+  {"id": "draft-no-zero-days-thanksgiving", "hookId": "never-zero-days", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-semdemora-01", "lead": 999, "scenes": [
+   {"cap": "THANKSGIVING IS TOMORROW. <i>READ THIS.</i>", "show": "none", "dur": 1.8},
+   {"cap": "HOLIDAYS ARE WHERE <i>STREAKS DIE.</i>", "show": "calendar", "months": ["NOV", "DEC"], "dur": 1.8},
+   {"cap": "THE RULE: <b>NO ZERO DAYS.</b>", "show": "big", "big": "0", "small": "ZERO DAYS", "dur": 1.7},
+   {"cap": "1 CHAPTER <b>INSTEAD OF 3.</b>", "show": "none", "dur": 1.6},
+   {"cap": "A WALK <b>AFTER THE MEAL.</b>", "show": "none", "dur": 1.6},
+   {"cap": "5 MINUTES <b>OF PRAYER.</b>", "show": "none", "dur": 1.6},
+   {"cap": "ZERO DAY VS. <b>SMALL DAY.</b>", "show": "compare", "l": {"label": "ZERO DAY", "fig": true}, "r": {"label": "SMALL DAY", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "THE SMALL VERSION <b>STILL COUNTS.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [18, 18, 18, 18, 18], "fill": [20, 20, 19, 18, 24], "dur": 1.9},
+   {"cap": "KEEP THE STREAK <b>ALIVE.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+  ]},
+  {"id": "draft-life-became-an-rpg", "hookId": "life-rpg", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "POV: YOUR LIFE<br>JUST BECAME<br><b>AN RPG.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Choose your <b>character.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Real habits. <b>Real XP.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Read the Word. <b>+XP</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Move your body. <b>+XP</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break <b>the streak.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Build <b>your world.</b>"}
+   ]},
+  {"id": "draft-discipline-will-show-up", "hookId": "discipline-vs-motivation", "time": "17:00", "type": "video", "silent": true, "sound": "hype-bipolar-01",
+   "kicker": "WARNING", "hook": "MOTIVATION<br>WON'T SHOW UP.<br><b>DISCIPLINE WILL.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}
