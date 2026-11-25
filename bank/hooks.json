@@ -8,7 +8,8 @@
    "hook": "5 habits to quit if you want to level up",
    "used": [
     "2026-11-10",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-26"
    ]
   },
   {
@@ -99,7 +100,8 @@
    "used": [
     "2026-11-11",
     "2026-11-16",
-    "2026-11-22"
+    "2026-11-22",
+    "2026-11-26"
    ]
   },
   {
@@ -108,7 +110,8 @@
    "format": "slides",
    "hook": "5 AM routine: expectation vs what actually works",
    "used": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-26"
    ]
   },
   {
@@ -271,7 +274,8 @@
    "hook": "Why a daily walk is the most underrated stat boost",
    "used": [
     "2026-11-17",
-    "2026-11-22"
+    "2026-11-22",
+    "2026-11-26"
    ]
   },
   {
@@ -370,7 +374,8 @@
    "hook": "Day 1 or one day. You decide.",
    "used": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-26"
    ]
   },
   {
@@ -420,7 +425,8 @@
    "hook": "Stop comparing your level 3 to someone's level 50",
    "used": [
     "2026-11-14",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-26"
    ]
   },
   {
@@ -629,7 +635,8 @@
    "hook": "Sneak peek: what The System looks like inside",
    "used": [
     "2026-11-12",
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-26"
    ]
   },
   {
@@ -658,7 +665,8 @@
    "format": "whisper",
    "hook": "Dream life whisper: faith and family are the real rich",
    "used": [
-    "2026-11-10"
+    "2026-11-10",
+    "2026-11-26"
    ]
   },
   {
@@ -696,7 +704,8 @@
    "format": "essay",
    "hook": "How to quietly rebuild your life this winter (body, mind, environment, money, character, faith)",
    "used": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-26"
    ]
   },
   {
@@ -761,6 +770,15 @@
    "hook": "'discipline' quiet mood video: dark calm photos, one tiny word",
    "used": [
     "2026-11-25"
+   ]
+  },
+  {
+   "id": "holiday-weekend-streak",
+   "pillar": "consistency",
+   "format": "slides",
+   "hook": "Don't let one holiday meal become 4 zero days (Thu–Sun streak plan)",
+   "used": [
+    "2026-11-26"
    ]
   }
  ]

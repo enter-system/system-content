@@ -2120,6 +2120,146 @@
    ],
    "manual": true,
    "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "08:00",
+   "id": "thanksgiving-morning-before-the-house-wakes",
+   "hook": "5am-vs-reality",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-26",
+   "time": "10:00",
+   "id": "thanksgiving-what-did-you-open-first",
+   "hook": "phone-before-bible",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01",
+   "remixOf": "phone-before-bible"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "12:00",
+   "id": "dont-let-one-meal-become-4-zero-days",
+   "hook": "holiday-weekend-streak",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-26",
+   "time": "14:00",
+   "id": "quit-these-before-2027",
+   "hook": "quit-5-habits",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "16:00",
+   "id": "the-real-rich-whisper",
+   "hook": "dream-life-rich",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "photos": [
+    "family-couple-house-cars-behind-01.jpg",
+    "body-cooking-night-back-01.jpg",
+    "wealth-lake-robe-laptop-01.jpg",
+    "wealth-skyline-cars-behind-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-26",
+   "time": "18:00",
+   "id": "winter-starts-in-25-days",
+   "hook": "rebuild-this-winter",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "20:00",
+   "id": "stop-comparing-your-thanksgiving",
+   "hook": "comparison-trap",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-26",
+   "time": "09:00",
+   "id": "draft-walk-after-the-meal",
+   "hook": "walk-daily",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "13:00",
+   "id": "draft-inside-the-system",
+   "hook": "app-sneak-peek",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-26",
+   "time": "17:00",
+   "id": "draft-day-1-or-one-day",
+   "hook": "streak-day-1",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }

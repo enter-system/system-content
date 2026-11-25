@@ -1,0 +1,118 @@
+{
+ "date": "2026-11-26",
+ "note": "Nightly run (Tue Nov 24 night, ET). Nov 25 was already made, so this is Thanksgiving, Thursday Nov 26 (35 days left in 2026; winter starts Dec 21, 25 days away). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos; the one photo slot (16:00 'the real rich' whisper) uses library photos last used Nov 12 (14+ days). Metricool's last-7-days window is empty again; remix rotation lands on phone-before-bible (Nov 11 share leader) as the 10:00 Thanksgiving-morning explainer.",
+ "posts": [
+  {
+   "id": "thanksgiving-morning-before-the-house-wakes",
+   "hookId": "5am-vs-reality",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE THE NOISE", "kick": "THANKSGIVING MORNING", "title": "DON'T LET TODAY <b>START WITHOUT YOU</b>", "sub": "4 quests. 20 minutes. →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "35", "title": "DAYS LEFT<br>IN 2026", "sub": "Holidays aren't a pause button."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE CHAOS START", "text": "Wake up late. Kitchen chaos. Day runs you.", "sub": "No quiet minute all day."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · UP FIRST", "text": "Get up 20 minutes before everyone else.", "sub": "Not 5 a.m. Just first."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · THANK HIM", "text": "Pray first. Name 3 things you're thankful for.", "sub": "Out loud if the house is quiet."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · ONE CHAPTER", "text": "Read Psalm 100 before you open your phone.", "sub": "Five verses. Made for today."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · MOVE", "text": "10 minutes outside. Walk, stretch, breathe.", "sub": "Before the food. Before the noise."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 5:3", "kick": "SCRIPTURE", "text": "“My voice shalt thou hear in the morning, O LORD…”", "sub": "Give Him the first minutes."},
+    {"kind": "cta", "title": "START TODAY.<br><b>NOT MONDAY.</b>", "text": "The System turns your morning into daily quests with streaks. <b>Coming soon.</b>", "sub": "SAVE THIS FOR TOMORROW TOO"}
+   ]
+  },
+  {
+   "id": "thanksgiving-what-did-you-open-first",
+   "hookId": "phone-before-bible",
+   "remixOf": "phone-before-bible",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "THANKSGIVING MORNING. <i>WHAT DID YOU OPEN FIRST?</i>", "show": "none", "dur": 1.9},
+    {"cap": "THE PHONE? <i>FIRST QUEST LOST.</i>", "show": "crowd", "dur": 1.7},
+    {"cap": "35 DAYS LEFT. <b>35 MORNINGS.</b>", "show": "big", "big": "35", "small": "MORNINGS", "dur": 1.8},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "PHONE FIRST EVERY DAY = <i>FAITH STAT ON ZERO.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [18, 18, 18, 18, 18], "fill": [2, 14, 12, 15, 13], "dur": 2.1},
+    {"cap": "FLIP IT. <b>BIBLE BEFORE PHONE.</b>", "show": "none", "dur": 1.6},
+    {"cap": "ONE CHAPTER. <b>THEN THE PHONE.</b>", "show": "big", "big": "1", "small": "CHAPTER", "dur": 1.7},
+    {"cap": "SAME MORNING. <b>DIFFERENT PERSON.</b>", "show": "compare", "l": {"label": "PHONE FIRST", "fig": true}, "r": {"label": "BIBLE FIRST", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "35 MORNINGS = <b>35 CHAPTERS.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [2, 14, 12, 15, 13], "fill": [30, 20, 20, 18, 22], "dur": 2.0},
+    {"cap": "THANKFUL? <b>GIVE HIM THE FIRST MINUTE.</b>", "show": "crowd", "glow": true, "dur": 2.1}
+   ]
+  },
+  {
+   "id": "dont-let-one-meal-become-4-zero-days",
+   "hookId": "holiday-weekend-streak",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE YOU EAT", "kick": "STREAK CHECK", "title": "DON'T LET ONE MEAL BECOME <b>4 ZERO DAYS</b>", "sub": "Thursday to Sunday kills streaks →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE LOST WEEKEND", "text": "\"I'll restart Monday.\" 4 days gone.", "sub": "That's 4 of your last 35."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · ENJOY IT", "text": "Eat the meal. Enjoy it. No guilt.", "sub": "One meal never breaks a streak."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · SMALL VERSION", "text": "1 chapter. 10 push-ups. 1 walk. Every day.", "sub": "The small version still counts."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · SAME BEDTIME", "text": "Back in bed at your normal time tonight.", "sub": "Friday starts tonight."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · NEVER MISS TWICE", "text": "Missed today? Friday is not optional.", "sub": "One miss is a slip. Two is a habit."},
+    {"kind": "point", "tone": "gold", "num": "GALATIANS 6:9", "kick": "SCRIPTURE", "text": "“And let us not be weary in well doing…”", "sub": "In due season we reap."},
+    {"kind": "cta", "title": "KEEP THE STREAK.<br><b>NOT MONDAY.</b>", "text": "The System keeps your streak alive with small daily quests. <b>Coming soon.</b>", "sub": "SAVE THIS FOR THE WEEKEND"}
+   ]
+  },
+  {
+   "id": "quit-these-before-2027",
+   "hookId": "quit-5-habits",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "WARNING",
+   "hook": "35 DAYS LEFT.<br>QUIT ONE HABIT<br><b>TODAY.</b>",
+   "scenes": [0, 1, 2, 3, 4, 5]
+  },
+  {
+   "id": "the-real-rich-whisper",
+   "hookId": "dream-life-rich",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "whisper", "bg": "photos/library/family-couple-house-cars-behind-01.jpg", "text": "rich.", "y": 30},
+    {"kind": "whisper", "bg": "photos/library/body-cooking-night-back-01.jpg", "text": "a full table.", "y": 24},
+    {"kind": "whisper", "bg": "photos/library/wealth-lake-robe-laptop-01.jpg", "text": "a quiet mind.", "y": 24},
+    {"kind": "whisper", "bg": "photos/library/wealth-skyline-cars-behind-01.jpg", "text": "answered prayer.", "y": 22},
+    {"kind": "cta", "title": "THE REAL RICH.<br><b>COUNT IT TODAY.</b>", "text": "Faith, family, peace. Level up the stats that matter. The System. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "winter-starts-in-25-days",
+   "hookId": "rebuild-this-winter",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "WINTER STARTS IN <i>25 DAYS.</i>", "show": "big", "big": "25", "small": "DAYS", "dur": 1.8},
+    {"cap": "MOST PEOPLE <i>HIBERNATE.</i>", "show": "crowd", "dur": 1.7},
+    {"cap": "COUCH. SNACKS. <i>SCREENS.</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [16, 16, 16, 16, 16], "fill": [8, 4, 6, 9, 10], "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "THEY START JANUARY <i>FURTHER BEHIND.</i>", "show": "calendar", "months": ["DEC", "JAN"], "dur": 1.9},
+    {"cap": "YOUR WINTER ARC: <b>ONE QUEST A DAY.</b>", "show": "none", "dur": 1.7},
+    {"cap": "PRAY. WALK. READ. <b>SAVE.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [8, 4, 6, 9, 10], "fill": [28, 24, 22, 20, 22], "dur": 2.0},
+    {"cap": "HIBERNATE VS. <b>WINTER ARC.</b>", "show": "compare", "l": {"label": "HIBERNATES", "fig": true}, "r": {"label": "WINTER ARC", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "START IT <b>AFTER THE MEAL.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "stop-comparing-your-thanksgiving",
+   "hookId": "comparison-trap",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "MIND CHECK", "title": "STOP COMPARING YOUR THANKSGIVING <b>TO THEIR STORY</b>", "sub": "Read this before you scroll tonight →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE HIGHLIGHT REEL", "text": "Their best 10 seconds vs. your whole day.", "sub": "You'll lose that every time."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · CLOSE IT", "text": "Close the app. You were there. That's enough.", "sub": "No one needed a recap."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · WRITE 3", "text": "Write 3 good moments from today.", "sub": "Your own highlight reel."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · TEXT ONE", "text": "Text one person you ate with: thank you.", "sub": "Be specific."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · YOUR LEVEL", "text": "Compare you to last year's you. Nobody else.", "sub": "That's the only fair fight."},
+    {"kind": "point", "tone": "gold", "num": "GALATIANS 6:4", "kick": "SCRIPTURE", "text": "“But let every man prove his own work…”", "sub": "…and not in another."},
+    {"kind": "cta", "title": "CLOSE THE APP.<br><b>START TONIGHT.</b>", "text": "The System tracks your own stats, not anyone else's. <b>Coming soon.</b>", "sub": "SAVE THIS FOR TONIGHT"}
+   ]
+  }
+ ]
+}

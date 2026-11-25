@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-24 night run (for Nov 26, Thanksgiving)
+- Data: Metricool TikTok posts Nov 17–24 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix pick: rotation lands on phone-before-bible (Nov 11 share leader, 15 shares) → 10:00 explainer "Thanksgiving morning. What did you open first?" (35 mornings = 35 chapters). 1pct and 5-stats were remixed Nov 24–25.
+- Thanksgiving angle all day: quiet morning before the house wakes (08:00, 35-day countdown), 4-zero-days holiday streak plan (12:00), "the real rich" whisper on Nov 12 library photos (16:00), winter-arc explainer "winter starts in 25 days" (18:00), stop comparing to their story (20:00).
+
 ## 2026-11-23 night run (for Nov 25)
 - Data: Metricool TikTok posts Nov 16–23 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

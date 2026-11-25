@@ -1,0 +1,27 @@
+{
+ "date": "2026-11-26",
+ "posts": [
+  {"id": "draft-walk-after-the-meal", "hookId": "walk-daily", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "BIG MEAL TODAY? <i>DON'T SIT DOWN YET.</i>", "show": "none", "dur": 1.8},
+   {"cap": "MOST PEOPLE <i>HIT THE COUCH.</i>", "show": "crowd", "dur": 1.7},
+   {"cap": "DO THIS INSTEAD: <b>WALK 20 MINUTES.</b>", "show": "big", "big": "20", "small": "MINUTES", "dur": 1.9},
+   {"cap": "TAKE SOMEONE <b>WITH YOU.</b>", "show": "none", "dur": 1.6},
+   {"cap": "PHONE <b>IN YOUR POCKET.</b>", "show": "none", "dur": 1.6},
+   {"cap": "COUCH VS. <b>WALK.</b>", "show": "compare", "l": {"label": "COUCH", "fig": true}, "r": {"label": "WALK", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "BODY AND HEART <b>BOTH GO UP.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [18, 12, 18, 18, 14], "fill": [18, 22, 18, 18, 26], "dur": 1.9},
+   {"cap": "EASIEST QUEST <b>OF THE DAY.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+  ]},
+  {"id": "draft-inside-the-system", "hookId": "app-sneak-peek", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-shizuku-01", "beatsPer": 2,
+   "hook": "THIS IS WHAT<br>YOUR LIFE LOOKS LIKE<br><b>AS A GAME.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Your life. <b>Your stats.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% better. <b>Every day.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Scripture. <b>+XP</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Recovery. <b>+XP</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Level up. <b>For real.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-day-1-or-one-day", "hookId": "streak-day-1", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "ALERT", "hook": "DAY 1<br>OR ONE DAY.<br><b>YOU DECIDE.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}
