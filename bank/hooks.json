@@ -22,7 +22,8 @@
     "2026-11-13",
     "2026-11-17",
     "2026-11-20",
-    "2026-11-24"
+    "2026-11-24",
+    "2026-11-27"
    ]
   },
   {
@@ -57,7 +58,8 @@
    "used": [
     "2026-11-10",
     "2026-11-18",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-27"
    ]
   },
   {
@@ -89,7 +91,8 @@
    "used": [
     "2026-11-10",
     "2026-11-18",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-27"
    ]
   },
   {
@@ -324,7 +327,8 @@
    "format": "slides",
    "hook": "What fasting teaches you about discipline",
    "used": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-27"
    ]
   },
   {
@@ -354,7 +358,8 @@
    "hook": "Plan tomorrow tonight. Wake up already winning.",
    "used": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-27"
    ]
   },
   {
@@ -446,7 +451,8 @@
    "hook": "Your bank account is a stat too",
    "used": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ]
   },
   {
@@ -534,7 +540,8 @@
    "hook": "You've been scrolling for 20 minutes. Here's your quest.",
    "used": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-27"
    ]
   },
   {
@@ -594,7 +601,8 @@
    "format": "slides",
    "hook": "Hard things you can do daily to build discipline",
    "used": [
-    "2026-11-17"
+    "2026-11-17",
+    "2026-11-27"
    ]
   },
   {
@@ -695,7 +703,8 @@
    "hook": "If you're the same person you were last year, that should scare you",
    "used": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-27"
    ]
   },
   {
@@ -779,6 +788,14 @@
    "hook": "Don't let one holiday meal become 4 zero days (Thu–Sun streak plan)",
    "used": [
     "2026-11-26"
+   ]
+  },
+  {
+   "id": "i-love-discipline",
+   "pillar": "consistency",
+   "hook": "'my favorite part of discipline…' whisper cover, then POV photos with no text (Bible, treadmill, meal prep, coffee by the laptop)",
+   "used": [
+    "2026-11-27"
    ]
   }
  ]

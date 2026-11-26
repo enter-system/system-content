@@ -2260,6 +2260,147 @@
    ],
    "manual": true,
    "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "08:00",
+   "id": "stop-feeding-every-craving",
+   "hook": "fasting-discipline",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-27",
+   "time": "10:00",
+   "id": "the-only-deal-that-compounds",
+   "hook": "1pct-rule",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01",
+   "remixOf": "1pct-rule"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "12:00",
+   "id": "close-the-cart",
+   "hook": "money-stat",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-27",
+   "time": "14:00",
+   "id": "do-one-hard-thing-today",
+   "hook": "cold-shower",
+   "type": "video",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "16:00",
+   "id": "my-favorite-part-of-discipline",
+   "hook": "i-love-discipline",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "photos": [
+    "wealth-pool-breakfast-laptop-01.jpg",
+    "faith-bible-table-pov-01.jpg",
+    "body-treadmill-garage-01.jpg",
+    "body-meal-prep-plan-01.jpg",
+    "wealth-cafe-cars-pov-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-27",
+   "time": "18:00",
+   "id": "same-person-34-days-left",
+   "hook": "same-person-last-year",
+   "type": "explainer",
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "20:00",
+   "id": "dont-wake-up-without-a-plan",
+   "hook": "plan-tomorrow",
+   "type": "slides",
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "manual": true
+  },
+  {
+   "date": "2026-11-27",
+   "time": "09:00",
+   "id": "draft-scrolling-deals",
+   "hook": "scroll-stop",
+   "type": "explainer",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "13:00",
+   "id": "draft-life-became-an-rpg",
+   "hook": "life-rpg",
+   "type": "montage",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-27",
+   "time": "17:00",
+   "id": "draft-never-miss-twice",
+   "hook": "never-miss-twice",
+   "type": "video",
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "manual": true,
+   "sound": "hype-semdemora-01"
   }
  ]
 }
