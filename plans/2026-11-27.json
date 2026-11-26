@@ -1,0 +1,120 @@
+{
+ "date": "2026-11-27",
+ "note": "Nightly run (Wed Nov 25 night, ET). Nov 26 was already made, so this is Black Friday, Nov 27 (34 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos; the one photo slot (16:00 'i love…' POV whisper) uses library photos last used Nov 12–13 (14+ days). Metricool's last-7-days window is empty again; remix is 1pct-rule as the 10:00 'only Black Friday deal that compounds' explainer (1.01^34 = 1.40, 0.99^34 = 0.71).",
+ "posts": [
+  {
+   "id": "stop-feeding-every-craving",
+   "hookId": "fasting-discipline",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE YOU SHOP", "kick": "BLACK FRIDAY", "title": "STOP FEEDING <b>EVERY CRAVING</b>", "sub": "Today is a discipline test →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "34", "title": "DAYS LEFT<br>IN 2026", "sub": "Every craving you obey costs one."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE YES MACHINE", "text": "Want it. Buy it. Eat it. Scroll it.", "sub": "Your \"no\" never gets a rep."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · PICK ONE", "text": "Fast from one thing today. Just one.", "sub": "Sugar, scrolling, or spending."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · PRAY INSTEAD", "text": "Every time the craving hits, pray one minute.", "sub": "Turn the urge into a reminder."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · KEEP IT QUIET", "text": "Don't post it. Don't announce it.", "sub": "Between you and God."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · WRITE IT DOWN", "text": "Tonight, write down how it felt.", "sub": "Proof you can say no."},
+    {"kind": "point", "tone": "gold", "num": "MATTHEW 6:18", "kick": "SCRIPTURE", "text": "“…thy Father, which seeth in secret, shall reward thee openly.”", "sub": "Fast in secret."},
+    {"kind": "cta", "title": "SAY NO ONCE.<br><b>START TODAY.</b>", "text": "The System turns discipline into daily quests with streaks. <b>Coming soon.</b>", "sub": "SAVE THIS FOR NEXT TIME"}
+   ]
+  },
+  {
+   "id": "the-only-deal-that-compounds",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "THE ONLY BLACK FRIDAY DEAL <i>THAT COMPOUNDS.</i>", "show": "none", "dur": 2.0},
+    {"cap": "1% BETTER. <b>EVERY DAY.</b>", "show": "big", "big": "1%", "small": "A DAY", "dur": 1.7},
+    {"cap": "34 DAYS LEFT <b>IN 2026.</b>", "show": "big", "big": "34", "small": "DAYS", "dur": 1.7},
+    {"cap": "1.01^34 = <b>40% BETTER.</b>", "show": "big", "big": "1.40", "small": "1.01^34", "dur": 2.0},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "1% WORSE A DAY? <i>0.71.</i>", "show": "big", "big": "0.71", "small": "0.99^34", "dur": 1.9},
+    {"cap": "<i>29% WORSE</i> BY NEW YEAR'S.", "show": "calendar", "months": ["DEC", "JAN"], "dur": 1.9},
+    {"cap": "SAME 34 DAYS. <b>TWO DIFFERENT PEOPLE.</b>", "show": "compare", "l": {"label": "1% WORSE", "fig": true}, "r": {"label": "1% BETTER", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "ONE SMALL QUEST. <b>STARTING TODAY.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [14, 14, 14, 14, 14], "fill": [26, 24, 22, 22, 24], "dur": 2.0},
+    {"cap": "NO SALE <b>BEATS THIS ONE.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "close-the-cart",
+   "hookId": "money-stat",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE YOU CHECK OUT", "kick": "MONEY CHECK", "title": "STOP. <b>CLOSE THE CART.</b>", "sub": "Ask these 4 questions first →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE \"DEAL\" TRAP", "text": "It's not a deal if you didn't need it.", "sub": "50% off is still money spent."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · THE LIST", "text": "Was it on your list before today?", "sub": "No list? Close the tab."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · 24 HOURS", "text": "Leave it in the cart for 24 hours.", "sub": "Still want it tomorrow? Then decide."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · CASH TEST", "text": "Could you pay for it in cash today?", "sub": "If not, it's not a deal."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · HOURS", "text": "Count the price in hours of your work.", "sub": "Still worth it?"},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 21:20", "kick": "SCRIPTURE", "text": "“…but a foolish man spendeth it up.”", "sub": "The wise keep their treasure."},
+    {"kind": "cta", "title": "GUARD YOUR MONEY.<br><b>START TODAY.</b>", "text": "The System makes your money habits a stat you can level up. <b>Coming soon.</b>", "sub": "SAVE THIS BEFORE YOU SHOP"}
+   ]
+  },
+  {
+   "id": "do-one-hard-thing-today",
+   "hookId": "cold-shower",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "WARNING",
+   "hook": "34 DAYS LEFT.<br>DO ONE HARD THING<br><b>TODAY.</b>",
+   "scenes": [0, 1, 2, 3, 4, 5]
+  },
+  {
+   "id": "my-favorite-part-of-discipline",
+   "hookId": "i-love-discipline",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "whisper", "bg": "photos/library/wealth-pool-breakfast-laptop-01.jpg", "text": "my favorite part of discipline…", "y": 22},
+    {"kind": "whisper", "bg": "photos/library/faith-bible-table-pov-01.jpg", "text": ""},
+    {"kind": "whisper", "bg": "photos/library/body-treadmill-garage-01.jpg", "text": ""},
+    {"kind": "whisper", "bg": "photos/library/body-meal-prep-plan-01.jpg", "text": ""},
+    {"kind": "whisper", "bg": "photos/library/wealth-cafe-cars-pov-01.jpg", "text": ""},
+    {"kind": "cta", "title": "QUIET MORNINGS.<br><b>BUILT DAILY.</b>", "text": "The System turns your habits into quests and stats. <b>Coming soon.</b>", "sub": "FOLLOW TO JOIN"}
+   ]
+  },
+  {
+   "id": "same-person-34-days-left",
+   "hookId": "same-person-last-year",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "34 DAYS LEFT. <i>SAME PERSON AS LAST YEAR?</i>", "show": "none", "dur": 2.0},
+    {"cap": "SAME HABITS. <i>SAME EXCUSES.</i>", "show": "compare", "l": {"label": "LAST YEAR", "fig": true}, "r": {"label": "THIS YEAR", "fig": true}, "dur": 2.0},
+    {"cap": "365 DAYS. <i>ZERO STATS GAINED.</i>", "show": "big", "big": "365", "small": "DAYS", "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "2027 LOOKS <i>EXACTLY THE SAME.</i>", "show": "calendar", "months": ["DEC", "JAN", "FEB"], "dur": 1.9},
+    {"cap": "UNLESS SOMETHING CHANGES <b>TODAY.</b>", "show": "none", "dur": 1.6},
+    {"cap": "ONE QUEST A DAY. <b>34 DAYS.</b>", "show": "big", "big": "34", "small": "QUESTS", "dur": 1.8},
+    {"cap": "STATS START <b>MOVING.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [10, 10, 10, 10, 10], "fill": [28, 22, 22, 18, 24], "dur": 2.0},
+    {"cap": "A DIFFERENT PERSON BY <b>JANUARY 1.</b>", "show": "compare", "l": {"label": "LAST YEAR", "fig": true}, "r": {"label": "JANUARY 1", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "BE THE ONE <b>WHO CHANGED.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "dont-wake-up-without-a-plan",
+   "hookId": "plan-tomorrow",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE YOU SLEEP", "kick": "NIGHT CHECK", "title": "DON'T WAKE UP <b>WITHOUT A PLAN</b>", "sub": "Saturday decides your weekend →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE AIMLESS SATURDAY", "text": "No plan. Sleep in. Scroll. Day gone.", "sub": "Weekends eat streaks."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · WRITE 3", "text": "Write tomorrow's 3 quests on paper.", "sub": "Faith. Body. One task."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · SET THE ALARM", "text": "Same wake-up time as a weekday.", "sub": "Saturday still counts."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · LAY IT OUT", "text": "Shoes by the door. Bible on the table.", "sub": "Make the first move easy."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · PHONE AWAY", "text": "Charge your phone outside the bedroom.", "sub": "Your morning stays yours."},
+    {"kind": "point", "tone": "gold", "num": "PROVERBS 16:9", "kick": "SCRIPTURE", "text": "“A man's heart deviseth his way: but the LORD directeth his steps.”", "sub": "Plan it. Pray over it."},
+    {"kind": "cta", "title": "PLAN IT TONIGHT.<br><b>NOT MONDAY.</b>", "text": "The System gives you daily quests so you wake up with a plan. <b>Coming soon.</b>", "sub": "SAVE THIS FOR TONIGHT"}
+   ]
+  }
+ ]
+}

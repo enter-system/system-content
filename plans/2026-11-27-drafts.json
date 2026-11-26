@@ -1,0 +1,28 @@
+{
+ "date": "2026-11-27",
+ "posts": [
+  {"id": "draft-scrolling-deals", "hookId": "scroll-stop", "time": "09:00", "type": "explainer", "silent": true, "sound": "hype-bipolar-01", "lead": 999, "scenes": [
+   {"cap": "20 MINUTES <i>SCROLLING DEALS?</i>", "show": "none", "dur": 1.8},
+   {"cap": "YOUR BRAIN IS <i>ON AUTOPILOT.</i>", "show": "crowd", "dur": 1.7},
+   {"cap": "HERE'S YOUR QUEST.", "show": "none", "dur": 1.4},
+   {"cap": "PHONE <b>FACE DOWN.</b>", "show": "none", "dur": 1.5},
+   {"cap": "STAND UP. <b>10 PUSH-UPS.</b>", "show": "big", "big": "10", "small": "PUSH-UPS", "dur": 1.8},
+   {"cap": "DRINK WATER. <b>READ ONE PAGE.</b>", "show": "none", "dur": 1.7},
+   {"cap": "SCROLL VS. <b>QUEST.</b>", "show": "compare", "l": {"label": "SCROLL", "fig": true}, "r": {"label": "QUEST", "fig": true, "glow": true}, "dur": 2.0},
+   {"cap": "MIND STAT <b>BACK ONLINE.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [16, 14, 6, 16, 16], "fill": [18, 20, 24, 16, 16], "dur": 1.9},
+   {"cap": "NOW GO. <b>PHONE DOWN.</b>", "show": "crowd", "glow": true, "dur": 1.9}
+  ]},
+  {"id": "draft-life-became-an-rpg", "hookId": "life-rpg", "time": "13:00", "type": "montage", "silent": true, "sound": "calm-build-01", "beatsPer": 2,
+   "hook": "POV: YOUR LIFE<br>JUST BECAME<br><b>AN RPG.</b>", "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Choose your <b>form.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Streak: <b>don't break it.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Stretch. <b>+XP</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Scripture. <b>+XP</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Level <b>up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]},
+  {"id": "draft-never-miss-twice", "hookId": "never-miss-twice", "time": "17:00", "type": "video", "silent": true, "sound": "hype-semdemora-01",
+   "kicker": "ALERT", "hook": "MISSED TODAY?<br>FINE.<br><b>NEVER TWICE.</b>", "scenes": [0, 2, 3, 4, 5]}
+ ]
+}
