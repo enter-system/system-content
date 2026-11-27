@@ -35,7 +35,8 @@
     "2026-11-10",
     "2026-11-18",
     "2026-11-21",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-28"
    ]
   },
   {
@@ -70,7 +71,8 @@
    "used": [
     "2026-11-10",
     "2026-11-18",
-    "2026-11-23"
+    "2026-11-23",
+    "2026-11-28"
    ]
   },
   {
@@ -80,7 +82,8 @@
    "hook": "What 30 days of consistency looks like",
    "used": [
     "2026-11-10",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-28"
    ]
   },
   {
@@ -196,7 +199,8 @@
    "hook": "What Proverbs says about the lazy man (it's convicting)",
    "used": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-28"
    ]
   },
   {
@@ -237,7 +241,8 @@
    "hook": "If your life had a stats screen, what would yours say?",
    "used": [
     "2026-11-11",
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-28"
    ]
   },
   {
@@ -257,7 +262,8 @@
    "hook": "Signs you need a dopamine reset",
    "used": [
     "2026-11-15",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ]
   },
   {
@@ -288,7 +294,8 @@
    "hook": "Sleep is a stat. Here's how to level it up",
    "used": [
     "2026-11-16",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-28"
    ]
   },
   {
@@ -511,7 +518,8 @@
    "format": "slides",
    "hook": "A Christian man's daily routine (realistic version)",
    "used": [
-    "2026-11-18"
+    "2026-11-18",
+    "2026-11-28"
    ]
   },
   {
@@ -734,7 +742,8 @@
    "hook": "Do this before the January crowd shows up",
    "used": [
     "2026-11-13",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-28"
    ]
   },
   {
@@ -796,6 +805,15 @@
    "hook": "'my favorite part of discipline…' whisper cover, then POV photos with no text (Bible, treadmill, meal prep, coffee by the laptop)",
    "used": [
     "2026-11-27"
+   ]
+  },
+  {
+   "id": "saturday-7-stats",
+   "pillar": "heart",
+   "format": "slides",
+   "hook": "How to spend Saturday like the man your family brags about (Bible approved)",
+   "used": [
+    "2026-11-28"
    ]
   }
  ]

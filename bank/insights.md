@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-26 night run (for Nov 28, Saturday)
+- Data: Metricool TikTok posts Nov 19–26 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix pick: 5-stats-2027 (last Nov 25; 1pct was yesterday) → 10:00 explainer "Your 2026 report card is due", ending on "comment your weakest stat".
+- Saturday angle: before-9am Saturday (08:00, 33-day countdown), last 30-day challenge of 2026 (12:00), Saturday 7-stats rank list on a photo yellowcover (16:00; only 2 library photos are 14+ days old, so no mood montage), beat the January gym crowd (18:00), Saturday night stealing Sunday (20:00).
+
 ## 2026-11-25 night run (for Nov 27, Black Friday)
 - Data: Metricool TikTok posts Nov 18–25 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

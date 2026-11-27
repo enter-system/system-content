@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-28",
+ "posts": [
+  {
+   "id": "draft-still-in-bed-saturday",
+   "hookId": "proverbs-sluggard",
+   "time": "09:00",
+   "type": "explainer",
+   "silent": true,
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "STILL IN BED <i>AT 10AM?</i>", "show": "none", "dur": 1.8},
+    {"cap": "THE BIBLE ALREADY <i>ASKED YOU.</i>", "show": "none", "dur": 1.7},
+    {"cap": "\"HOW LONG WILT THOU SLEEP, <b>O SLUGGARD?</b>\"", "show": "none", "dur": 2.2},
+    {"cap": "PROVERBS 6:9", "show": "none", "dur": 1.4},
+    {"cap": "HERE'S YOUR QUEST.", "show": "none", "dur": 1.4},
+    {"cap": "FEET ON THE FLOOR. <b>NOW.</b>", "show": "big", "big": "1", "small": "QUEST", "dur": 1.7},
+    {"cap": "PRAY. MOVE. <b>ONE HARD THING.</b>", "show": "none", "dur": 1.8},
+    {"cap": "SNOOZE VS. <b>QUEST.</b>", "show": "compare", "l": {"label": "SNOOZE", "fig": true}, "r": {"label": "QUEST", "fig": true, "glow": true}, "dur": 2.0},
+    {"cap": "GET UP. <b>SATURDAY COUNTS.</b>", "show": "crowd", "glow": true, "dur": 1.9}
+   ]
+  },
+  {
+   "id": "draft-habits-finally-have-stats",
+   "hookId": "stats-screen-pov",
+   "time": "13:00",
+   "type": "montage",
+   "silent": true,
+   "sound": "calm-shizuku-01",
+   "beatsPer": 2,
+   "hook": "POV: YOUR HABITS<br>FINALLY HAVE<br><b>STATS.</b>",
+   "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Every habit <b>counts.</b>"},
+    {"photo": "photos/app/04-one-percent-system.jpg", "text": "1% a day. <b>Tracked.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Faith. <b>+XP</b>"},
+    {"photo": "photos/app/06-recovery-map.jpg", "text": "Body. <b>+XP</b>"},
+    {"photo": "photos/app/03-kicked-up-a-notch.jpg", "text": "Streak <b>kicked up.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]
+  },
+  {
+   "id": "draft-saturday-quest-list",
+   "hookId": "todo-xp",
+   "time": "17:00",
+   "type": "video",
+   "silent": true,
+   "sound": "hype-semdemora-01",
+   "kicker": "ALERT",
+   "hook": "SATURDAY TO-DO LIST?<br>TURN IT INTO<br><b>QUESTS.</b>",
+   "scenes": [0, 2, 3, 4, 5]
+  }
+ ]
+}

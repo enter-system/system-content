@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-28",
+ "note": "Nightly run (Thu Nov 26 night, ET). Nov 27 was already made, so this is Saturday Nov 28 (33 days left in 2026). MANUAL MODE (before Dec 1): rendered and pushed, sent to Nahum to post by hand. No inbox photos and only 2 library photos are 14+ days old (Nov 12), so the one photo slot is a photo yellowcover + rank countdown (16:00), and no mood montage today. Metricool's last-7-days window is empty again; remix is 5-stats-2027 as the 10:00 '2026 report card' explainer.",
+ "posts": [
+  {
+   "id": "before-9am-saturday",
+   "hookId": "christian-man-routine",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS TOMORROW MORNING", "kick": "SATURDAY CHECK", "title": "DO THIS <b>BEFORE 9AM</b> SATURDAY", "sub": "Weekends make or break you →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "33", "title": "DAYS LEFT<br>IN 2026", "sub": "Starting with this weekend."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE LOST SATURDAY", "text": "Sleep till 11. Scroll. Snack. Day gone.", "sub": "Your streak dies on the weekend."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · UP ON TIME", "text": "Wake up at your weekday time.", "sub": "No snooze. Feet on the floor."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · GOD FIRST", "text": "Bible open before your phone is.", "sub": "One chapter. Then pray."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · MOVE", "text": "Train or walk before breakfast.", "sub": "20 minutes counts."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · HARD THING", "text": "Knock out the chore you keep avoiding.", "sub": "Then enjoy your Saturday."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 5:3", "kick": "SCRIPTURE", "text": "“My voice shalt thou hear in the morning, O LORD…”", "sub": "Morning belongs to Him."},
+    {"kind": "cta", "title": "WIN THE MORNING.<br><b>START TOMORROW.</b>", "text": "The System turns your mornings into daily quests with streaks. <b>Coming soon.</b>", "sub": "SAVE THIS FOR SATURDAY"}
+   ]
+  },
+  {
+   "id": "your-2026-report-card",
+   "hookId": "5-stats-2027",
+   "remixOf": "5-stats-2027",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-semdemora-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "YOUR 2026 REPORT CARD <i>IS DUE.</i>", "show": "none", "dur": 2.0},
+    {"cap": "5 STATS. <b>GRADE YOURSELF.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [0, 0, 0, 0, 0], "fill": [12, 10, 8, 6, 10], "dur": 2.0},
+    {"cap": "FAITH. BODY. MIND. <b>MONEY. HEART.</b>", "show": "none", "dur": 1.8},
+    {"cap": "BE HONEST. <i>NOBODY'S WATCHING.</i>", "show": "crowd", "dur": 1.8},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "THE GRADE IS <i>ALMOST FINAL.</i>", "show": "big", "big": "33", "small": "DAYS LEFT", "dur": 1.9},
+    {"cap": "BUT 33 DAYS IS <b>ENOUGH TO MOVE IT.</b>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+    {"cap": "ONE QUEST A DAY <b>FOR YOUR WEAKEST STAT.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [12, 10, 8, 6, 10], "fill": [24, 20, 18, 22, 20], "dur": 2.1},
+    {"cap": "SAME YOU. <b>BETTER GRADE.</b>", "show": "compare", "l": {"label": "NOV 28", "fig": true}, "r": {"label": "DEC 31", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "COMMENT YOUR <b>WEAKEST STAT.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "last-30-day-challenge",
+   "hookId": "30-days",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DON'T SCROLL PAST THIS", "kick": "LAST CHANCE IN 2026", "title": "STOP WAITING <b>FOR JANUARY</b>", "sub": "Your last 30-day challenge starts now →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE JANUARY LIE", "text": "\"I'll start fresh in January.\"", "sub": "You said that last year too."},
+    {"kind": "math", "kick": "THE MATH", "big": "33 − 30 = 3", "text": "30 days of reps. 3 days of grace. Done by Dec 31."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · PICK ONE", "text": "Pick one habit. Just one.", "sub": "Pray, train, read, or save."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · GO SMALL", "text": "Small enough to do on your worst day.", "sub": "10 push-ups. 1 chapter."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · TRACK IT", "text": "Mark an X every day you do it.", "sub": "Don't break the chain."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · NEVER TWICE", "text": "Miss a day? Never miss two.", "sub": "That's what the 3 spare days are for."},
+    {"kind": "point", "tone": "gold", "num": "GALATIANS 6:9", "kick": "SCRIPTURE", "text": "“…in due season we shall reap, if we faint not.”", "sub": "Keep going."},
+    {"kind": "cta", "title": "DAY 1 IS TODAY.<br><b>NOT JANUARY.</b>", "text": "The System tracks your streaks and turns them into XP. <b>Coming soon.</b>", "sub": "SAVE THIS · START TODAY"}
+   ]
+  },
+  {
+   "id": "your-focus-is-dropping",
+   "hookId": "dopamine-reset",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-bipolar-01",
+   "kicker": "SYSTEM ALERT",
+   "hook": "YOUR FOCUS IS DROPPING<br>EVERY DAY<br><b>YOU WAIT.</b>",
+   "scenes": [0, 1, 2, 3, 4, 5]
+  },
+  {
+   "id": "saturday-family-brags-about",
+   "hookId": "saturday-7-stats",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "yellowcover", "bg": "photos/library/wealth-house-cars-behind-01.jpg", "title": "How to spend Saturday like the man your family brags about…", "sub": "(Bible approved)"},
+    {"kind": "rank", "labels": ["7) Charisma", "Invite a friend over. Or call the one you've been avoiding."], "ab": "CHA", "name": "CHARISMA", "role": "LIFE OF THE PARTY", "color": "#a98bff", "fill": 30},
+    {"kind": "rank", "labels": ["6) Ambition", "One hour on the goal nobody is paying you for yet."], "ab": "AMB", "name": "AMBITION", "role": "CEO", "color": "#e2b85a", "fill": 40},
+    {"kind": "rank", "labels": ["5) Wealth", "15-minute money check. Look at every dollar from this week."], "ab": "WLT", "name": "WEALTH", "role": "STABILITY", "color": "#4fd6a0", "fill": 50},
+    {"kind": "rank", "labels": ["4) Intellect", "Read 20 pages before you touch your phone."], "ab": "INT", "name": "INTELLECT", "role": "DISCIPLINED MIND", "color": "#4cb8ff", "fill": 60},
+    {"kind": "rank", "labels": ["3) Strength", "Train early. Then fix the thing around the house."], "ab": "STR", "name": "STRENGTH", "role": "PROTECTOR", "color": "#ff6a5c", "fill": 70},
+    {"kind": "rank", "labels": ["2) Heart", "One full hour with your family. Phone in another room."], "ab": "HRT", "name": "HEART", "role": "LEADER", "color": "#ff9f6b", "fill": 85},
+    {"kind": "rank", "labels": ["1) Faith", "Get ready for the Lord's day. Pray tonight, lay out tomorrow.", "“This is the day which the LORD hath made” Psalm 118:24"], "ab": "FTH", "name": "FAITH", "role": "SOLDIER", "color": "#f1e6b8", "fill": 100, "lv": "MAX PRIORITY"},
+    {"kind": "rank", "y": 22, "labels": ["All 7 stats. One system.", "Train every one of them daily with quests, streaks and level-ups."], "foot": ["The System · Coming soon", "Follow to join ⬇️"], "ab": "S", "name": "THE SYSTEM", "role": "LEVEL UP YOUR LIFE", "color": "#5ee7ff", "fill": 100, "lv": "ALL 7 STATS"}
+   ]
+  },
+  {
+   "id": "beat-the-january-crowd",
+   "hookId": "before-january-crowd",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "IN 34 DAYS <i>THE GYM FILLS UP.</i>", "show": "none", "dur": 2.0},
+    {"cap": "THE JANUARY CROWD. <i>NEW YEAR, NEW ME.</i>", "show": "crowd", "dur": 2.0},
+    {"cap": "THEN FEBRUARY HITS. <i>MOTIVATION FADES.</i>", "show": "calendar", "months": ["JAN", "FEB"], "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "IF YOU WAIT, <i>YOU'RE ONE OF THEM.</i>", "show": "compare", "l": {"label": "WAITS", "fig": true}, "r": {"label": "QUITS", "fig": true}, "dur": 2.0},
+    {"cap": "OR START <b>TODAY.</b>", "show": "none", "dur": 1.5},
+    {"cap": "34 DAYS OF REPS <b>BEFORE THEY SHOW UP.</b>", "show": "big", "big": "34", "small": "DAYS", "dur": 1.9},
+    {"cap": "STRENGTH STAT <b>ALREADY CLIMBING.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [14, 6, 14, 14, 14], "fill": [18, 26, 16, 15, 16], "dur": 2.0},
+    {"cap": "JANUARY 1? <b>YOU'RE ON DAY 35.</b>", "show": "compare", "l": {"label": "DAY 1", "fig": true}, "r": {"label": "DAY 35", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "BE THE ONE <b>WHO STARTED EARLY.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "saturday-night-steals-sunday",
+   "hookId": "sleep-stat",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "CHECK YOURSELF RIGHT NOW", "kick": "NIGHT CHECK", "title": "SATURDAY NIGHT <b>IS STEALING SUNDAY</b>", "sub": "Fix it before midnight →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE 2AM SPIRAL", "text": "Late scroll. Late snack. Late church.", "sub": "Or no church at all."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · SET A CUTOFF", "text": "Screens off one hour before bed.", "sub": "Set the alarm now."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · NO SNACKS", "text": "No food in the last two hours.", "sub": "You'll sleep deeper."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · LAY IT OUT", "text": "Church clothes out. Keys by the door.", "sub": "Tomorrow-you says thanks."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · LIGHTS OUT", "text": "Pray, then lights out. Same time as weekdays.", "sub": "Rest is part of the plan."},
+    {"kind": "point", "tone": "gold", "num": "PSALM 4:8", "kick": "SCRIPTURE", "text": "“I will both lay me down in peace, and sleep…”", "sub": "Sleep is a gift."},
+    {"kind": "cta", "title": "SLEEP TONIGHT.<br><b>NOT AT 2AM.</b>", "text": "The System tracks your sleep, body and faith as stats you level up. <b>Coming soon.</b>", "sub": "SAVE THIS FOR SATURDAY NIGHT"}
+   ]
+  }
+ ]
+}
