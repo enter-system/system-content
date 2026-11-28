@@ -1,6 +1,13 @@
 # Insights
 What's working, newest first. Updated each nightly run from Metricool.
 
+## 2026-11-27 night run (for Nov 29, Sunday, first Sunday of Advent)
+- Data: Metricool TikTok posts Nov 20–27 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
+- #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.
+- #2 5-stats-2027 (Nov 10): 749 views, 51 likes. Best like rate; self-rating question.
+- Remix pick: 1pct-rule (5-stats was yesterday) → 10:00 explainer "32 days left. Do the math" (1.01^32 = 1.37, 0.99^32 = 0.72).
+- Sunday/Advent angle: your week is decided today (08:00, 32-day countdown), Advent Luke plan, 24 chapters in 26 days (12:00), winter-arc 7-stats rank list on the only 14+ day library photo (16:00), only 5 Mondays left (18:00), Monday-workout setup tonight (20:00).
+
 ## 2026-11-26 night run (for Nov 28, Saturday)
 - Data: Metricool TikTok posts Nov 19–26 returned no rows again (hand-posted packs don't show in Metricool analytics). All-time board unchanged.
 - #1 1pct-rule (Nov 10): 946 views, 21 likes, 1 share. A hard number in line one.

@@ -2537,6 +2537,142 @@
    ],
    "manual": true,
    "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "08:00",
+   "id": "your-week-is-decided-today",
+   "hook": "weekend-reset",
+   "type": "slides",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "time": "10:00",
+   "id": "32-days-of-1-percent",
+   "hook": "1pct-rule",
+   "type": "explainer",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "sound": "hype-bipolar-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "12:00",
+   "id": "advent-starts-today",
+   "hook": "advent-luke-plan",
+   "type": "slides",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "time": "14:00",
+   "id": "read-before-you-scroll",
+   "hook": "read-20-pages",
+   "type": "video",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "sound": "hype-semdemora-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "16:00",
+   "id": "winter-arc-man-of-god",
+   "hook": "winter-arc-quests",
+   "type": "slides",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ],
+   "photos": [
+    "photos/library/wealth-restaurant-pov-01.jpg"
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "time": "18:00",
+   "id": "only-5-mondays-left",
+   "hook": "mondays-left",
+   "type": "explainer",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "youtube",
+    "ig-story",
+    "fb-story"
+   ],
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "20:00",
+   "id": "tomorrow-you-wont-feel-like-it",
+   "hook": "gym-not-feeling-it",
+   "type": "slides",
+   "manual": true,
+   "platforms": [
+    "tiktok",
+    "ig-story",
+    "fb-story"
+   ]
+  },
+  {
+   "date": "2026-11-29",
+   "time": "09:00",
+   "id": "draft-want-to-quit-read-this",
+   "hook": "verses-discipline",
+   "type": "explainer",
+   "manual": true,
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "calm-shizuku-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "13:00",
+   "id": "draft-building-the-system",
+   "hook": "building-in-public",
+   "type": "montage",
+   "manual": true,
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "calm-build-01"
+  },
+  {
+   "date": "2026-11-29",
+   "time": "17:00",
+   "id": "draft-sunday-counts-too",
+   "hook": "never-zero-days",
+   "type": "video",
+   "manual": true,
+   "platforms": [
+    "tiktok-draft"
+   ],
+   "sound": "hype-bipolar-01"
   }
  ]
 }

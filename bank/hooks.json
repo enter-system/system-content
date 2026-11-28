@@ -23,7 +23,8 @@
     "2026-11-17",
     "2026-11-20",
     "2026-11-24",
-    "2026-11-27"
+    "2026-11-27",
+    "2026-11-29"
    ]
   },
   {
@@ -189,7 +190,8 @@
    "hook": "5 Bible verses for when you want to quit",
    "used": [
     "2026-11-11",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-29"
    ]
   },
   {
@@ -220,7 +222,8 @@
    "hook": "You don't have to feel like it. You have to show up.",
    "used": [
     "2026-11-14",
-    "2026-11-21"
+    "2026-11-21",
+    "2026-11-29"
    ]
   },
   {
@@ -273,7 +276,8 @@
    "hook": "Read 20 pages a day and this happens in a year",
    "used": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-29"
    ]
   },
   {
@@ -570,7 +574,8 @@
    "used": [
     "2026-11-13",
     "2026-11-20",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-29"
    ]
   },
   {
@@ -600,7 +605,8 @@
    "hook": "Sunday reset that sets up your whole week",
    "used": [
     "2026-11-14",
-    "2026-11-20"
+    "2026-11-20",
+    "2026-11-29"
    ]
   },
   {
@@ -662,7 +668,8 @@
    "hook": "Building an app that turns your life into a game. Day X.",
    "used": [
     "2026-11-16",
-    "2026-11-25"
+    "2026-11-25",
+    "2026-11-29"
    ]
   },
   {
@@ -732,7 +739,8 @@
    "hook": "Your winter arc starts now: 5 quests before 2027",
    "used": [
     "2026-11-12",
-    "2026-11-19"
+    "2026-11-19",
+    "2026-11-29"
    ]
   },
   {
@@ -760,7 +768,8 @@
    "hook": "It's Monday. Only 7 Mondays left in 2026.",
    "used": [
     "2026-11-16",
-    "2026-11-22"
+    "2026-11-22",
+    "2026-11-29"
    ]
   },
   {
@@ -814,6 +823,15 @@
    "hook": "How to spend Saturday like the man your family brags about (Bible approved)",
    "used": [
     "2026-11-28"
+   ]
+  },
+  {
+   "id": "advent-luke-plan",
+   "pillar": "faith",
+   "format": "slides",
+   "hook": "Advent starts today: read Luke before Christmas (24 chapters, 26 days)",
+   "used": [
+    "2026-11-29"
    ]
   }
  ]

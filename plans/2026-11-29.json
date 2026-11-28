@@ -1,0 +1,124 @@
+{
+ "date": "2026-11-29",
+ "note": "Nightly run (Fri Nov 27 night, ET). Nov 28 was already made, so this is Sunday Nov 29 (32 days left in 2026; first Sunday of Advent; 26 days to Christmas; 5 Mondays left). MANUAL MODE (before Dec 1). No inbox photos and only 1 library photo is 14+ days old (wealth-restaurant-pov-01, Nov 12), so the photo slot is a photo yellowcover + rank countdown again and no mood montage. Metricool last-7-days window empty again; remix is 1pct-rule (32 days of 1%) at 10:00.",
+ "posts": [
+  {
+   "id": "your-week-is-decided-today",
+   "hookId": "weekend-reset",
+   "time": "08:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "DO THIS BEFORE MONDAY", "kick": "SUNDAY CHECK", "title": "YOUR WEEK IS DECIDED <b>TODAY</b>", "sub": "Not Monday morning →"},
+    {"kind": "countdown", "kick": "TIME LEFT", "big": "32", "title": "DAYS LEFT<br>IN 2026", "sub": "Only 5 Mondays left."},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE SUNDAY SCARIES", "text": "No plan. Monday hits. You react all week.", "sub": "Then you blame the week."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · WORSHIP FIRST", "text": "Church, rest, and real time with God.", "sub": "The week starts here."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · 3 MAIN QUESTS", "text": "Write the 3 things this week must have.", "sub": "Everything else is a side quest."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · PREP", "text": "Groceries bought. Gym days on the calendar.", "sub": "Decide once. Not every morning."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · RESET YOUR SPACE", "text": "Clean desk. Clean room. 20 minutes.", "sub": "Monday-you walks into order."},
+    {"kind": "point", "tone": "gold", "num": "EXODUS 20:8", "kick": "SCRIPTURE", "text": "“Remember the sabbath day, to keep it holy.”", "sub": "Rest on purpose."},
+    {"kind": "cta", "title": "PLAN IT TODAY.<br><b>NOT MONDAY.</b>", "text": "The System turns your week into daily quests with streaks. <b>Coming soon.</b>", "sub": "SAVE THIS FOR SUNDAY"}
+   ]
+  },
+  {
+   "id": "32-days-of-1-percent",
+   "hookId": "1pct-rule",
+   "remixOf": "1pct-rule",
+   "time": "10:00",
+   "type": "explainer",
+   "sound": "hype-bipolar-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "32 DAYS LEFT. <i>DO THE MATH.</i>", "show": "big", "big": "32", "small": "DAYS LEFT", "dur": 2.0},
+    {"cap": "1% BETTER EVERY DAY.", "show": "none", "dur": 1.6},
+    {"cap": "1.01 ^ 32 = <b>1.37</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [10, 10, 10, 10, 10], "fill": [14, 14, 14, 14, 14], "dur": 2.0},
+    {"cap": "<b>37% BETTER</b> BY DEC 31.", "show": "none", "dur": 1.7},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "1% WORSE: 0.99 ^ 32 = <i>0.72</i>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [10, 10, 10, 10, 10], "fill": [7, 7, 7, 7, 7], "dur": 2.1},
+    {"cap": "<i>28% WORSE.</i> SAME 32 DAYS.", "show": "compare", "l": {"label": "1% WORSE", "fig": true}, "r": {"label": "1% BETTER", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "NOTHING STAYS THE SAME. <i>YOU PICK.</i>", "show": "calendar", "months": ["NOV", "DEC", "JAN"], "dur": 1.9},
+    {"cap": "ONE PRAYER. ONE WORKOUT. <b>ONE PAGE.</b>", "show": "none", "dur": 1.9},
+    {"cap": "START TODAY. <b>NOT MONDAY.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "advent-starts-today",
+   "hookId": "advent-luke-plan",
+   "time": "12:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE DECEMBER", "kick": "ADVENT STARTS TODAY", "title": "DON'T LET CHRISTMAS <b>SNEAK UP ON YOU</b>", "sub": "26 days. One plan →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "THE DECEMBER BLUR", "text": "Shopping. Parties. Screens. Then it's over.", "sub": "And Jesus got the leftovers."},
+    {"kind": "math", "kick": "THE MATH", "big": "24 ÷ 26", "text": "Luke has 24 chapters. 26 days to Christmas. One a day, 2 spare."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · ONE CHAPTER", "text": "Read one chapter of Luke every morning.", "sub": "Start with Luke 1 today."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · BEFORE THE PHONE", "text": "Bible open before any app.", "sub": "5 minutes is enough."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · ONE LINE", "text": "Write one verse that hit you.", "sub": "24 lines by Christmas Eve."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · TELL SOMEONE", "text": "Invite one person to read along.", "sub": "Streaks are easier together."},
+    {"kind": "point", "tone": "gold", "num": "ISAIAH 9:6", "kick": "SCRIPTURE", "text": "“For unto us a child is born, unto us a son is given…”", "sub": "Make room for Him."},
+    {"kind": "cta", "title": "LUKE 1. <b>TODAY.</b>", "text": "The System tracks your Bible streak like a stat you level up. <b>Coming soon.</b>", "sub": "SAVE THIS · START TODAY"}
+   ]
+  },
+  {
+   "id": "read-before-you-scroll",
+   "hookId": "read-20-pages",
+   "time": "14:00",
+   "type": "video",
+   "sound": "hype-semdemora-01",
+   "kicker": "WARNING",
+   "hook": "READ 20 PAGES<br>BEFORE YOU<br><b>SCROLL TODAY.</b>",
+   "scenes": [0, 2, 3, 4, 5]
+  },
+  {
+   "id": "winter-arc-man-of-god",
+   "hookId": "winter-arc-quests",
+   "time": "16:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "yellowcover", "bg": "photos/library/wealth-restaurant-pov-01.jpg", "title": "How to run your winter arc like a man of God…", "sub": "(Bible approved)"},
+    {"kind": "rank", "labels": ["7) Charisma", "Text one friend a week to check on him. Mean it."], "ab": "CHA", "name": "CHARISMA", "role": "LIFE OF THE PARTY", "color": "#a98bff", "fill": 30},
+    {"kind": "rank", "labels": ["6) Ambition", "Write your 3 goals for 2027 before January does it for you."], "ab": "AMB", "name": "AMBITION", "role": "CEO", "color": "#e2b85a", "fill": 40},
+    {"kind": "rank", "labels": ["5) Wealth", "Set a holiday budget tonight. Cash or nothing."], "ab": "WLT", "name": "WEALTH", "role": "STABILITY", "color": "#4fd6a0", "fill": 50},
+    {"kind": "rank", "labels": ["4) Intellect", "One book by Dec 31. 10 pages a day."], "ab": "INT", "name": "INTELLECT", "role": "DISCIPLINED MIND", "color": "#4cb8ff", "fill": 60},
+    {"kind": "rank", "labels": ["3) Strength", "Cold outside? Train inside. 3 days a week minimum."], "ab": "STR", "name": "STRENGTH", "role": "PROTECTOR", "color": "#ff6a5c", "fill": 70},
+    {"kind": "rank", "labels": ["2) Heart", "Phone down at dinner. Every night this month."], "ab": "HRT", "name": "HEART", "role": "LEADER", "color": "#ff9f6b", "fill": 85},
+    {"kind": "rank", "labels": ["1) Faith", "Read Luke this Advent. One chapter a day.", "“Seek ye first the kingdom of God” Matthew 6:33"], "ab": "FTH", "name": "FAITH", "role": "SOLDIER", "color": "#f1e6b8", "fill": 100, "lv": "MAX PRIORITY"},
+    {"kind": "rank", "y": 22, "labels": ["All 7 stats. One system.", "Train every one of them daily with quests, streaks and level-ups."], "foot": ["The System · Coming soon", "Follow to join ⬇️"], "ab": "S", "name": "THE SYSTEM", "role": "LEVEL UP YOUR LIFE", "color": "#5ee7ff", "fill": 100, "lv": "ALL 7 STATS"}
+   ]
+  },
+  {
+   "id": "only-5-mondays-left",
+   "hookId": "mondays-left",
+   "time": "18:00",
+   "type": "explainer",
+   "sound": "calm-build-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "ONLY <i>5 MONDAYS</i> LEFT IN 2026.", "show": "big", "big": "5", "small": "MONDAYS", "dur": 2.0},
+    {"cap": "HOW MANY TIMES DID YOU SAY <i>\"MONDAY\"?</i>", "show": "none", "dur": 2.0},
+    {"cap": "MONDAY CAME. <i>NOTHING CHANGED.</i>", "show": "calendar", "months": ["SEP", "OCT", "NOV"], "dur": 1.9},
+    {"cap": "HERE'S THE SCARY PART.", "show": "none", "dur": 1.4},
+    {"cap": "5 MORE MONDAYS. <i>THEN IT'S 2027.</i>", "show": "compare", "l": {"label": "2026", "fig": true}, "r": {"label": "2027", "fig": true}, "dur": 2.0},
+    {"cap": "SAME PERSON. <i>NEW CALENDAR.</i>", "show": "none", "dur": 1.6},
+    {"cap": "OR START <b>TONIGHT.</b>", "show": "none", "dur": 1.5},
+    {"cap": "SUNDAY PLAN. <b>MONDAY QUESTS.</b>", "show": "bars", "names": ["FTH", "STR", "INT", "WLT", "HRT"], "from": [8, 8, 8, 8, 8], "fill": [20, 18, 16, 15, 18], "dur": 2.0},
+    {"cap": "5 MONDAYS ON A STREAK <b>BEATS 0.</b>", "show": "compare", "l": {"label": "WAITED", "fig": true}, "r": {"label": "STARTED", "fig": true, "glow": true}, "dur": 2.1},
+    {"cap": "BE THE ONE <b>WHO DIDN'T WAIT.</b>", "show": "crowd", "glow": true, "dur": 2.0}
+   ]
+  },
+  {
+   "id": "tomorrow-you-wont-feel-like-it",
+   "hookId": "gym-not-feeling-it",
+   "time": "20:00",
+   "type": "slides",
+   "slides": [
+    {"kind": "cover", "tone": "alert", "banner": "READ THIS BEFORE BED", "kick": "MONDAY WARNING", "title": "TOMORROW YOU <b>WON'T FEEL LIKE IT</b>", "sub": "Set it up tonight →"},
+    {"kind": "point", "tone": "alert", "num": "WHAT IT'S COSTING YOU", "kick": "WAITING TO FEEL READY", "text": "You wait for motivation. It never shows up.", "sub": "So the workout never does either."},
+    {"kind": "point", "num": "THE FIX · 01 / 04", "kick": "QUEST 01 · CLOTHES OUT", "text": "Gym clothes on the chair tonight.", "sub": "Shoes by the door."},
+    {"kind": "point", "num": "THE FIX · 02 / 04", "kick": "QUEST 02 · DECIDE NOW", "text": "Pick the workout and the time now.", "sub": "No deciding at 6am."},
+    {"kind": "point", "num": "THE FIX · 03 / 04", "kick": "QUEST 03 · 10 MINUTES", "text": "Promise only 10 minutes.", "sub": "You'll usually keep going."},
+    {"kind": "point", "num": "THE FIX · 04 / 04", "kick": "QUEST 04 · NEVER TWICE", "text": "Miss Monday? Never miss Tuesday.", "sub": "One miss isn't a pattern."},
+    {"kind": "point", "tone": "gold", "num": "1 CORINTHIANS 9:27", "kick": "SCRIPTURE", "text": "“But I keep under my body, and bring it into subjection…”", "sub": "Lead your body."},
+    {"kind": "cta", "title": "SET IT UP TONIGHT.<br><b>SHOW UP TOMORROW.</b>", "text": "The System turns workouts into quests and your body into a stat. <b>Coming soon.</b>", "sub": "SAVE THIS FOR MONDAY"}
+   ]
+  }
+ ]
+}

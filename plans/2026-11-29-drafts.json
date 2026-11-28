@@ -1,0 +1,55 @@
+{
+ "date": "2026-11-29",
+ "posts": [
+  {
+   "id": "draft-want-to-quit-read-this",
+   "hookId": "verses-discipline",
+   "time": "09:00",
+   "type": "explainer",
+   "silent": true,
+   "sound": "calm-shizuku-01",
+   "lead": 999,
+   "scenes": [
+    {"cap": "WANT TO QUIT? <i>READ THIS FIRST.</i>", "show": "none", "dur": 1.9},
+    {"cap": "3 VERSES FOR <b>DAY 47.</b>", "show": "big", "big": "3", "small": "VERSES", "dur": 1.7},
+    {"cap": "\"I CAN DO ALL THINGS THROUGH CHRIST <b>WHICH STRENGTHENETH ME.\"</b>", "show": "none", "dur": 2.4},
+    {"cap": "PHILIPPIANS 4:13", "show": "none", "dur": 1.4},
+    {"cap": "\"GOD HATH NOT GIVEN US THE SPIRIT OF FEAR; <b>BUT OF POWER…\"</b>", "show": "none", "dur": 2.4},
+    {"cap": "2 TIMOTHY 1:7", "show": "none", "dur": 1.4},
+    {"cap": "\"THEY SHALL RUN, <b>AND NOT BE WEARY…\"</b>", "show": "none", "dur": 2.2},
+    {"cap": "ISAIAH 40:31", "show": "none", "dur": 1.4},
+    {"cap": "DON'T QUIT. <b>DO TODAY'S QUEST.</b>", "show": "crowd", "glow": true, "dur": 1.9}
+   ]
+  },
+  {
+   "id": "draft-building-the-system",
+   "hookId": "building-in-public",
+   "time": "13:00",
+   "type": "montage",
+   "silent": true,
+   "sound": "calm-build-01",
+   "beatsPer": 2,
+   "hook": "I'M BUILDING AN APP<br>THAT TURNS YOUR LIFE<br><b>INTO A GAME.</b>",
+   "kicker": "SYSTEM ALERT",
+   "frames": [
+    {"photo": "photos/app/00-choose-your-form.jpg", "text": "Pick your <b>form.</b>"},
+    {"photo": "photos/app/01-home-level-up.jpg", "text": "Habits = <b>XP.</b>"},
+    {"photo": "photos/app/05-scripture-game.jpg", "text": "Faith is a <b>stat.</b>"},
+    {"photo": "photos/app/07-guided-stretch.jpg", "text": "Body is a <b>stat.</b>"},
+    {"photo": "photos/app/02-streak.jpg", "text": "Don't break the <b>streak.</b>"},
+    {"photo": "photos/app/08-your-world.jpg", "text": "Coming <b>soon.</b>"}
+   ]
+  },
+  {
+   "id": "draft-sunday-counts-too",
+   "hookId": "never-zero-days",
+   "time": "17:00",
+   "type": "video",
+   "silent": true,
+   "sound": "hype-bipolar-01",
+   "kicker": "ALERT",
+   "hook": "SUNDAY COUNTS TOO.<br>NO<br><b>ZERO DAYS.</b>",
+   "scenes": [0, 1, 3, 4, 5]
+  }
+ ]
+}
